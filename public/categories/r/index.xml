@@ -1,0 +1,24 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>R - category - </title>
+    <link>/categories/r/</link>
+    <description>R - category - </description>
+    <generator>Hugo -- gohugo.io</generator><managingEditor>rui.ying@bristol.ac.uk (Rui Ying)</managingEditor>
+      <webMaster>rui.ying@bristol.ac.uk (Rui Ying)</webMaster><lastBuildDate>Fri, 16 Jul 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="/categories/r/" rel="self" type="application/rss+xml" /><item>
+  <title>Truly dark theme of Rstudio</title>
+  <link>/2021-07-16-truly-dark-theme-of-rstudio/</link>
+  <pubDate>Fri, 16 Jul 2021 00:00:00 &#43;0000</pubDate>
+  <author>Rui Ying</author>
+  <guid>/2021-07-16-truly-dark-theme-of-rstudio/</guid>
+  <description><![CDATA[A better dark theme]]></description>
+</item>
+<item>
+  <title>Embedding Chinese Fonts in R</title>
+  <link>/embedding-chinese-fonts-in-r/</link>
+  <pubDate>Tue, 31 Mar 2020 20:24:01 &#43;0000</pubDate>
+  <author>Rui Ying</author>
+  <guid>/embedding-chinese-fonts-in-r/</guid>
+  <description><![CDATA[embed CJK fonts in R pdf]]></description>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>C语言下的转换说明 - </title><meta name="author" content="Rui Ying">
+<meta name="author-link" content="">
+<meta name="description" content="Welcome to my world" /><meta name="keywords" content='C' /><meta itemprop="name" content="C语言下的转换说明">
+<meta itemprop="description" content=""><meta itemprop="datePublished" content="2018-11-23T09:06:46+00:00" />
+<meta itemprop="dateModified" content="2018-11-23T09:06:46+00:00" />
+<meta itemprop="wordCount" content="76"><meta itemprop="image" content="/logo.png"/>
+<meta itemprop="keywords" content="C," /><meta property="og:title" content="C语言下的转换说明" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/c%E8%AF%AD%E8%A8%80%E4%B8%8B%E7%9A%84%E8%BD%AC%E6%8D%A2%E8%AF%B4%E6%98%8E/" /><meta property="og:image" content="/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2018-11-23T09:06:46+00:00" />
+<meta property="article:modified_time" content="2018-11-23T09:06:46+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/logo.png"/>
+
+<meta name="twitter:title" content="C语言下的转换说明"/>
+<meta name="twitter:description" content=""/>
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#ffffff" data-dark="#252627" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="canonical" href="/c%E8%AF%AD%E8%A8%80%E4%B8%8B%E7%9A%84%E8%BD%AC%E6%8D%A2%E8%AF%B4%E6%98%8E/" /><link rel="next" href="/use-emacs-to-write-markdown/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "C语言下的转换说明",
+    "inLanguage": "",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "\/c%E8%AF%AD%E8%A8%80%E4%B8%8B%E7%9A%84%E8%BD%AC%E6%8D%A2%E8%AF%B4%E6%98%8E\/"
+    },"genre": "posts","keywords": "C","wordcount":  76 ,
+    "url": "\/c%E8%AF%AD%E8%A8%80%E4%B8%8B%E7%9A%84%E8%BD%AC%E6%8D%A2%E8%AF%B4%E6%98%8E\/","datePublished": "2018-11-23T09:06:46+00:00","dateModified": "2018-11-23T09:06:46+00:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Rui Ying"
+      },"description": ""
+  }
+  </script></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title=""><span class="header-title-text">Heaven</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item text-center">
+              <a
+                class="menu-link"
+                href="/categories/"
+                
+                
+              ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> categories</a></li><li class="menu-item text-center">
+              <a
+                class="menu-link"
+                href="/posts/"
+                
+                
+              ><i class="fa-solid fa-pen-nib fa-fw fa-sm" aria-hidden="true"></i> posts</a></li><li class="menu-item text-center">
+              <a
+                class="menu-link"
+                href="/about/"
+                
+                
+              ><i class="fa-regular fa-address-card fa-fw fa-sm" aria-hidden="true"></i> about</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="" id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title=""><span class="header-title-text">Heaven</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="" id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
+            </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              
+            </a>
+          </li><li
+              class="menu-item text-center"
+            ><a
+                  class="menu-link"
+                  href="/categories/"
+                  
+                  
+                ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> categories</a></li><li
+              class="menu-item text-center"
+            ><a
+                  class="menu-link"
+                  href="/posts/"
+                  
+                  
+                ><i class="fa-solid fa-pen-nib fa-fw fa-sm" aria-hidden="true"></i> posts</a></li><li
+              class="menu-item text-center"
+            ><a
+                  class="menu-link"
+                  href="/about/"
+                  
+                  
+                ><i class="fa-regular fa-address-card fa-fw fa-sm" aria-hidden="true"></i> about</a></li><li class="menu-item theme-switch" title="">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><main class="container" data-page-style="normal"><aside class="toc" id="toc-auto"></aside>
+
+  <aside class="aside-custom">
+    
+</aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX">
+        <span>C语言下的转换说明</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><img
+    class="lazyload avatar"
+    src="/svg/loading.min.svg"
+    data-src="/images/avatar.jpg"
+    data-srcset="/images/avatar.jpg, /images/avatar.jpg 1.5x, /images/avatar.jpg 2x"
+    data-sizes="auto"
+    alt="Rui Ying"
+    title="Rui Ying"/>&nbsp;Rui Ying</span></span>
+          <span class="post-category"></span></div>
+      <div class="post-meta-line"><span title=2018-11-23&#32;09:06:46><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2018-11-23">2018-11-23</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> </span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> </span>&nbsp;</div>
+    </div><div
+      class="content"
+      id="content"
+      
+      
+    ><h1 id="c语言下的转换说明修饰符">C语言下的转换说明修饰符</h1>
+<ul>
+<li>scanf()和getchar()函数的不同在于,getchar()函数和scanf(%c)接受包括转行符在内的所有字符，而使用其他转换修饰符的scanf()则可以通过转换说明限制输入的字符类型。例如，在声明中，<code>char a;</code>声明a变量是一个字符，但是我偏偏打进去一个数字96，结果编译器没有报错。为什么呢，因为getchar读取了数字96并且把他存成了一个字符串变量。而scanf()则可以通过%d等来告诉计算机，只要真的数字而不是string。所以，当你用scanf输入错误的数据类型时，会得到</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="nl">warning</span><span class="p">:</span> <span class="n">format</span> <span class="err">‘</span><span class="o">%</span><span class="n">d</span><span class="err">’</span> <span class="n">expects</span> <span class="n">argument</span> <span class="n">of</span> <span class="n">type</span> <span class="err">‘</span><span class="kt">int</span> <span class="o">*</span><span class="err">’</span><span class="p">,</span> <span class="n">but</span> <span class="n">argument</span> <span class="mi">2</span> <span class="n">has</span> <span class="n">type</span> <span class="err">‘</span><span class="kt">char</span> <span class="o">*</span><span class="err">’</span> <span class="p">[</span><span class="o">-</span><span class="n">Wformat</span><span class="o">=</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">   <span class="n">scanf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">          <span class="o">~^</span>   <span class="o">~~</span>
+</span></span><span class="line"><span class="cl">          <span class="o">%</span><span class="n">hhd</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>意思就是数据类型不匹配。同样地，如果一开始声明变量就是字符串外的其他类型，那么也一样会报错。
+所以一个输入流程应该是</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="n">input</span> <span class="o">&gt;</span> <span class="k">if</span> <span class="kt">char</span> <span class="o">&gt;</span> <span class="o">%</span><span class="n">convertion</span><span class="p">(</span><span class="k">if</span> <span class="o">%</span><span class="n">c</span> <span class="n">or</span> <span class="nl">getchar</span><span class="p">:</span> <span class="n">pass</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">variable</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在获取用户输入的时候，就要尤其注意，要添加一段<code>while (getchar() != '\n') continue;</code>来跳开换行符。</p>
+<ul>
+<li>printf()函数也可以通过转换说明修饰符（例如%d, %c ）来对输出进行转换。例如下面的代码：</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"> <span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span> <span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"> <span class="kt">int</span> <span class="n">a</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> <span class="n">scanf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"> <span class="n">printf</span><span class="p">(</span><span class="s">&#34;%c</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">a</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>我输入一个int整数，结果可以转化为相应的字符。因为在计算机中，无论是整数还是字符，都只是二进制的01序列而已。所以，转换说明也相当于一个翻译的作用，例如将十进制输出为十六进制（%x）。</p>
+</div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title=2018-11-23&#32;09:06:46>&nbsp;</span>
+      </div><div class="post-info-license">
+          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+        </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"><span><a href="/c%E8%AF%AD%E8%A8%80%E4%B8%8B%E7%9A%84%E8%BD%AC%E6%8D%A2%E8%AF%B4%E6%98%8E/index.md" class="link-to-markdown"></a></span></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title=" Twitter" data-sharer="twitter" data-url="/c%E8%AF%AD%E8%A8%80%E4%B8%8B%E7%9A%84%E8%BD%AC%E6%8D%A2%E8%AF%B4%E6%98%8E/" data-title="C语言下的转换说明" data-via="YingRui17" data-hashtags="C"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title=" Facebook" data-sharer="facebook" data-url="/c%E8%AF%AD%E8%A8%80%E4%B8%8B%E7%9A%84%E8%BD%AC%E6%8D%A2%E8%AF%B4%E6%98%8E/" data-hashtag="C"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title=" WhatsApp" data-sharer="whatsapp" data-url="/c%E8%AF%AD%E8%A8%80%E4%B8%8B%E7%9A%84%E8%BD%AC%E6%8D%A2%E8%AF%B4%E6%98%8E/" data-title="C语言下的转换说明" data-web><i class="fa-brands fa-whatsapp fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title=" Line" data-sharer="line" data-url="/c%E8%AF%AD%E8%A8%80%E4%B8%8B%E7%9A%84%E8%BD%AC%E6%8D%A2%E8%AF%B4%E6%98%8E/" data-title="C语言下的转换说明"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title=" 微博" data-sharer="weibo" data-url="/c%E8%AF%AD%E8%A8%80%E4%B8%8B%E7%9A%84%E8%BD%AC%E6%8D%A2%E8%AF%B4%E6%98%8E/" data-title="C语言下的转换说明"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title=" Myspace" data-sharer="myspace" data-url="/c%E8%AF%AD%E8%A8%80%E4%B8%8B%E7%9A%84%E8%BD%AC%E6%8D%A2%E8%AF%B4%E6%98%8E/" data-title="C语言下的转换说明" data-description=""><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title=" Blogger" data-sharer="blogger" data-url="/c%E8%AF%AD%E8%A8%80%E4%B8%8B%E7%9A%84%E8%BD%AC%E6%8D%A2%E8%AF%B4%E6%98%8E/" data-title="C语言下的转换说明" data-description=""><i class="fa-brands fa-blogger fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title=" Evernote" data-sharer="evernote" data-url="/c%E8%AF%AD%E8%A8%80%E4%B8%8B%E7%9A%84%E8%BD%AC%E6%8D%A2%E8%AF%B4%E6%98%8E/" data-title="C语言下的转换说明"><i class="fa-brands fa-evernote fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/c/">C</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();"></a></span>&nbsp;|&nbsp;<span><a href="/"></a></span>
+    </section>
+  </div>
+
+  <div class="post-nav">
+      <a href="/use-emacs-to-write-markdown/" class="next" rel="next" title="Use Emacs to Write Markdown">Use Emacs to Write Markdown<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered">
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2019 - 2022</span><span class="author" itemprop="copyrightHolder">
+              <a href="/">Rui Ying</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line ibruce">
+          <span id="busuanzi_container_site_uv" title=''><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title=''><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
+        </div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label=""><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+        </div></div><div id="mask"></div><div class="reading-progress-bar" style="left: 0;top: 0;height: 2px;"></div><noscript>
+    <div class="noscript-warning"></div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/lunr/lunr.min.js" defer></script><script src="/lib/lazysizes/lazysizes.min.js" async defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/katex/katex.min.js" defer></script><script src="/lib/katex/auto-render.min.js" defer></script><script src="/lib/katex/copy-tex.min.js" defer></script><script src="/lib/katex/mhchem.min.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async defer></script><script>window.config={"code":{"copyTitle":"","editLockTitle":"","editUnLockTitle":"","editable":true,"maxShownLines":10},"comment":{"enable":false},"cookieconsent":{"content":{"dismiss":"","link":"","message":""},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"enablePWA":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"","snippetLength":50,"type":"lunr"}};</script><script src="/js/theme.min.js" defer></script></body>
+</html>
