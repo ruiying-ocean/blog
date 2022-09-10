@@ -1,0 +1,72 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Emacs - Category - Rui Ying 应锐</title>
+        <link>http://ruiying.online/categories/emacs/</link>
+        <description>Emacs - Category - Rui Ying 应锐</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>rui.ying@bristol.ac.uk (Rui Ying)</managingEditor>
+            <webMaster>rui.ying@bristol.ac.uk (Rui Ying)</webMaster><lastBuildDate>Sat, 31 Jul 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://ruiying.online/categories/emacs/" rel="self" type="application/rss+xml" /><item>
+    <title>Experience of studying vim</title>
+    <link>http://ruiying.online/posts/2021-07-31-experience-of-studying-vim/</link>
+    <pubDate>Sat, 31 Jul 2021 00:00:00 &#43;0000</pubDate>
+    <author>Rui Ying</author>
+    <guid>http://ruiying.online/posts/2021-07-31-experience-of-studying-vim/</guid>
+    <description><![CDATA[The holy war!]]></description>
+</item>
+<item>
+    <title>Try Windows Terminal &#43; Powershell</title>
+    <link>http://ruiying.online/posts/2021-07-12-try-windows-terminal-powershell/</link>
+    <pubDate>Mon, 12 Jul 2021 00:00:00 &#43;0000</pubDate>
+    <author>Rui Ying</author>
+    <guid>http://ruiying.online/posts/2021-07-12-try-windows-terminal-powershell/</guid>
+    <description><![CDATA[A nice Windows programming environment in 2021]]></description>
+</item>
+<item>
+    <title>Use Emacs on a remote shell</title>
+    <link>http://ruiying.online/posts/2021-07-12-use-emacs-on-a-remote-shell/</link>
+    <pubDate>Mon, 12 Jul 2021 00:00:00 &#43;0000</pubDate>
+    <author>Rui Ying</author>
+    <guid>http://ruiying.online/posts/2021-07-12-use-emacs-on-a-remote-shell/</guid>
+    <description><![CDATA[Another way to run Emacs]]></description>
+</item>
+<item>
+    <title>Install and use Emacs 28 Native comp (gccemacs)</title>
+    <link>http://ruiying.online/posts/2021-07-02-install-and-use-emacs-28-native-comp-gccemacs/</link>
+    <pubDate>Fri, 02 Jul 2021 00:00:00 &#43;0000</pubDate>
+    <author>Rui Ying</author>
+    <guid>http://ruiying.online/posts/2021-07-02-install-and-use-emacs-28-native-comp-gccemacs/</guid>
+    <description><![CDATA[Emacs feature: native compilation plus 1M ways to download]]></description>
+</item>
+<item>
+    <title>LSP Mode</title>
+    <link>http://ruiying.online/posts/lsp-mode/</link>
+    <pubDate>Thu, 17 Dec 2020 20:42:26 &#43;0000</pubDate>
+    <author>Rui Ying</author>
+    <guid>http://ruiying.online/posts/lsp-mode/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Run Emacs in WSL2</title>
+    <link>http://ruiying.online/posts/run-emacs-in-wsl/</link>
+    <pubDate>Sat, 12 Dec 2020 14:39:42 &#43;0000</pubDate>
+    <author>Rui Ying</author>
+    <guid>http://ruiying.online/posts/run-emacs-in-wsl/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Use Emacs as a Python IDE</title>
+    <link>http://ruiying.online/posts/use-emacs-as-python-ide/</link>
+    <pubDate>Sat, 12 Dec 2020 11:46:23 &#43;0000</pubDate>
+    <author>Rui Ying</author>
+    <guid>http://ruiying.online/posts/use-emacs-as-python-ide/</guid>
+    <description><![CDATA[Emacs package: elpy, company-quickhelper]]></description>
+</item>
+<item>
+    <title>Use Emacs to Write Markdown</title>
+    <link>http://ruiying.online/posts/use-emacs-to-write-markdown/</link>
+    <pubDate>Sun, 25 Nov 2018 20:54:20 &#43;0000</pubDate>
+    <author>Rui Ying</author>
+    <guid>http://ruiying.online/posts/use-emacs-to-write-markdown/</guid>
+    <description><![CDATA[Emacs as md editor]]></description>
+</item>
+</channel>
+</rss>

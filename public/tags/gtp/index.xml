@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>GTP - Tag - Rui Ying 应锐</title>
+        <link>http://ruiying.online/tags/gtp/</link>
+        <description>GTP - Tag - Rui Ying 应锐</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>rui.ying@bristol.ac.uk (Rui Ying)</managingEditor>
+            <webMaster>rui.ying@bristol.ac.uk (Rui Ying)</webMaster><lastBuildDate>Sun, 18 Apr 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://ruiying.online/tags/gtp/" rel="self" type="application/rss+xml" /><item>
+    <title>A simple song by RY</title>
+    <link>http://ruiying.online/posts/2021-04-18-a-simple-song-score/</link>
+    <pubDate>Sun, 18 Apr 2021 00:00:00 &#43;0000</pubDate>
+    <author>Rui Ying</author>
+    <guid>http://ruiying.online/posts/2021-04-18-a-simple-song-score/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
+</rss>

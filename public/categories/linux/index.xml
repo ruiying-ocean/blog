@@ -1,0 +1,33 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Linux - Category - Rui Ying 应锐</title>
+        <link>http://ruiying.online/categories/linux/</link>
+        <description>Linux - Category - Rui Ying 应锐</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>rui.ying@bristol.ac.uk (Rui Ying)</managingEditor>
+            <webMaster>rui.ying@bristol.ac.uk (Rui Ying)</webMaster><lastBuildDate>Mon, 12 Jul 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://ruiying.online/categories/linux/" rel="self" type="application/rss+xml" /><item>
+    <title>Try Windows Terminal &#43; Powershell</title>
+    <link>http://ruiying.online/posts/2021-07-12-try-windows-terminal-powershell/</link>
+    <pubDate>Mon, 12 Jul 2021 00:00:00 &#43;0000</pubDate>
+    <author>Rui Ying</author>
+    <guid>http://ruiying.online/posts/2021-07-12-try-windows-terminal-powershell/</guid>
+    <description><![CDATA[A nice Windows programming environment in 2021]]></description>
+</item>
+<item>
+    <title>REGEXP note</title>
+    <link>http://ruiying.online/posts/2021-05-12-a-grep-note/</link>
+    <pubDate>Wed, 12 May 2021 00:00:00 &#43;0000</pubDate>
+    <author>Rui Ying</author>
+    <guid>http://ruiying.online/posts/2021-05-12-a-grep-note/</guid>
+    <description><![CDATA[Grep and regexp usage]]></description>
+</item>
+<item>
+    <title>SSH and Some Linux Commands</title>
+    <link>http://ruiying.online/posts/2021-01-04-ssh-and-some-linux-commands/</link>
+    <pubDate>Mon, 04 Jan 2021 00:00:00 &#43;0000</pubDate>
+    <author>Rui Ying</author>
+    <guid>http://ruiying.online/posts/2021-01-04-ssh-and-some-linux-commands/</guid>
+    <description><![CDATA[What&rsquo;s public key and private key (in my understanding) Public key and private key are generated pairwisely. Only each other can decode the other. One of the pair can be the lock and the other can be the key.
+SSH connection process Client sends a request Server receives the request and send pub_key to client client uses the pub_key to encrypt password and send back Server decodes it using private_key Core: use server&rsquo;s public key to encrypt user&rsquo;s password.]]></description>
+</item>
+</channel>
+</rss>

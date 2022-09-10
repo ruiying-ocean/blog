@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Fortran basics - Rui Ying 应锐</title><meta name="Description" content="This is Rui Ying&#39;s cool home"><meta property="og:title" content="Fortran basics" />
+<meta property="og:description" content="We reviewed basic data types, structure and IO here" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://ruiying.online/posts/2022-02-18-fortran-basics/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-02-18T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-02-18T00:00:00+00:00" /><meta property="og:site_name" content="Personal Heaven" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Fortran basics"/>
+<meta name="twitter:description" content="We reviewed basic data types, structure and IO here"/>
+<meta name="application-name" content="My cool site">
+<meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="canonical" href="http://ruiying.online/posts/2022-02-18-fortran-basics/" /><link rel="prev" href="http://ruiying.online/posts/2021-07-31-experience-of-studying-vim/" /><link rel="next" href="http://ruiying.online/posts/2022-02-21-carbon-chemistry-and-biological-pump/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Fortran basics",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/ruiying.online\/posts\/2022-02-18-fortran-basics\/"
+        },"genre": "posts","keywords": "tag1, tag2","wordcount":  1133 ,
+        "url": "http:\/\/ruiying.online\/posts\/2022-02-18-fortran-basics\/","datePublished": "2022-02-18T00:00:00+00:00","dateModified": "2022-02-18T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Rui Ying"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Rui Ying 应锐">Heaven</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> posts </a><a class="menu-item" href="/categories/"> categories </a><a class="menu-item" href="/posts/about/" title="About"> About </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Rui Ying 应锐">Heaven</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">posts</a><a class="menu-item" href="/categories/" title="">categories</a><a class="menu-item" href="/posts/about/" title="About">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Fortran basics</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Rui Ying</a></span>&nbsp;<span class="post-category">included in <a href="/categories/fortran/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Fortran</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-02-18">2022-02-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1133 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#data-types-and-declaraion">Data types and declaraion</a>
+      <ul>
+        <li><a href="#arrays">Arrays</a></li>
+        <li><a href="#derived-types">Derived types</a></li>
+        <li><a href="#implicit-and-explicit-declaration">Implicit and explicit declaration</a></li>
+      </ul>
+    </li>
+    <li><a href="#structure">Structure</a></li>
+    <li><a href="#io">IO</a>
+      <ul>
+        <li><a href="#standard-streams">Standard streams</a></li>
+        <li><a href="#format-string">Format string</a></li>
+        <li><a href="#python">Python</a></li>
+        <li><a href="#fortran">Fortran</a></li>
+        <li><a href="#file-io">File IO</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="fortran-basics">Fortran Basics</h1>
+<h2 id="data-types-and-declaraion">Data types and declaraion</h2>
+<ul>
+<li>Character</li>
+<li>Real (same as <strong>double</strong> in C-series languages )</li>
+<li>Integer</li>
+<li>Complex</li>
+<li>Logical (.TRUE. and .FALSE.)</li>
+</ul>
+<h3 id="arrays">Arrays</h3>
+<ul>
+<li>Whole-array arithmetic (similar to some functional programming)</li>
+<li>Column major order/indexing (inherited by R/Matlab, unlike C/Python), therefore, a(1,1), a(2,1), a(3,1) will be faster to index.</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Row_and_column_major_order.svg/170px-Row_and_column_major_order.svg.png"
+        data-srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Row_and_column_major_order.svg/170px-Row_and_column_major_order.svg.png, https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Row_and_column_major_order.svg/170px-Row_and_column_major_order.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Row_and_column_major_order.svg/170px-Row_and_column_major_order.svg.png 2x"
+        data-sizes="auto"
+        alt="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Row_and_column_major_order.svg/170px-Row_and_column_major_order.svg.png"
+        title="img" /></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fortran" data-lang="fortran"><span class="line"><span class="cl"><span class="c">! ways to declare data
+</span></span></span><span class="line"><span class="cl"><span class="c">! Keyword `parameter` means immutable constant
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="kt">integer</span><span class="p">,</span> <span class="k">parameter</span> <span class="kd">::</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl"><span class="c">! or
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="kt">integer</span><span class="p">,</span> <span class="k">parameter</span> <span class="kd">::</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span>
+</span></span><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">b</span> <span class="o">=</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">!character
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span> <span class="kd">::</span> <span class="n">first</span>
+</span></span><span class="line"><span class="cl"><span class="kt">character</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="kd">::</span> <span class="n">last_name</span>
+</span></span><span class="line"><span class="cl"><span class="c">! String concatenation
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="n">full_name</span> <span class="o">=</span> <span class="n">first_name</span><span class="o">//</span><span class="s1">&#39; &#39;</span><span class="o">//</span><span class="n">last_name</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">! ways to declare arrays
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="kt">real</span> <span class="kd">::</span> <span class="n">vec</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="kt">real</span><span class="p">,</span> <span class="k">dimension</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="kd">::</span> <span class="n">vec</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">!dynamic arrays, also called allocatable arrays
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="kt">integer</span><span class="p">,</span> <span class="k">allocatable</span> <span class="kd">::</span> <span class="n">a</span><span class="p">(:)</span>
+</span></span></code></pre></div><h3 id="derived-types">Derived types</h3>
+<p>Derived types are &ldquo;struct&rdquo; in C/C++.</p>
+<p>A <em>derived type</em> is a special form of data type that can encapsulate other built-in types as well as other derived types</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fortran" data-lang="fortran"><span class="line"><span class="cl"><span class="c">!create a derived type
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">type</span> <span class="kd">::</span> <span class="n">t_pair</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">integer</span> <span class="kd">::</span> <span class="n">x</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">real</span> <span class="kd">::</span> <span class="n">y</span>
+</span></span><span class="line"><span class="cl"><span class="k">end type</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">! use t_pair
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">type</span><span class="p">(</span><span class="n">t_pair</span><span class="p">)</span> <span class="kd">::</span> <span class="n">pair</span>
+</span></span><span class="line"><span class="cl"><span class="n">pair</span><span class="p">%</span><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">pair</span><span class="p">%</span><span class="n">y</span> <span class="o">=</span> <span class="mf">0.1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">! or do this at once
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">type</span><span class="p">(</span><span class="n">t_pair</span><span class="p">)</span> <span class="kd">::</span> <span class="n">pair</span>
+</span></span><span class="line"><span class="cl"><span class="n">pair</span> <span class="o">=</span> <span class="n">t_pair</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+</span></span></code></pre></div><h3 id="implicit-and-explicit-declaration">Implicit and explicit declaration</h3>
+<p>FORTRAN has a historical feature called implicit typing which allows variable types to be inferred by the compiler based on the first letter of the variable (stupid). Basically, any variable that began with I, J, K, L, M, or N was an integer, and it was a real (floating point) otherwise.</p>
+<p>Anyway, always use <code>implict none</code> to override this stupid declaring!</p>
+<h2 id="structure">Structure</h2>
+<p><strong>Program:</strong> Top-level unit that can be invoked only from the operating system. It contains sub-program as following.</p>
+<p><strong>Function:</strong> An executable subprogram that is invoked from expressions and <strong>always returns a single result</strong>. No side effects.can only call it from the main program or another procedure.</p>
+<p><strong>Subroutine:</strong> Modify multiple arguments in-place but can’t be used in expressions. Cause side effcts. (side effects can be prevented by <strong>pure</strong> statement)</p>
+<p><strong>Module:</strong> A <strong>nonexecutable</strong> collection of <strong>variable</strong>, <strong>function</strong>, and <strong>subroutine</strong> definitions (since F90). The variable declaration and procedure definition sections (function and subroutine) are separated with a <strong>contains</strong> statement.</p>
+<p><strong>Submodule</strong>: Extends an existing module and is used for defining variable and procedure definitions that only that module can access; useful for more complex apps and libraries</p>
+<blockquote>
+<p>In FORTRAN function/subroutine, dummy parameters are same as formal argument (形参) in other languages. In other languages, dummy arguments equals unused arguments.</p>
+</blockquote>
+<blockquote>
+<p>In subroutine, INTEND (IN):  indicating take value from outside and cannot be modified</p>
+</blockquote>
+<blockquote>
+<p>INTEND (OUT): indicating that their values will be computed and passed to the outside.</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fortran" data-lang="fortran"><span class="line"><span class="cl"><span class="c">! function always return a result
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">! subroutine modifies input parameters
+</span></span></span><span class="line"><span class="cl"><span class="c">! and must be called by *call*
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">call </span><span class="n">add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">! define module
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">module </span><span class="n">mod_test</span>
+</span></span><span class="line"><span class="cl"><span class="k">end module </span><span class="n">mod_test</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">! like from xx import xx in Python
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">use </span><span class="n">mod_test</span><span class="p">,</span> <span class="n">only</span><span class="p">:</span> <span class="n">xxx</span>
+</span></span></code></pre></div><h2 id="io">IO</h2>
+<h3 id="standard-streams">Standard streams</h3>
+<p>Standard streams include standard input/output/error. 标准输入stdin是指从键盘输入，标准输出stdout是指输出到终端， 如printf, system.out.println(). 标准错误stderr是另外一种输出流，用于输出错误消息或诊断.</p>
+<p>general I/O STATEMENTS</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fortran" data-lang="fortran"><span class="line"><span class="cl"><span class="k">READ</span><span class="p">(</span><span class="n">unit</span><span class="p">,</span> <span class="k">format</span><span class="p">)</span> <span class="n">item1</span><span class="p">,</span> <span class="n">item2</span><span class="p">,...</span>
+</span></span><span class="line"><span class="cl"><span class="k">WRITE</span><span class="p">(</span><span class="n">unit</span><span class="p">,</span> <span class="k">format</span><span class="p">)</span> <span class="n">item1</span><span class="p">,</span> <span class="n">item2</span><span class="p">,...</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">! In many cases we use * which tell the compiler to use any format it likes
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">WRITE</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="o">*</span><span class="p">)</span> <span class="n">item1</span><span class="p">,</span> <span class="n">item2</span><span class="p">,</span> <span class="p">...</span>
+</span></span><span class="line"><span class="cl"><span class="k">READ</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="o">*</span><span class="p">)</span> <span class="n">item1</span><span class="p">,</span> <span class="n">item2</span><span class="p">,...</span>
+</span></span></code></pre></div><blockquote>
+<p>File handler: a identifier assigned to an open file that is currently being utilized by an operating system</p>
+<p>An I/O unit is like a <strong>file handle</strong> in other programming languages. It’s a unique identifier that’s assigned to a file when you open it.</p>
+</blockquote>
+<p>The first asterisk <code>*</code> means the input comes from the <strong>keyboard</strong> in a READ statement and goes to the <strong>screen</strong> in a WRITE statement. The second asterisk (*) means the <code>free format</code> or <code>list-directed</code>: multiple variables in the sequence.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fortran" data-lang="fortran"><span class="line"><span class="cl"><span class="k">program </span><span class="n">standard_streams</span>
+</span></span><span class="line"><span class="cl"><span class="c">! =&gt; means alias
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">use </span><span class="n">iso_fortran_env</span><span class="p">,</span> <span class="n">only</span><span class="p">:</span> <span class="n">stdin</span> <span class="o">=&gt;</span> <span class="n">input_unit</span><span class="p">,</span> <span class="n">stdout</span> <span class="o">=&gt;</span> <span class="n">output_unit</span><span class="p">,</span> <span class="n">stderr</span> <span class="o">=&gt;</span> <span class="n">error_unit</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">implicit none
+</span></span></span><span class="line"><span class="cl"><span class="k"></span><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span> <span class="kd">::</span> <span class="n">text</span>
+</span></span><span class="line"><span class="cl"><span class="k">read</span><span class="p">(</span><span class="n">stdin</span><span class="p">,</span> <span class="s1">&#39;(a)&#39;</span><span class="p">)</span> <span class="n">text</span>
+</span></span><span class="line"><span class="cl"><span class="c">! trim() Remove trailing blank characters of a string
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">write</span><span class="p">(</span><span class="n">stdout</span><span class="p">,</span> <span class="s1">&#39;(a)&#39;</span><span class="p">)</span> <span class="nb">trim</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">write</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s1">&#39;(a)&#39;</span><span class="p">)</span> <span class="s1">&#39;This is an error message&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="k">end program </span><span class="n">standard_streams</span>
+</span></span></code></pre></div><h3 id="format-string">Format string</h3>
+<h3 id="python">Python</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># format specifier Python</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># d -&gt; integer; f -&gt; float; s -&gt; string</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># use format or %</span>
+</span></span><span class="line"><span class="cl"><span class="o">%</span><span class="mf">4.2</span><span class="n">f</span>
+</span></span></code></pre></div><p><code>%4.2f</code> means 4 characters at total, with 2 floating points.</p>
+<h3 id="fortran">Fortran</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fortran" data-lang="fortran"><span class="line"><span class="cl"><span class="c">! format specifier is a string like &#39;(e3.4)&#39;, the first letter means different data types and is surrounded by ()
+</span></span></span><span class="line"><span class="cl"><span class="c">! l -&gt; logic, i -&gt; integer, es -&gt; exponential (scientific, 1.2E+02), en (engineering, 12E+01), g (any, OS-independent)
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="n">f4</span><span class="p">.</span><span class="mi">3</span> <span class="o">-&gt;</span> <span class="nb">float </span><span class="k">type</span><span class="p">,</span> <span class="mi">4</span> <span class="kt">character</span><span class="p">,</span> <span class="n">three</span> <span class="n">decimals</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">! integer: ix.y, x -&gt; how many characters, y -&gt; must use y characters (so add zeros if necessary)
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="n">i4</span><span class="p">.</span><span class="mi">3</span> <span class="o">-&gt;</span> <span class="mi">42</span> <span class="n">to</span> <span class="err">`</span> <span class="mi">042</span><span class="err">`</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">! Leading number -&gt; apply the same format to multiple characters
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="mi">2</span><span class="p">(</span><span class="n">f6</span><span class="p">.</span><span class="mi">3</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">will</span> <span class="n">cause</span> <span class="n">no</span> <span class="n">white</span> <span class="n">space</span> <span class="n">between</span> <span class="n">these</span> <span class="mi">2</span> <span class="n">values</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">! therefore we need manually inserat `spaces`, here 2x means 2 whitespaces
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="mi">2</span><span class="p">(</span><span class="n">f6</span><span class="p">.</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="n">x</span><span class="p">)</span>
+</span></span></code></pre></div><p>![](images/iShot2022-02-18 18.33.21.png)</p>
+<p><strong>Legacy</strong>: use ID to label and format statement (i.e. they are separated!)</p>
+<p>![](images/iShot2022-02-18 18.33.49.png)</p>
+<h3 id="file-io">File IO</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fortran" data-lang="fortran"><span class="line"><span class="cl"><span class="k">open</span><span class="p">(</span><span class="n">unit</span><span class="p">,</span> <span class="k">file</span><span class="o">=</span><span class="n">filename</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="err">“</span><span class="k">read</span><span class="o">/</span><span class="k">write</span><span class="o">/</span><span class="n">readwrite</span><span class="err">”</span><span class="p">,</span> <span class="n">position</span><span class="o">=</span><span class="err">&#39;</span><span class="n">append</span><span class="o">/</span><span class="n">asis</span><span class="o">/</span><span class="k">rewind</span><span class="err">’</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">! file unit is OS dependent and unknown ahead of time
+</span></span></span><span class="line"><span class="cl"><span class="c">! file unit is assigned only to one file before close. You can also determine the unit by yourself.
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="c">! 形参 `file =` can’t be omitted
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="c">! POSITION
+</span></span></span><span class="line"><span class="cl"><span class="c">! Rewinding -&gt; start at the beginning
+</span></span></span><span class="line"><span class="cl"><span class="c">! asis -&gt; begining if a fresh file, otherwise go to previous position
+</span></span></span><span class="line"><span class="cl"><span class="c">! append -&gt; final position
+</span></span></span></code></pre></div><h4 id="writing-file">writing file</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fortran" data-lang="fortran"><span class="line"><span class="cl"><span class="k">write</span><span class="p">(</span><span class="n">fileunit</span><span class="p">,</span> <span class="n">format_string</span><span class="p">)</span> <span class="p">,</span> <span class="n">text</span>
+</span></span><span class="line"><span class="cl"><span class="nb">flush</span><span class="p">(</span><span class="n">fileunit</span><span class="p">)</span> <span class="c">!flush the write buffer to the file
+</span></span></span></code></pre></div><h4 id="check-existence-of-file">check existence of file</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fortran" data-lang="fortran"><span class="line"><span class="cl"><span class="kt">logical</span> <span class="kd">::</span> <span class="n">file_existence</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">inquire</span><span class="p">(</span><span class="k">file</span><span class="o">=</span><span class="nb">trim</span><span class="p">(</span><span class="n">filename</span><span class="p">),</span> <span class="n">exist</span><span class="o">=</span><span class="n">file_exists</span><span class="p">)</span>
+</span></span></code></pre></div><h4 id="error-handling-keywords">Error handling keywords</h4>
+<p>Each of the <code>read</code>, <code>write</code>, <code>open</code>, <code>close</code>, <code>inquire</code>, <code>flush</code>, and <code>rewind</code> statements allows passing the <code>iostat</code> and <code>err</code> keyword parameters:</p>
+<p>iostat = 0 if all good, otherwise positive</p>
+<p>err—An integer error label to which the program will jump if the error is encountered</p>
+<p>e.g.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fortran" data-lang="fortran"><span class="line"><span class="cl"><span class="k">write</span><span class="p">(</span><span class="n">fileunit</span><span class="p">,</span> <span class="err">‘</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="err">’</span><span class="p">,</span> <span class="n">iostat</span> <span class="o">=</span> <span class="n">a_number</span><span class="p">,</span> <span class="n">err</span><span class="o">=</span><span class="n">b_number</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">! if error, the program jumps to here to close the file
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="n">b_number</span> <span class="k">close</span><span class="p">(</span><span class="n">fileunit</span><span class="p">)</span> 
+</span></span></code></pre></div><p>TODO:</p>
+<p>parallel fortran</p>
+<p>compile and linking</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-02-18</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://ruiying.online/posts/2022-02-18-fortran-basics/" data-title="Fortran basics" data-via="YingRui17" data-hashtags="tag1,tag2"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://ruiying.online/posts/2022-02-18-fortran-basics/" data-hashtag="tag1"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://ruiying.online/posts/2022-02-18-fortran-basics/" data-title="Fortran basics"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://ruiying.online/posts/2022-02-18-fortran-basics/" data-title="Fortran basics"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://ruiying.online/posts/2022-02-18-fortran-basics/" data-title="Fortran basics"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/tag1/">tag1</a>,&nbsp;<a href="/tags/tag2/">tag2</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/2021-07-31-experience-of-studying-vim/" class="prev" rel="prev" title="Experience of studying vim"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Experience of studying vim</a>
+            <a href="/posts/2022-02-21-carbon-chemistry-and-biological-pump/" class="next" rel="next" title="Carbon chemistry and biological pump">Carbon chemistry and biological pump<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.102.3">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Rui Ying</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
