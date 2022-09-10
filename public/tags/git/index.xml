@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Git - Tag - Rui Ying 应锐</title>
+        <link>http://ruiying.online/tags/git/</link>
+        <description>Git - Tag - Rui Ying 应锐</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>rui.ying@bristol.ac.uk (Rui Ying)</managingEditor>
+            <webMaster>rui.ying@bristol.ac.uk (Rui Ying)</webMaster><lastBuildDate>Sun, 25 Nov 2018 20:54:42 &#43;0000</lastBuildDate><atom:link href="http://ruiying.online/tags/git/" rel="self" type="application/rss+xml" /><item>
+    <title>Git Study</title>
+    <link>http://ruiying.online/posts/git-study/</link>
+    <pubDate>Sun, 25 Nov 2018 20:54:42 &#43;0000</pubDate>
+    <author>Rui Ying</author>
+    <guid>http://ruiying.online/posts/git-study/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
+</rss>

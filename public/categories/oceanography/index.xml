@@ -1,0 +1,24 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>oceanography - Category - Rui Ying 应锐</title>
+        <link>http://ruiying.online/categories/oceanography/</link>
+        <description>oceanography - Category - Rui Ying 应锐</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>rui.ying@bristol.ac.uk (Rui Ying)</managingEditor>
+            <webMaster>rui.ying@bristol.ac.uk (Rui Ying)</webMaster><lastBuildDate>Mon, 21 Feb 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://ruiying.online/categories/oceanography/" rel="self" type="application/rss+xml" /><item>
+    <title>Carbon chemistry and biological pump</title>
+    <link>http://ruiying.online/posts/2022-02-21-carbon-chemistry-and-biological-pump/</link>
+    <pubDate>Mon, 21 Feb 2022 00:00:00 &#43;0000</pubDate>
+    <author>Rui Ying</author>
+    <guid>http://ruiying.online/posts/2022-02-21-carbon-chemistry-and-biological-pump/</guid>
+    <description><![CDATA[A brief study of Hain and Sigman, (2014) The Biological Pump in the Past]]></description>
+</item>
+<item>
+    <title>Re-study biology/geology term in CN/EN</title>
+    <link>http://ruiying.online/posts/2021-05-06-chinese-english-name-of-marine-organisms/</link>
+    <pubDate>Thu, 06 May 2021 00:00:00 &#43;0000</pubDate>
+    <author>Rui Ying</author>
+    <guid>http://ruiying.online/posts/2021-05-06-chinese-english-name-of-marine-organisms/</guid>
+    <description><![CDATA[Biology/Geology term list]]></description>
+</item>
+</channel>
+</rss>
