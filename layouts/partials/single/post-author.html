@@ -8,16 +8,16 @@
   {{- $author = dict "email" (echoParam $params "authoremail") | merge $author -}}
   {{- $avatar = "" -}}
 {{- end -}}
-{{- if (not $avatar | or $params.gravatarForce) | and $author.email -}}
-  {{- $gravatar := .Site.Params.gravatar -}}
-  {{- with $gravatar -}}
-    {{- $avatar = printf "https://%v/avatar/%v?s=32&d=%v"
-      (path.Clean .Host | default "www.gravatar.com")
-      (md5 $author.email)
-      (.Style | default "")
-    -}}
-  {{- end -}}
-{{- end -}}
+<!-- {{- if (not $avatar | or $params.gravatarForce) | and $author.email -}} -->
+<!--   {{- $gravatar := .Site.Params.gravatar -}} -->
+<!--   {{- with $gravatar -}} -->
+<!--     {{- $avatar = printf "https://%v/avatar/%v?s=32&d=%v" -->
+<!--       (path.Clean .Host | default "www.gravatar.com") -->
+<!--       (md5 $author.email) -->
+<!--       (.Style | default "") -->
+<!--     -}} -->
+<!--   {{- end -}} -->
+<!-- {{- end -}} -->
 <span class="post-author">
   {{- $content := $author.name -}}
   {{- $icon := dict "Class" "fa-solid fa-user-circle" -}}
