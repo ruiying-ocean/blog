@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Emacs; python - tag - </title>
+    <link>/tags/emacs-python/</link>
+    <description>Emacs; python - tag - </description>
+    <generator>Hugo -- gohugo.io</generator><managingEditor>rui.ying@bristol.ac.uk (Rui Ying)</managingEditor>
+      <webMaster>rui.ying@bristol.ac.uk (Rui Ying)</webMaster><lastBuildDate>Sat, 12 Dec 2020 11:46:23 &#43;0000</lastBuildDate><atom:link href="/tags/emacs-python/" rel="self" type="application/rss+xml" /><item>
+  <title>Use Emacs as a Python IDE</title>
+  <link>/use-emacs-as-python-ide/</link>
+  <pubDate>Sat, 12 Dec 2020 11:46:23 &#43;0000</pubDate>
+  <author>Rui Ying</author>
+  <guid>/use-emacs-as-python-ide/</guid>
+  <description><![CDATA[Emacs package: elpy, company-quickhelper]]></description>
+</item>
+</channel>
+</rss>
