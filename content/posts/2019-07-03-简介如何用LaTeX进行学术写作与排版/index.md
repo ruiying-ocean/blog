@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "简介如何用LaTeX进行学术写作与排版"
+title: "LaTeX学术写作与排版简介"
 subtitle: ""
 summary: "use LaTeX to do academic writing"
 authors: [Rui Ying]
