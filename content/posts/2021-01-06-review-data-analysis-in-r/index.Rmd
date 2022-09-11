@@ -83,7 +83,8 @@ The *variables* used to connect each pair of tables are called *keys*, if it is 
 Four *mutate* joins (__add__ new matched variable to primary): inner (smallest subset), left (as primary), right (as primary), full (collection).
 Two *filter* joins (__filter__ matched observations to save or drop).
 
-## reshap2 package
+~~
+## reshap2 package (deprecated)
 
 ### melt()
 `melt()` breaks data into a data.frame with only two columns (variable and value), which is exactly transforming a "wide format" data into a "long format" data.
@@ -91,17 +92,18 @@ parameters:
 - `id`
 - `variable.name` (change the default variable column name)
 - `value.name` (change the default value column name)
+
 ```{r warning=FALSE,message=FALSE}
-library(reshape2)
-table1_melt <- table1 %>% melt(id=c("country","year"))
-table1_melt
+# library(reshape2)
+# table1_melt <- table1 %>% melt(id=c("country","year"))
+# table1_melt
 ```
 ### dcast()
 `dcast()` do the opposite thing as `melt()`, transforming long to *wide data*. Additional parameter including `mean`,
 The difference between `dcast` and `acast` is the output in data.frame (2-D only) or vector/array/matrix.
 ```{r}
-table1_melt %>% dcast(country+year~variable) #turn it back
+# table1_melt %>% dcast(country+year~variable) #turn it back
 ```
-
+~~
 
 This post is built by rmarkdown. Seemingly Rstudio and Rmd are good tool to manage this site.
