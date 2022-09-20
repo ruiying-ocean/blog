@@ -4,7 +4,7 @@ author: Rui Ying
 date: '2021-04-18'
 slug: []
 categories:
-  - Thoughts
+  - Life and thoughts
 tags:
   - Psychology
   - Cognition
