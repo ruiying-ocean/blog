@@ -4,7 +4,7 @@ author: Rui Ying
 date: '2021-04-21'
 slug: []
 categories:
-  - Thoughts
+  - Life and thoughts
 tags: []
 subtitle: ''
 summary: 'Human society is similar to natural ecosystem'
