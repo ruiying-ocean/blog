@@ -6,9 +6,8 @@ slug: []
 categories:
   - Ecology
 tags:
-  - draft
 subtitle: ''
-draft: yes
+draft: No
 authorLink: ''
 authorEmail: ''
 description: ''
