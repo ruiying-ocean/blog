@@ -96,8 +96,8 @@ All these indices can be classfied into 3 primary component of functional divers
 Following is the equation: with *S* the total number of species,  N the total number of functional entities, and $n_i$ the number of species in functional entity *i*,
 
 $$
-FRed = \frac{S}{N}\\
-FOR = \frac{\sum_{i=1}^{N}[max(n_i, FRed) - FRed]}{S}\\
+FRed = \frac{S}{N}
+FOR = \frac{\sum_{i=1}^{N}[max(n_i, FRed) - FRed]}{S}
 FVul = \frac{N - \sum_{i=1}^{N}min(n_i - 1, 1)}{N}
 $$
 
@@ -107,12 +107,12 @@ Functional beta-diversity indices are computed for a  pair of assemblages based 
 
 # References
 
-Magneville, C., Loiseau, N., Albouy, C., Casajus, N., Claverie, T.,  Escalas, A., Leprieur, F., Maire, E., Mouillot, D. and Villéger, S.  (2022), mFD: an R package to compute and illustrate the multiple facets  of functional diversity. Ecography, 2022:. https://doi.org/10.1111/ecog.05904
+- Magneville, C., Loiseau, N., Albouy, C., Casajus, N., Claverie, T.,  Escalas, A., Leprieur, F., Maire, E., Mouillot, D. and Villéger, S.  (2022), mFD: an R package to compute and illustrate the multiple facets  of functional diversity. Ecography, 2022:. https://doi.org/10.1111/ecog.05904
 
-Villéger, S., Mason, N.W.H. and Mouillot, D. (2008), NEW  MULTIDIMENSIONAL FUNCTIONAL DIVERSITY INDICES FOR A MULTIFACETED  FRAMEWORK IN FUNCTIONAL ECOLOGY. Ecology, 89: 2290-2301. https://doi.org/10.1890/07-1206.1
+- Villéger, S., Mason, N.W.H. and Mouillot, D. (2008), New  multidimensional functional diversity indices for a multifaceted framework in functional ecology. Ecology, 89: 2290-2301. https://doi.org/10.1890/07-1206.1
 
-Mouillot, D., Villéger, S., Parravicini, V., Kulbicki, M., Arias-González, J. E., Bender, M., et al. (2014). Functional over-redundancy and high functional vulnerability in global fish faunas on tropical reefs. *Proceedings of the National Academy of Sciences*, *111*(38), 13757–13762. https://doi.org/10/f6hw3n
+- Mouillot, D., Villéger, S., Parravicini, V., Kulbicki, M., Arias-González, J. E., Bender, M., et al. (2014). Functional over-redundancy and high functional vulnerability in global fish faunas on tropical reefs. *Proceedings of the National Academy of Sciences*, *111*(38), 13757–13762. https://doi.org/10/f6hw3n
 
-Mouillot, D., Graham, N. A. J., Villéger, S., Mason, N. W. H., & Bellwood, D. R. (2013). A functional approach reveals community responses to disturbances. *Trends in Ecology & Evolution*, *28*(3), 167–177. https://doi.org/10.1016/j.tree.2012.10.004
+- Mouillot, D., Graham, N. A. J., Villéger, S., Mason, N. W. H., & Bellwood, D. R. (2013). A functional approach reveals community responses to disturbances. *Trends in Ecology & Evolution*, *28*(3), 167–177. https://doi.org/10.1016/j.tree.2012.10.004
 
-Laliberté, E. and Legendre, P. (2010), A distance-based framework for  measuring functional diversity from multiple traits. Ecology, 91:  299-305. https://doi.org/10.1890/08-2244.1           
+- Laliberté, E. and Legendre, P. (2010), A distance-based framework for  measuring functional diversity from multiple traits. Ecology, 91:  299-305. https://doi.org/10.1890/08-2244.1           
