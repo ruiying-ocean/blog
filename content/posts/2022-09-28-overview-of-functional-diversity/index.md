@@ -96,9 +96,9 @@ All these indices can be classfied into 3 primary component of functional divers
 Following is the equation: with *S* the total number of species,  N the total number of functional entities, and $n_i$ the number of species in functional entity *i*,
 
 $$
-\begin{align}
-FRed = \frac{S}{N}\\ FOR = \frac{\sum_{i=1}^{N}[max(n_i, FRed) - FRed]}{S} \\ FVul = \frac{N - \sum_{i=1}^{N}min(n_i - 1, 1)}{N}
-\end{align}
+\displaylines{
+FRed = \frac{S}{N}\\\ FOR = \frac{\sum_{i=1}^{N}[max(n_i, FRed) - FRed]}{S} \\\ FVul = \frac{N - \sum_{i=1}^{N}min(n_i - 1, 1)}{N}
+}
 $$
 
 ### Functional $\beta$ diversity
