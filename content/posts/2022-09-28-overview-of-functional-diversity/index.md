@@ -94,13 +94,13 @@ All these indices can be classfied into 3 primary component of functional divers
 **Functional vulnerability**: The proportion of FE with only 1 species in a given assemblage
 
 Following is the equation: with *S* the total number of species,  N the total number of functional entities, and $n_i$ the number of species in functional entity *i*,
+
 $$
 FRed = \frac{S}{N}\\
-
 FOR = \frac{\sum_{i=1}^{N}[max(n_i, FRed) - FRed]}{S}\\
-
 FVul = \frac{N - \sum_{i=1}^{N}min(n_i - 1, 1)}{N}
 $$
+
 ### Functional $\beta$ diversity
 
 Functional beta-diversity indices are computed for a  pair of assemblages based on the overlap between the convex hulls  shaping their respective species.
