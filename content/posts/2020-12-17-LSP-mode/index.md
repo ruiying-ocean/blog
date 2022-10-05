@@ -6,7 +6,7 @@ subtitle: ""
 summary: " "
 authors: [Rui Ying]
 tags: [Emacs; LSP]
-categories: [Emacs]
+categories: [Programming]
 date: 2020-12-17T20:42:26Z
 lastmod: 2020-12-17T20:42:26Z
 featured: false

@@ -5,8 +5,8 @@ title: "LaTeX学术写作与排版简介"
 subtitle: ""
 summary: "use LaTeX to do academic writing"
 authors: [Rui Ying]
-tags: [LaTeX; academic writing]
-categories: [LaTeX]
+tags: [LaTeX]
+categories: [Science]
 date: 2019-07-03T15:10:26Z
 lastmod: 2020-12-25T17:02:51Z
 featured: false

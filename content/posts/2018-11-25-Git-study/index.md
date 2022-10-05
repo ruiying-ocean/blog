@@ -6,7 +6,7 @@ subtitle: ""
 summary: " "
 authors: [Rui Ying]
 tags: [Git]
-categories: [Git]
+categories: [Programming]
 date: 2018-11-25T20:54:42Z
 lastmod: 2018-11-25T20:54:42Z
 featured: false

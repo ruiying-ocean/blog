@@ -4,11 +4,8 @@ author: Rui Ying
 date: '2022-02-18'
 slug: []
 summary: "We reviewed basic data types, structure and IO here"
-categories:
-  - Fortran
+categories: [Programming]
 tags:
-  - tag1
-  - tag2
 subtitle: ''
 description: ''
 image: ''

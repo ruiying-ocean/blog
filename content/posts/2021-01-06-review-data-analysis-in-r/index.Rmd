@@ -3,8 +3,7 @@ title: Review data analysis in R
 author: Rui Ying
 date: '2021-01-06'
 slug: []
-categories:
-  - R
+categories: [Programming]
 tags:
   - R; Data Science
 subtitle: ''

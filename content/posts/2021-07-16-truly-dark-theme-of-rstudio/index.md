@@ -3,9 +3,7 @@ title: Truly dark theme of Rstudio
 author: Rui Ying
 date: '2021-07-16'
 slug: []
-categories:
-  - R
-  - Rstudio
+categories: [Programming]
 tags: []
 subtitle: ''
 summary: 'A better dark theme'

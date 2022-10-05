@@ -3,8 +3,7 @@ title: NPZ模型与人类社会的共通之处
 author: Rui Ying
 date: '2021-04-21'
 slug: []
-categories:
-  - Life and thoughts
+categories: [Life]
 tags: []
 subtitle: ''
 summary: 'Human society is similar to natural ecosystem'

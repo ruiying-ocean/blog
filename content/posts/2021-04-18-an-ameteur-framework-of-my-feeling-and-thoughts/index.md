@@ -3,8 +3,7 @@ title: An ameteur framework of feeling and thoughts in our brain
 author: Rui Ying
 date: '2021-04-18'
 slug: []
-categories:
-  - Life and thoughts
+categories: [Life]
 tags:
   - Psychology
   - Cognition

@@ -3,9 +3,7 @@ title: Cartography in R
 author: Rui Ying
 date: '2021-11-19'
 slug: []
-categories:
-  - R
-  - GIS
+categories: [Programming; Science]
 tags:
   - R; Data Science
 summary: 'Plot map in R'

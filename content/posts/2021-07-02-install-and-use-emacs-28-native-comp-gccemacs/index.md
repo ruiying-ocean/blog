@@ -3,8 +3,7 @@ title: Install and use Emacs 28 Native comp (gccemacs)
 author: Rui Ying
 date: '2021-07-02'
 slug: []
-categories:
-  - Emacs
+categories: [ Programming]
 tags:
   - Emacs; WSL
 summary: 'Emacs feature: native compilation plus 1M ways to download'

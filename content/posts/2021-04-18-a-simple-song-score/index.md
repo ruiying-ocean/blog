@@ -3,8 +3,7 @@ title: A simple song by RY
 author: Rui Ying
 date: '2021-04-18'
 slug: []
-categories:
-  - Music
+categories: [Music]
 tags:
   - Guitar
   - GTP

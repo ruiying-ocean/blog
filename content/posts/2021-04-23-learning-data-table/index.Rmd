@@ -3,8 +3,7 @@ title: Learning data.table (1)
 author: Rui Ying
 date: '2021-04-23'
 slug: []
-categories:
-  - R
+categories: [Programming]
 tags: []
 subtitle: ''
 summary: 'Day 1: data.table syntax'

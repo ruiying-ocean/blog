@@ -3,8 +3,7 @@ title: Re-study biology/geology term in CN/EN
 author: Rui Ying
 date: '2021-05-06'
 slug: []
-categories:
-  - oceanography
+categories: [Science]
 tags: []
 subtitle: ''
 summary: 'Biology/Geology term list'
