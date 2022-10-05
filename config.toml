@@ -2,7 +2,7 @@
   #  FixIt 主题版本
   version = "0.2.X" # 例如："0.2.X", "0.2.15", "v0.2.15" 等
   # 网站描述
-  description = "Welcome to my world"
+  description = "This is Rui Ying's personal site"
   # 网站关键词
   keywords = ["Theme", "Hugo"]
   # 网站默认主题样式 ("light", "dark", "auto")
@@ -74,7 +74,7 @@
       # LOGO 的 URL
       logo = ""
       # 标题名称
-      name = "Heaven"
+      name = "Home"
       # 你可以在名称（允许 HTML 格式）之前添加其他信息，例如图标
       pre = ""
       # 你可以在名称（允许 HTML 格式）之后添加其他信息，例如图标
@@ -100,9 +100,9 @@
     #  是否显示作者
     author = true
     # 网站创立年份
-    since = 2019
+    since = 2018
     #  网站创立时间
-    siteTime = '' # 例：'2019-02-03T19:30:34+08:00'
+    siteTime = '2018-11-23' # 例：'2019-02-03T19:30:34+08:00'
     #  是否显示网站内容总字数
     wordCount = true
     #  公网安备信息，仅在中国使用（支持 HTML 格式）
@@ -529,7 +529,7 @@
 
   #  Cookie 许可配置
   [params.cookieconsent]
-    enable = true
+    enable = false
     # 用于 Cookie 许可横幅的文本字符串
     [params.cookieconsent.content]
       message = ""
@@ -690,7 +690,7 @@
     name = "posts"
     url = "/posts/"
     # 当你将鼠标悬停在此菜单链接上时，将显示的标题
-    title = ""
+    title = "blog by time"
     weight = 2
     #  向菜单项添加用户定义的内容
     [menu.main.params]
@@ -714,7 +714,7 @@
     name = "categories"
     url = "/categories/"
     # 当你将鼠标悬停在此菜单链接上时，将显示的标题
-    title = ""
+    title = "blog by category"
     weight = 1
     #  向菜单项添加用户定义的内容
     [menu.main.params]
