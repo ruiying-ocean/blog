@@ -1,10 +1,18 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>All Posts - </title>
+    <title> - </title>
     <link>/posts/</link>
-    <description>All Posts | </description>
+    <description> | </description>
     <generator>Hugo -- gohugo.io</generator><managingEditor>rui.ying@bristol.ac.uk (Rui Ying)</managingEditor>
-      <webMaster>rui.ying@bristol.ac.uk (Rui Ying)</webMaster><lastBuildDate>Wed, 28 Sep 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
+      <webMaster>rui.ying@bristol.ac.uk (Rui Ying)</webMaster><lastBuildDate>Wed, 05 Oct 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
+  <title>Geological time scale</title>
+  <link>/2022-10-05-geological-time-scale/</link>
+  <pubDate>Wed, 05 Oct 2022 00:00:00 &#43;0000</pubDate>
+  <author>Rui Ying</author>
+  <guid>/2022-10-05-geological-time-scale/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
   <title>Overview of functional diversity</title>
   <link>/2022-09-28-overview-of-functional-diversity/</link>
   <pubDate>Wed, 28 Sep 2022 00:00:00 &#43;0000</pubDate>
@@ -75,14 +83,6 @@
   <author>Rui Ying</author>
   <guid>/2021-07-02-install-and-use-emacs-28-native-comp-gccemacs/</guid>
   <description><![CDATA[Emacs feature: native compilation plus 1M ways to download]]></description>
-</item>
-<item>
-  <title>Fundemental Bayesian analysis</title>
-  <link>/2021-05-12-fundemental-bayesian-analysis/</link>
-  <pubDate>Wed, 12 May 2021 00:00:00 &#43;0000</pubDate>
-  <author>Rui Ying</author>
-  <guid>/2021-05-12-fundemental-bayesian-analysis/</guid>
-  <description><![CDATA[A study note of &lsquo;Bayesian statistics for beginners&rsquo;]]></description>
 </item>
 </channel>
 </rss>

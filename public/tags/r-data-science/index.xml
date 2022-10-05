@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>R; Data Science - Tag - </title>
+    <title>R; Data Science - tag - </title>
     <link>/tags/r-data-science/</link>
-    <description>R; Data Science - Tag - </description>
+    <description>R; Data Science - tag - </description>
     <generator>Hugo -- gohugo.io</generator><managingEditor>rui.ying@bristol.ac.uk (Rui Ying)</managingEditor>
       <webMaster>rui.ying@bristol.ac.uk (Rui Ying)</webMaster><lastBuildDate>Fri, 19 Nov 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="/tags/r-data-science/" rel="self" type="application/rss+xml" /><item>
   <title>Cartography in R</title>

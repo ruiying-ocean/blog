@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>salmon - Tag - </title>
+    <title>salmon - tag - </title>
     <link>/tags/salmon/</link>
-    <description>salmon - Tag - </description>
+    <description>salmon - tag - </description>
     <generator>Hugo -- gohugo.io</generator><managingEditor>rui.ying@bristol.ac.uk (Rui Ying)</managingEditor>
       <webMaster>rui.ying@bristol.ac.uk (Rui Ying)</webMaster><lastBuildDate>Wed, 03 Jul 2019 17:40:21 &#43;0000</lastBuildDate><atom:link href="/tags/salmon/" rel="self" type="application/rss+xml" /><item>
-  <title>如何分辨三文鱼、鲑鱼、大马哈鱼</title>
-  <link>/2019-07-03-%E5%A6%82%E4%BD%95%E5%88%86%E8%BE%A8%E4%B8%89%E6%96%87%E9%B1%BC%E9%B2%91%E9%B1%BC%E5%A4%A7%E9%A9%AC%E5%93%88%E9%B1%BC/</link>
+  <title>三文鱼、鲑鱼、大马哈鱼的区别</title>
+  <link>/2019-07-03-%E4%B8%89%E6%96%87%E9%B1%BC%E9%B2%91%E9%B1%BC%E5%A4%A7%E9%A9%AC%E5%93%88%E9%B1%BC%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
   <pubDate>Wed, 03 Jul 2019 17:40:21 &#43;0000</pubDate>
   <author>Rui Ying</author>
-  <guid>/2019-07-03-%E5%A6%82%E4%BD%95%E5%88%86%E8%BE%A8%E4%B8%89%E6%96%87%E9%B1%BC%E9%B2%91%E9%B1%BC%E5%A4%A7%E9%A9%AC%E5%93%88%E9%B1%BC/</guid>
+  <guid>/2019-07-03-%E4%B8%89%E6%96%87%E9%B1%BC%E9%B2%91%E9%B1%BC%E5%A4%A7%E9%A9%AC%E5%93%88%E9%B1%BC%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
   <description><![CDATA[Fish identification]]></description>
 </item>
 </channel>

@@ -6,6 +6,6 @@ However, markdown doesn't support equations so well as LaTeX, so I compiled a PD
 
 ---
 
-> Author: Rui Ying  
+> : Rui Ying  
 > URL: /2020-12-25-principal-component-analysis/  
 

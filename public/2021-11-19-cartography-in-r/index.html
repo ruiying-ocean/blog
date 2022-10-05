@@ -45,19 +45,19 @@
   <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper"><header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper">
     <div class="header-title">
-      <a href="/" title=""><span class="header-title-text">Heaven</span></a><span class="header-subtitle"></span></div>
+      <a href="/" title=""><span class="header-title-text">Home</span></a><span class="header-subtitle"></span></div>
     <nav>
       <ul class="menu"><li class="menu-item text-center">
               <a
                 class="menu-link"
                 href="/categories/"
-                
+                title="blog by category"
                 
               ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> categories</a></li><li class="menu-item text-center">
               <a
                 class="menu-link"
                 href="/posts/"
-                
+                title="blog by time"
                 
               ><i class="fa-solid fa-pen-nib fa-fw fa-sm" aria-hidden="true"></i> posts</a></li><li class="menu-item text-center">
               <a
@@ -66,17 +66,17 @@
                 
                 
               ><i class="fa-regular fa-address-card fa-fw fa-sm" aria-hidden="true"></i> about</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
-            <input type="text" placeholder="Search titles or contents ..." id="search-input-desktop">
-            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+            <input type="text" placeholder="" id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="">
               <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
             </a>
-            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="">
               <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
             </a>
             <span class="search-button search-loading" id="search-loading-desktop">
               <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
             </span>
-          </li><li class="menu-item theme-switch" title="Switch Theme">
+          </li><li class="menu-item theme-switch" title="">
           <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
         </li>
       </ul>
@@ -86,7 +86,7 @@
   <div class="header-container">
     <div class="header-wrapper">
       <div class="header-title">
-        <a href="/" title=""><span class="header-title-text">Heaven</span></a><span class="header-subtitle"></span></div>
+        <a href="/" title=""><span class="header-title-text">Home</span></a><span class="header-subtitle"></span></div>
       <div class="menu-toggle" id="menu-toggle-mobile">
         <span></span><span></span><span></span>
       </div>
@@ -94,11 +94,11 @@
     <nav>
       <ul class="menu" id="menu-mobile"><li class="search-wrapper">
             <div class="search mobile" id="search-mobile">
-              <input type="text" placeholder="Search titles or contents ..." id="search-input-mobile">
-              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+              <input type="text" placeholder="" id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="">
                 <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
               </a>
-              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="">
                 <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
               </a>
               <span class="search-button search-loading" id="search-loading-mobile">
@@ -106,21 +106,21 @@
               </span>
             </div>
             <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
-              Cancel
+              
             </a>
           </li><li
               class="menu-item text-center"
             ><a
                   class="menu-link"
                   href="/categories/"
-                  
+                  title="blog by category"
                   
                 ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> categories</a></li><li
               class="menu-item text-center"
             ><a
                   class="menu-link"
                   href="/posts/"
-                  
+                  title="blog by time"
                   
                 ><i class="fa-solid fa-pen-nib fa-fw fa-sm" aria-hidden="true"></i> posts</a></li><li
               class="menu-item text-center"
@@ -129,7 +129,7 @@
                   href="/about/"
                   
                   
-                ><i class="fa-regular fa-address-card fa-fw fa-sm" aria-hidden="true"></i> about</a></li><li class="menu-item theme-switch" title="Switch Theme">
+                ><i class="fa-regular fa-address-card fa-fw fa-sm" aria-hidden="true"></i> about</a></li><li class="menu-item theme-switch" title="">
           <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
         </li></ul>
     </nav>
@@ -157,8 +157,8 @@
     data-sizes="auto"
     alt="Rui Ying"
     title="Rui Ying"/>&nbsp;Rui Ying</span></span>
-          <span class="post-category">included in <a href="/categories/programming/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Programming</a></span></div>
-      <div class="post-meta-line"><span title=2021-11-19&#32;00:00:00><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2021-11-19">2021-11-19</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 963 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 5 minutes</span>&nbsp;</div>
+          <span class="post-category"></span></div>
+      <div class="post-meta-line"><span title=2021-11-19&#32;00:00:00><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2021-11-19">2021-11-19</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> </span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> </span>&nbsp;</div>
     </div><div
       class="content"
       id="content"
@@ -215,29 +215,29 @@ which is very (but not limitedly) proficient at analysing data frames.</p>
 </span><span class="lnt">22
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
-<span class="nf">library</span><span class="p">(</span><span class="n">maps</span><span class="p">)</span> <span class="c1"># outline data for continents,countries</span>
-<span class="nf">library</span><span class="p">(</span><span class="n">mapdata</span><span class="p">)</span> <span class="c1"># extra map datasets</span>
-<span class="nf">library</span><span class="p">(</span><span class="n">mapproj</span><span class="p">)</span> <span class="c1"># map projection</span>
-<span class="c1">#library(maptools)</span>
-
-<span class="c1"># a quickest method to plot a global map</span>
-<span class="c1"># map(&#34;world&#34;)</span>
-
-<span class="c1"># Here I create a simple dataframe, which can be replaced to your data by read.csv()</span>
-<span class="n">toy_df</span> <span class="o">&lt;-</span> <span class="nf">data.frame</span><span class="p">(</span><span class="n">city</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&#34;Bristol&#34;</span><span class="p">,</span> <span class="s">&#34;Shangrao&#34;</span><span class="p">),</span>
-                     <span class="n">long</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="m">51.45</span><span class="p">,</span> <span class="m">28.45</span><span class="p">),</span>
-                     <span class="n">lat</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="m">-2.59</span><span class="p">,</span> <span class="m">117.94</span><span class="p">))</span>
-
-<span class="n">world</span> <span class="o">&lt;-</span> <span class="nf">map_data</span><span class="p">(</span><span class="s">&#34;world&#34;</span><span class="p">)</span> <span class="c1"># a ggplot2 function to get a world data.frame,see also borders</span>
-
-<span class="c1"># notice x is lat and y is long, which differs normal impression</span>
-<span class="nf">ggplot</span><span class="p">(</span><span class="n">world</span><span class="p">)</span> <span class="o">+</span>
-  <span class="nf">geom_polygon</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">long</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">lat</span><span class="p">,</span> <span class="n">group</span><span class="o">=</span><span class="n">group</span><span class="p">))</span> <span class="o">+</span> 
-  <span class="nf">geom_label</span><span class="p">(</span><span class="n">data</span><span class="o">=</span> <span class="n">toy_df</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">long</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">city</span><span class="p">))</span> <span class="o">+</span>
-  <span class="nf">coord_map</span><span class="p">(</span><span class="s">&#34;mollweide&#34;</span><span class="p">,</span> <span class="n">xlim</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="m">-180</span><span class="p">,</span><span class="m">180</span><span class="p">))</span> <span class="o">+</span> <span class="c1"># change the projection</span>
-  <span class="nf">theme_minimal</span><span class="p">()</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">maps</span><span class="p">)</span> <span class="c1"># outline data for continents,countries</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">mapdata</span><span class="p">)</span> <span class="c1"># extra map datasets</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">mapproj</span><span class="p">)</span> <span class="c1"># map projection</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#library(maptools)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># a quickest method to plot a global map</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># map(&#34;world&#34;)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Here I create a simple dataframe, which can be replaced to your data by read.csv()</span>
+</span></span><span class="line"><span class="cl"><span class="n">toy_df</span> <span class="o">&lt;-</span> <span class="nf">data.frame</span><span class="p">(</span><span class="n">city</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&#34;Bristol&#34;</span><span class="p">,</span> <span class="s">&#34;Shangrao&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">                     <span class="n">long</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="m">51.45</span><span class="p">,</span> <span class="m">28.45</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">                     <span class="n">lat</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="m">-2.59</span><span class="p">,</span> <span class="m">117.94</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">world</span> <span class="o">&lt;-</span> <span class="nf">map_data</span><span class="p">(</span><span class="s">&#34;world&#34;</span><span class="p">)</span> <span class="c1"># a ggplot2 function to get a world data.frame,see also borders</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># notice x is lat and y is long, which differs normal impression</span>
+</span></span><span class="line"><span class="cl"><span class="nf">ggplot</span><span class="p">(</span><span class="n">world</span><span class="p">)</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">geom_polygon</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">long</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">lat</span><span class="p">,</span> <span class="n">group</span><span class="o">=</span><span class="n">group</span><span class="p">))</span> <span class="o">+</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">geom_label</span><span class="p">(</span><span class="n">data</span><span class="o">=</span> <span class="n">toy_df</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">long</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">city</span><span class="p">))</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">coord_map</span><span class="p">(</span><span class="s">&#34;mollweide&#34;</span><span class="p">,</span> <span class="n">xlim</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="m">-180</span><span class="p">,</span><span class="m">180</span><span class="p">))</span> <span class="o">+</span> <span class="c1"># change the projection</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">theme_minimal</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><img src="/2021-11-19-cartography-in-r/index_files/figure-html/unnamed-chunk-1-1.png" width="672" />
 <p>Actually<code>ggfortify</code> provides the <code>autoplot</code> function, which is a quicker wrapper for ggplot2. So
@@ -251,12 +251,12 @@ we can do the same by using less command.</p>
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="nf">library</span><span class="p">(</span><span class="n">ggfortify</span><span class="p">)</span>
-<span class="n">world</span> <span class="o">&lt;-</span>  <span class="nf">map</span><span class="p">(</span><span class="s">&#39;world&#39;</span><span class="p">,</span> <span class="n">plot</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span>
-<span class="nf">autoplot</span><span class="p">(</span><span class="n">world</span><span class="p">,</span> <span class="n">geom</span> <span class="o">=</span> <span class="s">&#39;polygon&#39;</span><span class="p">)</span> <span class="o">+</span>
-  <span class="nf">geom_point</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">toy_df</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">long</span><span class="p">),</span>
-             <span class="n">color</span><span class="o">=</span><span class="s">&#34;red&#34;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="m">2</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">ggfortify</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">world</span> <span class="o">&lt;-</span>  <span class="nf">map</span><span class="p">(</span><span class="s">&#39;world&#39;</span><span class="p">,</span> <span class="n">plot</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">autoplot</span><span class="p">(</span><span class="n">world</span><span class="p">,</span> <span class="n">geom</span> <span class="o">=</span> <span class="s">&#39;polygon&#39;</span><span class="p">)</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">geom_point</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">toy_df</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">long</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">             <span class="n">color</span><span class="o">=</span><span class="s">&#34;red&#34;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="m">2</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><img src="/2021-11-19-cartography-in-r/index_files/figure-html/unnamed-chunk-2-1.png" width="672" />
 <p>There is another geom type: geom_map in ggplot. The difference between geom_map and
@@ -277,15 +277,15 @@ need to add lat/long in aes().</p>
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="n">fr_map</span> <span class="o">&lt;-</span> <span class="nf">map_data</span><span class="p">(</span><span class="s">&#34;france&#34;</span><span class="p">)</span>
-<span class="n">fr_data</span> <span class="o">&lt;-</span> <span class="nf">data.frame</span><span class="p">(</span><span class="n">region</span> <span class="o">=</span> <span class="nf">unique</span><span class="p">(</span><span class="n">fr_map</span><span class="o">$</span><span class="n">region</span><span class="p">),</span> 
-                      <span class="n">value</span>     <span class="o">=</span> <span class="nf">rnorm</span><span class="p">(</span><span class="nf">length</span><span class="p">(</span><span class="nf">unique</span><span class="p">(</span><span class="n">fr_map</span><span class="o">$</span><span class="n">region</span><span class="p">))))</span>
-
-<span class="nf">ggplot</span><span class="p">(</span><span class="n">fr_data</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">map_id</span> <span class="o">=</span> <span class="n">region</span><span class="p">))</span> <span class="o">+</span>
-  <span class="nf">geom_map</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">fill</span> <span class="o">=</span> <span class="n">value</span><span class="p">),</span> <span class="n">map</span><span class="o">=</span><span class="n">fr_map</span><span class="p">)</span> <span class="o">+</span>
-  <span class="nf">expand_limits</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">fr_map</span><span class="o">$</span><span class="n">long</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">fr_map</span><span class="o">$</span><span class="n">lat</span><span class="p">)</span> <span class="o">+</span>
-  <span class="nf">coord_fixed</span><span class="p">()</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="n">fr_map</span> <span class="o">&lt;-</span> <span class="nf">map_data</span><span class="p">(</span><span class="s">&#34;france&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">fr_data</span> <span class="o">&lt;-</span> <span class="nf">data.frame</span><span class="p">(</span><span class="n">region</span> <span class="o">=</span> <span class="nf">unique</span><span class="p">(</span><span class="n">fr_map</span><span class="o">$</span><span class="n">region</span><span class="p">),</span> 
+</span></span><span class="line"><span class="cl">                      <span class="n">value</span>     <span class="o">=</span> <span class="nf">rnorm</span><span class="p">(</span><span class="nf">length</span><span class="p">(</span><span class="nf">unique</span><span class="p">(</span><span class="n">fr_map</span><span class="o">$</span><span class="n">region</span><span class="p">))))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">ggplot</span><span class="p">(</span><span class="n">fr_data</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">map_id</span> <span class="o">=</span> <span class="n">region</span><span class="p">))</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">geom_map</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">fill</span> <span class="o">=</span> <span class="n">value</span><span class="p">),</span> <span class="n">map</span><span class="o">=</span><span class="n">fr_map</span><span class="p">)</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">expand_limits</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">fr_map</span><span class="o">$</span><span class="n">long</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">fr_map</span><span class="o">$</span><span class="n">lat</span><span class="p">)</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">coord_fixed</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><img src="/2021-11-19-cartography-in-r/index_files/figure-html/unnamed-chunk-3-1.png" width="672" />
 <h1 id="sf-object--geom_sf">sf object + geom_sf</h1>
@@ -296,17 +296,17 @@ need to add lat/long in aes().</p>
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="c1">#from https://r-spatial.org/r/2018/10/25/ggplot2-sf.htm</span>
-<span class="nf">library</span><span class="p">(</span><span class="n">sf</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="c1">#from https://r-spatial.org/r/2018/10/25/ggplot2-sf.htm</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">sf</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">## Linking to GEOS 3.10.2, GDAL 3.4.2, PROJ 8.2.1; sf_use_s2() is TRUE
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">## Linking to GEOS 3.10.2, GDAL 3.4.2, PROJ 8.2.1; sf_use_s2() is TRUE
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -318,13 +318,13 @@ need to add lat/long in aes().</p>
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="nf">library</span><span class="p">(</span><span class="n">rnaturalearth</span><span class="p">)</span> <span class="c1">#another public map data package</span>
-<span class="c1">#library(rnaturalearthdata)</span>
-
-<span class="n">it_data</span> <span class="o">=</span><span class="nf">st_as_sf</span><span class="p">(</span><span class="nf">map</span><span class="p">(</span><span class="s">&#34;italy&#34;</span><span class="p">,</span> <span class="n">plot</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">))</span> <span class="c1">#polygons</span>
-<span class="n">it_sf</span> <span class="o">&lt;-</span> <span class="nf">ne_countries</span><span class="p">(</span><span class="n">scale</span> <span class="o">=</span> <span class="s">&#34;medium&#34;</span><span class="p">,</span> <span class="n">country</span><span class="o">=</span><span class="s">&#34;italy&#34;</span><span class="p">,</span><span class="n">returnclass</span> <span class="o">=</span> <span class="s">&#34;sf&#34;</span><span class="p">)</span> <span class="c1">#an outline</span>
-<span class="nf">ggplot</span><span class="p">(</span><span class="n">it_sf</span><span class="p">)</span><span class="o">+</span><span class="nf">geom_sf</span><span class="p">()</span><span class="o">+</span><span class="nf">geom_sf</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">it_data</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="kc">NA</span><span class="p">)</span> 
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">rnaturalearth</span><span class="p">)</span> <span class="c1">#another public map data package</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#library(rnaturalearthdata)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">it_data</span> <span class="o">=</span><span class="nf">st_as_sf</span><span class="p">(</span><span class="nf">map</span><span class="p">(</span><span class="s">&#34;italy&#34;</span><span class="p">,</span> <span class="n">plot</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">))</span> <span class="c1">#polygons</span>
+</span></span><span class="line"><span class="cl"><span class="n">it_sf</span> <span class="o">&lt;-</span> <span class="nf">ne_countries</span><span class="p">(</span><span class="n">scale</span> <span class="o">=</span> <span class="s">&#34;medium&#34;</span><span class="p">,</span> <span class="n">country</span><span class="o">=</span><span class="s">&#34;italy&#34;</span><span class="p">,</span><span class="n">returnclass</span> <span class="o">=</span> <span class="s">&#34;sf&#34;</span><span class="p">)</span> <span class="c1">#an outline</span>
+</span></span><span class="line"><span class="cl"><span class="nf">ggplot</span><span class="p">(</span><span class="n">it_sf</span><span class="p">)</span><span class="o">+</span><span class="nf">geom_sf</span><span class="p">()</span><span class="o">+</span><span class="nf">geom_sf</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">it_data</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="kc">NA</span><span class="p">)</span> 
+</span></span></code></pre></td></tr></table>
 </div>
 </div><img src="/2021-11-19-cartography-in-r/index_files/figure-html/unnamed-chunk-4-1.png" width="672" />
 <div class="highlight"><div class="chroma">
@@ -333,9 +333,9 @@ need to add lat/long in aes().</p>
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="c1">#and you can add more geom_sf() based on data in your  hand</span>
-<span class="c1">#plot(uk_sf$geometry) #uk_sf$geometry equals st_geomety(uk_sf)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="c1">#and you can add more geom_sf() based on data in your  hand</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#plot(uk_sf$geometry) #uk_sf$geometry equals st_geomety(uk_sf)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="sf-object--tmap">sf object + tmap</h1>
 <p><code>tmap</code> has a similar layer-based syntax to plot map, but should be more professional and specilised than <code>ggplot2.</code></p>
@@ -354,18 +354,18 @@ need to add lat/long in aes().</p>
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="c1">#from https://geocompr.robinlovelace.net/adv-map.html</span>
-<span class="nf">library</span><span class="p">(</span><span class="n">spData</span><span class="p">)</span>
-<span class="c1">#library(spDataLarge)</span>
-<span class="nf">library</span><span class="p">(</span><span class="n">tmap</span><span class="p">)</span>
-<span class="nf">library</span><span class="p">(</span><span class="n">sf</span><span class="p">)</span>
-
-<span class="n">world</span> <span class="o">&lt;-</span> <span class="n">spData</span><span class="o">::</span><span class="n">world</span>
-<span class="n">toy_sf</span> <span class="o">&lt;-</span> <span class="nf">st_as_sf</span><span class="p">(</span><span class="n">toy_df</span><span class="p">,</span> <span class="n">coords</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&#34;lat&#34;</span><span class="p">,</span> <span class="s">&#34;long&#34;</span><span class="p">),</span> <span class="n">crs</span><span class="o">=</span><span class="m">4326</span><span class="p">)</span> <span class="c1">#WGS84</span>
-
-<span class="nf">tm_shape</span><span class="p">(</span><span class="n">world</span><span class="p">)</span><span class="o">+</span><span class="nf">tm_borders</span><span class="p">()</span><span class="o">+</span><span class="nf">tm_fill</span><span class="p">()</span><span class="o">+</span>
-  <span class="nf">tm_shape</span><span class="p">(</span><span class="n">toy_sf</span><span class="p">)</span> <span class="o">+</span> <span class="nf">tm_dots</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="m">.5</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="c1">#from https://geocompr.robinlovelace.net/adv-map.html</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">spData</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#library(spDataLarge)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">tmap</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">sf</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">world</span> <span class="o">&lt;-</span> <span class="n">spData</span><span class="o">::</span><span class="n">world</span>
+</span></span><span class="line"><span class="cl"><span class="n">toy_sf</span> <span class="o">&lt;-</span> <span class="nf">st_as_sf</span><span class="p">(</span><span class="n">toy_df</span><span class="p">,</span> <span class="n">coords</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&#34;lat&#34;</span><span class="p">,</span> <span class="s">&#34;long&#34;</span><span class="p">),</span> <span class="n">crs</span><span class="o">=</span><span class="m">4326</span><span class="p">)</span> <span class="c1">#WGS84</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">tm_shape</span><span class="p">(</span><span class="n">world</span><span class="p">)</span><span class="o">+</span><span class="nf">tm_borders</span><span class="p">()</span><span class="o">+</span><span class="nf">tm_fill</span><span class="p">()</span><span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">tm_shape</span><span class="p">(</span><span class="n">toy_sf</span><span class="p">)</span> <span class="o">+</span> <span class="nf">tm_dots</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="m">.5</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><img src="/2021-11-19-cartography-in-r/index_files/figure-html/unnamed-chunk-5-1.png" width="672" />
 <h1 id="ggmap">ggmap</h1>
@@ -384,16 +384,16 @@ a function <code>get_map()</code> to download some map data from google, open st
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="nf">library</span><span class="p">(</span><span class="n">ggmap</span><span class="p">)</span>
-
-<span class="c1">#downloading raster data by get_map(). REQUIRE GOOGLE API</span>
-<span class="n">gmap</span> <span class="o">&lt;-</span> <span class="nf">get_stamenmap</span><span class="p">(</span><span class="n">bbox</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="n">left</span> <span class="o">=</span> <span class="m">-10</span><span class="p">,</span> <span class="n">bottom</span> <span class="o">=</span> <span class="m">50</span><span class="p">,</span> <span class="n">right</span> <span class="o">=</span> <span class="m">5</span><span class="p">,</span> <span class="n">top</span> <span class="o">=</span> <span class="m">60</span><span class="p">),</span>
-                      <span class="n">zoom</span> <span class="o">=</span> <span class="m">6</span><span class="p">,</span>
-                      <span class="n">maptype</span><span class="o">=</span><span class="s">&#39;watercolor&#39;</span><span class="p">,</span>
-                      <span class="n">messaging</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span>
-
-<span class="nf">ggmap</span><span class="p">(</span><span class="n">gmap</span><span class="p">)</span> <span class="o">+</span> <span class="nf">theme_void</span><span class="p">()</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">ggmap</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#downloading raster data by get_map(). REQUIRE GOOGLE API</span>
+</span></span><span class="line"><span class="cl"><span class="n">gmap</span> <span class="o">&lt;-</span> <span class="nf">get_stamenmap</span><span class="p">(</span><span class="n">bbox</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="n">left</span> <span class="o">=</span> <span class="m">-10</span><span class="p">,</span> <span class="n">bottom</span> <span class="o">=</span> <span class="m">50</span><span class="p">,</span> <span class="n">right</span> <span class="o">=</span> <span class="m">5</span><span class="p">,</span> <span class="n">top</span> <span class="o">=</span> <span class="m">60</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">                      <span class="n">zoom</span> <span class="o">=</span> <span class="m">6</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                      <span class="n">maptype</span><span class="o">=</span><span class="s">&#39;watercolor&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                      <span class="n">messaging</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">ggmap</span><span class="p">(</span><span class="n">gmap</span><span class="p">)</span> <span class="o">+</span> <span class="nf">theme_void</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><img src="/2021-11-19-cartography-in-r/index_files/figure-html/unnamed-chunk-6-1.png" width="672" />
 <h1 id="raster--levelplotgeom_raster">raster + levelplot/geom_raster</h1>
@@ -417,22 +417,22 @@ a function <code>get_map()</code> to download some map data from google, open st
 </span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="nf">library</span><span class="p">(</span><span class="n">ncdf4</span><span class="p">)</span>
-<span class="nf">library</span><span class="p">(</span><span class="n">terra</span><span class="p">)</span>
-<span class="nf">library</span><span class="p">(</span><span class="n">rasterVis</span><span class="p">)</span>
-
-<span class="c1"># an example file from UCAR</span>
-<span class="c1"># https://www.unidata.ucar.edu/software/netcdf/examples/files.html</span>
-<span class="n">nc</span> <span class="o">&lt;-</span> <span class="nf">nc_open</span><span class="p">(</span><span class="s">&#34;tos_O1_2001-2002.nc&#34;</span><span class="p">)</span>
-<span class="c1">#names(nc$var) # print all variables</span>
-<span class="n">sst_K</span> <span class="o">&lt;-</span> <span class="nf">ncvar_get</span><span class="p">(</span><span class="n">nc</span><span class="p">,</span> <span class="n">varid</span><span class="o">=</span><span class="s">&#34;tos&#34;</span><span class="p">)</span> <span class="c1">#in Kelvin</span>
-<span class="n">sst</span> <span class="o">&lt;-</span> <span class="n">sst_K</span> <span class="o">-</span> <span class="m">273.15</span> <span class="c1">#in Celsius</span>
-<span class="c1">#dim(sst) # check dimension</span>
-<span class="c1">#image(sst[,,1])</span>
-
-<span class="n">sst_raster</span> <span class="o">&lt;-</span> <span class="nf">flip</span><span class="p">(</span><span class="nf">rast</span><span class="p">(</span><span class="nf">t</span><span class="p">(</span><span class="n">sst[</span><span class="p">,,</span><span class="m">1</span><span class="n">]</span><span class="p">)))</span>
-<span class="nf">plot</span><span class="p">(</span><span class="n">sst_raster</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">ncdf4</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">terra</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">rasterVis</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># an example file from UCAR</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># https://www.unidata.ucar.edu/software/netcdf/examples/files.html</span>
+</span></span><span class="line"><span class="cl"><span class="n">nc</span> <span class="o">&lt;-</span> <span class="nf">nc_open</span><span class="p">(</span><span class="s">&#34;tos_O1_2001-2002.nc&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#names(nc$var) # print all variables</span>
+</span></span><span class="line"><span class="cl"><span class="n">sst_K</span> <span class="o">&lt;-</span> <span class="nf">ncvar_get</span><span class="p">(</span><span class="n">nc</span><span class="p">,</span> <span class="n">varid</span><span class="o">=</span><span class="s">&#34;tos&#34;</span><span class="p">)</span> <span class="c1">#in Kelvin</span>
+</span></span><span class="line"><span class="cl"><span class="n">sst</span> <span class="o">&lt;-</span> <span class="n">sst_K</span> <span class="o">-</span> <span class="m">273.15</span> <span class="c1">#in Celsius</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#dim(sst) # check dimension</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#image(sst[,,1])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">sst_raster</span> <span class="o">&lt;-</span> <span class="nf">flip</span><span class="p">(</span><span class="nf">rast</span><span class="p">(</span><span class="nf">t</span><span class="p">(</span><span class="n">sst[</span><span class="p">,,</span><span class="m">1</span><span class="n">]</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl"><span class="nf">plot</span><span class="p">(</span><span class="n">sst_raster</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><img src="/2021-11-19-cartography-in-r/index_files/figure-html/unnamed-chunk-7-1.png" width="672" />
 <p>We can also use ggplot to do the plotting. But notice that the array from netCDF is not containing
@@ -447,13 +447,13 @@ CRS data, that&rsquo;s why we have x-y axis with 0-1 range.</p>
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
-
-<span class="c1">#to use geom_raster/geom_tile, we should transfer raster to a data.frame</span>
-<span class="n">sst_df</span> <span class="o">&lt;-</span> <span class="n">sst_raster</span> <span class="o">|&gt;</span> <span class="n">terra</span><span class="o">::</span><span class="nf">as.data.frame</span><span class="p">(</span><span class="n">xy</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">)</span> <span class="c1">#pipe requires R &gt; 4.1, otherwise use %&gt;% in tidyverse</span>
-<span class="nf">names</span><span class="p">(</span><span class="n">sst_df</span><span class="p">)</span><span class="n">[3]</span> <span class="o">&lt;-</span> <span class="s">&#34;sst&#34;</span>
-<span class="nf">ggplot</span><span class="p">(</span><span class="n">sst_df</span><span class="p">)</span> <span class="o">+</span> <span class="nf">geom_raster</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">sst</span><span class="p">))</span> <span class="o">+</span> <span class="nf">theme_light</span><span class="p">()</span> <span class="o">+</span> <span class="nf">scale_fill_viridis_c</span><span class="p">()</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#to use geom_raster/geom_tile, we should transfer raster to a data.frame</span>
+</span></span><span class="line"><span class="cl"><span class="n">sst_df</span> <span class="o">&lt;-</span> <span class="n">sst_raster</span> <span class="o">|&gt;</span> <span class="n">terra</span><span class="o">::</span><span class="nf">as.data.frame</span><span class="p">(</span><span class="n">xy</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">)</span> <span class="c1">#pipe requires R &gt; 4.1, otherwise use %&gt;% in tidyverse</span>
+</span></span><span class="line"><span class="cl"><span class="nf">names</span><span class="p">(</span><span class="n">sst_df</span><span class="p">)</span><span class="n">[3]</span> <span class="o">&lt;-</span> <span class="s">&#34;sst&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nf">ggplot</span><span class="p">(</span><span class="n">sst_df</span><span class="p">)</span> <span class="o">+</span> <span class="nf">geom_raster</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">sst</span><span class="p">))</span> <span class="o">+</span> <span class="nf">theme_light</span><span class="p">()</span> <span class="o">+</span> <span class="nf">scale_fill_viridis_c</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><img src="/2021-11-19-cartography-in-r/index_files/figure-html/unnamed-chunk-8-1.png" width="672" />
 <div class="highlight"><div class="chroma">
@@ -462,9 +462,9 @@ CRS data, that&rsquo;s why we have x-y axis with 0-1 range.</p>
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="c1"># what&#39;s the difference between |&gt; and %&gt;%?</span>
-<span class="c1">#https://stackoverflow.com/questions/67633022/what-are-the-differences-between-rs-new-native-pipe-and-the-magrittr-pipe</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="c1"># what&#39;s the difference between |&gt; and %&gt;%?</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#https://stackoverflow.com/questions/67633022/what-are-the-differences-between-rs-new-native-pipe-and-the-magrittr-pipe</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>As for the difference between <code>geom_tile</code>, <code>geom_raster</code>, let&rsquo;s see the offical answer:</p>
 <blockquote>
@@ -481,21 +481,21 @@ CRS data, that&rsquo;s why we have x-y axis with 0-1 range.</p>
   <div class="post-info">
     <div class="post-info-line">
       <div class="post-info-mod">
-        <span title=2021-11-19&#32;12:22:43>Updated on 2021-11-19&nbsp;</span>
+        <span title=2021-11-19&#32;12:22:43>&nbsp;</span>
       </div><div class="post-info-license">
           <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
         </div></div>
     <div class="post-info-line">
-      <div class="post-info-md"><span><a href="/2021-11-19-cartography-in-r/index.md" title="Read Markdown" class="link-to-markdown">Read Markdown</a></span></div>
+      <div class="post-info-md"><span><a href="/2021-11-19-cartography-in-r/index.md" class="link-to-markdown"></a></span></div>
       <div class="post-info-share">
-        <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/2021-11-19-cartography-in-r/" data-title="Cartography in R" data-via="YingRui17" data-hashtags="R; Data Science"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
-  <a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/2021-11-19-cartography-in-r/" data-hashtag="R; Data Science"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
-  <a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="/2021-11-19-cartography-in-r/" data-title="Cartography in R" data-web><i class="fa-brands fa-whatsapp fa-fw" aria-hidden="true"></i></a>
-  <a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/2021-11-19-cartography-in-r/" data-title="Cartography in R"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a>
-  <a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="/2021-11-19-cartography-in-r/" data-title="Cartography in R"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
-  <a href="javascript:void(0);" title="Share on Myspace" data-sharer="myspace" data-url="/2021-11-19-cartography-in-r/" data-title="Cartography in R" data-description=""><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg" aria-hidden="true"></i></a>
-  <a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="/2021-11-19-cartography-in-r/" data-title="Cartography in R" data-description=""><i class="fa-brands fa-blogger fa-fw" aria-hidden="true"></i></a>
-  <a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="/2021-11-19-cartography-in-r/" data-title="Cartography in R"><i class="fa-brands fa-evernote fa-fw" aria-hidden="true"></i></a>
+        <span><a href="javascript:void(0);" title=" Twitter" data-sharer="twitter" data-url="/2021-11-19-cartography-in-r/" data-title="Cartography in R" data-via="YingRui17" data-hashtags="R; Data Science"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title=" Facebook" data-sharer="facebook" data-url="/2021-11-19-cartography-in-r/" data-hashtag="R; Data Science"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title=" WhatsApp" data-sharer="whatsapp" data-url="/2021-11-19-cartography-in-r/" data-title="Cartography in R" data-web><i class="fa-brands fa-whatsapp fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title=" Line" data-sharer="line" data-url="/2021-11-19-cartography-in-r/" data-title="Cartography in R"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title=" 微博" data-sharer="weibo" data-url="/2021-11-19-cartography-in-r/" data-title="Cartography in R"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title=" Myspace" data-sharer="myspace" data-url="/2021-11-19-cartography-in-r/" data-title="Cartography in R" data-description=""><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title=" Blogger" data-sharer="blogger" data-url="/2021-11-19-cartography-in-r/" data-title="Cartography in R" data-description=""><i class="fa-brands fa-blogger fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title=" Evernote" data-sharer="evernote" data-url="/2021-11-19-cartography-in-r/" data-title="Cartography in R"><i class="fa-brands fa-evernote fa-fw" aria-hidden="true"></i></a>
   </span>
       </div>
     </div>
@@ -504,7 +504,7 @@ CRS data, that&rsquo;s why we have x-y axis with 0-1 range.</p>
   <div class="post-info-more">
     <section class="post-tags"><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/r-data-science/">R; Data Science</a></section>
     <section>
-      <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+      <span><a href="javascript:void(0);" onclick="window.history.back();"></a></span>&nbsp;|&nbsp;<span><a href="/"></a></span>
     </section>
   </div>
 
@@ -512,15 +512,15 @@ CRS data, that&rsquo;s why we have x-y axis with 0-1 range.</p>
       <a href="/2022-02-18-fortran-basics/" class="next" rel="next" title="Fortran basics">Fortran basics<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 </article></main><footer class="footer">
-    <div class="footer-container"><div class="footer-line powered">Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.89.4">Hugo</a> | Theme - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.2.16-RC"><img class="fixit-icon" src="/images/fixit.svg" alt="FixIt logo" />&nbsp;FixIt</a>
+    <div class="footer-container"><div class="footer-line powered">
         </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
-            <span itemprop="copyrightYear">2019 - 2022</span><span class="author" itemprop="copyrightHolder">
-              <a href="/">Rui Ying</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line ibruce">
-          <span id="busuanzi_container_site_uv" title='Total visitors'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='Total visits'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
+            <span itemprop="copyrightYear">2018 - 2022</span><span class="author" itemprop="copyrightHolder">
+              <a href="/">Rui Ying</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"><span class="site-time" title=''><i class="fa-solid fa-heartbeat fa-fw animate-icon" aria-hidden="true"></i>&nbsp;<span class="run-times"></span></span></div><div class="footer-line ibruce">
+          <span id="busuanzi_container_site_uv" title=''><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title=''><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
         </div></div>
-  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label=""><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
         </div></div><div id="mask"></div><noscript>
-    <div class="noscript-warning">Theme FixIt works best with JavaScript enabled.</div>
+    <div class="noscript-warning"></div>
   </noscript>
-</div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/lunr/lunr.min.js" defer></script><script src="/lib/lazysizes/lazysizes.min.js" async defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/katex/katex.min.js" defer></script><script src="/lib/katex/auto-render.min.js" defer></script><script src="/lib/katex/copy-tex.min.js" defer></script><script src="/lib/katex/mhchem.min.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async defer></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","editLockTitle":"Lock editable code block","editUnLockTitle":"Unlock editable code block","editable":true,"maxShownLines":10},"comment":{"enable":false},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"enablePWA":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50,"type":"lunr"}};</script><script src="/js/theme.min.js" defer></script></body>
+</div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/lunr/lunr.min.js" defer></script><script src="/lib/lazysizes/lazysizes.min.js" async defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/katex/katex.min.js" defer></script><script src="/lib/katex/auto-render.min.js" defer></script><script src="/lib/katex/copy-tex.min.js" defer></script><script src="/lib/katex/mhchem.min.js" defer></script><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async defer></script><script>window.config={"code":{"copyTitle":"","editLockTitle":"","editUnLockTitle":"","editable":true,"maxShownLines":10},"comment":{"enable":false},"enablePWA":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"","snippetLength":50,"type":"lunr"},"siteTime":"2018-11-23"};</script><script src="/js/theme.min.js" defer></script></body>
 </html>

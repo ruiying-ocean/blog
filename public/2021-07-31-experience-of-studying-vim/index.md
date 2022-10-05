@@ -56,6 +56,6 @@ Emacs. Each one will be one of my toolbox without any issue!
 
 ---
 
-> Author: Rui Ying  
+> : Rui Ying  
 > URL: /2021-07-31-experience-of-studying-vim/  
 

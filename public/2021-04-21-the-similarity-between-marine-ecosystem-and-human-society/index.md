@@ -12,6 +12,6 @@ NPZ模型是一个经典的海洋生态系统(食物链)模型，NPZ三个字母
 
 ---
 
-> Author: Rui Ying  
+> : Rui Ying  
 > URL: /2021-04-21-the-similarity-between-marine-ecosystem-and-human-society/  
 

@@ -261,6 +261,6 @@ Turn on Fe limitation: set `eg_useFe=.true.` and `eg_fquota=.true.`. Then define
 
 ---
 
-> Author: Rui Ying  
+> : Rui Ying  
 > URL: /2020-12-25-cgenie-simplest-summary/  
 

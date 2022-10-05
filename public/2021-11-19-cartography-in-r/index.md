@@ -216,6 +216,6 @@ As for the difference between `geom_tile`, `geom_raster`, let's see the offical 
 
 ---
 
-> Author: Rui Ying  
+> : Rui Ying  
 > URL: /2021-11-19-cartography-in-r/  
 

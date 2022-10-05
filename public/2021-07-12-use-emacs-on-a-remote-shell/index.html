@@ -45,19 +45,19 @@
   <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper"><header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper">
     <div class="header-title">
-      <a href="/" title=""><span class="header-title-text">Heaven</span></a><span class="header-subtitle"></span></div>
+      <a href="/" title=""><span class="header-title-text">Home</span></a><span class="header-subtitle"></span></div>
     <nav>
       <ul class="menu"><li class="menu-item text-center">
               <a
                 class="menu-link"
                 href="/categories/"
-                
+                title="blog by category"
                 
               ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> categories</a></li><li class="menu-item text-center">
               <a
                 class="menu-link"
                 href="/posts/"
-                
+                title="blog by time"
                 
               ><i class="fa-solid fa-pen-nib fa-fw fa-sm" aria-hidden="true"></i> posts</a></li><li class="menu-item text-center">
               <a
@@ -66,17 +66,17 @@
                 
                 
               ><i class="fa-regular fa-address-card fa-fw fa-sm" aria-hidden="true"></i> about</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
-            <input type="text" placeholder="Search titles or contents ..." id="search-input-desktop">
-            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+            <input type="text" placeholder="" id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="">
               <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
             </a>
-            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="">
               <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
             </a>
             <span class="search-button search-loading" id="search-loading-desktop">
               <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
             </span>
-          </li><li class="menu-item theme-switch" title="Switch Theme">
+          </li><li class="menu-item theme-switch" title="">
           <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
         </li>
       </ul>
@@ -86,7 +86,7 @@
   <div class="header-container">
     <div class="header-wrapper">
       <div class="header-title">
-        <a href="/" title=""><span class="header-title-text">Heaven</span></a><span class="header-subtitle"></span></div>
+        <a href="/" title=""><span class="header-title-text">Home</span></a><span class="header-subtitle"></span></div>
       <div class="menu-toggle" id="menu-toggle-mobile">
         <span></span><span></span><span></span>
       </div>
@@ -94,11 +94,11 @@
     <nav>
       <ul class="menu" id="menu-mobile"><li class="search-wrapper">
             <div class="search mobile" id="search-mobile">
-              <input type="text" placeholder="Search titles or contents ..." id="search-input-mobile">
-              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+              <input type="text" placeholder="" id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="">
                 <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
               </a>
-              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="">
                 <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
               </a>
               <span class="search-button search-loading" id="search-loading-mobile">
@@ -106,21 +106,21 @@
               </span>
             </div>
             <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
-              Cancel
+              
             </a>
           </li><li
               class="menu-item text-center"
             ><a
                   class="menu-link"
                   href="/categories/"
-                  
+                  title="blog by category"
                   
                 ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> categories</a></li><li
               class="menu-item text-center"
             ><a
                   class="menu-link"
                   href="/posts/"
-                  
+                  title="blog by time"
                   
                 ><i class="fa-solid fa-pen-nib fa-fw fa-sm" aria-hidden="true"></i> posts</a></li><li
               class="menu-item text-center"
@@ -129,7 +129,7 @@
                   href="/about/"
                   
                   
-                ><i class="fa-regular fa-address-card fa-fw fa-sm" aria-hidden="true"></i> about</a></li><li class="menu-item theme-switch" title="Switch Theme">
+                ><i class="fa-regular fa-address-card fa-fw fa-sm" aria-hidden="true"></i> about</a></li><li class="menu-item theme-switch" title="">
           <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
         </li></ul>
     </nav>
@@ -157,8 +157,8 @@
     data-sizes="auto"
     alt="Rui Ying"
     title="Rui Ying"/>&nbsp;Rui Ying</span></span>
-          <span class="post-category">included in <a href="/categories/programming/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Programming</a></span></div>
-      <div class="post-meta-line"><span title=2021-07-12&#32;00:00:00><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2021-07-12">2021-07-12</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 268 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 2 minutes</span>&nbsp;</div>
+          <span class="post-category"></span></div>
+      <div class="post-meta-line"><span title=2021-07-12&#32;00:00:00><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2021-07-12">2021-07-12</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> </span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> </span>&nbsp;</div>
     </div><div
       class="content"
       id="content"
@@ -172,8 +172,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">conda install Emacs -c conda-forge
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">conda install Emacs -c conda-forge
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="enable-mouse-operation-for-terminal-emacs">Enable mouse operation for terminal Emacs</h1>
 <div class="highlight"><div class="chroma">
@@ -185,12 +185,12 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nb">unless</span> <span class="p">(</span><span class="nv">display-graphic-p</span><span class="p">)</span>
-  <span class="p">(</span><span class="nv">xterm-mouse-mode</span> <span class="mi">1</span><span class="p">)</span>
-  <span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;&lt;mouse-4&gt;&#34;</span><span class="p">)</span> <span class="ss">&#39;scroll-down-line</span><span class="p">)</span>
-  <span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;&lt;mouse-5&gt;&#34;</span><span class="p">)</span> <span class="ss">&#39;scroll-up-line</span><span class="p">)</span>
-  <span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">unless</span> <span class="p">(</span><span class="nv">display-graphic-p</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">xterm-mouse-mode</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;&lt;mouse-4&gt;&#34;</span><span class="p">)</span> <span class="ss">&#39;scroll-down-line</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;&lt;mouse-5&gt;&#34;</span><span class="p">)</span> <span class="ss">&#39;scroll-up-line</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="use-new-emacs-without-activating-conda">Use new Emacs without activating conda</h1>
 <p>However, I&rsquo;ve got a new task that if I add miniconda to the top of <code>$PATH</code>, my model which uses python2 won&rsquo;t work properly. So I alias Emacs directly to <code>~/miniconda/bin/emacs-27.2</code> to avoid using default last-century (actually not) Emacs. And if I add a package <code>conda.el</code> to manage conda environment in shell:</p>
@@ -203,12 +203,12 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nf">use-package</span> <span class="nv">conda</span>
-  <span class="ss">:config</span>
-  <span class="p">(</span><span class="k">setq</span> <span class="nv">conda-anaconda-home</span> <span class="p">(</span><span class="nv">expand-file-name</span> <span class="s">&#34;~/miniconda3&#34;</span><span class="p">))</span>
-  <span class="p">(</span><span class="k">setq</span> <span class="nv">conda-env-home-directory</span> <span class="p">(</span><span class="nv">expand-file-name</span> <span class="s">&#34;~/miniconda3&#34;</span><span class="p">))</span>
-  <span class="p">(</span><span class="nv">conda-env-initialize-interactive-shells</span><span class="p">))</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nf">use-package</span> <span class="nv">conda</span>
+</span></span><span class="line"><span class="cl">  <span class="ss">:config</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="k">setq</span> <span class="nv">conda-anaconda-home</span> <span class="p">(</span><span class="nv">expand-file-name</span> <span class="s">&#34;~/miniconda3&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="k">setq</span> <span class="nv">conda-env-home-directory</span> <span class="p">(</span><span class="nv">expand-file-name</span> <span class="s">&#34;~/miniconda3&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">conda-env-initialize-interactive-shells</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>I just found I can simply put conda path before default Emacs but after python2. But the ad of my way is that I can use conda packages like pylsp without exporting its path in the shell profile.</p>
 <h1 id="the-last-interesting-thing">The last interesting thing</h1>
@@ -219,29 +219,29 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">conda list --revisions
-conda install --revision <span class="o">[</span>revision number<span class="o">]</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">conda list --revisions
+</span></span><span class="line"><span class="cl">conda install --revision <span class="o">[</span>revision number<span class="o">]</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
   <div class="post-info">
     <div class="post-info-line">
       <div class="post-info-mod">
-        <span title=2021-07-12&#32;22:01:02>Updated on 2021-07-12&nbsp;</span>
+        <span title=2021-07-12&#32;22:01:02>&nbsp;</span>
       </div><div class="post-info-license">
           <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
         </div></div>
     <div class="post-info-line">
-      <div class="post-info-md"><span><a href="/2021-07-12-use-emacs-on-a-remote-shell/index.md" title="Read Markdown" class="link-to-markdown">Read Markdown</a></span></div>
+      <div class="post-info-md"><span><a href="/2021-07-12-use-emacs-on-a-remote-shell/index.md" class="link-to-markdown"></a></span></div>
       <div class="post-info-share">
-        <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/2021-07-12-use-emacs-on-a-remote-shell/" data-title="Use Emacs on a remote shell" data-via="YingRui17"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
-  <a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/2021-07-12-use-emacs-on-a-remote-shell/"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
-  <a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="/2021-07-12-use-emacs-on-a-remote-shell/" data-title="Use Emacs on a remote shell" data-web><i class="fa-brands fa-whatsapp fa-fw" aria-hidden="true"></i></a>
-  <a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/2021-07-12-use-emacs-on-a-remote-shell/" data-title="Use Emacs on a remote shell"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a>
-  <a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="/2021-07-12-use-emacs-on-a-remote-shell/" data-title="Use Emacs on a remote shell"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
-  <a href="javascript:void(0);" title="Share on Myspace" data-sharer="myspace" data-url="/2021-07-12-use-emacs-on-a-remote-shell/" data-title="Use Emacs on a remote shell" data-description=""><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg" aria-hidden="true"></i></a>
-  <a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="/2021-07-12-use-emacs-on-a-remote-shell/" data-title="Use Emacs on a remote shell" data-description=""><i class="fa-brands fa-blogger fa-fw" aria-hidden="true"></i></a>
-  <a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="/2021-07-12-use-emacs-on-a-remote-shell/" data-title="Use Emacs on a remote shell"><i class="fa-brands fa-evernote fa-fw" aria-hidden="true"></i></a>
+        <span><a href="javascript:void(0);" title=" Twitter" data-sharer="twitter" data-url="/2021-07-12-use-emacs-on-a-remote-shell/" data-title="Use Emacs on a remote shell" data-via="YingRui17"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title=" Facebook" data-sharer="facebook" data-url="/2021-07-12-use-emacs-on-a-remote-shell/"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title=" WhatsApp" data-sharer="whatsapp" data-url="/2021-07-12-use-emacs-on-a-remote-shell/" data-title="Use Emacs on a remote shell" data-web><i class="fa-brands fa-whatsapp fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title=" Line" data-sharer="line" data-url="/2021-07-12-use-emacs-on-a-remote-shell/" data-title="Use Emacs on a remote shell"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title=" 微博" data-sharer="weibo" data-url="/2021-07-12-use-emacs-on-a-remote-shell/" data-title="Use Emacs on a remote shell"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title=" Myspace" data-sharer="myspace" data-url="/2021-07-12-use-emacs-on-a-remote-shell/" data-title="Use Emacs on a remote shell" data-description=""><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title=" Blogger" data-sharer="blogger" data-url="/2021-07-12-use-emacs-on-a-remote-shell/" data-title="Use Emacs on a remote shell" data-description=""><i class="fa-brands fa-blogger fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title=" Evernote" data-sharer="evernote" data-url="/2021-07-12-use-emacs-on-a-remote-shell/" data-title="Use Emacs on a remote shell"><i class="fa-brands fa-evernote fa-fw" aria-hidden="true"></i></a>
   </span>
       </div>
     </div>
@@ -250,7 +250,7 @@ conda install --revision <span class="o">[</span>revision number<span class="o">
   <div class="post-info-more">
     <section class="post-tags"></section>
     <section>
-      <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+      <span><a href="javascript:void(0);" onclick="window.history.back();"></a></span>&nbsp;|&nbsp;<span><a href="/"></a></span>
     </section>
   </div>
 
@@ -258,15 +258,15 @@ conda install --revision <span class="o">[</span>revision number<span class="o">
       <a href="/2021-07-12-try-windows-terminal-powershell/" class="next" rel="next" title="Try Windows Terminal &#43; Powershell">Try Windows Terminal &#43; Powershell<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 </article></main><footer class="footer">
-    <div class="footer-container"><div class="footer-line powered">Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.89.4">Hugo</a> | Theme - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.2.16-RC"><img class="fixit-icon" src="/images/fixit.svg" alt="FixIt logo" />&nbsp;FixIt</a>
+    <div class="footer-container"><div class="footer-line powered">
         </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
-            <span itemprop="copyrightYear">2019 - 2022</span><span class="author" itemprop="copyrightHolder">
-              <a href="/">Rui Ying</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line ibruce">
-          <span id="busuanzi_container_site_uv" title='Total visitors'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='Total visits'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
+            <span itemprop="copyrightYear">2018 - 2022</span><span class="author" itemprop="copyrightHolder">
+              <a href="/">Rui Ying</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"><span class="site-time" title=''><i class="fa-solid fa-heartbeat fa-fw animate-icon" aria-hidden="true"></i>&nbsp;<span class="run-times"></span></span></div><div class="footer-line ibruce">
+          <span id="busuanzi_container_site_uv" title=''><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title=''><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
         </div></div>
-  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label=""><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
         </div></div><div id="mask"></div><noscript>
-    <div class="noscript-warning">Theme FixIt works best with JavaScript enabled.</div>
+    <div class="noscript-warning"></div>
   </noscript>
-</div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/lunr/lunr.min.js" defer></script><script src="/lib/lazysizes/lazysizes.min.js" async defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/katex/katex.min.js" defer></script><script src="/lib/katex/auto-render.min.js" defer></script><script src="/lib/katex/copy-tex.min.js" defer></script><script src="/lib/katex/mhchem.min.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async defer></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","editLockTitle":"Lock editable code block","editUnLockTitle":"Unlock editable code block","editable":true,"maxShownLines":10},"comment":{"enable":false},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"enablePWA":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50,"type":"lunr"}};</script><script src="/js/theme.min.js" defer></script></body>
+</div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/lunr/lunr.min.js" defer></script><script src="/lib/lazysizes/lazysizes.min.js" async defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/katex/katex.min.js" defer></script><script src="/lib/katex/auto-render.min.js" defer></script><script src="/lib/katex/copy-tex.min.js" defer></script><script src="/lib/katex/mhchem.min.js" defer></script><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async defer></script><script>window.config={"code":{"copyTitle":"","editLockTitle":"","editUnLockTitle":"","editable":true,"maxShownLines":10},"comment":{"enable":false},"enablePWA":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"","snippetLength":50,"type":"lunr"},"siteTime":"2018-11-23"};</script><script src="/js/theme.min.js" defer></script></body>
 </html>
