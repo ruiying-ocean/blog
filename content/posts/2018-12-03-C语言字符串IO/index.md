@@ -6,7 +6,7 @@ subtitle: ""
 summary: " "
 authors: [Rui Ying]
 tags: [C]
-categories: [C]
+categories: [Programming]
 date: 2018-12-03T11:17:41Z
 lastmod: 2018-12-03T11:17:41Z
 featured: false
