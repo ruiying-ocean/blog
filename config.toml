@@ -2,7 +2,7 @@
   #  FixIt 主题版本
   version = "0.2.X" # 例如："0.2.X", "0.2.15", "v0.2.15" 等
   # 网站描述
-  description = "This is Rui Ying's personal site"
+  description = "This is Rui Ying's website"
   # 网站关键词
   keywords = ["Theme", "Hugo"]
   # 网站默认主题样式 ("light", "dark", "auto")
@@ -22,7 +22,7 @@
   externalIcon = false
   #  默认情况下，FixIt 只会在主页的 HTML 头中注入主题元标记。
   # 您可以将其关闭，但如果您不这样做，我们将不胜感激，因为这是观察 FixIt 受欢迎程度上升的好方法。
-  disableThemeInject = false
+  disableThemeInject = true
 
   #  应用图标配置
   [params.app]
@@ -739,7 +739,7 @@
     name = "about"
     url = "/about/"
     # 当你将鼠标悬停在此菜单链接上时，将显示的标题
-    title = ""
+    title = "self-introduction"
     weight = 0
     #  向菜单项添加用户定义的内容
     [menu.main.params]
