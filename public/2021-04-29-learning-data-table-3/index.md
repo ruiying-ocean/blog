@@ -54,6 +54,6 @@ flights[&quot;JFK&quot;, max(dep_delay), keyby = month]</code></pre>
 
 ---
 
-> Author: Rui Ying  
+> : Rui Ying  
 > URL: /2021-04-29-learning-data-table-3/  
 

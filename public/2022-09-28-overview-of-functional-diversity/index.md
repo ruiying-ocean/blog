@@ -87,6 +87,6 @@ Functional beta-diversity indices are computed for a  pair of assemblages based 
 
 ---
 
-> Author: Rui Ying  
+> : Rui Ying  
 > URL: /2022-09-28-overview-of-functional-diversity/  
 

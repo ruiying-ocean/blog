@@ -355,6 +355,6 @@ df[, head(.SD, 2), by=month] %&gt;% head()</code></pre>
 
 ---
 
-> Author: Rui Ying  
+> : Rui Ying  
 > URL: /2021-04-23-learning-data-table/  
 

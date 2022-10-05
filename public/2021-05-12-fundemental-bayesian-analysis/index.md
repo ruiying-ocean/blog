@@ -204,6 +204,6 @@ p_{move} = min\large(\frac{P(\theta_p|data)*\color{pink}{g(\theta_c|\theta_p)}}{
 
 ---
 
-> Author: Rui Ying  
+> : Rui Ying  
 > URL: /2021-05-12-fundemental-bayesian-analysis/  
 

@@ -38,6 +38,6 @@ Couple with [the other new post](https://www.ruiying.online/post/2021-07-12-use-
 
 ---
 
-> Author: Rui Ying  
+> : Rui Ying  
 > URL: /2021-07-12-try-windows-terminal-powershell/  
 

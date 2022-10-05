@@ -41,6 +41,6 @@ Basically you can successfully use elpy after steps above. `C-c C-c` to send reg
 
 ---
 
-> Author: Rui Ying  
+> : Rui Ying  
 > URL: /2020-12-12-use-emacs-as-python-ide/  
 

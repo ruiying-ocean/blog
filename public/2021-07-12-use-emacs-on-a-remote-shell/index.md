@@ -47,6 +47,6 @@ conda install --revision [revision number]
 
 ---
 
-> Author: Rui Ying  
+> : Rui Ying  
 > URL: /2021-07-12-use-emacs-on-a-remote-shell/  
 

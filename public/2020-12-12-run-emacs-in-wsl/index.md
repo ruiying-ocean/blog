@@ -29,6 +29,6 @@ There're also other alternative ways like Docker, a pure virtual machine (VMware
 
 ---
 
-> Author: Rui Ying  
+> : Rui Ying  
 > URL: /2020-12-12-run-emacs-in-wsl/  
 

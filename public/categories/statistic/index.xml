@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>Statistic - Category - </title>
+    <title>Statistic - category - </title>
     <link>/categories/statistic/</link>
-    <description>Statistic - Category - </description>
+    <description>Statistic - category - </description>
     <generator>Hugo -- gohugo.io</generator><managingEditor>rui.ying@bristol.ac.uk (Rui Ying)</managingEditor>
       <webMaster>rui.ying@bristol.ac.uk (Rui Ying)</webMaster><lastBuildDate>Wed, 12 May 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="/categories/statistic/" rel="self" type="application/rss+xml" /><item>
   <title>Fundemental Bayesian analysis</title>

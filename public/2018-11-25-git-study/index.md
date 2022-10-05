@@ -89,6 +89,6 @@ Git由Linus开发以实现版本控制，（几乎）是现在最流行的版本
 
 ---
 
-> Author: Rui Ying  
+> : Rui Ying  
 > URL: /2018-11-25-git-study/  
 

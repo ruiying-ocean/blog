@@ -59,6 +59,6 @@ p + xlab("中文")+ylab("字体")
 
 ---
 
-> Author: Rui Ying  
+> : Rui Ying  
 > URL: /2020-03-31-embedding-chinese-fonts-in-r/  
 

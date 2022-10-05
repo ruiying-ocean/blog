@@ -6,6 +6,6 @@
 
 ---
 
-> Author: Rui Ying  
+> : Rui Ying  
 > URL: /2022-02-21-carbon-chemistry-and-biological-pump/  
 

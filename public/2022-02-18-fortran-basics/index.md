@@ -256,6 +256,6 @@ compile and linking
 
 ---
 
-> Author: Rui Ying  
+> : Rui Ying  
 > URL: /2022-02-18-fortran-basics/  
 

@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>C - Tag - </title>
+    <title>C - tag - </title>
     <link>/tags/c/</link>
-    <description>C - Tag - </description>
+    <description>C - tag - </description>
     <generator>Hugo -- gohugo.io</generator><managingEditor>rui.ying@bristol.ac.uk (Rui Ying)</managingEditor>
       <webMaster>rui.ying@bristol.ac.uk (Rui Ying)</webMaster><lastBuildDate>Thu, 06 Dec 2018 12:02:48 &#43;0000</lastBuildDate><atom:link href="/tags/c/" rel="self" type="application/rss+xml" /><item>
   <title>C语言预处理</title>

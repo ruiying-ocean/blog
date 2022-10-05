@@ -165,6 +165,6 @@ DT.c2</code></pre>
 
 ---
 
-> Author: Rui Ying  
+> : Rui Ying  
 > URL: /2021-04-30-learning-data-table-4/  
 
