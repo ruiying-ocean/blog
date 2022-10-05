@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Embedding Chinese Fonts in R - </title><meta name="author" content="Rui Ying">
+<meta name="author-link" content="">
+<meta name="description" content="embed CJK fonts in R pdf" /><meta name="keywords" content='R; Chinese fonts' /><meta itemprop="name" content="Embedding Chinese Fonts in R">
+<meta itemprop="description" content="embed CJK fonts in R pdf"><meta itemprop="datePublished" content="2020-03-31T20:24:01+00:00" />
+<meta itemprop="dateModified" content="2020-03-31T20:24:01+00:00" />
+<meta itemprop="wordCount" content="213"><meta itemprop="image" content="/logo.png"/>
+<meta itemprop="keywords" content="R; Chinese fonts," /><meta property="og:title" content="Embedding Chinese Fonts in R" />
+<meta property="og:description" content="embed CJK fonts in R pdf" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2020-03-31-embedding-chinese-fonts-in-r/" /><meta property="og:image" content="/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-03-31T20:24:01+00:00" />
+<meta property="article:modified_time" content="2020-03-31T20:24:01+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/logo.png"/>
+
+<meta name="twitter:title" content="Embedding Chinese Fonts in R"/>
+<meta name="twitter:description" content="embed CJK fonts in R pdf"/>
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#ffffff" data-dark="#252627" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="canonical" href="/2020-03-31-embedding-chinese-fonts-in-r/" /><link rel="prev" href="/2019-07-03-%E5%A6%82%E4%BD%95%E5%88%86%E8%BE%A8%E4%B8%89%E6%96%87%E9%B1%BC%E9%B2%91%E9%B1%BC%E5%A4%A7%E9%A9%AC%E5%93%88%E9%B1%BC/" /><link rel="next" href="/2020-12-12-use-emacs-as-python-ide/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Embedding Chinese Fonts in R",
+    "inLanguage": "",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "\/2020-03-31-embedding-chinese-fonts-in-r\/"
+    },"genre": "posts","keywords": "R; Chinese fonts","wordcount":  213 ,
+    "url": "\/2020-03-31-embedding-chinese-fonts-in-r\/","datePublished": "2020-03-31T20:24:01+00:00","dateModified": "2020-03-31T20:24:01+00:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Rui Ying"
+      },"description": ""
+  }
+  </script></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title=""><span class="header-title-text">Heaven</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item text-center">
+              <a
+                class="menu-link"
+                href="/categories/"
+                
+                
+              ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> categories</a></li><li class="menu-item text-center">
+              <a
+                class="menu-link"
+                href="/posts/"
+                
+                
+              ><i class="fa-solid fa-pen-nib fa-fw fa-sm" aria-hidden="true"></i> posts</a></li><li class="menu-item text-center">
+              <a
+                class="menu-link"
+                href="/about/"
+                
+                
+              ><i class="fa-regular fa-address-card fa-fw fa-sm" aria-hidden="true"></i> about</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="Search titles or contents ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title=""><span class="header-title-text">Heaven</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="Search titles or contents ..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
+            </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              Cancel
+            </a>
+          </li><li
+              class="menu-item text-center"
+            ><a
+                  class="menu-link"
+                  href="/categories/"
+                  
+                  
+                ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> categories</a></li><li
+              class="menu-item text-center"
+            ><a
+                  class="menu-link"
+                  href="/posts/"
+                  
+                  
+                ><i class="fa-solid fa-pen-nib fa-fw fa-sm" aria-hidden="true"></i> posts</a></li><li
+              class="menu-item text-center"
+            ><a
+                  class="menu-link"
+                  href="/about/"
+                  
+                  
+                ><i class="fa-regular fa-address-card fa-fw fa-sm" aria-hidden="true"></i> about</a></li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><main class="container" data-page-style="normal"><aside class="toc" id="toc-auto"><h2 class="toc-title">Contents&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    
+</aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX">
+        <span>Embedding Chinese Fonts in R</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><img
+    class="lazyload avatar"
+    src="/svg/loading.min.svg"
+    data-src="/images/avatar.jpg"
+    data-srcset="/images/avatar.jpg, /images/avatar.jpg 1.5x, /images/avatar.jpg 2x"
+    data-sizes="auto"
+    alt="Rui Ying"
+    title="Rui Ying"/>&nbsp;Rui Ying</span></span>
+          <span class="post-category">included in <a href="/categories/programming/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Programming</a></span></div>
+      <div class="post-meta-line"><span title=2020-03-31&#32;20:24:01><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2020-03-31">2020-03-31</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 213 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> One minute</span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>Contents</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#aim-of-this-blog">Aim of this blog</a></li>
+    <li><a href="#used-packages">Used packages</a></li>
+    <li><a href="#example">Example</a></li>
+    <li><a href="#another-example">Another Example</a></li>
+  </ul>
+</nav></div>
+      </div><div
+      class="content"
+      id="content"
+      
+      
+    ><h2 id="aim-of-this-blog">Aim of this blog</h2>
+<p>To record the process of embedding Chinese font(or other CJK fonts) in R-created pdf files.</p>
+<h2 id="used-packages">Used packages</h2>
+<ul>
+<li>showtext(primary)</li>
+<li>extrafont</li>
+</ul>
+<h2 id="example">Example</h2>
+<p>If you wanna simply show chinese text in plot, showtext package is enought, &lsquo;cause it includes a open source font &ldquo;wqy-microhei&rdquo;
+Here is an example.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-R" data-lang="R"><span class="nf">library</span><span class="p">(</span><span class="n">showtext</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+<span class="nf">showtext_auto</span><span class="p">()</span>
+
+<span class="c1">#plot example</span>
+<span class="nf">set.seed</span><span class="p">(</span><span class="m">123</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">&lt;-</span> <span class="nf">rnorm</span><span class="p">(</span><span class="m">10</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">&lt;-</span> <span class="nf">rnorm</span><span class="p">(</span><span class="m">10</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">&lt;-</span> <span class="nf">data.frame</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">)</span>
+<span class="n">p</span> <span class="o">&lt;-</span> <span class="nf">ggplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">))</span><span class="o">+</span><span class="nf">geom_point</span><span class="p">()</span><span class="o">+</span><span class="nf">geom_smooth</span><span class="p">()</span><span class="o">+</span>
+	<span class="nf">theme_bw</span><span class="p">(</span><span class="n">base_family</span> <span class="o">=</span> <span class="s">&#34;wqy-microhei&#34;</span><span class="p">)</span>
+<span class="n">p</span> <span class="o">+</span> <span class="nf">xlab</span><span class="p">(</span><span class="s">&#34;中文&#34;</span><span class="p">)</span><span class="o">+</span><span class="nf">ylab</span><span class="p">(</span><span class="s">&#34;字体&#34;</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="another-example">Another Example</h2>
+<p>If you gonna use other fonts in R, such as Songti(&ldquo;宋体&rdquo;) which is used in many Chinese academic article, you need to firstly download (or copy them from your OS) and import them, and use them as the previous example.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-R" data-lang="R"><span class="c1"># import fonts from Windows</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">extrafont</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">showtext</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+
+<span class="c1">#Strategy1 COPY FONTS FROM SYSTEM</span>
+<span class="c1">#Note: You have to run font_import() again when you have one new font</span>
+<span class="nf">font_import</span><span class="p">()</span>
+<span class="nf">loadfonts</span><span class="p">(</span><span class="n">device</span><span class="o">=</span><span class="s">&#34;pdf&#34;</span><span class="p">)</span>
+<span class="nf">fonts</span><span class="p">()</span> <span class="c1">#show all fonts</span>
+
+<span class="c1">#Straetegy2 ADD ONE FONT</span>
+<span class="nf">font_add</span><span class="p">(</span><span class="s">&#34;Songti&#34;</span><span class="p">,</span><span class="s">&#34;~/Downloads/SourceHanSanSerif.otf&#34;</span><span class="p">)</span>
+
+<span class="c1">#Strategy3 DOWNLOAD FONTS</span>
+<span class="nf">font_add_google</span><span class="p">(</span><span class="s">&#34;Lobster&#34;</span><span class="p">,</span> <span class="s">&#34;lobster&#34;</span><span class="p">)</span>
+
+<span class="nf">set.seed</span><span class="p">(</span><span class="m">123</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">&lt;-</span> <span class="nf">rnorm</span><span class="p">(</span><span class="m">10</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">&lt;-</span> <span class="nf">rnorm</span><span class="p">(</span><span class="m">10</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">&lt;-</span> <span class="nf">data.frame</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">)</span>
+<span class="n">p</span> <span class="o">&lt;-</span> <span class="nf">ggplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">))</span><span class="o">+</span><span class="nf">geom_point</span><span class="p">()</span><span class="o">+</span><span class="nf">geom_smooth</span><span class="p">()</span><span class="o">+</span>
+	<span class="nf">theme_bw</span><span class="p">(</span><span class="n">base_family</span> <span class="o">=</span> <span class="s">&#34;Songti&#34;</span><span class="p">)</span>
+<span class="n">p</span> <span class="o">+</span> <span class="nf">xlab</span><span class="p">(</span><span class="s">&#34;中文&#34;</span><span class="p">)</span><span class="o">+</span><span class="nf">ylab</span><span class="p">(</span><span class="s">&#34;字体&#34;</span><span class="p">)</span>
+
+</code></pre></td></tr></table>
+</div>
+</div></div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title=2020-03-31&#32;20:24:01>Updated on 2020-03-31&nbsp;</span>
+      </div><div class="post-info-license">
+          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+        </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"><span><a href="/2020-03-31-embedding-chinese-fonts-in-r/index.md" title="Read Markdown" class="link-to-markdown">Read Markdown</a></span></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/2020-03-31-embedding-chinese-fonts-in-r/" data-title="Embedding Chinese Fonts in R" data-via="YingRui17" data-hashtags="R; Chinese fonts"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/2020-03-31-embedding-chinese-fonts-in-r/" data-hashtag="R; Chinese fonts"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="/2020-03-31-embedding-chinese-fonts-in-r/" data-title="Embedding Chinese Fonts in R" data-web><i class="fa-brands fa-whatsapp fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/2020-03-31-embedding-chinese-fonts-in-r/" data-title="Embedding Chinese Fonts in R"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="/2020-03-31-embedding-chinese-fonts-in-r/" data-title="Embedding Chinese Fonts in R"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Myspace" data-sharer="myspace" data-url="/2020-03-31-embedding-chinese-fonts-in-r/" data-title="Embedding Chinese Fonts in R" data-description=""><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="/2020-03-31-embedding-chinese-fonts-in-r/" data-title="Embedding Chinese Fonts in R" data-description=""><i class="fa-brands fa-blogger fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="/2020-03-31-embedding-chinese-fonts-in-r/" data-title="Embedding Chinese Fonts in R"><i class="fa-brands fa-evernote fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/r-chinese-fonts/">R; Chinese fonts</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/2019-07-03-%E5%A6%82%E4%BD%95%E5%88%86%E8%BE%A8%E4%B8%89%E6%96%87%E9%B1%BC%E9%B2%91%E9%B1%BC%E5%A4%A7%E9%A9%AC%E5%93%88%E9%B1%BC/" class="prev" rel="prev" title="如何分辨三文鱼、鲑鱼、大马哈鱼"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>如何分辨三文鱼、鲑鱼、大马哈鱼</a>
+      <a href="/2020-12-12-use-emacs-as-python-ide/" class="next" rel="next" title="Use Emacs as a Python IDE">Use Emacs as a Python IDE<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered">Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.89.4">Hugo</a> | Theme - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.2.16-RC"><img class="fixit-icon" src="/images/fixit.svg" alt="FixIt logo" />&nbsp;FixIt</a>
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2019 - 2022</span><span class="author" itemprop="copyrightHolder">
+              <a href="/">Rui Ying</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line ibruce">
+          <span id="busuanzi_container_site_uv" title='Total visitors'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='Total visits'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
+        </div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+        </div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">Theme FixIt works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/lunr/lunr.min.js" defer></script><script src="/lib/lazysizes/lazysizes.min.js" async defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/katex/katex.min.js" defer></script><script src="/lib/katex/auto-render.min.js" defer></script><script src="/lib/katex/copy-tex.min.js" defer></script><script src="/lib/katex/mhchem.min.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async defer></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","editLockTitle":"Lock editable code block","editUnLockTitle":"Unlock editable code block","editable":true,"maxShownLines":10},"comment":{"enable":false},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"enablePWA":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50,"type":"lunr"}};</script><script src="/js/theme.min.js" defer></script></body>
+</html>

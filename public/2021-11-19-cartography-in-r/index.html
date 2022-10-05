@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Cartography in R - </title><meta name="author" content="Rui Ying">
+<meta name="author-link" content="">
+<meta name="description" content="Plot map in R" /><meta name="keywords" content='R; Data Science' /><meta itemprop="name" content="Cartography in R">
+<meta itemprop="description" content="Plot map in R"><meta itemprop="datePublished" content="2021-11-19T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-11-19T12:22:43+00:00" />
+<meta itemprop="wordCount" content="963"><meta itemprop="image" content="/logo.png"/>
+<meta itemprop="keywords" content="R; Data Science," /><meta property="og:title" content="Cartography in R" />
+<meta property="og:description" content="Plot map in R" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2021-11-19-cartography-in-r/" /><meta property="og:image" content="/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-11-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-11-19T12:22:43+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/logo.png"/>
+
+<meta name="twitter:title" content="Cartography in R"/>
+<meta name="twitter:description" content="Plot map in R"/>
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#ffffff" data-dark="#252627" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="canonical" href="/2021-11-19-cartography-in-r/" /><link rel="prev" href="/2021-07-31-experience-of-studying-vim/" /><link rel="next" href="/2022-02-18-fortran-basics/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Cartography in R",
+    "inLanguage": "",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "\/2021-11-19-cartography-in-r\/"
+    },"genre": "posts","keywords": "R; Data Science","wordcount":  963 ,
+    "url": "\/2021-11-19-cartography-in-r\/","datePublished": "2021-11-19T00:00:00+00:00","dateModified": "2021-11-19T12:22:43+00:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Rui Ying"
+      },"description": ""
+  }
+  </script></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title=""><span class="header-title-text">Heaven</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item text-center">
+              <a
+                class="menu-link"
+                href="/categories/"
+                
+                
+              ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> categories</a></li><li class="menu-item text-center">
+              <a
+                class="menu-link"
+                href="/posts/"
+                
+                
+              ><i class="fa-solid fa-pen-nib fa-fw fa-sm" aria-hidden="true"></i> posts</a></li><li class="menu-item text-center">
+              <a
+                class="menu-link"
+                href="/about/"
+                
+                
+              ><i class="fa-regular fa-address-card fa-fw fa-sm" aria-hidden="true"></i> about</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="Search titles or contents ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title=""><span class="header-title-text">Heaven</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="Search titles or contents ..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
+            </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              Cancel
+            </a>
+          </li><li
+              class="menu-item text-center"
+            ><a
+                  class="menu-link"
+                  href="/categories/"
+                  
+                  
+                ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> categories</a></li><li
+              class="menu-item text-center"
+            ><a
+                  class="menu-link"
+                  href="/posts/"
+                  
+                  
+                ><i class="fa-solid fa-pen-nib fa-fw fa-sm" aria-hidden="true"></i> posts</a></li><li
+              class="menu-item text-center"
+            ><a
+                  class="menu-link"
+                  href="/about/"
+                  
+                  
+                ><i class="fa-regular fa-address-card fa-fw fa-sm" aria-hidden="true"></i> about</a></li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><main class="container" data-page-style="normal"><aside class="toc" id="toc-auto"></aside>
+
+  <aside class="aside-custom">
+    
+</aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX">
+        <span>Cartography in R</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><img
+    class="lazyload avatar"
+    src="/svg/loading.min.svg"
+    data-src="/images/avatar.jpg"
+    data-srcset="/images/avatar.jpg, /images/avatar.jpg 1.5x, /images/avatar.jpg 2x"
+    data-sizes="auto"
+    alt="Rui Ying"
+    title="Rui Ying"/>&nbsp;Rui Ying</span></span>
+          <span class="post-category">included in <a href="/categories/programming/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Programming</a></span></div>
+      <div class="post-meta-line"><span title=2021-11-19&#32;00:00:00><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2021-11-19">2021-11-19</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 963 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 5 minutes</span>&nbsp;</div>
+    </div><div
+      class="content"
+      id="content"
+      
+      
+    ><h1 id="introduction">Introduction</h1>
+<p>This post is to simply introduce how to make a map in R environment, or more officially,
+geographic/spatial visualisation. However, I just found numerous methods to do this in R,
+depending on which data type you have. So this post will not introduce the basic of R and GIS.
+After all, I am also not an expert in this.</p>
+<p>To make a map, at least two types of data are needed:</p>
+<ul>
+<li>Geographic Information System (GIS) data for position</li>
+<li>Research data <em>per se</em> for value</li>
+</ul>
+<p>Sometimes these two are combined to a unified data (e.g., population data as an attribute in a shapefile). However,
+in most cases for those who are not studying geography (like me), we have to join
+the research data (in csv, netCDF) to GIS fields based on shared &ldquo;key/id column&rdquo;. The relevant GIS data probably can be found in third-party packages such as <code>maps</code> or <code>mapdata</code>, but for more demands like custom resolution, one have to download in other sources.</p>
+<h1 id="csv-file-with-lat-and-long-columns">CSV file with lat and long columns</h1>
+<p>There are two methods to plot a csv data frame on a map:</p>
+<ul>
+<li>
+<p>plot layers using <code>ggplot2</code></p>
+</li>
+<li>
+<p>transform to <code>sf</code></p>
+</li>
+</ul>
+<p>Because the latter one is same to sections below, so I will introduce <code>ggplot2</code>,
+which is very (but not limitedly) proficient at analysing data frames.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">maps</span><span class="p">)</span> <span class="c1"># outline data for continents,countries</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">mapdata</span><span class="p">)</span> <span class="c1"># extra map datasets</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">mapproj</span><span class="p">)</span> <span class="c1"># map projection</span>
+<span class="c1">#library(maptools)</span>
+
+<span class="c1"># a quickest method to plot a global map</span>
+<span class="c1"># map(&#34;world&#34;)</span>
+
+<span class="c1"># Here I create a simple dataframe, which can be replaced to your data by read.csv()</span>
+<span class="n">toy_df</span> <span class="o">&lt;-</span> <span class="nf">data.frame</span><span class="p">(</span><span class="n">city</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&#34;Bristol&#34;</span><span class="p">,</span> <span class="s">&#34;Shangrao&#34;</span><span class="p">),</span>
+                     <span class="n">long</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="m">51.45</span><span class="p">,</span> <span class="m">28.45</span><span class="p">),</span>
+                     <span class="n">lat</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="m">-2.59</span><span class="p">,</span> <span class="m">117.94</span><span class="p">))</span>
+
+<span class="n">world</span> <span class="o">&lt;-</span> <span class="nf">map_data</span><span class="p">(</span><span class="s">&#34;world&#34;</span><span class="p">)</span> <span class="c1"># a ggplot2 function to get a world data.frame,see also borders</span>
+
+<span class="c1"># notice x is lat and y is long, which differs normal impression</span>
+<span class="nf">ggplot</span><span class="p">(</span><span class="n">world</span><span class="p">)</span> <span class="o">+</span>
+  <span class="nf">geom_polygon</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">long</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">lat</span><span class="p">,</span> <span class="n">group</span><span class="o">=</span><span class="n">group</span><span class="p">))</span> <span class="o">+</span> 
+  <span class="nf">geom_label</span><span class="p">(</span><span class="n">data</span><span class="o">=</span> <span class="n">toy_df</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">long</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">city</span><span class="p">))</span> <span class="o">+</span>
+  <span class="nf">coord_map</span><span class="p">(</span><span class="s">&#34;mollweide&#34;</span><span class="p">,</span> <span class="n">xlim</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="m">-180</span><span class="p">,</span><span class="m">180</span><span class="p">))</span> <span class="o">+</span> <span class="c1"># change the projection</span>
+  <span class="nf">theme_minimal</span><span class="p">()</span>
+</code></pre></td></tr></table>
+</div>
+</div><img src="/2021-11-19-cartography-in-r/index_files/figure-html/unnamed-chunk-1-1.png" width="672" />
+<p>Actually<code>ggfortify</code> provides the <code>autoplot</code> function, which is a quicker wrapper for ggplot2. So
+we can do the same by using less command.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="nf">library</span><span class="p">(</span><span class="n">ggfortify</span><span class="p">)</span>
+<span class="n">world</span> <span class="o">&lt;-</span>  <span class="nf">map</span><span class="p">(</span><span class="s">&#39;world&#39;</span><span class="p">,</span> <span class="n">plot</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span>
+<span class="nf">autoplot</span><span class="p">(</span><span class="n">world</span><span class="p">,</span> <span class="n">geom</span> <span class="o">=</span> <span class="s">&#39;polygon&#39;</span><span class="p">)</span> <span class="o">+</span>
+  <span class="nf">geom_point</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">toy_df</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">long</span><span class="p">),</span>
+             <span class="n">color</span><span class="o">=</span><span class="s">&#34;red&#34;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="m">2</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><img src="/2021-11-19-cartography-in-r/index_files/figure-html/unnamed-chunk-2-1.png" width="672" />
+<p>There is another geom type: geom_map in ggplot. The difference between geom_map and
+geom_polygon is that the latter just plot the polygon (or position) and does not care about
+the value, but the geom_map contains both position and value information. Therefore,
+there must be a id columns shared by both polygon and value data frames, but no
+need to add lat/long in aes().</p>
+<p>An example</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="n">fr_map</span> <span class="o">&lt;-</span> <span class="nf">map_data</span><span class="p">(</span><span class="s">&#34;france&#34;</span><span class="p">)</span>
+<span class="n">fr_data</span> <span class="o">&lt;-</span> <span class="nf">data.frame</span><span class="p">(</span><span class="n">region</span> <span class="o">=</span> <span class="nf">unique</span><span class="p">(</span><span class="n">fr_map</span><span class="o">$</span><span class="n">region</span><span class="p">),</span> 
+                      <span class="n">value</span>     <span class="o">=</span> <span class="nf">rnorm</span><span class="p">(</span><span class="nf">length</span><span class="p">(</span><span class="nf">unique</span><span class="p">(</span><span class="n">fr_map</span><span class="o">$</span><span class="n">region</span><span class="p">))))</span>
+
+<span class="nf">ggplot</span><span class="p">(</span><span class="n">fr_data</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">map_id</span> <span class="o">=</span> <span class="n">region</span><span class="p">))</span> <span class="o">+</span>
+  <span class="nf">geom_map</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">fill</span> <span class="o">=</span> <span class="n">value</span><span class="p">),</span> <span class="n">map</span><span class="o">=</span><span class="n">fr_map</span><span class="p">)</span> <span class="o">+</span>
+  <span class="nf">expand_limits</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">fr_map</span><span class="o">$</span><span class="n">long</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">fr_map</span><span class="o">$</span><span class="n">lat</span><span class="p">)</span> <span class="o">+</span>
+  <span class="nf">coord_fixed</span><span class="p">()</span>
+</code></pre></td></tr></table>
+</div>
+</div><img src="/2021-11-19-cartography-in-r/index_files/figure-html/unnamed-chunk-3-1.png" width="672" />
+<h1 id="sf-object--geom_sf">sf object + geom_sf</h1>
+<p>shp file can be read in R through <code>sf</code> or <code>rgal</code>, and then plot using <code>ggplot</code> .</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="c1">#from https://r-spatial.org/r/2018/10/25/ggplot2-sf.htm</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">sf</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">## Linking to GEOS 3.10.2, GDAL 3.4.2, PROJ 8.2.1; sf_use_s2() is TRUE
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="nf">library</span><span class="p">(</span><span class="n">rnaturalearth</span><span class="p">)</span> <span class="c1">#another public map data package</span>
+<span class="c1">#library(rnaturalearthdata)</span>
+
+<span class="n">it_data</span> <span class="o">=</span><span class="nf">st_as_sf</span><span class="p">(</span><span class="nf">map</span><span class="p">(</span><span class="s">&#34;italy&#34;</span><span class="p">,</span> <span class="n">plot</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">))</span> <span class="c1">#polygons</span>
+<span class="n">it_sf</span> <span class="o">&lt;-</span> <span class="nf">ne_countries</span><span class="p">(</span><span class="n">scale</span> <span class="o">=</span> <span class="s">&#34;medium&#34;</span><span class="p">,</span> <span class="n">country</span><span class="o">=</span><span class="s">&#34;italy&#34;</span><span class="p">,</span><span class="n">returnclass</span> <span class="o">=</span> <span class="s">&#34;sf&#34;</span><span class="p">)</span> <span class="c1">#an outline</span>
+<span class="nf">ggplot</span><span class="p">(</span><span class="n">it_sf</span><span class="p">)</span><span class="o">+</span><span class="nf">geom_sf</span><span class="p">()</span><span class="o">+</span><span class="nf">geom_sf</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">it_data</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="kc">NA</span><span class="p">)</span> 
+</code></pre></td></tr></table>
+</div>
+</div><img src="/2021-11-19-cartography-in-r/index_files/figure-html/unnamed-chunk-4-1.png" width="672" />
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="c1">#and you can add more geom_sf() based on data in your  hand</span>
+<span class="c1">#plot(uk_sf$geometry) #uk_sf$geometry equals st_geomety(uk_sf)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="sf-object--tmap">sf object + tmap</h1>
+<p><code>tmap</code> has a similar layer-based syntax to plot map, but should be more professional and specilised than <code>ggplot2.</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="c1">#from https://geocompr.robinlovelace.net/adv-map.html</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">spData</span><span class="p">)</span>
+<span class="c1">#library(spDataLarge)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">tmap</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">sf</span><span class="p">)</span>
+
+<span class="n">world</span> <span class="o">&lt;-</span> <span class="n">spData</span><span class="o">::</span><span class="n">world</span>
+<span class="n">toy_sf</span> <span class="o">&lt;-</span> <span class="nf">st_as_sf</span><span class="p">(</span><span class="n">toy_df</span><span class="p">,</span> <span class="n">coords</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&#34;lat&#34;</span><span class="p">,</span> <span class="s">&#34;long&#34;</span><span class="p">),</span> <span class="n">crs</span><span class="o">=</span><span class="m">4326</span><span class="p">)</span> <span class="c1">#WGS84</span>
+
+<span class="nf">tm_shape</span><span class="p">(</span><span class="n">world</span><span class="p">)</span><span class="o">+</span><span class="nf">tm_borders</span><span class="p">()</span><span class="o">+</span><span class="nf">tm_fill</span><span class="p">()</span><span class="o">+</span>
+  <span class="nf">tm_shape</span><span class="p">(</span><span class="n">toy_sf</span><span class="p">)</span> <span class="o">+</span> <span class="nf">tm_dots</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="m">.5</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><img src="/2021-11-19-cartography-in-r/index_files/figure-html/unnamed-chunk-5-1.png" width="672" />
+<h1 id="ggmap">ggmap</h1>
+<p><code>ggmap</code> is another friendly package for people from other research background, it provides
+a function <code>get_map()</code> to download some map data from google, open street map and so on.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="nf">library</span><span class="p">(</span><span class="n">ggmap</span><span class="p">)</span>
+
+<span class="c1">#downloading raster data by get_map(). REQUIRE GOOGLE API</span>
+<span class="n">gmap</span> <span class="o">&lt;-</span> <span class="nf">get_stamenmap</span><span class="p">(</span><span class="n">bbox</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="n">left</span> <span class="o">=</span> <span class="m">-10</span><span class="p">,</span> <span class="n">bottom</span> <span class="o">=</span> <span class="m">50</span><span class="p">,</span> <span class="n">right</span> <span class="o">=</span> <span class="m">5</span><span class="p">,</span> <span class="n">top</span> <span class="o">=</span> <span class="m">60</span><span class="p">),</span>
+                      <span class="n">zoom</span> <span class="o">=</span> <span class="m">6</span><span class="p">,</span>
+                      <span class="n">maptype</span><span class="o">=</span><span class="s">&#39;watercolor&#39;</span><span class="p">,</span>
+                      <span class="n">messaging</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span>
+
+<span class="nf">ggmap</span><span class="p">(</span><span class="n">gmap</span><span class="p">)</span> <span class="o">+</span> <span class="nf">theme_void</span><span class="p">()</span>
+</code></pre></td></tr></table>
+</div>
+</div><img src="/2021-11-19-cartography-in-r/index_files/figure-html/unnamed-chunk-6-1.png" width="672" />
+<h1 id="raster--levelplotgeom_raster">raster + levelplot/geom_raster</h1>
+<p>netCDF data can be transformed to raster format.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="nf">library</span><span class="p">(</span><span class="n">ncdf4</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">terra</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">rasterVis</span><span class="p">)</span>
+
+<span class="c1"># an example file from UCAR</span>
+<span class="c1"># https://www.unidata.ucar.edu/software/netcdf/examples/files.html</span>
+<span class="n">nc</span> <span class="o">&lt;-</span> <span class="nf">nc_open</span><span class="p">(</span><span class="s">&#34;tos_O1_2001-2002.nc&#34;</span><span class="p">)</span>
+<span class="c1">#names(nc$var) # print all variables</span>
+<span class="n">sst_K</span> <span class="o">&lt;-</span> <span class="nf">ncvar_get</span><span class="p">(</span><span class="n">nc</span><span class="p">,</span> <span class="n">varid</span><span class="o">=</span><span class="s">&#34;tos&#34;</span><span class="p">)</span> <span class="c1">#in Kelvin</span>
+<span class="n">sst</span> <span class="o">&lt;-</span> <span class="n">sst_K</span> <span class="o">-</span> <span class="m">273.15</span> <span class="c1">#in Celsius</span>
+<span class="c1">#dim(sst) # check dimension</span>
+<span class="c1">#image(sst[,,1])</span>
+
+<span class="n">sst_raster</span> <span class="o">&lt;-</span> <span class="nf">flip</span><span class="p">(</span><span class="nf">rast</span><span class="p">(</span><span class="nf">t</span><span class="p">(</span><span class="n">sst[</span><span class="p">,,</span><span class="m">1</span><span class="n">]</span><span class="p">)))</span>
+<span class="nf">plot</span><span class="p">(</span><span class="n">sst_raster</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><img src="/2021-11-19-cartography-in-r/index_files/figure-html/unnamed-chunk-7-1.png" width="672" />
+<p>We can also use ggplot to do the plotting. But notice that the array from netCDF is not containing
+CRS data, that&rsquo;s why we have x-y axis with 0-1 range.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+
+<span class="c1">#to use geom_raster/geom_tile, we should transfer raster to a data.frame</span>
+<span class="n">sst_df</span> <span class="o">&lt;-</span> <span class="n">sst_raster</span> <span class="o">|&gt;</span> <span class="n">terra</span><span class="o">::</span><span class="nf">as.data.frame</span><span class="p">(</span><span class="n">xy</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">)</span> <span class="c1">#pipe requires R &gt; 4.1, otherwise use %&gt;% in tidyverse</span>
+<span class="nf">names</span><span class="p">(</span><span class="n">sst_df</span><span class="p">)</span><span class="n">[3]</span> <span class="o">&lt;-</span> <span class="s">&#34;sst&#34;</span>
+<span class="nf">ggplot</span><span class="p">(</span><span class="n">sst_df</span><span class="p">)</span> <span class="o">+</span> <span class="nf">geom_raster</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">sst</span><span class="p">))</span> <span class="o">+</span> <span class="nf">theme_light</span><span class="p">()</span> <span class="o">+</span> <span class="nf">scale_fill_viridis_c</span><span class="p">()</span>
+</code></pre></td></tr></table>
+</div>
+</div><img src="/2021-11-19-cartography-in-r/index_files/figure-html/unnamed-chunk-8-1.png" width="672" />
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="c1"># what&#39;s the difference between |&gt; and %&gt;%?</span>
+<span class="c1">#https://stackoverflow.com/questions/67633022/what-are-the-differences-between-rs-new-native-pipe-and-the-magrittr-pipe</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>As for the difference between <code>geom_tile</code>, <code>geom_raster</code>, let&rsquo;s see the offical answer:</p>
+<blockquote>
+<p>geom_rect() and geom_tile() do the same thing, but are parameterised differently: geom_rect() uses the locations of the four corners (xmin, xmax, ymin and ymax), while geom_tile() uses the center of the tile and its size (x, y, width, height). geom_raster() is a high performance special case for when all the tiles are the same size.</p>
+</blockquote>
+<h1 id="more-resources">More resources</h1>
+<ul>
+<li><code>rworldmap</code> for extra intersting data</li>
+<li><code>cowplot</code> for subplot added on ggplot objects</li>
+<li><code>gganimate</code> for animated plot</li>
+<li><code>leaflet</code> for interactive map</li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title=2021-11-19&#32;12:22:43>Updated on 2021-11-19&nbsp;</span>
+      </div><div class="post-info-license">
+          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+        </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"><span><a href="/2021-11-19-cartography-in-r/index.md" title="Read Markdown" class="link-to-markdown">Read Markdown</a></span></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/2021-11-19-cartography-in-r/" data-title="Cartography in R" data-via="YingRui17" data-hashtags="R; Data Science"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/2021-11-19-cartography-in-r/" data-hashtag="R; Data Science"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="/2021-11-19-cartography-in-r/" data-title="Cartography in R" data-web><i class="fa-brands fa-whatsapp fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/2021-11-19-cartography-in-r/" data-title="Cartography in R"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="/2021-11-19-cartography-in-r/" data-title="Cartography in R"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Myspace" data-sharer="myspace" data-url="/2021-11-19-cartography-in-r/" data-title="Cartography in R" data-description=""><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="/2021-11-19-cartography-in-r/" data-title="Cartography in R" data-description=""><i class="fa-brands fa-blogger fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="/2021-11-19-cartography-in-r/" data-title="Cartography in R"><i class="fa-brands fa-evernote fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/r-data-science/">R; Data Science</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/2021-07-31-experience-of-studying-vim/" class="prev" rel="prev" title="Experience of studying vim"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>Experience of studying vim</a>
+      <a href="/2022-02-18-fortran-basics/" class="next" rel="next" title="Fortran basics">Fortran basics<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered">Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.89.4">Hugo</a> | Theme - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.2.16-RC"><img class="fixit-icon" src="/images/fixit.svg" alt="FixIt logo" />&nbsp;FixIt</a>
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2019 - 2022</span><span class="author" itemprop="copyrightHolder">
+              <a href="/">Rui Ying</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line ibruce">
+          <span id="busuanzi_container_site_uv" title='Total visitors'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='Total visits'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
+        </div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+        </div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">Theme FixIt works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/lunr/lunr.min.js" defer></script><script src="/lib/lazysizes/lazysizes.min.js" async defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/katex/katex.min.js" defer></script><script src="/lib/katex/auto-render.min.js" defer></script><script src="/lib/katex/copy-tex.min.js" defer></script><script src="/lib/katex/mhchem.min.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async defer></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","editLockTitle":"Lock editable code block","editUnLockTitle":"Unlock editable code block","editable":true,"maxShownLines":10},"comment":{"enable":false},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"enablePWA":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50,"type":"lunr"}};</script><script src="/js/theme.min.js" defer></script></body>
+</html>

@@ -1,0 +1,24 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>R; Data Science - Tag - </title>
+    <link>/tags/r-data-science/</link>
+    <description>R; Data Science - Tag - </description>
+    <generator>Hugo -- gohugo.io</generator><managingEditor>rui.ying@bristol.ac.uk (Rui Ying)</managingEditor>
+      <webMaster>rui.ying@bristol.ac.uk (Rui Ying)</webMaster><lastBuildDate>Fri, 19 Nov 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="/tags/r-data-science/" rel="self" type="application/rss+xml" /><item>
+  <title>Cartography in R</title>
+  <link>/2021-11-19-cartography-in-r/</link>
+  <pubDate>Fri, 19 Nov 2021 00:00:00 &#43;0000</pubDate>
+  <author>Rui Ying</author>
+  <guid>/2021-11-19-cartography-in-r/</guid>
+  <description><![CDATA[Plot map in R]]></description>
+</item>
+<item>
+  <title>Review data analysis in R</title>
+  <link>/2021-01-06-review-data-analysis-in-r/</link>
+  <pubDate>Wed, 06 Jan 2021 00:00:00 &#43;0000</pubDate>
+  <author>Rui Ying</author>
+  <guid>/2021-01-06-review-data-analysis-in-r/</guid>
+  <description><![CDATA[tidyverse, reshap2 functions review]]></description>
+</item>
+</channel>
+</rss>

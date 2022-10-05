@@ -66,6 +66,6 @@ e.g. `cat > output.txt < input.txt`
 
 ---
 
-> : Rui Ying  
+> Author: Rui Ying  
 > URL: /2021-01-04-ssh-and-some-linux-commands/  
 

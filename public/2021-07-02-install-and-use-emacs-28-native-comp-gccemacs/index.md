@@ -181,6 +181,6 @@ My experience is that it's significantly faster on Mac, which is why I spend mor
 
 ---
 
-> : Rui Ying  
+> Author: Rui Ying  
 > URL: /2021-07-02-install-and-use-emacs-28-native-comp-gccemacs/  
 
