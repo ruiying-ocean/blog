@@ -6,7 +6,7 @@ subtitle: ""
 summary: "embed CJK fonts in R pdf"
 authors: [Rui Ying]
 tags: [R; Chinese fonts]
-categories: [R]
+categories: [Programming]
 date: 2020-03-31T20:24:01Z
 lastmod: 2020-03-31T20:24:01Z
 featured: false

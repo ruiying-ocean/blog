@@ -3,8 +3,7 @@ title: Use Emacs on a remote shell
 author: Rui Ying
 date: '2021-07-12'
 slug: []
-categories:
-  - Emacs
+categories: [Programming]
 tags: []
 subtitle: ''
 summary: 'Another way to run Emacs'

@@ -3,10 +3,8 @@ title: SSH and Some Linux Commands
 author: Rui Ying
 date: '2021-01-04'
 slug: []
-categories:
-  - Linux
-  - SSH
-tags: []
+categories: [Programming]
+tags: [Linux, SSH]
 ---
 # What's public key and private key (in my understanding)
 Public key and private key are generated pairwisely. Only each other can decode the other. One of the pair can be the lock and the other can be the key.

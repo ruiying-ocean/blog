@@ -4,7 +4,7 @@ subtitle: ""
 summary: " "
 authors: [Rui Ying]
 tags: [Emacs; WSL]
-categories: [Emacs]
+categories: [Programming]
 date: 2020-12-12T14:39:42Z
 lastmod: 2020-12-12T14:39:42Z
 featured: false

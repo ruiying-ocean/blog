@@ -3,8 +3,7 @@ title: REGEXP note
 author: Rui Ying
 date: '2021-05-12'
 slug: []
-categories:
-  - Linux
+categories: [Programming]
 tags: []
 subtitle: ''
 summary: 'Grep and regexp usage'

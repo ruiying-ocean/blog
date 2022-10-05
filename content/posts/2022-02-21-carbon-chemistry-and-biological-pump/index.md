@@ -3,8 +3,7 @@ title: Carbon chemistry and biological pump
 author: Rui Ying
 date: '2022-02-21'
 slug: []
-categories:
-  - oceanography
+categories: [Science]
 tags:
   - tag1
   - tag2

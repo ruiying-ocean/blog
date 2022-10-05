@@ -3,10 +3,8 @@ title: Experience of studying vim
 author: Rui Ying
 date: '2021-07-31'
 slug: []
-categories:
-  - Vim
-  - Emacs
-tags: []
+categories: [Programming]
+tags: [Emacs; Vim]
 subtitle: ''
 summary: 'The holy war!'
 authors: []

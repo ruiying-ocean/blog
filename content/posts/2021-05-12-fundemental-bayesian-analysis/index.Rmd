@@ -3,8 +3,7 @@ title: Fundemental Bayesian analysis
 author: Rui Ying
 date: '2021-05-12'
 slug: []
-categories:
-  - Statistic
+categories: [Statistic]
 tags: []
 subtitle: ''
 summary: "A study note of 'Bayesian statistics for beginners'"

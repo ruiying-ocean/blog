@@ -3,8 +3,7 @@ title: Overview of functional diversity
 author: Rui Ying
 date: '2022-09-28'
 slug: []
-categories:
-  - Ecology
+categories: [Science]
 tags:
 subtitle: ''
 draft: No

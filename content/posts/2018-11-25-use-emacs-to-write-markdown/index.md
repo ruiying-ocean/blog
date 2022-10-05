@@ -6,7 +6,7 @@ subtitle: ""
 summary: "Emacs as md editor"
 authors: [Rui Ying]
 tags: [Emacs; Markdown]
-categories: [Emacs]
+categories: [Programming]
 date: 2018-11-25T20:54:20Z
 lastmod: 2020-12-25T16:54:18Z
 featured: false

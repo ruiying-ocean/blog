@@ -6,6 +6,7 @@ subtitle: ""
 summary: "A simple note of cgenie study"
 authors: [Rui Ying]
 tags: [cGENIE]
+categories: [Science]
 date: 2020-12-25T16:44:18Z
 lastmod: 2020-12-25T16:44:18Z
 featured: false

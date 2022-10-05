@@ -4,7 +4,7 @@ subtitle: ""
 summary: "Emacs package: elpy, company-quickhelper"
 authors: [Rui Ying]
 tags: [Emacs; python]
-categories: [Emacs]
+categories: [Programming]
 date: 2020-12-12T11:46:23Z
 lastmod: 2020-12-12T11:46:23Z
 featured: false

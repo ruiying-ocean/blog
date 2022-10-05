@@ -4,9 +4,7 @@ author: Rui Ying
 date: '2021-07-12'
 summary: 'A nice Windows programming environment in 2021'
 slug: []
-categories:
-  - Emacs
-  - Linux
+categories: [Programming]
 tags: []
 ---
 
