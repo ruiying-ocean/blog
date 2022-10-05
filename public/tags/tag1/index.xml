@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>tag1 - tag - </title>
+    <title>tag1 - Tag - </title>
     <link>/tags/tag1/</link>
-    <description>tag1 - tag - </description>
+    <description>tag1 - Tag - </description>
     <generator>Hugo -- gohugo.io</generator><managingEditor>rui.ying@bristol.ac.uk (Rui Ying)</managingEditor>
       <webMaster>rui.ying@bristol.ac.uk (Rui Ying)</webMaster><lastBuildDate>Mon, 21 Feb 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="/tags/tag1/" rel="self" type="application/rss+xml" /><item>
   <title>Carbon chemistry and biological pump</title>
@@ -11,14 +11,6 @@
   <author>Rui Ying</author>
   <guid>/2022-02-21-carbon-chemistry-and-biological-pump/</guid>
   <description><![CDATA[A brief study of Hain and Sigman, (2014) The Biological Pump in the Past]]></description>
-</item>
-<item>
-  <title>Fortran basics</title>
-  <link>/2022-02-18-fortran-basics/</link>
-  <pubDate>Fri, 18 Feb 2022 00:00:00 &#43;0000</pubDate>
-  <author>Rui Ying</author>
-  <guid>/2022-02-18-fortran-basics/</guid>
-  <description><![CDATA[We reviewed basic data types, structure and IO here]]></description>
 </item>
 </channel>
 </rss>

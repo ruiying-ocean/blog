@@ -15,6 +15,6 @@ finally becomes sexy (The screenshot is done by iShot).
 
 ---
 
-> : Rui Ying  
+> Author: Rui Ying  
 > URL: /2021-07-16-truly-dark-theme-of-rstudio/  
 

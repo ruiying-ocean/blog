@@ -31,6 +31,6 @@ In Linux, fuzzy finding fzf is another interesting program.
 
 ---
 
-> : Rui Ying  
+> Author: Rui Ying  
 > URL: /2021-05-12-a-grep-note/  
 

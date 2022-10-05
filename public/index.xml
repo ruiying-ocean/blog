@@ -4,9 +4,17 @@
     <link>/</link>
     <description>Welcome to my world</description>
     <generator>Hugo -- gohugo.io</generator><managingEditor>rui.ying@bristol.ac.uk (Rui Ying)</managingEditor>
-      <webMaster>rui.ying@bristol.ac.uk (Rui Ying)</webMaster><lastBuildDate>Mon, 21 Feb 2022 00:00:00 &#43;0000</lastBuildDate>
+      <webMaster>rui.ying@bristol.ac.uk (Rui Ying)</webMaster><lastBuildDate>Wed, 28 Sep 2022 00:00:00 &#43;0000</lastBuildDate>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
+  <title>Overview of functional diversity</title>
+  <link>/2022-09-28-overview-of-functional-diversity/</link>
+  <pubDate>Wed, 28 Sep 2022 00:00:00 &#43;0000</pubDate>
+  <author>Rui Ying</author>
+  <guid>/2022-09-28-overview-of-functional-diversity/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
   <title>Carbon chemistry and biological pump</title>
   <link>/2022-02-21-carbon-chemistry-and-biological-pump/</link>
   <pubDate>Mon, 21 Feb 2022 00:00:00 &#43;0000</pubDate>
@@ -21,6 +29,14 @@
   <author>Rui Ying</author>
   <guid>/2022-02-18-fortran-basics/</guid>
   <description><![CDATA[We reviewed basic data types, structure and IO here]]></description>
+</item>
+<item>
+  <title>Cartography in R</title>
+  <link>/2021-11-19-cartography-in-r/</link>
+  <pubDate>Fri, 19 Nov 2021 00:00:00 &#43;0000</pubDate>
+  <author>Rui Ying</author>
+  <guid>/2021-11-19-cartography-in-r/</guid>
+  <description><![CDATA[Plot map in R]]></description>
 </item>
 <item>
   <title>Experience of studying vim</title>
@@ -63,28 +79,12 @@
   <description><![CDATA[Emacs feature: native compilation plus 1M ways to download]]></description>
 </item>
 <item>
-  <title>REGEXP note</title>
-  <link>/2021-05-12-a-grep-note/</link>
+  <title>Fundemental Bayesian analysis</title>
+  <link>/2021-05-12-fundemental-bayesian-analysis/</link>
   <pubDate>Wed, 12 May 2021 00:00:00 &#43;0000</pubDate>
   <author>Rui Ying</author>
-  <guid>/2021-05-12-a-grep-note/</guid>
-  <description><![CDATA[Grep and regexp usage]]></description>
-</item>
-<item>
-  <title>Re-study biology/geology term in CN/EN</title>
-  <link>/2021-05-06-chinese-english-name-of-marine-organisms/</link>
-  <pubDate>Thu, 06 May 2021 00:00:00 &#43;0000</pubDate>
-  <author>Rui Ying</author>
-  <guid>/2021-05-06-chinese-english-name-of-marine-organisms/</guid>
-  <description><![CDATA[Biology/Geology term list]]></description>
-</item>
-<item>
-  <title>NPZ模型与人类社会的共通之处</title>
-  <link>/2021-04-21-the-similarity-between-marine-ecosystem-and-human-society/</link>
-  <pubDate>Wed, 21 Apr 2021 00:00:00 &#43;0000</pubDate>
-  <author>Rui Ying</author>
-  <guid>/2021-04-21-the-similarity-between-marine-ecosystem-and-human-society/</guid>
-  <description><![CDATA[Human society is similar to natural ecosystem]]></description>
+  <guid>/2021-05-12-fundemental-bayesian-analysis/</guid>
+  <description><![CDATA[A study note of &lsquo;Bayesian statistics for beginners&rsquo;]]></description>
 </item>
 </channel>
 </rss>

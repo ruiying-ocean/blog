@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Learning data.table (4) - </title><meta name="author" content="Rui Ying">
+<meta name="author-link" content="">
+<meta name="description" content="Day 4: reshape data.table" /><meta name="keywords" content='Theme, Hugo' /><meta itemprop="name" content="Learning data.table (4)">
+<meta itemprop="description" content="Day 4: reshape data.table"><meta itemprop="datePublished" content="2021-04-30T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-04-30T16:38:36+01:00" />
+<meta itemprop="wordCount" content="912"><meta itemprop="image" content="/logo.png"/>
+<meta itemprop="keywords" content="" /><meta property="og:title" content="Learning data.table (4)" />
+<meta property="og:description" content="Day 4: reshape data.table" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2021-04-30-learning-data-table-4/" /><meta property="og:image" content="/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-04-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-04-30T16:38:36+01:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/logo.png"/>
+
+<meta name="twitter:title" content="Learning data.table (4)"/>
+<meta name="twitter:description" content="Day 4: reshape data.table"/>
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#ffffff" data-dark="#252627" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="canonical" href="/2021-04-30-learning-data-table-4/" /><link rel="prev" href="/2021-04-29-learning-data-table-3/" /><link rel="next" href="/2021-05-06-chinese-english-name-of-marine-organisms/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Learning data.table (4)",
+    "inLanguage": "",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "\/2021-04-30-learning-data-table-4\/"
+    },"genre": "posts","wordcount":  912 ,
+    "url": "\/2021-04-30-learning-data-table-4\/","datePublished": "2021-04-30T00:00:00+00:00","dateModified": "2021-04-30T16:38:36+01:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Rui Ying"
+      },"description": ""
+  }
+  </script></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title=""><span class="header-title-text">Heaven</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item text-center">
+              <a
+                class="menu-link"
+                href="/categories/"
+                
+                
+              ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> categories</a></li><li class="menu-item text-center">
+              <a
+                class="menu-link"
+                href="/posts/"
+                
+                
+              ><i class="fa-solid fa-pen-nib fa-fw fa-sm" aria-hidden="true"></i> posts</a></li><li class="menu-item text-center">
+              <a
+                class="menu-link"
+                href="/about/"
+                
+                
+              ><i class="fa-regular fa-address-card fa-fw fa-sm" aria-hidden="true"></i> about</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="Search titles or contents ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title=""><span class="header-title-text">Heaven</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="Search titles or contents ..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
+            </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              Cancel
+            </a>
+          </li><li
+              class="menu-item text-center"
+            ><a
+                  class="menu-link"
+                  href="/categories/"
+                  
+                  
+                ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> categories</a></li><li
+              class="menu-item text-center"
+            ><a
+                  class="menu-link"
+                  href="/posts/"
+                  
+                  
+                ><i class="fa-solid fa-pen-nib fa-fw fa-sm" aria-hidden="true"></i> posts</a></li><li
+              class="menu-item text-center"
+            ><a
+                  class="menu-link"
+                  href="/about/"
+                  
+                  
+                ><i class="fa-regular fa-address-card fa-fw fa-sm" aria-hidden="true"></i> about</a></li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><main class="container" data-page-style="normal"><aside class="toc" id="toc-auto"><h2 class="toc-title">Contents&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    
+</aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX">
+        <span>Learning data.table (4)</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><img
+    class="lazyload avatar"
+    src="/svg/loading.min.svg"
+    data-src="/images/avatar.jpg"
+    data-srcset="/images/avatar.jpg, /images/avatar.jpg 1.5x, /images/avatar.jpg 2x"
+    data-sizes="auto"
+    alt="Rui Ying"
+    title="Rui Ying"/>&nbsp;Rui Ying</span></span>
+          <span class="post-category">included in <a href="/categories/programming/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Programming</a></span></div>
+      <div class="post-meta-line"><span title=2021-04-30&#32;00:00:00><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2021-04-30">2021-04-30</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 912 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 5 minutes</span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>Contents</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"></div>
+      </div><div
+      class="content"
+      id="content"
+      
+      
+    >
+
+
+<div id="melt-and-dcast" class="section level1">
+<h1><code>melt</code> and <code>dcast</code></h1>
+<p>Actually I don’t know the difference of these two functions between data.table and reshape2, but the use should be same.</p>
+<div id="melt-converts-wide-to-long" class="section level2">
+<h2><code>melt</code> converts wide to long</h2>
+<pre class="r"><code>library(data.table)
+s1 &lt;- &quot;family_id age_mother dob_child1 dob_child2 dob_child3
+1         30 1998-11-26 2000-01-29         NA
+2         27 1996-06-22         NA         NA
+3         26 2002-07-11 2004-04-05 2007-09-02
+4         32 2004-10-10 2009-08-27 2012-07-21
+5         29 2000-12-05 2005-02-28         NA&quot;
+DT &lt;- fread(s1)
+DT</code></pre>
+<pre><code>##    family_id age_mother dob_child1 dob_child2 dob_child3
+## 1:         1         30 1998-11-26 2000-01-29       &lt;NA&gt;
+## 2:         2         27 1996-06-22       &lt;NA&gt;       &lt;NA&gt;
+## 3:         3         26 2002-07-11 2004-04-05 2007-09-02
+## 4:         4         32 2004-10-10 2009-08-27 2012-07-21
+## 5:         5         29 2000-12-05 2005-02-28       &lt;NA&gt;</code></pre>
+<pre class="r"><code>str(DT)</code></pre>
+<pre><code>## Classes &#39;data.table&#39; and &#39;data.frame&#39;:   5 obs. of  5 variables:
+##  $ family_id : int  1 2 3 4 5
+##  $ age_mother: int  30 27 26 32 29
+##  $ dob_child1: IDate, format: &quot;1998-11-26&quot; &quot;1996-06-22&quot; ...
+##  $ dob_child2: IDate, format: &quot;2000-01-29&quot; NA ...
+##  $ dob_child3: IDate, format: NA NA ...
+##  - attr(*, &quot;.internal.selfref&quot;)=&lt;externalptr&gt;</code></pre>
+<pre class="r"><code>DT.melt &lt;- melt(DT, id.vars = c(&quot;family_id&quot;,&quot;age_mother&quot;),
+                measure.vars = c(&quot;dob_child1&quot;, &quot;dob_child2&quot;, &quot;dob_child3&quot;),
+                variable.name = &quot;child&quot;,
+                value.name = &quot;dob&quot;)
+head(DT.melt)</code></pre>
+<pre><code>##    family_id age_mother      child        dob
+## 1:         1         30 dob_child1 1998-11-26
+## 2:         2         27 dob_child1 1996-06-22
+## 3:         3         26 dob_child1 2002-07-11
+## 4:         4         32 dob_child1 2004-10-10
+## 5:         5         29 dob_child1 2000-12-05
+## 6:         1         30 dob_child2 2000-01-29</code></pre>
+<ul>
+<li>If neither <code>id.var</code> and <code>measure.var</code> are specified , the <code>id</code> will assign all non-integer, logical, numeric columns.</li>
+<li>By default, var and value name is simply <code>var</code> and <code>value</code>.</li>
+</ul>
+</div>
+<div id="dcast-converts-long-to-wide" class="section level2">
+<h2><code>dcast</code> converts long to wide</h2>
+<p>dcast use formula as below</p>
+<pre class="r"><code>dcast(DT.melt, family_id + age_mother ~ child, value.var = &quot;dob&quot;) #value.var is the variable to fill all cells</code></pre>
+<pre><code>##    family_id age_mother dob_child1 dob_child2 dob_child3
+## 1:         1         30 1998-11-26 2000-01-29       &lt;NA&gt;
+## 2:         2         27 1996-06-22       &lt;NA&gt;       &lt;NA&gt;
+## 3:         3         26 2002-07-11 2004-04-05 2007-09-02
+## 4:         4         32 2004-10-10 2009-08-27 2012-07-21
+## 5:         5         29 2000-12-05 2005-02-28       &lt;NA&gt;</code></pre>
+</div>
+</div>
+<div id="limitation-in-combine-multiple-columns" class="section level1">
+<h1>Limitation in combine multiple columns</h1>
+<pre class="r"><code>s2 &lt;- &quot;family_id age_mother dob_child1 dob_child2 dob_child3 gender_child1 gender_child2 gender_child3
+1         30 1998-11-26 2000-01-29         NA             1             2            NA
+2         27 1996-06-22         NA         NA             2            NA            NA
+3         26 2002-07-11 2004-04-05 2007-09-02             2             2             1
+4         32 2004-10-10 2009-08-27 2012-07-21             1             1             1
+5         29 2000-12-05 2005-02-28         NA             2             1            NA&quot;
+DT &lt;- fread(s2)
+DT</code></pre>
+<pre><code>##    family_id age_mother dob_child1 dob_child2 dob_child3 gender_child1
+## 1:         1         30 1998-11-26 2000-01-29       &lt;NA&gt;             1
+## 2:         2         27 1996-06-22       &lt;NA&gt;       &lt;NA&gt;             2
+## 3:         3         26 2002-07-11 2004-04-05 2007-09-02             2
+## 4:         4         32 2004-10-10 2009-08-27 2012-07-21             1
+## 5:         5         29 2000-12-05 2005-02-28       &lt;NA&gt;             2
+##    gender_child2 gender_child3
+## 1:             2            NA
+## 2:            NA            NA
+## 3:             2             1
+## 4:             1             1
+## 5:             1            NA</code></pre>
+<div id="an-untidy-way-to-implement-this-not-run" class="section level2">
+<h2>An untidy way to implement this (not run)</h2>
+<pre class="r"><code>DT.m1 = melt(DT, id = c(&quot;family_id&quot;, &quot;age_mother&quot;))
+DT.m1[, c(&quot;variable&quot;, &quot;child&quot;) := tstrsplit(variable, &quot;_&quot;, fixed = TRUE)] #I don&#39;t even understand this weird function tstrsplit
+DT.c1 = dcast(DT.m1, family_id + age_mother + child ~ variable, value.var = &quot;value&quot;)
+DT.c1</code></pre>
+</div>
+<div id="enhanced-ways" class="section level2">
+<h2>Enhanced ways</h2>
+<div id="pass-a-list-to-measure.vars-where-each-element-of-the-list-contains-the-column-that-should-be-combined-together." class="section level3">
+<h3>Pass a list to measure.vars where each element of the list contains the column that should be combined together.</h3>
+<pre class="r"><code>colA = paste(&quot;dob_child&quot;, 1:3, sep = &quot;&quot;)
+colB = paste(&quot;gender_child&quot;, 1:3, sep = &quot;&quot;)
+DT.m2 = melt(DT, measure = list(colA, colB), value.name = c(&quot;dob&quot;, &quot;gender&quot;)) #notice the measure paramter instead of measure.var
+DT.m2</code></pre>
+<pre><code>##     family_id age_mother variable        dob gender
+##  1:         1         30        1 1998-11-26      1
+##  2:         2         27        1 1996-06-22      2
+##  3:         3         26        1 2002-07-11      2
+##  4:         4         32        1 2004-10-10      1
+##  5:         5         29        1 2000-12-05      2
+##  6:         1         30        2 2000-01-29      2
+##  7:         2         27        2       &lt;NA&gt;     NA
+##  8:         3         26        2 2004-04-05      2
+##  9:         4         32        2 2009-08-27      1
+## 10:         5         29        2 2005-02-28      1
+## 11:         1         30        3       &lt;NA&gt;     NA
+## 12:         2         27        3       &lt;NA&gt;     NA
+## 13:         3         26        3 2007-09-02      1
+## 14:         4         32        3 2012-07-21      1
+## 15:         5         29        3       &lt;NA&gt;     NA</code></pre>
+<p>The additional <code>variable</code> column is good to do dcast later and <em>can be removed</em> if necessary!</p>
+</div>
+<div id="using-patterns" class="section level3">
+<h3>Using <code>patterns()</code></h3>
+<pre class="r"><code>DT.m2 = melt(DT, measure = patterns(&quot;^dob&quot;, &quot;^gender&quot;), value.name = c(&quot;dob&quot;, &quot;gender&quot;))
+DT.m2</code></pre>
+<pre><code>##     family_id age_mother variable        dob gender
+##  1:         1         30        1 1998-11-26      1
+##  2:         2         27        1 1996-06-22      2
+##  3:         3         26        1 2002-07-11      2
+##  4:         4         32        1 2004-10-10      1
+##  5:         5         29        1 2000-12-05      2
+##  6:         1         30        2 2000-01-29      2
+##  7:         2         27        2       &lt;NA&gt;     NA
+##  8:         3         26        2 2004-04-05      2
+##  9:         4         32        2 2009-08-27      1
+## 10:         5         29        2 2005-02-28      1
+## 11:         1         30        3       &lt;NA&gt;     NA
+## 12:         2         27        3       &lt;NA&gt;     NA
+## 13:         3         26        3 2007-09-02      1
+## 14:         4         32        3 2012-07-21      1
+## 15:         5         29        3       &lt;NA&gt;     NA</code></pre>
+<pre class="r"><code>#the ^ here means letters beginning with &quot;dob&quot; and &quot;gender&quot;
+#similarly, _ means end with xxx</code></pre>
+<p>You can also do this using <code>stat::reshape()</code> in base R</p>
+</div>
+<div id="enhanced-dcast" class="section level3">
+<h3>Enhanced <code>dcast</code></h3>
+<pre class="r"><code>DT.c2 &lt;- dcast(DT.m2, family_id + age_mother ~ variable, value.var = c(&quot;dob&quot;, &quot;gender&quot;) )
+DT.c2</code></pre>
+<pre><code>##    family_id age_mother      dob_1      dob_2      dob_3 gender_1 gender_2
+## 1:         1         30 1998-11-26 2000-01-29       &lt;NA&gt;        1        2
+## 2:         2         27 1996-06-22       &lt;NA&gt;       &lt;NA&gt;        2       NA
+## 3:         3         26 2002-07-11 2004-04-05 2007-09-02        2        2
+## 4:         4         32 2004-10-10 2009-08-27 2012-07-21        1        1
+## 5:         5         29 2000-12-05 2005-02-28       &lt;NA&gt;        2        1
+##    gender_3
+## 1:       NA
+## 2:       NA
+## 3:        1
+## 4:        1
+## 5:       NA</code></pre>
+</div>
+<div id="section" class="section level3">
+<h3></h3>
+</div>
+</div>
+</div>
+</div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title=2021-04-30&#32;16:38:36>Updated on 2021-04-30&nbsp;</span>
+      </div><div class="post-info-license">
+          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+        </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"><span><a href="/2021-04-30-learning-data-table-4/index.md" title="Read Markdown" class="link-to-markdown">Read Markdown</a></span></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/2021-04-30-learning-data-table-4/" data-title="Learning data.table (4)" data-via="YingRui17"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/2021-04-30-learning-data-table-4/"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="/2021-04-30-learning-data-table-4/" data-title="Learning data.table (4)" data-web><i class="fa-brands fa-whatsapp fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/2021-04-30-learning-data-table-4/" data-title="Learning data.table (4)"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="/2021-04-30-learning-data-table-4/" data-title="Learning data.table (4)"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Myspace" data-sharer="myspace" data-url="/2021-04-30-learning-data-table-4/" data-title="Learning data.table (4)" data-description=""><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="/2021-04-30-learning-data-table-4/" data-title="Learning data.table (4)" data-description=""><i class="fa-brands fa-blogger fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="/2021-04-30-learning-data-table-4/" data-title="Learning data.table (4)"><i class="fa-brands fa-evernote fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/2021-04-29-learning-data-table-3/" class="prev" rel="prev" title="Learning data.table (3)"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>Learning data.table (3)</a>
+      <a href="/2021-05-06-chinese-english-name-of-marine-organisms/" class="next" rel="next" title="Re-study biology/geology term in CN/EN">Re-study biology/geology term in CN/EN<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered">Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.89.4">Hugo</a> | Theme - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.2.16-RC"><img class="fixit-icon" src="/images/fixit.svg" alt="FixIt logo" />&nbsp;FixIt</a>
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2019 - 2022</span><span class="author" itemprop="copyrightHolder">
+              <a href="/">Rui Ying</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line ibruce">
+          <span id="busuanzi_container_site_uv" title='Total visitors'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='Total visits'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
+        </div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+        </div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">Theme FixIt works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/lunr/lunr.min.js" defer></script><script src="/lib/lazysizes/lazysizes.min.js" async defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/katex/katex.min.js" defer></script><script src="/lib/katex/auto-render.min.js" defer></script><script src="/lib/katex/copy-tex.min.js" defer></script><script src="/lib/katex/mhchem.min.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async defer></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","editLockTitle":"Lock editable code block","editUnLockTitle":"Unlock editable code block","editable":true,"maxShownLines":10},"comment":{"enable":false},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"enablePWA":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50,"type":"lunr"}};</script><script src="/js/theme.min.js" defer></script></body>
+</html>

@@ -6,7 +6,7 @@ subtitle: ""
 summary: "Fish identification"
 authors: [Rui Ying]
 tags: [salmon]
-categories: [Sciences]
+categories: [Science]
 date: 2019-07-03T17:40:21Z
 lastmod: 2019-07-03T17:40:21Z
 featured: false

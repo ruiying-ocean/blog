@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>Emacs; Markdown - tag - </title>
+    <title>Emacs; Markdown - Tag - </title>
     <link>/tags/emacs-markdown/</link>
-    <description>Emacs; Markdown - tag - </description>
+    <description>Emacs; Markdown - Tag - </description>
     <generator>Hugo -- gohugo.io</generator><managingEditor>rui.ying@bristol.ac.uk (Rui Ying)</managingEditor>
       <webMaster>rui.ying@bristol.ac.uk (Rui Ying)</webMaster><lastBuildDate>Sun, 25 Nov 2018 20:54:20 &#43;0000</lastBuildDate><atom:link href="/tags/emacs-markdown/" rel="self" type="application/rss+xml" /><item>
   <title>Use Emacs to Write Markdown</title>
-  <link>/use-emacs-to-write-markdown/</link>
+  <link>/2018-11-25-use-emacs-to-write-markdown/</link>
   <pubDate>Sun, 25 Nov 2018 20:54:20 &#43;0000</pubDate>
   <author>Rui Ying</author>
-  <guid>/use-emacs-to-write-markdown/</guid>
+  <guid>/2018-11-25-use-emacs-to-write-markdown/</guid>
   <description><![CDATA[Emacs as md editor]]></description>
 </item>
 </channel>

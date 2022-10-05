@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Emacs; Vim - Tag - </title>
+    <link>/tags/emacs-vim/</link>
+    <description>Emacs; Vim - Tag - </description>
+    <generator>Hugo -- gohugo.io</generator><managingEditor>rui.ying@bristol.ac.uk (Rui Ying)</managingEditor>
+      <webMaster>rui.ying@bristol.ac.uk (Rui Ying)</webMaster><lastBuildDate>Sat, 31 Jul 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="/tags/emacs-vim/" rel="self" type="application/rss+xml" /><item>
+  <title>Experience of studying vim</title>
+  <link>/2021-07-31-experience-of-studying-vim/</link>
+  <pubDate>Sat, 31 Jul 2021 00:00:00 &#43;0000</pubDate>
+  <author>Rui Ying</author>
+  <guid>/2021-07-31-experience-of-studying-vim/</guid>
+  <description><![CDATA[The holy war!]]></description>
+</item>
+</channel>
+</rss>
