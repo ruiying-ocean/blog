@@ -24,7 +24,7 @@ resources:
 toc:
   enable: yes
 math:
-  enable: no
+  enable: yes
 lightgallery: no
 seo:
   images: []
