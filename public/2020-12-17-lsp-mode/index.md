@@ -22,6 +22,6 @@ The server for python (pyls) and fortran (fortls) respectively need to be pre-in
 
 ---
 
-> : Rui Ying  
+> Author: Rui Ying  
 > URL: /2020-12-17-lsp-mode/  
 

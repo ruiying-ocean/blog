@@ -112,6 +112,6 @@ indices(flights)</code></pre>
 
 ---
 
-> : Rui Ying  
+> Author: Rui Ying  
 > URL: /2021-05-07-learning-data-table-5/  
 

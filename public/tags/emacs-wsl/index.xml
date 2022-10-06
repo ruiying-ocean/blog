@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>Emacs; WSL - tag - </title>
+    <title>Emacs; WSL - Tag - </title>
     <link>/tags/emacs-wsl/</link>
-    <description>Emacs; WSL - tag - </description>
+    <description>Emacs; WSL - Tag - </description>
     <generator>Hugo -- gohugo.io</generator><managingEditor>rui.ying@bristol.ac.uk (Rui Ying)</managingEditor>
       <webMaster>rui.ying@bristol.ac.uk (Rui Ying)</webMaster><lastBuildDate>Fri, 02 Jul 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="/tags/emacs-wsl/" rel="self" type="application/rss+xml" /><item>
   <title>Install and use Emacs 28 Native comp (gccemacs)</title>

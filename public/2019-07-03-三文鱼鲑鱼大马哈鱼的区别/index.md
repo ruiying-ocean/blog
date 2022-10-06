@@ -39,6 +39,6 @@
 
 ---
 
-> : Rui Ying  
+> Author: Rui Ying  
 > URL: /2019-07-03-%E4%B8%89%E6%96%87%E9%B1%BC%E9%B2%91%E9%B1%BC%E5%A4%A7%E9%A9%AC%E5%93%88%E9%B1%BC%E7%9A%84%E5%8C%BA%E5%88%AB/  
 

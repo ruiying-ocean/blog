@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>R; Chinese fonts - tag - </title>
+    <title>R; Chinese fonts - Tag - </title>
     <link>/tags/r-chinese-fonts/</link>
-    <description>R; Chinese fonts - tag - </description>
+    <description>R; Chinese fonts - Tag - </description>
     <generator>Hugo -- gohugo.io</generator><managingEditor>rui.ying@bristol.ac.uk (Rui Ying)</managingEditor>
       <webMaster>rui.ying@bristol.ac.uk (Rui Ying)</webMaster><lastBuildDate>Tue, 31 Mar 2020 20:24:01 &#43;0000</lastBuildDate><atom:link href="/tags/r-chinese-fonts/" rel="self" type="application/rss+xml" /><item>
   <title>Embedding Chinese Fonts in R</title>

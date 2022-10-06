@@ -166,6 +166,6 @@ The difference between <code>dcast</code> and <code>acast</code> is the output i
 
 ---
 
-> : Rui Ying  
+> Author: Rui Ying  
 > URL: /2021-01-06-review-data-analysis-in-r/  
 
