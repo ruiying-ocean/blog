@@ -82,6 +82,6 @@ TBD
 
 ---
 
-> : Rui Ying  
+> Author: Rui Ying  
 > URL: /2021-05-06-chinese-english-name-of-marine-organisms/  
 

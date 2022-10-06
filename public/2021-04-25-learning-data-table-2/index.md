@@ -106,6 +106,6 @@ df[, c(out_cols) := lapply(.SD, max), by = month, .SD = in_cols][] %&gt;% head()
 
 ---
 
-> : Rui Ying  
+> Author: Rui Ying  
 > URL: /2021-04-25-learning-data-table-2/  
 

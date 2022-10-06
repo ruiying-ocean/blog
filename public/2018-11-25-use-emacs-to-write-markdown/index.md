@@ -9,6 +9,6 @@ use grip-mode to preview it.
 
 ---
 
-> : Rui Ying  
+> Author: Rui Ying  
 > URL: /2018-11-25-use-emacs-to-write-markdown/  
 

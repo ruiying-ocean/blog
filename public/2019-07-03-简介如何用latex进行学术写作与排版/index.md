@@ -165,6 +165,6 @@ Ecology Letters does not have a standard LaTex style file. Manuscripts submitted
 
 ---
 
-> : Rui Ying  
+> Author: Rui Ying  
 > URL: /2019-07-03-%E7%AE%80%E4%BB%8B%E5%A6%82%E4%BD%95%E7%94%A8latex%E8%BF%9B%E8%A1%8C%E5%AD%A6%E6%9C%AF%E5%86%99%E4%BD%9C%E4%B8%8E%E6%8E%92%E7%89%88/  
 

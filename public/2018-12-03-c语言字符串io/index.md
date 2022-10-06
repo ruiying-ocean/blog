@@ -93,6 +93,6 @@ puts函数很常用，但是要知道它的几个特性
 
 ---
 
-> : Rui Ying  
+> Author: Rui Ying  
 > URL: /2018-12-03-c%E8%AF%AD%E8%A8%80%E5%AD%97%E7%AC%A6%E4%B8%B2io/  
 

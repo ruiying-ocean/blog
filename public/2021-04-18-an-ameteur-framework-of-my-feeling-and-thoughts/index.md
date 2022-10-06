@@ -31,6 +31,6 @@ I am not a professional researcher in Psychology and Neurosciece, and also not a
 
 ---
 
-> : Rui Ying  
+> Author: Rui Ying  
 > URL: /2021-04-18-an-ameteur-framework-of-my-feeling-and-thoughts/  
 

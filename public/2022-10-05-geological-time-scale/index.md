@@ -44,6 +44,6 @@ Structure: Eon(宙)-Era(代)-Period(纪)-Epoch(世)-age(期)
 
 ---
 
-> : Rui Ying  
+> Author: Rui Ying  
 > URL: /2022-10-05-geological-time-scale/  
 

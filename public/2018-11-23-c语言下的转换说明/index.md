@@ -39,6 +39,6 @@ input > if char > %convertion(if %c or getchar: pass) > variable
 
 ---
 
-> : Rui Ying  
+> Author: Rui Ying  
 > URL: /2018-11-23-c%E8%AF%AD%E8%A8%80%E4%B8%8B%E7%9A%84%E8%BD%AC%E6%8D%A2%E8%AF%B4%E6%98%8E/  
 

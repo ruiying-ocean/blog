@@ -14,6 +14,6 @@ I am now a CSC-funded PhD student at [School of Earth Sciences, University of Br
 
 ---
 
-> : Rui Ying  
+> Author: Rui Ying  
 > URL: /about/  
 
