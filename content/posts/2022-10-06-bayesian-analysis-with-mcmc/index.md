@@ -1,11 +1,12 @@
 ---
-title: Bayesian model in practice
+title: Bayesian analysis with MCMC
 author: Rui Ying
 date: '2022-10-06'
 slug: []
 categories:
   - Statistic
 subtitle: ''
+draft: no
 authorLink: ''
 authorEmail: ''
 description: ''
@@ -34,61 +35,16 @@ repost:
 ---
 
 <!--more-->
+# Unsolved Problem: Integral
 
-
-## Bayesian analysis step by step
-
-### 1. Hypotheses
-
-Hypotheses can be discrete or continuous. For example, we may estimate the $\mu$ (mean) of a normal distribution and assume it spans from 1 to 5 (Let us assume the $\sigma$, the variance, is known here).
-
-### 2. (Parameter's) prior distribution
-
-The parameter that we want to estimate is a random variable thus has its own distribution (and parameters). The parameter of $\theta$'s distribution is called *hyperparameter*. In another word, hyperparameter is the parameters of prior and posterior distribution.
-
-The prior distribution has its name because it is condcuted before our data collection. You may wonder if the selection of prior influences the result, sadly it does. Thus a useful (informative) prior should be better selected. Otherwise, a non-informative prior will be used, e.g., uniform distribution or normal distribution. Here we know nothing and choose uniform distribution.
-
-### 3. Collect data
-
-A dataset might contain various dimensions. If they are independent, we can calculate likelihood by multiplication. Assume we have got one data point $x$.
-
-### 4. Likelihood Profile
-
-Likelihood is the conditional probability given data collected. It can be written in *$\mathcal{L}(x|\theta)$*, if we have the data $x$ already collected. Likelihood is different from probability because for the pdf distribution, the probability of one single point is always 0. Probability only refers to the integration area from $a$ to $b$, while likelihood is the $y$ value.
-
-This step generates likelihood profile that describe the distribution of parameter. It is the *weights* (权重) of prior distribution and is the one updating our belief.
-
-### 5. (Parameters's) posterior distribution
-
-If we are estimating continuos distribution, then we have
-
-1. prior distribution
-
-2. likelihood profile (distribution)
-
-Then we multiply them and calculate a new distribution: the posterior one! It describe the new proportion (density) of all hypotheses. So far the Bayesian analysis updates two things: (1) the distribution of data; (2) the distribution of parameter (or hypotheses) from prior to posterior.
-
-But, you may notice the denominator of Bayes's theorem requires integration, which means in most cases we cannot calculate them directly!
-
-### 6. A handnote summary!
-
-![](images/handnote.PNG)
-
-## Conjugate shortcut
-
-Some statisticians found in some limited cases we are able to calculate posterior distribution very easily and do not need simulation (no proof in this article!). They are:
-
-- Beta prior + binomial data &rarr; beta posterior
-- Gamma prior + Poisson data &rarr; beta posterior
-- Normal prior + normal data &rarr; normal posterior
-- Dirichlet prior + multinomial data &rarr; Dirichlet posterior
+We skipped a big problem, integral. This can be trick because there're can be multiple integral for multiple parameters. So we usually use simulation method to do this.
 
 
 ## MCMC to estimate posterior distribution
 
-The integration often prevents us from calculating posterior distribution analytically. Thus we have simulation method - Markov Chain Monte Carlo (MCMC). Markov chain is to trace the state of variable which is relevant with the last one. Monte Carlo is a famous gambling city (and tax heaven and the venue of ATP 1000 Master where Rafa Nadal won his title for 11 times, OK I'm his fan :grin: ). Here we try parameters one by one (i.e. simulation) as a "chain".
+The integral often prevents us from calculating posterior distribution analytically. Thus we have simulation method - Markov Chain Monte Carlo (MCMC). Markov chain is to trace the state of variable which is relevant with the last one. Monte Carlo stands for a random number generator for simulation. Here we try parameters one by one (i.e. simulation) as a "chain".
 
-### Metropolis algorithm
+### Metropolis sampling algorithm
 
 #### How to do it?
 
@@ -116,13 +72,13 @@ The integration often prevents us from calculating posterior distribution analyt
 
 - The distribution should be tuned so that the acceptance rate range between 20-50% (This is the limitation of entire MCMC method, not the algorithm's fault)
 
-### Metropolis-Hastings algorithm
+### Metropolis-Hastings sampling algorithm
 
 #### Advantage
 You can use Metropolis-Hastings algorithm when the proposal distribution is not symmetric. The only difference is the *correction factor* (the pink part):
 
 $$
-p_{move} = min\large(\frac{P(\theta_p|data)*\color{pink}{g(\theta_c|\theta_p)}}{P(\theta_c|data)*\color{pink}{g(\theta_p|\theta_c)}} ,1 \large)
+p_{move} = min\large(\frac{P(\theta_p|data)* \color{pink}{g(\theta_c|\theta_p)}}{P(\theta_c|data)* \color{pink}{g(\theta_p|\theta_c)}} ,1 \large)
 $$
 
 $p$ refers to "proposed value" and $c$ refers to "current value".
@@ -137,7 +93,9 @@ $$
 
 ### Gibbs sampling algorithm
 
-You may already find that our do not estimate the two parameters in our [first example](#do-bayesian-analysis). We will do it in this section! The specialty of Gibbs sampling reflects in its no limitation of the number of estimated parameters. Let's see it.
+#### Advantage
+
+The specialty of Gibbs sampling reflects in its no limitation of the number of estimated parameters. Let's see it.
 
 #### Concrete steps
 
@@ -158,7 +116,7 @@ You may already find that our do not estimate the two parameters in our [first e
 - JAGS (Just Another Gibbs Sampler)
 - Stan
 
-# MCMC diagnostic approaches
+## MCMC diagnostic approaches
 
 ### Number of trials
 
@@ -185,3 +143,12 @@ The computer store numbers in binary, e.g., 10 in decimal is 1010 in binary. Thu
 ### How to report MCMC result?
 
 The credible interval of MCMC analysis is often reported. For example,minimum, maximum, 25/50/75 percentile, mean and variance.
+
+## Special case: Conjugate shortcut
+
+Some statisticians found in some limited cases we are able to calculate posterior distribution very easily and do not need simulation (no proof in this article!). They are:
+
+- Beta prior + binomial data &rarr; beta posterior
+- Gamma prior + Poisson data &rarr; beta posterior
+- Normal prior + normal data &rarr; normal posterior
+- Dirichlet prior + multinomial data &rarr; Dirichlet posterior
