@@ -66,33 +66,32 @@ $$
 This euqation is called Bayesian theorem and it means if you are given something like P(A|B), you can find its reverse P(B|A) (i.e., the Bayesian inference, see the next block).
 
 
-## Bayesian inference and science
+## Bayesian inference
 
-### Bayesian inference
+### Hypothesis test
 
 Based on the theorem, if we set B the given event as our collected data, A the thing we want to test (or a hypothesis), we change the equation into:
 
 $$
-Pr(H_i|data) = \frac{\color{pink}{Pr(data|H_i)}\color{steelblue}Pr(H_i)}{\sum_{j=1}^n \color{pink}{Pr(data|H_i)}\color{steelblue}Pr(H_i)}
+\color{blue}{Pr(H_i|data)} = \frac{\color{pink}{Pr(data|H_i)}\color{steelblue}Pr(H_i)}{\sum_{j=1}^n \color{pink}{Pr(data|H_i)}\color{steelblue}Pr(H_i)}
 $$
 
 $\color{pink}{Pr(data|H_i)}$ is called $\color{pink}{likelihood}$, $\color{steelblue}Pr(H_i)$ the $\color{steelblue}{prior}$ probability, $\color{blue}{Pr(H_i|data)}$ refers to $\color{blue}{posterior}$ probability.
 
-If the probability is discrete, we use Pr(); otherwise, we use P() to represent the PDF distribution (and use integration to replace sum).
 
+### Parameter estimation
+
+Change the hypotheses to parameters to estimate, the only difference is parameter is continuous. If the probability is discrete, we use Pr(); otherwise, we use P() to represent the PDF distribution (and use integration to replace sum).
+ 
 $$
-P(\theta|data) = \frac{\color{pink}{P(data|\theta)}\color{steelblue}P(\theta)}{\int \color{pink}{P(data|\theta)}\color{steelblue}P(\theta)d\theta}
+\color{blue}{P(\theta|data)} = \frac{\color{pink}{P(data|\theta)}\color{steelblue}P(\theta)}{\int \color{pink}{P(data|\theta)}\color{steelblue}P(\theta)d\theta}
 $$
 
 The $\theta$ here refers to the single parameter in our PDF distribution. If there are two or more, simply change it.
 
-You might find the former one is regrading to hypothesis test, while the later one refer to parameter estimation. And due to its special feature, **Bayesian inference always gives distribution for parameters**. Thus the point estimation is not existing here and the interval estimation will be very natural.
-
-In conclusion, Bayesian inference does work like below:
-
-> Initial belief + New Data = Updated belief
 
 ### What is science?
-Science refers to a system of acquiring knowledge and update our cognition. The scientific method consists of *induction* and *deduction* (see the figure below).
+
+As you can see, In conclusion, Bayesian inference does work like below: `Initial belief + New Data = Updated belief`. And this is exactly same to the philosophy of science. Science refers to a system of acquiring knowledge and update our cognition. The scientific method consists of *induction* and *deduction* (see the figure below).
 
 ![](images/science.jpg)
