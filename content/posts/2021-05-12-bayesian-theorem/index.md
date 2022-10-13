@@ -54,7 +54,7 @@ $$
 Therefore,
 
 $$
-P(A|B) = \frac{P(B|A)P(A)}{P(B)}
+P(A|B) = \frac{P(B|A)P(A)}{P(B)} \prop P(B|A)P(A)
 $$
 
 If we use the total probability for our denominator, it becomes
