@@ -33,7 +33,7 @@ Foraminifer as carbonate producer also influence the modern carbon cycle by regu
 
 <img align="right" src="genie_example.png" width="280"/>
 
-cGENIE is an Earth System Model with intermediate complexity (EMIC), with most focuses on the ocean biogeochemistry. It is my main tool to explore foraminifer and ecosystem. Recently I added more foraminifer functional groups into the model, which you can view the [pre-print version on GMD](https://gmd.copernicus.org/preprints/gmd-2022-177/).
+cGENIE is an Earth System Model with intermediate complexity (EMIC), with most focuses on the ocean biogeochemistry. It is my main tool to explore foraminifer and ecosystem. Recently I added more foraminifer functional groups into the model. You can view the [pre-print version on GMD](https://gmd.copernicus.org/preprints/gmd-2022-177/) for more details about this model.
 
 
 ### Last Glacial Maximum
