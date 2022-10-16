@@ -7,11 +7,9 @@ date: 2020-02-02T16:23:32+08:00
 
 <img align="right" src="avatar.png" width="200"/>
 
-I am a Chinese PhD student at [School of Earth Sciences, University of Bristol](http://www.bristol.ac.uk/earthsciences/). Before I came to the UK, I studied in Yangling and Guangzhou for 4 and 3 years, respectively. I have a variety to geek interests, from programming to fitness/tennis, from natural sciences to music (ME on the RHS!).
+I am a Chinese PhD student at [School of Earth Sciences, University of Bristol](http://www.bristol.ac.uk/earthsciences/). Before I came to the UK, I studied in Yangling and Guangzhou for 4 and 3 years, respectively. I have a variety of geek interests, from programming to fitness/tennis, from natural sciences to music (ME playing guitar on the RHS!).
 
-This webiste you are seeing is a combination of my personal advertisement and blog records. Check [my CV](https://www.dropbox.com/s/njsob5kj3njh9ru/CV%20%28Rui%20Ying%29-%202%20Aug%2C%202022%20%28en%29.pdf?dl=0) if you are more interested in the former.
-
-
+This webiste you are seeing is a combination of my blog records and a broad introduction of my research. Check [my CV](https://www.dropbox.com/s/njsob5kj3njh9ru/CV%20%28Rui%20Ying%29-%202%20Aug%2C%202022%20%28en%29.pdf?dl=0) if you want to find more about me.
 
 ## Research 🔬
 
