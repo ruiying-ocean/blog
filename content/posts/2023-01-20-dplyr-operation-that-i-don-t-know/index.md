@@ -52,7 +52,7 @@ repost:
 `c_across` is a verb for row, but must be used with rowwise()
 
 ```r
-# calculate mean for x and y column vector
+# calculate mean for x and y column vector,  imagine x=mean(x), y=mean(y)
 df %>% mutate(across(c(x,y), mean))
 
 ## Yes, it can't be used in the same functional programming way, how weird!
