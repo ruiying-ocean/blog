@@ -37,10 +37,10 @@ repost:
 
 ## selection
 - X:Y (column X to Y)
-- start_with
-- end_with
+- start_with (string)
+- end_with (string)
 - matches (regex)
-- contains （string)
+- contains (string)
 
 ## conditons
 - if_else(condition, TRUE_operation, FASLE_operation)
@@ -63,7 +63,7 @@ df %>% rowwise() %>% mutate(m = mean(c_across(c(x,y))))
 
 ~ = lambda, .x = argument
 ```r
-## plus 1
+## plus 1 for selected column vector, imagine x=x+1, y=y+1
 df %>% mutate(across(c(x,y), ~ .x + 1))
 ```
 
