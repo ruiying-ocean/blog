@@ -8,7 +8,7 @@ categories:
 tags:
   - Ecology
 subtitle: ''
-draft: yes
+draft: no
 authorLink: ''
 authorEmail: ''
 description: ''
@@ -18,7 +18,7 @@ comment: no
 weight: 0
 hiddenFromHomePage: no
 hiddenFromSearch: no
-summary: ''
+summary: 'Habitat and niche'
 resources:
   - name: featured-image
     src: featured-image.jpg
@@ -47,10 +47,12 @@ And each organism's niche is multi-dimensional. i.e., Each dimension represents 
 ## A 2D example
 ![](images/Habitat and niche.jpg)
 
-## A 3D niche example
-Below is a 3D figure (from MATLAB) to represent niche where environmental factors are axes, and optimal niche is the peak point (no predator's pressure, sufficient resources, mostly suitable climate). Values above zero mean that species can live in this environment.
+## A 3D full niche example
+Below is a 3D figure (from MATLAB) to represent **FULL niche space** where environmental factors are axes, and optimal niche is the peak point (no predator's pressure, sufficient resources, mostly suitable climate). Values above zero mean that species can live in this environment.
 
 But, this figure is nothing about habitat because  **niche and habitat don't necessarily match**. Some environment conditions does not exist in the world, or species are limited by dispersal ability. 
+
+An important reason niche model has less predicting ability is this curve is not sure to keep same with time.
 
 ![test](https://www.mathworks.com/help/examples/graphics/win64/Creating3DPlotsDefaultCmapExample_02.png)
 
