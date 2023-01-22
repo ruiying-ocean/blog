@@ -48,7 +48,7 @@ Reference:
 Begon, Michael, and Colin R. Townsend. Ecology: from individuals to ecosystems. John Wiley & Sons, 2020.
 
 ## A 2D example
-![](images/Habitat and niche.png)
+![Click](images/Habitat_and_niche.png)
 
 ## A 3D full niche example
 Below is a 3D figure (from MATLAB) to represent **FULL niche space** where environmental factors are axes, and optimal niche is the peak point (no predator's pressure, sufficient resources, mostly suitable climate). Values above zero mean that species can live in this environment.
