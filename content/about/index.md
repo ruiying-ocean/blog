@@ -9,7 +9,7 @@ date: 2020-02-02T16:23:32+08:00
 
 I am a Chinese PhD student at [School of Earth Sciences, University of Bristol](http://www.bristol.ac.uk/earthsciences/). Before I came to the UK, I studied in Yangling and Guangzhou for 4 and 3 years, respectively. I have a variety of geek interests, from programming to fitness/tennis, from natural sciences to music (ME playing guitar on the RHS!).
 
-This webiste you are seeing is a combination of my blog records and a broad introduction of my research. Check [my CV](https://www.dropbox.com/s/j2s2zq89href5vd/CV%20%28Rui%20Ying%29.pdf?dl=0) if you want to find more about me.
+This webiste you are seeing is a combination of my blog records and a broad introduction of my research. Check [my CV](https://www.dropbox.com/scl/fi/2vtdcs1xo212kcqows4fj/CV-Rui-Ying.pdf?rlkey=cwth2c4g2j3tnmmqf3eiwuw71&dl=0) if you want to find more about me.
 
 ## Research 🔬
 
