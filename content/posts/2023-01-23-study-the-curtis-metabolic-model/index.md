@@ -1,5 +1,5 @@
 ---
-title: study the Curtis's metabolic model
+title: study the metabolic index model
 author: Package Build
 date: '2023-01-23'
 slug: []
@@ -36,66 +36,86 @@ repost:
   url: ''
 ---
 
-## Demand vs Supply of O2
 
-Both are dependent on temperature (T) and biomass (B), and the supply of O2 has one more constrain: the ambient pO2.
+
+The demand and supply of oxygen are both dependent on temperature (T) and biomass (B), and the supply of O2 has one more constrain: the ambient pO2.
 
 - Demand: f(T, B)
-
 - Supply: f(T, B, pO2)
-
-## Definition of temperature sensitivity (Arrhenius function)
-
-$$
-\gamma_T(E) = exp((\frac{1}{T} - \frac{1}{T_{ref}}) \frac{-E}{k_B})
-$$
-
-where *k*B is the Boltzmann constant. E is the parameter varied in Demand and Supply function.
 
 ## Demand function
 
 $$
-f(T, B) = \alpha_D \cdot B^{\delta} \cdot \gamma_T(E_d)
+f(T, B) = \alpha_D \cdot B^{\delta} \cdot \gamma(-E_d, T)
 $$
 
-*α*D is the <u>rate coefficient</u> has units of O2 per unit body mass per time (μmol O2 g−3/4 h−1)
+$\alpha_D$ is gas transfer rate per mass.
 
 ## Supply function
 
 $$
-f(T, B, \ce{pO2}) = \alpha_S \cdot \gamma_T(E_s) \cdot B^{\sigma} \cdot \ce{pO2}
+f(T, B, \ce{pO2}) = \alpha_S \cdot B^{\sigma} \cdot \gamma(-E_s, T)\cdot \ce{pO2}
 $$
 
-The function *𝛼*̂ s(*𝑇*) represents the efficacy of the O2 supply. It is a rate coefficient (in μmol O2 $g^{−3/4} h^{−1} atm^{−1}$)
+The function $\alpha_S$ represents the rate per unit of O2 pressure.
 
-## Metabolic index
+## Metabolic index (Supply/Demand ratio)
 
 $$
-\Phi = \frac{f(T,B)}{f(T, B, \ce{pO2})}\\
-\Phi = \frac{\alpha_S}{\alpha_D} \cdot B^{\delta - \sigma} \cdot \ce{pO2} \cdot\gamma_{T}(E_d - E_s)
+\Phi = \frac{f(T,B)}{f(T, B, \ce{pO2})} = \frac{\alpha_S}{\alpha_D} \cdot B^{\delta - \sigma} \cdot \ce{pO2} \cdot \frac{\gamma{(-E_s,T)}}{\gamma{(-E_d,T)}}\\
 $$
 
-Unknown parameters:
+Temperature dependency is an Arrhenius function:
+$$
+\gamma(-E, T) = exp((\frac{1}{T} - \frac{1}{T_{ref}}) \frac{-E}{k_B})\\
+\frac{\gamma{(-E_s,T)}}{\gamma{(-E_d,T)}} = exp((\frac{1}{T} - \frac{1}{T_{ref}}) \frac{-(E_s - E_d)}{k_B})\\
+$$
+Note $k_B$ is the Boltzmann constant.  Set $E_0 = E_d - E_s$, then
+$$
+\Phi = A_0 \cdot B^n \cdot pO_2 \cdot \gamma(E_0, T)\\
+$$
+or
+$$
+\Phi = A_0 \cdot B^n \cdot pO_2 / \gamma(-E_0, T)\\
+$$
+In this model, we have 3 unknown variables:
 
-- $E_d, E_s$
-- $\alpha_D, \alpha_S$
-- $\sigma, \delta$ (for S and D respectively)
+- $A_0 = \alpha_S/\alpha_D$ (rate coefficients of oxygen demand and supply)
+- $E_0$ (temperature sensitivity)
+- *n* = δ − ε (allometric parameter, empirically almost 0)
 
-When $\Phi = 1$, the organism has the minimum O2 balance to survive.
+$$
+\Phi = A_0 \cdot pO_2 / \gamma(-E_0, T)\\
+$$
 
-## Derived Physilogical Traits:
+## Transformation of the metabolic model
 
-$\frac{\alpha_S}{\alpha_D}$: the vulnerability to hypoxia, which is measurable as the lowest O2 pressure (*P*crit) that can sustain resting metabolic demand (*Φ* = 1)
+When $\Phi = 1$, the pO2 is the critical minimum, take the log of both sides:
+$$
+ln(\ce{pO2}) + ln(A_0)  = \frac{-E_0}{k_B}(\frac{1}{T} - \frac{1}{T_{ref}})
+$$
+The linear model $ln(pO2) \sim 1/k_BT$
 
-$E_0 = E_d - E_s$: the sensitivity of hypoxia tolerance to temperature
+$-E_0$: the slope
 
-$\epsilon = \sigma - \delta$: the allometric scaling (i.e., related to body size or biomass) of the supply-to-demand ratio
+$A_0$: the intercept of $ln(pO2)$ when $T=T_{ref}$ (i.e., the inverse of pO2)
 
-*P*crit: lab-measured hypoxic thresholds
+## Required emprical data to fit the model
+
+Body mass, temperature, life stage, and hypoxia tolerance.
+
+Hypoxia tolerance is the oxygen at anaerobic metabolism or mortality. O2 concentrations can be converted to pO2 (pressure) with certain temperature and salinity.
+
+## Related Traits
+
+- 1/A0, the critical minimum of oxygen, or hypoxia tolerance
+- Critical $\Phi$: bring A0, E0 back to the model with biogeographical T, pO2
 
 ## References
 
 Deutsch, C. *et al.* Climate change tightens a metabolic constraint on marine habitats. *Science* (2015)
+
+Justin L. Penn et al. Temperature-dependent hypoxia explains biogeography and severity of end-Permian marine mass extinction. Science. 2018.
 
 Deutsch, C. *et al.* Metabolic trait diversity shapes marine biogeography. *Nature* (2020)
 
