@@ -1,14 +1,14 @@
 ---
-title: Re-study biology/geology term in CN/EN
+title: Basic plant biology
 author: Rui Ying
 date: '2021-05-06'
 slug: []
 categories: [Science]
 tags: []
 subtitle: ''
-summary: 'Biology/Geology term list'
+summary: 'Biology terminology (Plant)'
 authors: []
-lastmod: '2021-05-06T18:38:47+01:00'
+lastmod: '2023-08-29T17:12:00+00:00'
 featured: no
 image:
   caption: ''
@@ -18,47 +18,28 @@ projects: []
 draft: false
 ---
 
-# Taxonomy
-- 界 Kingdom
+# 植物学分类
+根据繁殖方式分为孢子植物和种子植物。其中种子植物进一步为被子和裸子植物。显然种子植物更为高级，演化顺序为：藻类，苔藓，蕨类，裸子，被子。后三种（即种子植物和蕨类植物）为维管植物，即高级植物。
 
-- 门 Phylum
+## 孢子植物
+- 蕨类
+- 苔藓
+- 藻类
+- 地衣
 
-- 纲 Class
+## 种子植物
+- 裸子
+- 被子
 
-- 目 Order
+# 植物器官
 
-- 科 Family
+## 生殖器官
+花，果实，种子(按照先后顺序)。受精：花粉中包含的精子和位于子房的胚珠得以结合。
 
-- 属 Genus
+## 营养器官
+根、茎、叶
 
-- 种 Species
-
-  
-
-五界系统（非唯一）
-
-植物界、动物界、原核生物界、原生生物界、真菌生物界、
-
-
-
-## 常见分类
-
-- Prokaryote 原核生物 (无核膜)
-
-- Eukaryota 真核生物 (有核膜)
-
-- Protista 原生生物(Kingdom)（隶属于真核生物，亦称作单细胞生物）
-
-- Protozoan 原生动物 (informal term)
-
-- Metazoans（后生动物，动物界除原生动物外的其他动物，即多细胞动物）
-
-- Rhizopods 根足生物
-
-  
-
-  ## Phytoplankton
-
+# Phytoplankton
 - Dinoflagellate 甲藻 (门)
 - Charophyte 轮藻
 - Chrysophyte 金藻
@@ -69,29 +50,5 @@ draft: false
 - haptophyte 定鞭藻
 - Zooxanthellae 虫黄藻(coral的一种常见共生藻类)
 - Cyanobacteria（蓝藻，也成为蓝细菌，属于原核生物细菌界，革兰氏阴性菌）
-
 - Prochlorococcus (原绿球藻属，蓝藻的一属)
 - Synechococcus (聚球藻属，蓝藻的另一属)
-
-
-
-# Zooplankton
-
-copepod 桡足类
-
-
-
-# Zoology
-TBD
-节肢动物
-腔肠动物
-
-# Cell biology
-zooxanthellae
-pseudopod
-rhizopod
-cytoplasm
-
-
-# Fish
-TBD
