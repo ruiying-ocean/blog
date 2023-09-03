@@ -35,7 +35,7 @@ The difference between seawater DIC and foraminiferal test is due to abiotic kin
 
 
 ## Conclusion 
-Isotopic fractionation is like fliuds with different densities flowing through different reserviors. Some stay, some go.
+Isotopic fractionation is like fliuds with different densities flowing through different reserviors (namely global carbon cycle). Some stay, some go.
 
 ## References
 
