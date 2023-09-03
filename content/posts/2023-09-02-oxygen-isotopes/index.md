@@ -1,6 +1,6 @@
 ---
 title: Foraminifera and stable oxygen isotopes
-author: Package Build
+author: Rui Ying
 date: '2023-09-02'
 slug: []
 categories:
