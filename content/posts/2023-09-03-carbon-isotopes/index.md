@@ -22,7 +22,7 @@ Key: organic matter = low $\delta^{13}C$
 
 - Photosynthesis (prefers $^{12}C$, enriching seawater $\delta^{13}C$) & Respiration (release $\delta^{13}C$-deplete carbon)
 - Global terrestrial carbon pool (which also increases atmospheric $\delta^{13}C$) & lithosphere input ($\delta^{13}C$-deplete carbon)
-- Air-sea equilibrium (lower temperature leads to greater differences, with $\ce{CO2} higher than DIC in $\delta^{13}C$. But this process influence more on the atmospheric $\ce{CO2}$ because of its much smaller (1/50 times) size of inorganic carbon pool)
+- Air-sea equilibrium (lower temperature leads to greater differences, with $\ce{CO2}$ higher than DIC in $\delta^{13}C$. But this process influence more on the atmospheric $\ce{CO2}$ because of its much smaller (1/50 times) size of inorganic carbon pool)
 - Ocean Mixing (NADW has higher $\delta^{13}C$ from surface Atlantic, AABW has lower value due to more mixing of deep waters)
 
 ## Foraminifera test $\delta^{13}C$
