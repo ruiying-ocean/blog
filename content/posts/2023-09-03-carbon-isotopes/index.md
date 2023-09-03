@@ -1,7 +1,7 @@
 ---
 title: Foraminifera and stable carbon isotopes
-author: Package Build
-date: '2023-09-02'
+author: Rui Ying
+date: '2023-09-03'
 slug: []
 categories:
   - Science
