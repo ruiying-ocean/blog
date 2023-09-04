@@ -1,5 +1,5 @@
 ---
-title: Bayesian analysis with MCMC
+title: Bayesian Markov Chain Monte Carlo (MCMC) Algorithms
 author: Rui Ying
 date: '2022-10-06'
 slug: []
@@ -34,31 +34,32 @@ repost:
   url: ''
 ---
 
-<!--more-->
-# Unsolved Problem: Integral
+## The main reason to use MCMC: integral
 
-We skipped a big problem, integral. This can be trick because there're can be multiple integral for multiple parameters. So we usually use simulation method to do this.
+The computational difficulties of integral in the denominator is an unsolved problem. This can be trick because there're can be multiple integral for multiple parameters. So we use simulation method to skip this part, from [Prior] and [Likelihood] to [Posterior]
 
 
-## MCMC to estimate posterior distribution
+## MCMC to estimate posterior distribution of targeted parameters
 
-The integral often prevents us from calculating posterior distribution analytically. Thus we have simulation method - Markov Chain Monte Carlo (MCMC). Markov chain is to trace the state of variable which is relevant with the last one. Monte Carlo stands for a random number generator for simulation. Here we try parameters one by one (i.e. simulation) as a "chain".
+Monte Carlo = random walk, MCMC = dependent random walk
+
+The integral often prevents us from calculating posterior distribution analytically. Thus we have simulation method - Markov Chain Monte Carlo (MCMC). Markov chain is to trace the state of variable which is relevant with the last one. Monte Carlo stands for a random number generator for simulation. Here we try parameters one by one (i.e. iterative simulation) as a "chain".
 
 ### Metropolis sampling algorithm
 
 #### How to do it?
 
-- Choose a parameter value and calculate its likelihood
+- Choose a one value of estimated parameter and calculate its likelihood, multiply its prior density
 
-- Choose another one, do the same, and compare to the likelihood above
+- Choose another one, do the same, and compare to the likelihood above get the ratio `r`
 
-- Keep the parameter with smaller likelihood
+- Accept the parameter with `r` > 1; if `r` < 1, compare it with some random value. 
 
 - Repeat the steps above for as many times as possible
 
 - All accepted values will be the points in (estimated) posterior distribution
 
-- Update the hyperparameters using accepted values' mean/variance (so called *moment matching*) like connecting our points by a line.
+- Update the hyperparameters using accepted values' mean/variance (so called *moment matching*, 矩估计) like connecting our points by a line.
 
 #### Questions
 
@@ -134,7 +135,7 @@ If a starting point is in a low density region of the posterior distribution, it
 
 ### Thinning/pruning
 
-Disregard the certain number of trials, for example, every other trial, to avoid the correlation between nearby trials.
+Disregard the certain number of trials, for example, every other trial, to avoid the autocorrelation between nearby trials.
 
 ### Tiny number?
 
