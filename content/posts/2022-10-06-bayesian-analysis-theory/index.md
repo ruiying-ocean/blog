@@ -1,5 +1,5 @@
 ---
-title: Bayesian analysis workflow with example
+title: Bayesian analysis theory
 author: Rui Ying
 date: '2022-10-06'
 slug: []
