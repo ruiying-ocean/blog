@@ -151,9 +151,9 @@
       # 主页显示头像的 URL
       avatarURL = "/images/avatar.jpg"
       #  主页显示的网站标题（支持 HTML 格式）
-      title = "Here is Rui Ying (应锐)"
+      title = "Hi, I am Rui Ying (应锐)"
       # 主页显示的网站副标题
-      subtitle = "Congrats that you just found my heaven in secret!😊🎆"
+      subtitle = "Welcome to my website 😊"
       # 是否为副标题显示打字机动画
       typeit = true
       # 是否显示社交账号
