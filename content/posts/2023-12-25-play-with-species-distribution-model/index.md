@@ -39,3 +39,6 @@ repost:
 Here is a modelled result of a foraminifera species (G. ruber white). The model is using Maxent algorithm.
 
 ![](images/example.png)
+
+Here is a modelled result of a foraminifera species (G. bulloides) based on XGboost algorithm.
+![](images/example2.png)
