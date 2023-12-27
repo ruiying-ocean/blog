@@ -1,5 +1,5 @@
 ---
-title: Foraminifera species distribution model
+title: Study species distribution model
 author: Rui Ying
 date: '2023-12-25'
 slug: []
