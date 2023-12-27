@@ -55,7 +55,7 @@ Most ecologists use R and there is a curated list of packages[^1][^2].
 
 ## Planktic foraminifera case study
 
-I use core-top data and convert them into presence/absence data. Then I model two species (G. ruber white/G. bulloides) using SST, SSS, NPP, Chl, phytoplankton biomass, ice cover, pH (both use Maxent model). Both models achieve AUC score at around 0.9, and SST are the most important variable for both species. So this is basically a just-for-fun version of  Waterson et al. (2017) reconstruction[^3]. Here is the project result in the modern ocean:
+I use core-top data and convert them into presence/absence data. Then I model two species (G. ruber white/G. bulloides) using SST, SSS, NPP, Chl, phytoplankton biomass, ice cover, pH (both use Maxent model). Both models achieve AUC score at around 0.9, and SST are the most important variable for both species. So this is basically a just-for-fun version of  Waterson et al. (2017) reconstruction[^3]. Here is the project result in the modern ocean: clearly G. ruber (white) lives in the (sub)tropical gyres and G. bulloides lives in the subpolar ocean and some productive upwelling regions (California current system, Humboldt current system, Benguela current system, and Arabian Sea).
 
 ![](images/example.png)
 ![](images/example2.png)
