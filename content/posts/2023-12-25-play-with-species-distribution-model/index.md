@@ -39,7 +39,7 @@ repost:
 I am trying species distribution model recently and generating some nice figure, so I think my blog is a good place to store these pretty things.
 
 ## Platform
-Most ecologists use R and there is a curated list of packages^[1-2].
+Most ecologists use R and there is a curated list of packages[^1-2].
 
 ## Main Steps
 1. Presence-absence data & Environmental Data
@@ -55,12 +55,14 @@ Most ecologists use R and there is a curated list of packages^[1-2].
 
 ## Planktic foraminifera case study
 
-I use core-top data and convert them into presence/absence data. Then I model two species (G. ruber white/G. bulloides) using SST/SSS/NPP/Chl/phytoplankton biomass/ice cover/pH/. Here is the results:
+I use core-top data and convert them into presence/absence data. Then I model two species (G. ruber white/G. bulloides) using SST/SSS/NPP/Chl/phytoplankton biomass/ice cover/pH/. This is basically a just-for-fun version of  Waterson et al. (2017) reconstruction[^3]. Here is the results:
 
 ![](images/example.png)
 ![](images/example2.png)
 
 
 ## References
-1. Sillero, N., Campos, J. C., Arenas-Castro, S., & Barbosa, A. M. (2023). A curated list of R packages for ecological niche modelling. Ecological Modelling, 476, 110242.
-2. https://github.com/helixcn/sdm_r_packages
+[^1]. Sillero, N., Campos, J. C., Arenas-Castro, S., & Barbosa, A. M. (2023). A curated list of R packages for ecological niche modelling. Ecological Modelling, 476, 110242.
+[^2]. https://github.com/helixcn/sdm_r_packages
+[^3]. Waterson, A. M., Edgar, K. M., Schmidt, D. N. & Valdes, P. J. (2017). Quantifying the stability of planktic foraminiferal physical niches between the Holocene and Last Glacial Maximum: Niche Stability of Planktic Foraminifera. Paleoceanography 32, 74–89 
+
