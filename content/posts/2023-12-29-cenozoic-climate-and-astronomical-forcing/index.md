@@ -64,6 +64,9 @@ Milankovitch认为，北纬夏季65度日照量影响冰盖积累、日积月累
 这些机制反映了水循环（18O）和碳循环（13C）的复杂交互作用。
 
 ## Cenozoic climate evolution 
+
+> What is climate? Climate is the general weather over a long period (> 30 years). This can include temperature, humidity, pressure, wind, precipitation, and any other weather condition. In a broader term, it includes the state of several components: including the atmosphere, hydrosphere, cryosphere, lithosphere and biosphere.
+
 ### Warmhouse (66-56 Ma; 47-34 Ma) 
 since the EOT, antarctic ice sheet gradually appeared. The opening of drake passage (~33 Ma) allows the appearance of ACC that blocks the heat transport; The Antarctic glaciation also initialised AABW due to brine injection.
 
@@ -85,3 +88,5 @@ Westerhold, T. et al. An astronomically dated record of Earth’s climate and it
 The Cenozoic CO2 Proxy Integration Project (CenCO2PIP) Consortium,Toward a Cenozoic history of atmospheric CO2. Science, eadi5177 (2023)
 
 http://blog.sciencenet.cn/u/Brother8
+
+https://www.metoffice.gov.uk/weather/climate/climate-explained/what-is-climate
