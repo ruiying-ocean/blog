@@ -1,5 +1,5 @@
 ---
-title: Cenozoic climate and astronomical forcing
+title: Astronomical forcing and Cenozoic climate
 author: Package Build
 date: '2023-12-29'
 slug: []
