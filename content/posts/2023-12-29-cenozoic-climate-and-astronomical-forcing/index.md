@@ -1,4 +1,4 @@
----
+k---
 title: Astronomical forcing and Cenozoic climate
 author: Rui Ying
 date: '2023-12-29'
@@ -47,7 +47,7 @@ repost:
 ## 轨道参数
 * Eccentricity (400, 100 ka)：公转参数, 低纬过程
 * Obliquity (41 ka)：季节性、latitudinal gradient
-* Precession (23 ka)：地轴也会旋转，影响黄赤交角；影响岁差=恒星年-回归年；
+* Precession (23 ka)：地轴也会旋转（进动），影响黄赤交角，导致岁差，即恒星年和回归年的时间差；
 
 > Whereas eccentricity affects climate by modulating the amplitude of precession and thus influencing the total annual/seasonal solar energy budget, obliquity changes the latitudinal distribution of insolation (Zachos et al. 2001)
 
