@@ -45,11 +45,13 @@ repost:
 > 黄道面：地球绕太阳旋转的轨道平面; 赤道面：赤道所在的平面。
 
 ## 天文轨道参数
-* Eccentricity (400, 100 ka)：公转参数, 直接影响地球接收太阳辐射的总量（年度或季度），同时也影响岁差的幅度。突出低纬过程，主要是季风和水汽运输。
+* Eccentricity (400, 100 ka)：公转参数, 直接影响地球接收太阳辐射的总量（年度或季度），同时也影响岁差的幅度。突出低纬过程，主要是季风和水汽运输，包括Walker环流（ENSO的核心概念）和ITCZ。
 * Obliquity (41 ka)：影响季节性和纬度差异，因此突出高纬度的过程，主要是冰盖的消长；
 * Precession (23 ka)：地轴本身也会旋转（名为进动），影响黄赤交角，导致岁差，即恒星年和回归年的时间差。恒星年指的是地球公转的周期，回归年指的是阳光直射点在南北回归线之间的周期，后者显然和地轴的位置有关。
 
 > Whereas eccentricity affects climate by modulating the amplitude of precession and thus influencing the total annual/seasonal solar energy budget, obliquity changes the latitudinal distribution of insolation (Zachos et al. 2001)
+
+> The Intertropical Convergence Zone, or ITCZ, is a band of low pressure around the Earth which generally lies near to the equator. The trade winds of the northern and southern hemispheres come together here, which leads to the development of frequent thunderstorms and heavy rain. These thunderstorms can reach, and sometimes exceed, 16 kilometres, 55,000 feet or 10 miles in height above the surface. (Metoffice)
 
 Fast Fourier Transform (time-frequency plot) is often used to decompose these three periodic drivers.
 
@@ -92,6 +94,8 @@ Zachos, J., Pagani, M., Sloan, L., Thomas, E. & Billups, K. Trends, Rhythms, and
 Westerhold, T. et al. An astronomically dated record of Earth’s climate and its predictability over the last 66 million years. Science 369, 1383–1387 (2020).
 
 The Cenozoic CO2 Proxy Integration Project (CenCO2PIP) Consortium,Toward a Cenozoic history of atmospheric CO2. Science, eadi5177 (2023)
+
+徐建，刘臖，陈漪馨，孙金梁, 2020, 浅述低纬过程在全球气候变化中的重要性, 第四纪研究, 40 (3):595-604
 
 http://blog.sciencenet.cn/u/Brother8
 
