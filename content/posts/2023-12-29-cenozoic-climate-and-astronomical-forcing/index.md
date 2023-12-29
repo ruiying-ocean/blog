@@ -27,7 +27,7 @@ resources:
 toc:
   enable: yes
 math:
-  enable: no
+  enable: yes
 lightgallery: no
 seo:
   images: []
@@ -61,7 +61,7 @@ Milankovitch认为，北纬夏季65度日照量影响冰盖积累、日积月累
 4. 干旱导致的粉尘和铁元素输送、增加生物泵效率
 5. Wind stress影响upwelling systems
 
-这些机制反映了水循环（18O）和碳循环（13C）的复杂交互作用。
+这些机制反映了各种气候系统之间的复杂交互作用， 比如水循环（以$\Delta^{18}$O指示）和碳循环（以$\Delta^{13}$C指示）。
 
 ## Cenozoic climate evolution 
 
