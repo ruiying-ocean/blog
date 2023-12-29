@@ -1,4 +1,4 @@
-k---
+---
 title: Astronomical forcing and Cenozoic climate
 author: Rui Ying
 date: '2023-12-29'
@@ -34,7 +34,7 @@ seo:
 repost:
   enable: yes
   url: ''
---->
+---
 
 ## 时间和天文学原理
 * 地球自转：日夜
@@ -45,15 +45,15 @@ repost:
 > 黄道面：地球绕太阳旋转的轨道平面; 赤道面：赤道所在的平面。
 
 ## 天文轨道参数
-* Eccentricity (400, 100 ka)：公转参数, 低纬过程
-* Obliquity (41 ka)：季节性、latitudinal gradient
-* Precession (23 ka)：地轴也会旋转（进动），影响黄赤交角，导致岁差，即恒星年和回归年的时间差；
+* Eccentricity (400, 100 ka)：公转参数, 直接影响地球接收太阳辐射的总量（年度或季度），同时也影响岁差的幅度。突出低纬过程，主要是季风和水汽运输。
+* Obliquity (41 ka)：影响季节性和纬度差异，因此突出高纬度的过程，主要是冰盖的消长；
+* Precession (23 ka)：地轴本身也会旋转（名为进动），影响黄赤交角，导致岁差，即恒星年和回归年的时间差。恒星年指的是地球公转的周期，回归年指的是阳光直射点在南北回归线之间的周期，后者显然和地轴的位置有关。
 
 > Whereas eccentricity affects climate by modulating the amplitude of precession and thus influencing the total annual/seasonal solar energy budget, obliquity changes the latitudinal distribution of insolation (Zachos et al. 2001)
 
 Fast Fourier Transform (time-frequency plot) is often used to decompose these three periodic drivers.
 
-!()[https://i0.wp.com/geologyscience.com/wp-content/uploads/2023/11/Precession-as-a-Milankovitch-Cycle-jpg]
+![](https://i0.wp.com/geologyscience.com/wp-content/uploads/2023/11/Precession-as-a-Milankovitch-Cycle-jpg)
 
 ## 冰期-间冰期旋回
 
