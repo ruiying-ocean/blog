@@ -7,15 +7,15 @@ date: 2020-02-02T16:23:32+08:00
 
 <img align="right" src="avatar.png" width="200"/>
 
-I am a Chinese PhD student at [School of Earth Sciences, University of Bristol](http://www.bristol.ac.uk/earthsciences/). Before I came to the UK, I studied in Yangling and Guangzhou for 4 and 3 years, respectively. I have a variety of geek interests, from programming to fitness/tennis, from natural sciences to music (ME playing guitar on the RHS!).
+I am a Chinese PhD student at [School of Earth Sciences, University of Bristol](http://www.bristol.ac.uk/earthsciences/). I studied in Yangling and Guangzhou before my PhD. I have a variety of interests, from programming to fitness/tennis, from natural sciences to music (ME playing guitar on the RHS!).
 
-This webiste you are seeing is a combination of my blog records and a broad introduction of my research. Check [my CV](https://www.dropbox.com/scl/fi/2vtdcs1xo212kcqows4fj/CV-Rui-Ying.pdf?rlkey=cwth2c4g2j3tnmmqf3eiwuw71&dl=0) if you want to find more about me.
+This webiste you are seeing is a combination of my blog records and a brief introduction of my research. Check [my CV](https://www.dropbox.com/scl/fi/2vtdcs1xo212kcqows4fj/CV-Rui-Ying.pdf?rlkey=cwth2c4g2j3tnmmqf3eiwuw71&dl=0) if you want to find more about me.
 
 ## Research 🔬
 
-Generally speaking, I reckon myself as a marine ecologist. My scientific interests are understanding the fundamental ecological mechanisms, although the studied object has shifted from fish to zooplankton. For example, how global changes influence marine plankton ecology/evolution processes and corresponding functions? What is the role of marine ecosystem in the Earth System Cycles?
+I study climate, marine ecology and evolution, and biogeochemical cycles. The main interest of mine is to understand the fundamental mechanisms of the complex Earth system. For example, why (marine) species become today's shape and have today's functions? Why some areas have more species than the other? Broadly speaking, what controls the fate of lives since its beginning, is it deterministic or stochastic? Below is the introduction of my research object and tool.
 
-
+ 
 ### Planktonic Foraminifer
 
 <figure>
@@ -23,19 +23,21 @@ Generally speaking, I reckon myself as a marine ecologist. My scientific interes
 </figure>
 
 
-Planktic foraminifera are a group of marine zooplankton living in the surface ocean. Their first appearance in the Earth history is estimated in the mid-Jurassic (160 Ma). All the foraminifera have calcareous shells, but some species have evolved unique features (e.g., use algae as symbionts) through the time (See the figure, from Takagi et al. 2019, Bigeosciences). These shells sink onto the marine sediment, and provide the best microfossil record so far. Geochemisits use their fossils to measure past temperature ($\delta^{18}O$, Mg/Ca, UK'37, TEXH86 etc), ocean productivity, while we ecologitst studied the distribution and biodiversity change (Ezard et al. 2011).
+Planktic foraminifera are a group of marine zooplankton living in the surface ocean. Their first appearance in the Earth history is estimated in the mid-Jurassic (160 Ma). All the foraminifera have calcareous shells, but some species have evolved unique features (e.g., use algae as symbionts) through the time (See the figure, from Takagi et al. 2019, Bigeosciences). These shells sink onto the marine sediment, and provide the best microfossil record so far. Geochemisits use their fossils to measure past temperature ($\delta^{18}O$, Mg/Ca), nutrient (I/Ca), ocean productivity, whist I tend to study their distribution and biodiversity change (Ezard et al. 2011).
 
-Foraminifer as carbonate producer also influence the modern carbon cycle by regulating the carbonate pump. Because the precipitation of calcite reduces the alkalinity in the surface ocean, which hinders the ocean abosrbing more carbon dioxide from the atmosphere. Current estimation of foraminiferal contribution on carbonate production is >20%, but more figure is urgently needed. Also foram's role in the carbon cycle is largely unkown depending on the validity of ballast hypothesis.
+Foraminifera as carbonate producer also influence the modern carbon cycle by regulating the carbonate pump. Because the precipitation of calcite reduces the alkalinity in the surface ocean, which hinders the ocean abosrbing more carbon dioxide from the atmosphere. Current estimation of foraminiferal contribution on carbonate production is >20%, but more figure is urgently needed. Also foram's role in the carbon cycle is largely unkown depending on the validity of ballast hypothesis.
 
 ### Earth System Model
 
 <img align="right" src="genie_example.png" width="280"/>
 
-cGENIE is an Earth System Model with intermediate complexity (EMIC), with most focuses on the ocean biogeochemistry. It is my main tool to explore foraminifer and ecosystem. Recently I added more foraminifer functional groups into the model. You can view the [pre-print version on GMD](https://gmd.copernicus.org/preprints/gmd-2022-177/) for more details about this model.
+cGENIE is an Earth System Model with intermediate complexity (EMIC), with most focuses on the ocean biogeochemistry. It is my main tool to explore foraminifer and ecosystem. Recently I added more foraminifer functional groups into the model. You can view the [published paper on GMD](https://gmd.copernicus.org/articles/16/813/2023/gmd-16-813-2023.html) for more details about this model.
 
 
-### Last Glacial Maximum
+### Last Glacial Maximum and plankton niche
 
 <img align="left" src="lgm.png" width="280"/>
 
-The climate of our Earth is naturally cycling from warm (interglacial) and cold (glacial) ages, because of the changing eccentricity, obliquity and precession. We are now in an interglacial age, and the Last Galcial Maximum (~21,000 years BP) is the closet cold age to us (figure to the left, Tierney et al. 2020). There was more ice sheets in the polars and the sea surface temperature was averagely 2 to 4 degree lower than the Holocene (the current geological epoch). Given the changed circulation, marine environment, the Last Glacial Maximum will become the first past time interval for me to test some hypotheses about ecology. 
+The climate of our Earth is naturally cycling from warm (interglacial) and cold (glacial) ages, because of the changing eccentricity, obliquity and precession. The present day is now in an interglacial age, and the Last Galcial Maximum (~21,000 years BP) is the closet cold age to us (figure to the left, Tierney et al. 2020). There was more ice sheets in the polars and the sea surface temperature was averagely 2 to 4 degree lower than the Holocene (the current geological epoch).
+
+I studied the ecological niche of foraminifera in the LGM based on cGENIE model, and test it in several data compilations. These evidence suggest that some foraminifera have changed their optimal niche in response to the past climate changes, therefore showing the sign of adaptive behaviour. These results can be found in [my preprint](https://doi.org/10.31223/X5D10G).
