@@ -53,6 +53,8 @@ repost:
 
 Fast Fourier Transform (time-frequency plot) is often used to decompose these three periodic drivers.
 
+!()[https://i0.wp.com/geologyscience.com/wp-content/uploads/2023/11/Precession-as-a-Milankovitch-Cycle-jpg]
+
 ## 冰期-间冰期旋回
 
 Milankovitch认为，北纬夏季65度日照量影响冰盖积累、日积月累导致了冰期-间冰期的变化。但其实简单的积累是不够的，这其中还涉及许多复杂的反馈机制，包括但不限于：
