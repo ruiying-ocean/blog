@@ -15,8 +15,10 @@ This website is a combination of my blog records and a brief introduction of my 
 
 I study climate, marine ecology and evolution, and biogeochemical cycles. The main interest of mine is to understand the fundamental mechanisms of the complex Earth system. For example, why (marine) species become today's shape and have today's functions? Why some areas have more species than the other? Broadly speaking, what controls the fate of lives since its beginning, is it deterministic or stochastic? Below is the introduction of my research object and tool.
 
- 
-### Planktonic Foraminifer
+### Coastal pelagic and benthic fish community
+Before I dive in to the "big questions", I studied the seasonal variation of marine food web in North South China Sea 2017-2018. This is a coastal sea affected by the East Asia monsoon system. In the winter, the strong northeasterly wind mixed waters and supplied sufficient nutrient for plankton (high nitrate and Chl-a). However, the total biodiversity is lowest likely due to the narrow temperature window for organisms. Differently, in the summer, another phytoplankton bloom associated with high total pelagic biomass, average trophic level (caused by increasing carnivorous fish) and biodiversity was found. Spring is an interesting time when both temperature and nutrient were limited. This minimises the food resource and makes species to seek different food sources. Thus, we observed more benthic fish in the upper layer, but the most abundance zooplankton due to the less grazing pressure. These observations are based on intense field work including pair trawl, bottom trawl, plankton net, water sampling, and carbon and nitrogen stable isotopes measurement in my 3-year Master.
+
+### Planktonic Foraminifera
 
 <figure>
 	<img align="left" src="foram.png" width="300">
