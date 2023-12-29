@@ -61,7 +61,7 @@ Milankovitch认为，北纬夏季65度日照量影响冰盖积累、日积月累
 4. 干旱导致的粉尘和铁元素输送、增加海洋生物泵效率
 5. 风力强度影响上升流和生物生产力
 
-这些机制反映了各种气候系统之间的复杂交互作用， 最常研究的包括水循环和碳循环，分别以$\Delta^{18}$O和$\Delta^{13}$C指示。接下来的新生代气候演化研究就主要基于这两个proxy的数据。
+这些机制反映了各种气候系统之间的复杂交互作用， 最常研究的包括水循环和碳循环，分别以$\delta^{18}$O和$\delta^{13}$C指示。接下来的新生代气候演化研究就主要基于这两个proxy的数据。
 
 > 温室气体原理: 太阳短波辐射是地球气候系统的能量来源，地球发射长波辐射以维持能量平衡。大气包括水蒸汽、二氧化碳、甲烷、云层对长波辐射的吸收力较强，对短波辐射的吸收力比较弱。
 
@@ -80,7 +80,7 @@ since the EOT, antarctic ice sheet gradually appeared. The opening of drake pass
 The closure of the Central American Seaway (2.95–2.82 Ma) contributing the moisture for the Northern Hemisphere Glaciation (2.6-2.7Ma), NH differs from SH in its greater cover of land than ocean. This means that the NHG can accelerate the cooling of climate.
 
 ### Astronomical forcing and predictability
-Before icehouse, obliquity-related cycles are sparse (the lack of high-latitude ice sheet) and the eccentricity-related cycles dominate, indicating a strong influence of low-latitude processes (heat and moisture transport) on climate variations. Before icehouse, the climate  is more deterministic, particularly in the $\Delta^{18}$O compared to $\Delta^{13}$C, likely because of less nonlinear feedback related to ice sheet.
+Before icehouse, obliquity-related cycles are sparse (the lack of high-latitude ice sheet) and the eccentricity-related cycles dominate, indicating a strong influence of low-latitude processes (heat and moisture transport) on climate variations. Before icehouse, the climate  is more deterministic, particularly in the $\delta^{18}$O compared to $\delta^{13}$C, likely because of less nonlinear feedback related to ice sheet.
 
 ### References
 Zachos, J., Pagani, M., Sloan, L., Thomas, E. & Billups, K. Trends, Rhythms, and Aberrations in Global Climate 65 Ma to Present. Science 292, 686–693 (2001).
