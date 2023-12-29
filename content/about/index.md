@@ -16,11 +16,14 @@ This website is a combination of my blog records and a brief introduction of my 
 I study climate, marine ecology and evolution, and biogeochemical cycles. The main interest of mine is to understand the fundamental mechanisms of the complex Earth system. For example, why (marine) species become today's shape and have today's functions? Why some areas have more species than the other? Broadly speaking, what controls the fate of lives since its beginning, is it deterministic or stochastic? Below is the introduction of my research object and tool.
 
 ### Coastal marine ecosystem
-Before I dive in to the "big questions", I studied the seasonal variation of marine food web in North South China Sea 2017-2018. This is a coastal sea affected by the East Asia monsoon system. In the winter, the strong northeasterly wind mixed waters and supplied sufficient nutrient for plankton (high nitrate and Chl-a). However, the total biodiversity is lowest likely due to the narrow temperature window for organisms. Differently, in the summer, another phytoplankton bloom associated with high total pelagic biomass, average trophic level (caused by increasing carnivorous fish) and biodiversity was found. Spring is an interesting time when both temperature and nutrient were limited. This minimises the food resource and makes species to seek different food sources. Thus, we observed more benthic fish in the upper layer, but the most abundance zooplankton due to the less grazing pressure. These observations are based on intense field work including pair trawl, bottom trawl, plankton net, water sampling, and carbon and nitrogen stable isotopes measurement in my 3-year Master.
 
 <figure>
 	<img align="right" src="fish.png" width="300">
 </figure>
+
+Before I dive in to the "big questions", I studied the seasonal variation of marine food web in North South China Sea 2017-2018. This is a coastal sea affected by the East Asia monsoon system. In the winter, the strong northeasterly wind mixed waters and supplied sufficient nutrient for plankton (high nitrate and Chl-a). However, the total biodiversity is lowest likely due to the narrow temperature window for organisms. Differently, in the summer, another phytoplankton bloom associated with high total pelagic biomass, average trophic level (caused by increasing carnivorous fish) and biodiversity was found. Spring is an interesting time when both temperature and nutrient were limited. This minimises the food resource and makes species to seek different food sources. Thus, we observed more benthic fish in the upper layer, but the most abundance zooplankton due to the less grazing pressure. These observations are based on intense field work including pair trawl, bottom trawl, plankton net, water sampling, and carbon and nitrogen stable isotopes measurement in my 3-year Master.
+
+
 
 ### Planktonic Foraminifera
 
@@ -35,10 +38,11 @@ Foraminifera as carbonate producer also influence the modern carbon cycle by reg
 
 ### Earth System Model
 
-<img align="right" src="genie_example.png" width="280"/>
+<img align="right" src="example_map.png" width="280"/>
 
 cGENIE is an Earth System Model with intermediate complexity (EMIC), with most focuses on the ocean biogeochemistry. It is my main tool to explore foraminifer and ecosystem. Recently I added more foraminifer functional groups into the model. You can view the [published paper on GMD](https://gmd.copernicus.org/articles/16/813/2023/gmd-16-813-2023.html) for more details about this model.
 
+Out of interest, I developed a Python package to visualise cGENIE output, named as `cgeniepy`. An example here is how I use the package to plot the carbon biomass of phytoplankton population. More can be found in [my github repository](https://github.com/ruiying-ocean/cgeniepy).
 
 ### Last Glacial Maximum and plankton niche
 
@@ -47,3 +51,7 @@ cGENIE is an Earth System Model with intermediate complexity (EMIC), with most f
 The climate of our Earth is naturally cycling from warm (interglacial) and cold (glacial) ages, because of the changing eccentricity, obliquity and precession. The present day is now in an interglacial age, and the Last Galcial Maximum (~21,000 years BP) is the closet cold age to us (figure to the left, Tierney et al. 2020). There was more ice sheets in the polars and the sea surface temperature was averagely 2 to 4 degree lower than the Holocene (the current geological epoch).
 
 I studied the ecological niche of foraminifera in the LGM based on cGENIE model, and test it in several data compilations. These evidence suggest that some foraminifera have changed their optimal niche in response to the past climate changes, therefore showing the sign of adaptive behaviour. These results can be found in [my preprint](https://doi.org/10.31223/X5D10G).
+
+
+
+
