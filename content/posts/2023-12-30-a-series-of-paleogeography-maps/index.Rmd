@@ -1,0 +1,70 @@
+---
+title: A series of paleogeography maps
+author: Rui Ying
+date: '2023-12-30'
+slug: []
+categories:
+  - Science
+tags:
+  - R; Data Science
+subtitle: ''
+draft: yes
+authorLink: ''
+authorEmail: ''
+description: ''
+keywords: ''
+license: ''
+comment: no
+weight: 0
+hiddenFromHomePage: no
+hiddenFromSearch: no
+summary: ''
+resources:
+  - name: featured-image
+    src: featured-image.jpg
+  - name: featured-image-preview
+    src: featured-image-preview.jpg
+toc:
+  enable: yes
+math:
+  enable: no
+lightgallery: no
+seo:
+  images: []
+repost:
+  enable: yes
+  url: ''
+---
+
+
+```{r, echo = FALSE, message=FALSE, warning=FALSE}
+library(velociraptr)
+
+age_to_plot <- seq(0, 540, 20)
+
+## download data and save into a list
+paleo_data <- lapply(age_to_plot, downloadPaleogeography)
+
+## add age to each data
+paleo_data <- lapply(1:length(paleo_data), function(x) {
+  paleo_data[[x]]$age <- age_to_plot[x]
+  return(paleo_data[[x]])
+})
+
+## combine all data into one data frame
+paleo_data <- do.call(rbind, paleo_data)
+
+## plot in Robin projection
+library(ggplot2)
+p <- ggplot(paleo_data)+
+  geom_sf(aes(fill=plate_id))+
+  coord_sf(crs = "+proj=robin")+
+  facet_wrap(~age)
+
+p + scale_fill_viridis_c() + theme(legend.position='none')
+```
+
+```{r, message=FALSE}
+```
+
+
