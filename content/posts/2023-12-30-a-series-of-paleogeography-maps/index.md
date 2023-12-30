@@ -40,7 +40,7 @@ repost:
 Two years ago, I wrote a post about [plotting maps in R](https://www.ruiying.online/2021-11-19-cartography-in-r/). Recently, I wanted to understand more about the paleogeography evolution (e.g., Pohl et al. 2022 Nature) and its corresponding geological time, so I explored the available resources on the Internet.
 
 ## Data
-AFAIK, there are two main sources of paleogeography data: [PALEOMAP](https://www.earthbyte.org/paleomap-paleoatlas-for-gplates/) by [Christopher Scotese](http://www.scotese.com/) and [GPlates](https://www.gplates.org/) by [EarthByte group](https://www.earthbyte.org). The PBDB database possibly also contains some portals to explore this, although it is essentially a fossil database.
+AFAIK, there are two main sources of paleogeography data: [PALEOMAP](https://www.earthbyte.org/paleomap-paleoatlas-for-gplates/) by [Christopher Scotese](http://www.scotese.com/) and [GPlates](https://www.gplates.org/) by [EarthByte group](https://www.earthbyte.org). The PBDB database possibly also contains some portals to explore this, but it is essentially a fossil database.
 
 There are also different types of paleogeography data: coastlines, polygons, digital elevation model (DEM), tectonic plates etc.
 
@@ -60,7 +60,7 @@ Below is a list of softwares/packages I found:
 | velociraptr | R package using macrostrat API |    https://github.com/LunaSare/gplatesr |
 | chronosphere | A R package collecting lots of data in Zenodo beyond paleogeography |    https://github.com/chronosphere-info/r_client|
 
-What if someone just wants to use a fancy map for demonstration? I think it is easist to use the exisitng [PALEOMAP Atlas](https://www.earthbyte.org/paleomap-paleoatlas-for-gplates/). Download the data and use the existing pages directly, here is an example of the Cretaceous-Paleogene Boundry (66 Ma):
+What if someone just wants to use a fancy map for demonstration? I think it is easist to use the exisitng [PALEOMAP Atlas](https://www.earthbyte.org/paleomap-paleoatlas-for-gplates/). Download the data and use the pictures directly, here is an example of the Cretaceous-Paleogene Boundry (66 Ma):
 
 ![](images/paleomap_066.jpg)
 
