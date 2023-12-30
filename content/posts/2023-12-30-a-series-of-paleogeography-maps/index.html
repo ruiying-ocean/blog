@@ -46,7 +46,7 @@ repost:
 age_to_plot &lt;- seq(0, 540, 20)
 
 ## download data and save into a list
-paleo_data &lt;- lapply(age_to_plot, downloadPaleogeography)</code></pre>
+suppressMessages(paleo_data &lt;- lapply(age_to_plot, downloadPaleogeography))</code></pre>
 <pre><code>## Reading layer `OGRGeoJSON&#39; from data source 
 ##   `https://macrostrat.org/api/v2/paleogeography?format=geojson_bare&amp;age=0&#39; 
 ##   using driver `GeoJSON&#39;

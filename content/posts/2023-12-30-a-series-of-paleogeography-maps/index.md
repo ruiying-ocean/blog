@@ -35,15 +35,17 @@ repost:
   enable: yes
   url: ''
 ---
+```{r setup, include=FALSE} 
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+```
 
-
-```{r fig.height=8, fig.width=10, message=FALSE}
+```r
 library(velociraptr)
 
 age_to_plot <- seq(0, 540, 20)
 
 ## download data and save into a list
-paleo_data <- invisible(lapply(age_to_plot, downloadPaleogeography))
+paleo_data <- lapply(age_to_plot, downloadPaleogeography)
 
 ## add age to each data
 paleo_data <- lapply(1:length(paleo_data), function(x) {
@@ -67,5 +69,5 @@ p <- ggplot(paleo_data)+
 
 p + scale_fill_viridis_c() + theme(legend.position='none')
 ```
-
+![](images/example.jpg)
 
