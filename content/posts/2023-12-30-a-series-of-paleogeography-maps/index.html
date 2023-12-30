@@ -1,0 +1,268 @@
+---
+title: A series of paleogeography maps
+author: Rui Ying
+date: '2023-12-30'
+slug: []
+categories:
+  - Science
+tags:
+  - R; Data Science
+subtitle: ''
+draft: no
+authorLink: ''
+authorEmail: ''
+description: ''
+keywords: ''
+license: ''
+comment: no
+weight: 0
+hiddenFromHomePage: no
+hiddenFromSearch: no
+summary: ''
+resources:
+  - name: featured-image
+    src: featured-image.jpg
+  - name: featured-image-preview
+    src: featured-image-preview.jpg
+toc:
+  enable: yes
+math:
+  enable: no
+lightgallery: no
+seo:
+  images: []
+repost:
+  enable: yes
+  url: ''
+---
+
+
+<div id="TOC">
+
+</div>
+
+<pre><code>## Reading layer `OGRGeoJSON&#39; from data source 
+##   `https://macrostrat.org/api/v2/paleogeography?format=geojson_bare&amp;age=0&#39; 
+##   using driver `GeoJSON&#39;
+## Simple feature collection with 127 features and 1 field
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -180 ymin: -90 xmax: 180 ymax: 85.02899
+## Geodetic CRS:  WGS 84
+## Reading layer `OGRGeoJSON&#39; from data source 
+##   `https://macrostrat.org/api/v2/paleogeography?format=geojson_bare&amp;age=20&#39; 
+##   using driver `GeoJSON&#39;
+## Simple feature collection with 115 features and 1 field
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -180 ymin: -90 xmax: 180 ymax: 85.07523
+## Geodetic CRS:  WGS 84
+## Reading layer `OGRGeoJSON&#39; from data source 
+##   `https://macrostrat.org/api/v2/paleogeography?format=geojson_bare&amp;age=40&#39; 
+##   using driver `GeoJSON&#39;
+## Simple feature collection with 113 features and 1 field
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -180 ymin: -90 xmax: 180 ymax: 84.58586
+## Geodetic CRS:  WGS 84
+## Reading layer `OGRGeoJSON&#39; from data source 
+##   `https://macrostrat.org/api/v2/paleogeography?format=geojson_bare&amp;age=60&#39; 
+##   using driver `GeoJSON&#39;
+## Simple feature collection with 108 features and 1 field
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -180 ymin: -90 xmax: 180 ymax: 89.3009
+## Geodetic CRS:  WGS 84
+## Reading layer `OGRGeoJSON&#39; from data source 
+##   `https://macrostrat.org/api/v2/paleogeography?format=geojson_bare&amp;age=80&#39; 
+##   using driver `GeoJSON&#39;
+## Simple feature collection with 105 features and 1 field
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -180 ymin: -90 xmax: 180 ymax: 89.58829
+## Geodetic CRS:  WGS 84
+## Reading layer `OGRGeoJSON&#39; from data source 
+##   `https://macrostrat.org/api/v2/paleogeography?format=geojson_bare&amp;age=100&#39; 
+##   using driver `GeoJSON&#39;
+## Simple feature collection with 104 features and 1 field
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -180 ymin: -90 xmax: 180 ymax: 85.1535
+## Geodetic CRS:  WGS 84
+## Reading layer `OGRGeoJSON&#39; from data source 
+##   `https://macrostrat.org/api/v2/paleogeography?format=geojson_bare&amp;age=120&#39; 
+##   using driver `GeoJSON&#39;
+## Simple feature collection with 103 features and 1 field
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -180 ymin: -90 xmax: 180 ymax: 86.84487
+## Geodetic CRS:  WGS 84
+## Reading layer `OGRGeoJSON&#39; from data source 
+##   `https://macrostrat.org/api/v2/paleogeography?format=geojson_bare&amp;age=140&#39; 
+##   using driver `GeoJSON&#39;
+## Simple feature collection with 103 features and 1 field
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -180 ymin: -90 xmax: 180 ymax: 83.19893
+## Geodetic CRS:  WGS 84
+## Reading layer `OGRGeoJSON&#39; from data source 
+##   `https://macrostrat.org/api/v2/paleogeography?format=geojson_bare&amp;age=160&#39; 
+##   using driver `GeoJSON&#39;
+## Simple feature collection with 94 features and 1 field
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -173.4807 ymin: -88.42115 xmax: 177.6787 ymax: 87.89502
+## Geodetic CRS:  WGS 84
+## Reading layer `OGRGeoJSON&#39; from data source 
+##   `https://macrostrat.org/api/v2/paleogeography?format=geojson_bare&amp;age=180&#39; 
+##   using driver `GeoJSON&#39;
+## Simple feature collection with 94 features and 1 field
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -180 ymin: -78.2924 xmax: 180 ymax: 90
+## Geodetic CRS:  WGS 84
+## Reading layer `OGRGeoJSON&#39; from data source 
+##   `https://macrostrat.org/api/v2/paleogeography?format=geojson_bare&amp;age=200&#39; 
+##   using driver `GeoJSON&#39;
+## Simple feature collection with 91 features and 1 field
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -180 ymin: -73.8738 xmax: 180 ymax: 90
+## Geodetic CRS:  WGS 84
+## Reading layer `OGRGeoJSON&#39; from data source 
+##   `https://macrostrat.org/api/v2/paleogeography?format=geojson_bare&amp;age=220&#39; 
+##   using driver `GeoJSON&#39;
+## Simple feature collection with 90 features and 1 field
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -180 ymin: -83.70644 xmax: 180 ymax: 90
+## Geodetic CRS:  WGS 84
+## Reading layer `OGRGeoJSON&#39; from data source 
+##   `https://macrostrat.org/api/v2/paleogeography?format=geojson_bare&amp;age=240&#39; 
+##   using driver `GeoJSON&#39;
+## Simple feature collection with 87 features and 1 field
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -180 ymin: -89.03605 xmax: 180 ymax: 87.03059
+## Geodetic CRS:  WGS 84
+## Reading layer `OGRGeoJSON&#39; from data source 
+##   `https://macrostrat.org/api/v2/paleogeography?format=geojson_bare&amp;age=260&#39; 
+##   using driver `GeoJSON&#39;
+## Simple feature collection with 75 features and 1 field
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -180 ymin: -90 xmax: 180 ymax: 84.2173
+## Geodetic CRS:  WGS 84
+## Reading layer `OGRGeoJSON&#39; from data source 
+##   `https://macrostrat.org/api/v2/paleogeography?format=geojson_bare&amp;age=280&#39; 
+##   using driver `GeoJSON&#39;
+## Simple feature collection with 75 features and 1 field
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -180 ymin: -90 xmax: 180 ymax: 71.99472
+## Geodetic CRS:  WGS 84
+## Reading layer `OGRGeoJSON&#39; from data source 
+##   `https://macrostrat.org/api/v2/paleogeography?format=geojson_bare&amp;age=300&#39; 
+##   using driver `GeoJSON&#39;
+## Simple feature collection with 75 features and 1 field
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -180 ymin: -90 xmax: 180 ymax: 66.14279
+## Geodetic CRS:  WGS 84
+## Reading layer `OGRGeoJSON&#39; from data source 
+##   `https://macrostrat.org/api/v2/paleogeography?format=geojson_bare&amp;age=320&#39; 
+##   using driver `GeoJSON&#39;
+## Simple feature collection with 67 features and 1 field
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -180 ymin: -90 xmax: 180 ymax: 65.08627
+## Geodetic CRS:  WGS 84
+## Reading layer `OGRGeoJSON&#39; from data source 
+##   `https://macrostrat.org/api/v2/paleogeography?format=geojson_bare&amp;age=340&#39; 
+##   using driver `GeoJSON&#39;
+## Simple feature collection with 67 features and 1 field
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -180 ymin: -90 xmax: 180 ymax: 56.57533
+## Geodetic CRS:  WGS 84
+## Reading layer `OGRGeoJSON&#39; from data source 
+##   `https://macrostrat.org/api/v2/paleogeography?format=geojson_bare&amp;age=360&#39; 
+##   using driver `GeoJSON&#39;
+## Simple feature collection with 67 features and 1 field
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -180 ymin: -90 xmax: 180 ymax: 56.16314
+## Geodetic CRS:  WGS 84
+## Reading layer `OGRGeoJSON&#39; from data source 
+##   `https://macrostrat.org/api/v2/paleogeography?format=geojson_bare&amp;age=380&#39; 
+##   using driver `GeoJSON&#39;
+## Simple feature collection with 67 features and 1 field
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -180 ymin: -90 xmax: 180 ymax: 61.163
+## Geodetic CRS:  WGS 84
+## Reading layer `OGRGeoJSON&#39; from data source 
+##   `https://macrostrat.org/api/v2/paleogeography?format=geojson_bare&amp;age=400&#39; 
+##   using driver `GeoJSON&#39;
+## Simple feature collection with 67 features and 1 field
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -180 ymin: -90 xmax: 180 ymax: 76.76026
+## Geodetic CRS:  WGS 84
+## Reading layer `OGRGeoJSON&#39; from data source 
+##   `https://macrostrat.org/api/v2/paleogeography?format=geojson_bare&amp;age=420&#39; 
+##   using driver `GeoJSON&#39;
+## Simple feature collection with 67 features and 1 field
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -180 ymin: -90 xmax: 180 ymax: 79.92096
+## Geodetic CRS:  WGS 84
+## Reading layer `OGRGeoJSON&#39; from data source 
+##   `https://macrostrat.org/api/v2/paleogeography?format=geojson_bare&amp;age=440&#39; 
+##   using driver `GeoJSON&#39;
+## Simple feature collection with 67 features and 1 field
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -180 ymin: -90 xmax: 180 ymax: 55.29351
+## Geodetic CRS:  WGS 84
+## Reading layer `OGRGeoJSON&#39; from data source 
+##   `https://macrostrat.org/api/v2/paleogeography?format=geojson_bare&amp;age=460&#39; 
+##   using driver `GeoJSON&#39;
+## Simple feature collection with 67 features and 1 field
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -180 ymin: -90 xmax: 180 ymax: 35.13965
+## Geodetic CRS:  WGS 84
+## Reading layer `OGRGeoJSON&#39; from data source 
+##   `https://macrostrat.org/api/v2/paleogeography?format=geojson_bare&amp;age=480&#39; 
+##   using driver `GeoJSON&#39;
+## Simple feature collection with 67 features and 1 field
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -180 ymin: -90 xmax: 180 ymax: 54.73465
+## Geodetic CRS:  WGS 84
+## Reading layer `OGRGeoJSON&#39; from data source 
+##   `https://macrostrat.org/api/v2/paleogeography?format=geojson_bare&amp;age=500&#39; 
+##   using driver `GeoJSON&#39;
+## Simple feature collection with 67 features and 1 field
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -180 ymin: -90 xmax: 180 ymax: 60.17819
+## Geodetic CRS:  WGS 84
+## Reading layer `OGRGeoJSON&#39; from data source 
+##   `https://macrostrat.org/api/v2/paleogeography?format=geojson_bare&amp;age=520&#39; 
+##   using driver `GeoJSON&#39;
+## Simple feature collection with 66 features and 1 field
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -180 ymin: -90 xmax: 180 ymax: 50.79077
+## Geodetic CRS:  WGS 84
+## Reading layer `OGRGeoJSON&#39; from data source 
+##   `https://macrostrat.org/api/v2/paleogeography?format=geojson_bare&amp;age=540&#39; 
+##   using driver `GeoJSON&#39;
+## Simple feature collection with 66 features and 1 field
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -180 ymin: -90 xmax: 180 ymax: 48.65431
+## Geodetic CRS:  WGS 84</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
