@@ -59,6 +59,7 @@ Below is a list of softwares/packages I found:
 | mapast  | Another R package using Gplates API |    https://github.com/macroecology/mapast|
 | velociraptr | R package using macrostrat API |    https://github.com/LunaSare/gplatesr |
 | chronosphere | A R package collecting lots of data in Zenodo beyond paleogeography |    https://github.com/chronosphere-info/r_client|
+| via | A dataset (paleocoastlines) is provided to describe coastlines of 0, 10, 20 Ma  |  https://cran.r-project.org/web/packages/via/index.html|
 
 What if someone just wants to use a fancy map for demonstration? I think it is easist to use the exisitng [PALEOMAP Atlas](https://www.earthbyte.org/paleomap-paleoatlas-for-gplates/). Download the data and use the pictures directly, here is an example of the Cretaceous-Paleogene Boundry (66 Ma):
 
