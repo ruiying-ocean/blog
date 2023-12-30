@@ -106,6 +106,8 @@ p + scale_fill_viridis_c() + theme(legend.position='none')
 ![](images/example.png)
 
 ### Topography
+Then I also plot the topography using PaleoDEM data. Note there're many data formats and here I use .csv.
+
 ```R
 library(data.table)
 library(stringr)
@@ -144,3 +146,4 @@ p + scale_fill_etopo()+theme_minimal()+
 ## References
 Pohl, Alexandre, et al. "Continental configuration controls ocean oxygenation during the Phanerozoic." Nature 608.7923 (2022): 523-527.
 
+Cermeño, Pedro, et al. "Post-extinction recovery of the Phanerozoic oceans and biodiversity hotspots." Nature 607.7919 (2022): 507-511.
