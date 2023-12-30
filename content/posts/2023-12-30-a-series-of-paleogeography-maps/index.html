@@ -41,6 +41,12 @@ repost:
 
 </div>
 
+<pre class="r"><code>library(velociraptr)
+
+age_to_plot &lt;- seq(0, 540, 20)
+
+## download data and save into a list
+paleo_data &lt;- lapply(age_to_plot, downloadPaleogeography)</code></pre>
 <pre><code>## Reading layer `OGRGeoJSON&#39; from data source 
 ##   `https://macrostrat.org/api/v2/paleogeography?format=geojson_bare&amp;age=0&#39; 
 ##   using driver `GeoJSON&#39;
@@ -265,4 +271,25 @@ repost:
 ## Dimension:     XY
 ## Bounding box:  xmin: -180 ymin: -90 xmax: 180 ymax: 48.65431
 ## Geodetic CRS:  WGS 84</code></pre>
-<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<pre class="r"><code>## add age to each data
+paleo_data &lt;- lapply(1:length(paleo_data), function(x) {
+  paleo_data[[x]]$age &lt;- paste(age_to_plot[x], &quot;Ma&quot;)
+  return(paleo_data[[x]])
+})
+
+## combine all data into one data frame
+paleo_data &lt;- do.call(rbind, paleo_data)
+paleo_data$age &lt;- forcats::fct_reorder(paleo_data$age,
+                                       readr::parse_number(paleo_data$age))
+
+## plot in Robin projection
+library(ggplot2)
+p &lt;- ggplot(paleo_data)+
+  geom_sf(aes(fill=plate_id))+
+  coord_sf(crs = &quot;+proj=robin&quot;)+
+  facet_wrap(~age) +
+  theme_minimal()+
+  theme(panel.grid = element_line(color = &quot;black&quot;, linewidth = .2))
+
+p + scale_fill_viridis_c() + theme(legend.position=&#39;none&#39;)</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-1-1.png" width="960" /></p>
