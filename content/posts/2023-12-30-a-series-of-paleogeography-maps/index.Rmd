@@ -37,7 +37,7 @@ repost:
 ---
 
 
-```{r fig.height=8, fig.width=10, message=TRUE, warning=FALSE}
+```{r fig.height=8, fig.width=10, message=FALSE}
 library(velociraptr)
 
 age_to_plot <- seq(0, 540, 20)
