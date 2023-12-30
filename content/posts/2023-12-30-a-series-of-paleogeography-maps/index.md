@@ -35,9 +35,6 @@ repost:
   enable: yes
   url: ''
 ---
-```{r setup, include=FALSE} 
-knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
-```
 
 ```r
 library(velociraptr)
@@ -63,11 +60,13 @@ library(ggplot2)
 p <- ggplot(paleo_data)+
   geom_sf(aes(fill=plate_id))+
   coord_sf(crs = "+proj=robin")+
-  facet_wrap(~age) +
+  facet_wrap(~age, ncol=5) +
   theme_minimal()+
-  theme(panel.grid = element_line(color = "black", linewidth = .2))
+  theme(panel.grid = element_line(color = "black", linewidth = .2),
+        strip.text = element_text(size=12, face="bold"),
+        legend.position = "none")
 
 p + scale_fill_viridis_c() + theme(legend.position='none')
 ```
-![](images/example.jpg)
+![](images/example.png)
 
