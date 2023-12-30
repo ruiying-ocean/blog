@@ -131,20 +131,7 @@ tm_shape(world)+tm_borders()+tm_fill()+
 
 # ggmap
 
-`ggmap` is another friendly package for people from other research background, it provides
-a function `get_map()` to download some map data from google, open street map and so on.
-```{r, message=FALSE}
-library(ggmap)
-
-#downloading raster data by get_map(). REQUIRE GOOGLE API
-gmap <- get_stamenmap(bbox = c(left = -10, bottom = 50, right = 5, top = 60),
-                      zoom = 6,
-                      maptype='watercolor',
-                      messaging = FALSE)
-
-ggmap(gmap) + theme_void()
-```
-
+`ggmap` is another friendly package for people from other research background, it provides a function `get_map()` to download some map data from google, open street map and so on. Update: the package is updated and the related examples are removed (Dec 2023).
 
 # raster + levelplot/geom_raster
 

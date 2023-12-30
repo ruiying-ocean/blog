@@ -91,7 +91,7 @@ e.g.</p>
 <pre class="r"><code>head(table4a)</code></pre>
 <pre><code>## # A tibble: 3 × 3
 ##   country     `1999` `2000`
-##   &lt;chr&gt;        &lt;int&gt;  &lt;int&gt;
+##   &lt;chr&gt;        &lt;dbl&gt;  &lt;dbl&gt;
 ## 1 Afghanistan    745   2666
 ## 2 Brazil       37737  80488
 ## 3 China       212258 213766</code></pre>
@@ -99,7 +99,7 @@ e.g.</p>
 <pre class="r"><code>table4a %&gt;% pivot_longer(c(&#39;1999&#39;,&#39;2000&#39;), names_to = &quot;year&quot;, values_to = &quot;cases&quot;)</code></pre>
 <pre><code>## # A tibble: 6 × 3
 ##   country     year   cases
-##   &lt;chr&gt;       &lt;chr&gt;  &lt;int&gt;
+##   &lt;chr&gt;       &lt;chr&gt;  &lt;dbl&gt;
 ## 1 Afghanistan 1999     745
 ## 2 Afghanistan 2000    2666
 ## 3 Brazil      1999   37737
@@ -109,7 +109,7 @@ e.g.</p>
 <pre class="r"><code>table4a %&gt;% gather(`1999`,`2000`,key = &#39;year&#39;,value = &#39;cases&#39;) #the gather() in tidyr is equal</code></pre>
 <pre><code>## # A tibble: 6 × 3
 ##   country     year   cases
-##   &lt;chr&gt;       &lt;chr&gt;  &lt;int&gt;
+##   &lt;chr&gt;       &lt;chr&gt;  &lt;dbl&gt;
 ## 1 Afghanistan 1999     745
 ## 2 Brazil      1999   37737
 ## 3 China       1999  212258
@@ -123,7 +123,7 @@ e.g.</p>
 <pre class="r"><code> head(table2,5)</code></pre>
 <pre><code>## # A tibble: 5 × 4
 ##   country      year type          count
-##   &lt;chr&gt;       &lt;int&gt; &lt;chr&gt;         &lt;int&gt;
+##   &lt;chr&gt;       &lt;dbl&gt; &lt;chr&gt;         &lt;dbl&gt;
 ## 1 Afghanistan  1999 cases           745
 ## 2 Afghanistan  1999 population 19987071
 ## 3 Afghanistan  2000 cases          2666
@@ -132,7 +132,7 @@ e.g.</p>
 <pre class="r"><code>table2 %&gt;% pivot_wider(names_from = type, values_from = count) # here&#39;s 2 paramters only</code></pre>
 <pre><code>## # A tibble: 6 × 4
 ##   country      year  cases population
-##   &lt;chr&gt;       &lt;int&gt;  &lt;int&gt;      &lt;int&gt;
+##   &lt;chr&gt;       &lt;dbl&gt;  &lt;dbl&gt;      &lt;dbl&gt;
 ## 1 Afghanistan  1999    745   19987071
 ## 2 Afghanistan  2000   2666   20595360
 ## 3 Brazil       1999  37737  172006362
@@ -142,7 +142,7 @@ e.g.</p>
 <pre class="r"><code>table2 %&gt;% spread(type,count) #spread() is equal as well</code></pre>
 <pre><code>## # A tibble: 6 × 4
 ##   country      year  cases population
-##   &lt;chr&gt;       &lt;int&gt;  &lt;int&gt;      &lt;int&gt;
+##   &lt;chr&gt;       &lt;dbl&gt;  &lt;dbl&gt;      &lt;dbl&gt;
 ## 1 Afghanistan  1999    745   19987071
 ## 2 Afghanistan  2000   2666   20595360
 ## 3 Brazil       1999  37737  172006362

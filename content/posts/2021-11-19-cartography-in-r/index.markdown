@@ -115,11 +115,29 @@ library(sf)
 ```
 
 ```
-## Linking to GEOS 3.10.2, GDAL 3.4.2, PROJ 8.2.1; sf_use_s2() is TRUE
+## Linking to GEOS 3.11.0, GDAL 3.5.3, PROJ 9.1.0; sf_use_s2() is TRUE
 ```
 
 ```r
 library(rnaturalearth) #another public map data package
+```
+
+```
+## The legacy packages maptools, rgdal, and rgeos, underpinning the sp package,
+## which was just loaded, will retire in October 2023.
+## Please refer to R-spatial evolution reports for details, especially
+## https://r-spatial.org/r/2023/05/15/evolution4.html.
+## It may be desirable to make the sf package available;
+## package maintainers should consider adding sf to Suggests:.
+## The sp package is now running under evolution status 2
+##      (status 2 uses the sf package in place of rgdal)
+```
+
+```
+## Support for Spatial objects (`sp`) will be deprecated in {rnaturalearth} and will be removed in a future release of the package. Please use `sf` objects with {rnaturalearth}. For example: `ne_download(returnclass = 'sf')`
+```
+
+```r
 #library(rnaturalearthdata)
 
 it_data =st_as_sf(map("italy", plot = FALSE, fill = TRUE)) #polygons
@@ -156,23 +174,7 @@ tm_shape(world)+tm_borders()+tm_fill()+
 
 # ggmap
 
-`ggmap` is another friendly package for people from other research background, it provides
-a function `get_map()` to download some map data from google, open street map and so on.
-
-```r
-library(ggmap)
-
-#downloading raster data by get_map(). REQUIRE GOOGLE API
-gmap <- get_stamenmap(bbox = c(left = -10, bottom = 50, right = 5, top = 60),
-                      zoom = 6,
-                      maptype='watercolor',
-                      messaging = FALSE)
-
-ggmap(gmap) + theme_void()
-```
-
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-6-1.png" width="672" />
-
+`ggmap` is another friendly package for people from other research background, it provides a function `get_map()` to download some map data from google, open street map and so on. Update: the package is updated and the related examples are removed (Dec 2023).
 
 # raster + levelplot/geom_raster
 
@@ -197,7 +199,7 @@ sst_raster <- flip(rast(t(sst[,,1])))
 plot(sst_raster)
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-7-1.png" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-6-1.png" width="672" />
 
 We can also use ggplot to do the plotting. But notice that the array from netCDF is not containing
 CRS data, that's why we have x-y axis with 0-1 range.
@@ -211,7 +213,7 @@ names(sst_df)[3] <- "sst"
 ggplot(sst_df) + geom_raster(aes(x=x, y=y, fill=sst)) + theme_light() + scale_fill_viridis_c()
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-8-1.png" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-7-1.png" width="672" />
 
 ```r
 # what's the difference between |> and %>%?
