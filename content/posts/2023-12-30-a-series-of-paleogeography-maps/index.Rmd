@@ -37,7 +37,7 @@ repost:
 ---
 
 
-```{r, echo = FALSE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(velociraptr)
 
 age_to_plot <- seq(0, 540, 20)
@@ -58,7 +58,7 @@ paleo_data$age <- forcats::fct_reorder(paleo_data$age,
 
 ## plot in Robin projection
 library(ggplot2)
-ggplot(paleo_data)+
+p <- ggplot(paleo_data)+
   geom_sf(aes(fill=plate_id))+
   coord_sf(crs = "+proj=robin")+
   facet_wrap(~age) +
@@ -66,9 +66,6 @@ ggplot(paleo_data)+
   theme(panel.grid = element_line(color = "black", linewidth = .2))
 
 p + scale_fill_viridis_c() + theme(legend.position='none')
-```
-
-```{r, message=FALSE}
 ```
 
 
