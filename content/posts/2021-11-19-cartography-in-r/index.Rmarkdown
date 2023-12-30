@@ -130,8 +130,20 @@ tm_shape(world)+tm_borders()+tm_fill()+
 ```
 
 # ggmap
+> Update: the package `ggmap` is updated and the related examples are removed (Dec 2023).
+ 
+`ggmap` is another friendly package for people from other research background, it provides a function `get_map()` to download some map data from google, open street map and so on.
 
-`ggmap` is another friendly package for people from other research background, it provides a function `get_map()` to download some map data from google, open street map and so on. Update: the package is updated and the related examples are removed (Dec 2023).
+# ggOceanMaps
+
+`ggOceanMaps` is a package that I recently found. It is probably the most convenient way to plot pretty ocean maps.
+
+```{r}
+library(ggOceanMaps)
+
+## Plot Antarctic
+basemap(limits =-60, bathymetry = TRUE)
+```
 
 # raster + levelplot/geom_raster
 

@@ -173,8 +173,37 @@ tm_shape(world)+tm_borders()+tm_fill()+
 <img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-5-1.png" width="672" />
 
 # ggmap
+> Update: the package `ggmap` is updated and the related examples are removed (Dec 2023).
+ 
+`ggmap` is another friendly package for people from other research background, it provides a function `get_map()` to download some map data from google, open street map and so on.
 
-`ggmap` is another friendly package for people from other research background, it provides a function `get_map()` to download some map data from google, open street map and so on. Update: the package is updated and the related examples are removed (Dec 2023).
+# ggOceanMaps
+
+`ggOceanMaps` is a package that I recently found. It is probably the most convenient way to plot pretty ocean maps.
+
+
+```r
+library(ggOceanMaps)
+```
+
+```
+## ggOceanMaps: Setting data download folder to a temporary folder
+## /var/folders/rq/vks10_qx2l9b08d_pygvwfzh0000gn/T//RtmpL5UN42. This
+## means that any downloaded map data need to be downloaded again when you
+## restart R. To avoid this problem, change the default path to a
+## permanent folder on your computer. Add following lines to your
+## .Rprofile file: {.ggOceanMapsenv <- new.env(); .ggOceanMapsenv$datapath
+## <- 'YourCustomPath'}. You can use usethis::edit_r_profile() to edit the
+## file. '~/ggOceanMapsLargeData' would make it in a writable folder on
+## most operating systems.
+```
+
+```r
+## Plot Antarctic
+basemap(limits =-60, bathymetry = TRUE)
+```
+
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-6-1.png" width="672" />
 
 # raster + levelplot/geom_raster
 
@@ -199,7 +228,7 @@ sst_raster <- flip(rast(t(sst[,,1])))
 plot(sst_raster)
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-6-1.png" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-7-1.png" width="672" />
 
 We can also use ggplot to do the plotting. But notice that the array from netCDF is not containing
 CRS data, that's why we have x-y axis with 0-1 range.
@@ -213,7 +242,7 @@ names(sst_df)[3] <- "sst"
 ggplot(sst_df) + geom_raster(aes(x=x, y=y, fill=sst)) + theme_light() + scale_fill_viridis_c()
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-7-1.png" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-8-1.png" width="672" />
 
 ```r
 # what's the difference between |> and %>%?
