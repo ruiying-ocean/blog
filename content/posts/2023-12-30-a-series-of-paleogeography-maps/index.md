@@ -67,6 +67,8 @@ What if someone just wants to use a fancy map for demonstration? I think it is e
 
 
 ## Phanerozoic paleogeography evolution
+
+### Tectonic plates
 Next I use `velociraptr` to reconstruct the Pohl2022 like map series, it starts from 540 Ma and ends in the present with a time gap of 20 Myr. The code is as follows:
 
 ```r
@@ -103,5 +105,42 @@ p + scale_fill_viridis_c() + theme(legend.position='none')
 ```
 ![](images/example.png)
 
+### Topography
+```R
+library(data.table)
+library(stringr)
+library(marmap)
+
+## list all files
+## data is downloaded from https://zenodo.org/records/5460860
+folder <- "~/Downloads/PaleoDEMS_long_lat_elev_csv_v2/PaleoDEMS_long_lat_elev_csv_v2.csv/"
+data_files <- list.files(folder, full.names = T)[seq(1, 88, 4)]
+
+## read in data and add age column
+paleo_dem <- lapply(data_files, fread)
+
+## add age info
+paleo_dem <- lapply(1:length(paleo_dem), function(x) {
+  filename <- list.files(folder, full.names = F)[seq(1, 88, 4)][x]
+  ## parse age from filename
+  age <- str_extract(filename, "\\d+Ma")
+  paleo_dem[[x]]$age <- age
+  return(paleo_dem[[x]])
+})
+paleo_dem<- do.call(rbind,paleo_dem)
+
+p <- ggplot(paleo_dem) +
+  geom_raster(aes(x = `# lon`, y = lat, fill = elev))+
+  coord_fixed()+
+  facet_wrap(~age)
+
+p + scale_fill_etopo()+theme_minimal()+
+  theme(panel.grid = element_blank(),
+        legend.position='none')+
+  labs(x='',y='')
+```
+![](images/dem.png)
+
 ## References
 Pohl, Alexandre, et al. "Continental configuration controls ocean oxygenation during the Phanerozoic." Nature 608.7923 (2022): 523-527.
+
