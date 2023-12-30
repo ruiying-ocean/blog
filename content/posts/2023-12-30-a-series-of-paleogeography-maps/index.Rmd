@@ -8,7 +8,7 @@ categories:
 tags:
   - R; Data Science
 subtitle: ''
-draft: yes
+draft: no
 authorLink: ''
 authorEmail: ''
 description: ''
@@ -47,19 +47,23 @@ paleo_data <- lapply(age_to_plot, downloadPaleogeography)
 
 ## add age to each data
 paleo_data <- lapply(1:length(paleo_data), function(x) {
-  paleo_data[[x]]$age <- age_to_plot[x]
+  paleo_data[[x]]$age <- paste(age_to_plot[x], "Ma")
   return(paleo_data[[x]])
 })
 
 ## combine all data into one data frame
 paleo_data <- do.call(rbind, paleo_data)
+paleo_data$age <- forcats::fct_reorder(paleo_data$age,
+                                       readr::parse_number(paleo_data$age))
 
 ## plot in Robin projection
 library(ggplot2)
-p <- ggplot(paleo_data)+
+ggplot(paleo_data)+
   geom_sf(aes(fill=plate_id))+
   coord_sf(crs = "+proj=robin")+
-  facet_wrap(~age)
+  facet_wrap(~age) +
+  theme_minimal()+
+  theme(panel.grid = element_line(color = "black", linewidth = .2))
 
 p + scale_fill_viridis_c() + theme(legend.position='none')
 ```
