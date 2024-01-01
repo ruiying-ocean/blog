@@ -1,0 +1,118 @@
+---
+title: Study the evolution of Phanerozoic climate
+author: Rui Ying
+date: '2024-01-01'
+slug: []
+categories:
+  - Science
+tags:
+  - R; Data Science
+  - Climate change
+subtitle: ''
+draft: no
+authorLink: ''
+authorEmail: ''
+description: ''
+keywords: ''
+license: ''
+comment: no
+weight: 0
+hiddenFromHomePage: no
+hiddenFromSearch: no
+summary: ''
+resources:
+  - name: featured-image
+    src: featured-image.jpg
+  - name: featured-image-preview
+    src: featured-image-preview.jpg
+toc:
+  enable: yes
+math:
+  enable: no
+lightgallery: no
+seo:
+  images: []
+repost:
+  enable: yes
+  url: ''
+---
+
+## Introduction
+
+
+```r
+library(tidyverse)
+library(deeptime)
+library(ggthemr)
+
+ggthemr('fresh')
+
+## Global Average Temperature
+scotese2021 <- read_csv("https://raw.githubusercontent.com/ruiying-ocean/phanerozoic_data/main/phanerozoic_data/Scotese2021.csv")
+
+## CO2
+foster2017 <- read_csv('https://raw.githubusercontent.com/ruiying-ocean/phanerozoic_data/main/phanerozoic_data/Foster2017.csv')
+
+##  O2 (GEOCARBSULF/COPSE)
+mills2023 <- read_csv('https://raw.githubusercontent.com/ruiying-ocean/phanerozoic_data/main/phanerozoic_data/Mills_etal_2023_AREPS_O2.csv')
+mills2023$Time <- mills2023$Time * -1
+
+## biodiversity
+zafoss2017 <- read_csv("https://raw.githubusercontent.com/ruiying-ocean/phanerozoic_data/main/phanerozoic_data/ContinuousTimeSeries.csv")
+
+p1 <- ggplot(foster2017, aes(x = Age, y = CO2)) +
+  geom_point(aes(color=Proxy))+
+  geom_smooth(method = "loess", span = 0.1, alpha = 0.2,
+              level=0.95, linewidth=1) +
+  coord_geo()+
+  theme(legend.position = c(0.2,0.85),
+        legend.title = element_blank(),
+        legend.background = element_blank())+
+  ggtitle('Carbon Dioxide (Foster et al. 2017)')+
+  xlim(540,0)+
+  labs(x='', y='CO2 (ppm)')+
+  ## two rows of legend
+  guides(color = guide_legend(nrow = 4))
+
+p2 <-scotese2021 %>%  ggplot(aes(x = Age, y = GAT)) +
+  geom_line(linewidth=1)+
+  coord_geo()+
+  ggtitle('Global Average Temperature (Scotese et al. 2021)')+
+  xlim(540,0)+
+  labs(x='', y='GAT (°C)')
+
+p3 <- mills2023 %>% ggplot() +
+  geom_line(aes(x = Time, y = Mid),linewidth=1)+
+  geom_ribbon(aes(x = Time, ymin = Min, ymax = Max), alpha = 0.2)+
+  coord_geo()+
+  ggtitle('Oxygen (Mills et al. 2023)')+
+  xlim(540,0)+
+  labs(x='', y = 'O2 (%)')
+
+p4 <- zafoss2017 %>% 
+  ggplot(aes(x = Age, y = `genus range-through`)) +
+  geom_line(linewidth=1)+
+  coord_geo()+
+  ggtitle('Marine Biodiversity (Zafoss et al. 2017)')+
+  xlim(540,0)+
+  labs(x='', y='total genus')
+
+library(patchwork)
+p.left <- p1+p2
+p.right <- p3+p4
+p.left / p.right
+```
+
+```
+## Warning: Removed 1 row containing missing values (`geom_line()`).
+## Removed 1 row containing missing values (`geom_line()`).
+```
+
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-1-1.png" width="1152" />
+
+## References
+1. Zaffos, A., Finnegan, S. & Peters, S. E. Plate tectonic regulation of global marine animal diversity. Proc. Natl. Acad. Sci. 114, 5653–5658 (2017).
+2. Mills, B. J. W., Krause, A. J., Jarvis, I. & Cramer, B. D. Evolution of atmospheric O2 through the phanerozoic, revisited. Annu. Rev. Earth Planet. Sci. 51, 253–276 (2023).
+3. Foster, G. L., Royer, D. L. & Lunt, D. J. Future climate forcing potentially without precedent in the last 420 million years. Nat. Commun. 8, 14845 (2017).
+4. Scotese, C. R., Song, H., Mills, B. J. W. & Van Der Meer, D. G. Phanerozoic paleotemperatures: the earth’s changing climate during the last 540 million years. Earth Sci. Rev. 215, 103503 (2021).
+5. https://earthstep.wordpress.com/tag/evolution-of-atmosphere/
