@@ -68,7 +68,7 @@ p1 <- ggplot(foster2017, aes(x = Age, y = CO2)) +
   theme(legend.position = c(0.2,0.85),
         legend.title = element_blank(),
         legend.background = element_blank())+
-  ggtitle('Carbon Dioxide (Foster et al. 2017)')+
+  ggtitle('Atmospheric Carbon Dioxide (Foster et al. 2017)')+
   xlim(540,0)+
   labs(x='', y='CO2 (ppm)')+
   ## two rows of legend
@@ -85,7 +85,7 @@ p3 <- mills2023 %>% ggplot() +
   geom_line(aes(x = Time, y = Mid),linewidth=1)+
   geom_ribbon(aes(x = Time, ymin = Min, ymax = Max), alpha = 0.2)+
   coord_geo()+
-  ggtitle('Oxygen (Mills et al. 2023)')+
+  ggtitle('Atmospheric Oxygen (Mills et al. 2023)')+
   xlim(540,0)+
   labs(x='', y = 'O2 (%)')
 
