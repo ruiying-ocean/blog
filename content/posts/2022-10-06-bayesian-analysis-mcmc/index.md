@@ -34,9 +34,9 @@ repost:
   url: ''
 ---
 
-## The main reason to use MCMC: integral
+## The main reason of using MCMC: integral
 
-The computational difficulties of integral in the denominator is an unsolved problem. This can be trick because there're can be multiple integral for multiple parameters. So we use simulation method to skip this part, from [Prior] and [Likelihood] to [Posterior]
+The computational difficulties of integral in the denominator is an unsolved problem. This can be trick because there're can be multiple integral for multiple parameters. So we use simulation method to skip this part, from [Prior] and [Likelihood] to [Posterior]. The prior distribution and its hyperparameters are determined by authors. The likelihood are from the distribution of interest and samples.
 
 
 ## MCMC to estimate posterior distribution of targeted parameters
