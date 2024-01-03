@@ -38,13 +38,14 @@ repost:
 ---
 
 
-## Climate and biodiversity
+## Climate, landscape, and biodiversity
 Besides the change of [paleogeography](https://www.ruiying.online/2023-12-30-a-series-of-paleogeography-maps/), the Phanerozoic climate has experienced remarkable changes. Based on the modelled global average temperature (because most oxygen isotopic data are in the tropics), the Earth has alternated between the "icehouse" and "warmhouse" states (so called "Double Hump"). The early Paleozoic and the whole Mesozoic have warmer climate, while the late paleozoic and Cenzoic represent the "cool Earth". Such evolution of climate has been related to the formation and breakup of super-continent, Pangaea, which happened in around 300 and 200 Ma respectively. Others also suggest the impact of Large Igneous Provinces (LIPS) (warming) and bolide impacts (cooling). Of the most studied are the Siberian Traps and Deccan Traps associated with the end-Permian and the end-Cretaceous extinction event. The other exceptional transitions include the late Ordovician cooling which is supposed to cause the first massive extinction.
 
 The atmospheric composition in the early Phanerozoic also experienced great changes, mainly the CO<sub>2</sub> and O<sub>2</sub>. Obviously they played an important role in the climate change because one of them is the greenhouse gas, and the other closely links to the biosphere and methane (the other greenhouse gas with stronger warming effects than CO<sub>2</sub>). The driver of the atmospheric composition has been another compelling story that I do not want to dive deeper here. 
 
 The rising oxygen level in the Early and Middle Paleozoic clearly links to the rising biodiversity. The diversification of gastropod and bivalve happened in the Ordovician shallow-water environment, and more vertebrates including many fish evolved in the Devonian. The next is the end-Permian extinction corresponding to the declining oxygen and spiking CO<sub>2</sub>. Finally when the oxygen stablise in the Late Triassaic, more mammal are found. And after the K-Pg boundary that kills the dominant "reptiles" in the Mesozoic, our ancestor become the king of this planet.
 
+However, a very latest study (Salles et al. 2023) suggests that the evolution of plate tectonics change the sediment flux through weathering and nutrient discharge. Clearly nutrient determines the carrying capacity of environment, and thus the biodiversity. What is the relationship among climate, landscape, and biodiversity? How do they interact with each other? These questions need probably several generations to answer.
 
 ## Origination and extinction of biodiversity
 Biodiversity can be regarded in ecological modes (e.g., mobility, feeding strategies) and taxonomic richness (number of genus). The diversification of both is a net result of origination and extinction. Knope et al. (2020) studied the origination and extinction rate of ecological and taxonomic diversity. They found that the origination and extinction rate tended to increase with taxonomic richness before Cenozoic, while the origination and extinction rate mostly decreased with ecological diversity. This means that although the taxonomic richness was high in the early ages, the extinction and turnover rate is also remarkable. This prevails until the accumulation of ecological modes (mostly the complex physiological system and mobile ability),which make organism to be more resilient in extinction event. By such, the coupling strength between ecological and taxonomic diversity grows through time. In my interpretation, ecological modes are the "true and useful" diversification and will saturate, while the genus number is the appearance in this production process.
@@ -131,3 +132,5 @@ p.left / p.right
 7. https://zhuanlan.zhihu.com/p/68549205
 8. https://zh.wikipedia.org/zh-hans/%E7%94%9F%E5%91%BD%E5%8F%B2
 9. Knope, M. L., Bush, A. M., Frishkoff, L. O., Heim, N. A. & Payne, J. L. Ecologically diverse clades dominate the oceans via extinction resistance. Science 367, 1035–1038 (2020).
+10. Salles, T., Husson, L., Lorcery, M. & Hadler Boggiani, B. Landscape dynamics and the phanerozoic diversification of the biosphere. Nature 624, 115–121 (2023).
+
