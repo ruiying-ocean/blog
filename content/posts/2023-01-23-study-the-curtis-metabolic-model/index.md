@@ -1,5 +1,5 @@
 ---
-title: study the metabolic index model
+title: Study the metabolic index model
 author: Package Build
 date: '2023-01-23'
 slug: []
