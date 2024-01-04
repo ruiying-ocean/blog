@@ -1,5 +1,5 @@
 ---
-title: Astronomical forcing and Cenozoic climate
+title: Astronomical forcing and the Cenozoic climate
 author: Rui Ying
 date: '2023-12-29'
 slug: []

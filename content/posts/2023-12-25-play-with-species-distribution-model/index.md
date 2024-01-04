@@ -1,5 +1,5 @@
 ---
-title: Study species distribution model
+title: Study the species distribution model
 author: Rui Ying
 date: '2023-12-25'
 slug: []
