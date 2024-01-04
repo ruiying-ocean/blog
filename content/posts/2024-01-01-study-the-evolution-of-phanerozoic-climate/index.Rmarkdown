@@ -51,7 +51,7 @@ However, a very latest study (Salles et al. 2023) suggests that the evolution of
 Biodiversity can be regarded in ecological modes (e.g., mobility, feeding strategies) and taxonomic richness (number of genus). The diversification of both is a net result of origination and extinction. Knope et al. (2020) studied the origination and extinction rate of ecological and taxonomic diversity. They found that the origination and extinction rate tended to increase with taxonomic richness before Cenozoic, while the origination and extinction rate mostly decreased with ecological diversity. This means that although the taxonomic richness was high in the early ages, the extinction and turnover rate is also remarkable. This prevails until the accumulation of ecological modes (mostly the complex physiological system and mobile ability),which make organism to be more resilient in extinction event. By such, the coupling strength between ecological and taxonomic diversity grows through time. In my interpretation, ecological modes are the "true and useful" diversification and will saturate, while the genus number is the appearance in this production process.
 
 
-```{r, fig.height=10, fig.width=12,echo=FALSE, message=FALSE}
+```{r, fig.height=10, fig.width=12,echo=FALSE, message=FALSE, warning=FALSE}
 library(tidyverse)
 library(deeptime)
 library(ggthemr)
