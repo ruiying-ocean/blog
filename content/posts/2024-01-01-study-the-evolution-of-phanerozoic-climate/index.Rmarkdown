@@ -1,5 +1,5 @@
 ---
-title: Study the evolution of climate and life in Phanerozoic
+title: Study the evolution of climate and life in the Phanerozoic
 author: Rui Ying
 date: '2024-01-01'
 slug: []
