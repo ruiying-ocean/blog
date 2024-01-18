@@ -2,6 +2,10 @@
 title: "学习欧洲历史"
 date: 2024-01-17T22:26:35Z
 draft: false
+categories:
+  - Life
+tags:
+  - History
 ---
 
 ** 欧洲整体趋势
