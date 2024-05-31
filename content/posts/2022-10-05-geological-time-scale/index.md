@@ -1,5 +1,5 @@
 ---
-title: Geological time scale
+title: Geological time scale and its naming history
 author: Rui Ying
 date: '2022-10-05'
 slug: []
@@ -36,14 +36,18 @@ repost:
 
 <!--more-->
 
-Structure: Eon(宙)-Era(代)-Period(纪)-Epoch(世)-age(期)
+## Geological Time Scale
+
+Eon(宙)-Era(代)-Period(纪)-Epoch(世)-age(期)
 
 ```
-+ -- Precambrian（隐生宙）
-|	|-- Archean（太古宙，初始生物的时期）
-|	|-- Proterozoic（元古宙，久远的原始生物的时期）
++-- Hadean (冥古宙，冥王Hades, 代表地狱一般的地球初期)
 |
-+-- Phanerozoic（显生宙，现代生物存在的时期）
++-- Archean（太古宙，the first form of life）
+|
++-- Proterozoic（元古宙，early life）
+|
++-- Phanerozoic (显生宙，phanerós: 可见的)
 	|
 	+ -- Paleozoic（古生代，古代生物）
 	|	| -- Cambrian（寒武纪）
@@ -54,7 +58,7 @@ Structure: Eon(宙)-Era(代)-Period(纪)-Epoch(世)-age(期)
 	|	| -- Permian（二叠纪）
 	|
 	+ -- Mesozoic（中生代，爬行动物）
-	|	| -- Triassic
+	|	| -- Triassic (evolution of Mammal)
 	|	| -- Jurassic
 	|	| -- Cretaceous
 	|
@@ -73,3 +77,24 @@ Structure: Eon(宙)-Era(代)-Period(纪)-Epoch(世)-age(期)
 			| -- Pleistocene
 			| -- Holocene
 ```
+
+## Naming History
+
+* Cambrian - The Latin name of Wales
+* Ordovician: a Welsh tribe, Ordovices
+* Silurian - another tribe of Wales, Silures
+* Devonian - Name after the Devon County, the era of fish
+* Carboniferous - "coal-bearing"
+* Cretaceous - Chalk (Latin: Creta)
+
+## Life evolution and important climate events
+LUCA 3.5-3.8 Ga (Procaryote)
+GOE: 2.4-2.0 Ga
+Eucaryote: 2.2 Ga
+Snowball Earth:  (2.4 Ga after the GOE; 0.75 to 0.635 Ga)
+Multicelluar organism: 1.4 Ga (diverse cells start to emerge)
+Ediacaran biota: 0.68 Ga (after the second Snowball Earth)
+The first metazoan (Saccorhytus) and the first vertebate (昆明鱼和云南虫)
+
+
+
