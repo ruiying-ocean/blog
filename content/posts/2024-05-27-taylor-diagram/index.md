@@ -13,9 +13,9 @@ comment: false
 weight: 0
 
 tags:
-- draft
+- visualisation
 categories:
-- draft
+- Science
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
