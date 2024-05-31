@@ -56,9 +56,11 @@ brew install --cask squirrel
 
 ### Configuration
 
-Application configuration:  squirrel.yaml and squirrel.custom.yaml (theme etc)
+The configuration files (in MacOS) is under `~/Library/Rime`.
 
-Input Method scheme configuration: default.yaml and default.custom.yaml (global); rime_mint.yaml (local).
+Application configuration:  `squirrel.yaml` and `squirrel.custom.yaml` (theme etc)
+
+Input Method scheme configuration: `default.yaml` and `default.custom.yaml` (global); `rime_mint.schema.yaml` (local).
 
 
 ### Useful features for me
@@ -72,3 +74,4 @@ Input Method scheme configuration: default.yaml and default.custom.yaml (global)
 * [rime-ice](https://github.com/iDvel/rime-ice)
 * [rime-mint](https://github.com/ayaka14732/awesome-rime)
 * [ssnhd-rime](https://github.com/ssnhd/rime)
+* [rime-wiki](https://github.com/rime/home/wiki/)
