@@ -88,13 +88,13 @@ Eon(宙)-Era(代)-Period(纪)-Epoch(世)-age(期)
 * Cretaceous - Chalk (Latin: Creta)
 
 ## Life evolution and important climate events
-LUCA 3.5-3.8 Ga (Procaryote)
-GOE: 2.4-2.0 Ga
-Eucaryote: 2.2 Ga
-Snowball Earth:  (2.4 Ga after the GOE; 0.75 to 0.635 Ga)
-Multicelluar organism: 1.4 Ga (diverse cells start to emerge)
-Ediacaran biota: 0.68 Ga (after the second Snowball Earth)
-The first metazoan (Saccorhytus) and the first vertebate (昆明鱼和云南虫)
+* LUCA 3.5-3.8 Ga (Procaryote)
+* GOE: 2.4-2.0 Ga
+* Eucaryote: 2.2 Ga
+* Snowball Earth:  (2.4 Ga after the GOE; 0.75 to 0.635 Ga)
+* Multicelluar organism: 1.4 Ga (diverse cells start to emerge)
+* Ediacaran biota: 0.68 Ga (after the second Snowball Earth)
+* The first metazoan (Saccorhytus) and the first vertebate (昆明鱼和云南虫)
 
 
 
