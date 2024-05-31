@@ -3,7 +3,7 @@ title: "Rime input method"
 subtitle: ""
 date: 2024-05-28T11:42:51+01:00
 draft: false
-author: ""
+author: "Rui Ying"
 authorLink: ""
 authorEmail: ""
 description: ""
@@ -12,10 +12,8 @@ license: ""
 comment: false
 weight: 0
 
-tags:
-- draft
 categories:
-- draft
+- Programming
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
