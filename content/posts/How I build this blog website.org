@@ -1,0 +1,16 @@
+---
+title: "How I Organise My Personal Blog"
+date: 2024-01-14T15:42:30Z
+draft: false
+tag: "life"
+---
+
+* Framekwork: Hugo
+I use =hugo= to build site. As in [[https://gohugo.io/getting-started/quick-start/][the official documentation]], hugo is a fast and flexible static site generator written in Golang.
+It converts source markup files (e.g., org, markdown, Rmarkdown, quarto) to html file.
+
+* Configure websites
+
+* Build locally
+
+* Depoly in the cloud
