@@ -1,5 +1,5 @@
 ---
-title: Astronomical forcing and the Cenozoic climate
+title: Astronomical forcing and the glacial-interglacial climate
 author: Rui Ying
 date: '2023-12-29'
 slug: []
@@ -71,22 +71,6 @@ Milankovitch认为，北纬夏季65度日照量影响冰盖积累、日积月累
 
 > 温室气体原理: 太阳短波辐射是地球气候系统的能量来源，地球发射长波辐射以维持能量平衡。大气包括水蒸汽、二氧化碳、甲烷、云层对长波辐射的吸收力较强，对短波辐射的吸收力比较弱。
 
-## Cenozoic climate evolution 
-
-> What is climate? Climate is the general weather over a long period (> 30 years). This can include temperature, humidity, pressure, wind, precipitation, and any other weather condition. In a broader term, it includes the state of several components: including the atmosphere, hydrosphere, cryosphere, lithosphere and biosphere.
-
-### Warmhouse (66-56 Ma; 47-34 Ma) 
-since the EOT, antarctic ice sheet gradually appeared. The opening of drake passage (~33 Ma) allows the appearance of ACC that blocks the heat transport; The Antarctic glaciation also initialised AABW due to brine injection.
-
-### Hothouse (PETM-EECO)
-
-### Coolhouse (34-3.3 Ma)
-
-### Icehouse
-The closure of the Central American Seaway (2.95–2.82 Ma) contributing the moisture for the Northern Hemisphere Glaciation (2.6-2.7Ma), NH differs from SH in its greater cover of land than ocean. This means that the NHG can accelerate the cooling of climate.
-
-### Astronomical forcing and predictability
-Before icehouse, obliquity-related cycles are sparse (the lack of high-latitude ice sheet) and the eccentricity-related cycles dominate, indicating a strong influence of low-latitude processes (heat and moisture transport) on climate variations. Before icehouse, the climate  is more deterministic, particularly in the $\delta^{18}$O compared to $\delta^{13}$C, likely because of less nonlinear feedback related to ice sheet.
 
 ### References
 Zachos, J., Pagani, M., Sloan, L., Thomas, E. & Billups, K. Trends, Rhythms, and Aberrations in Global Climate 65 Ma to Present. Science 292, 686–693 (2001).
