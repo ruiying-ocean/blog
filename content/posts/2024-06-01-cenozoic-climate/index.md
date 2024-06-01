@@ -98,10 +98,6 @@ from plate_model_manager import PlateModelManager
 # Directory to plate model files
 input_directory = "/Users/yingrui/Science/PaleoMapAtlas/Scotese PaleoAtlas_v3/PALEOMAP PaleoAtlas Rasters v3/Map1a PALEOMAP PaleoAtlas.gpml"
 
-# Locate rotation files and set up the RotationModel object
-rotation_filenames = glob.glob(os.path.join(input_directory, '*.rot'))
-rotation_model = pygplates.RotationModel(rotation_filenames)
-
 # Locate topology feature files and set up a FeatureCollection object 
 topology_filenames = glob.glob(os.path.join(input_directory, '*.gpml'))
 topology_features = pygplates.FeatureCollection()
