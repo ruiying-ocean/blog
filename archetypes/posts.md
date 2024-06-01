@@ -3,7 +3,7 @@ title: "{{ replace .TranslationBaseName "-" " " | title }}"
 subtitle: ""
 date: {{ .Date }}
 draft: true
-author: ""
+author: "Rui Ying"
 authorLink: ""
 authorEmail: ""
 description: ""
