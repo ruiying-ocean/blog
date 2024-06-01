@@ -46,13 +46,14 @@ There are also different types of paleogeography data: coastlines, polygons, dig
 
 ## Softwares and packages
 Then, there are many packages in R/Python to access these data (mostly the GWS service of Gplates). Ben Moon has written some posts on this, check it [here](https://bcmoon.uk/palaeontology/palaeomaps-in-R/).
-Below is a list of softwares/packages I found:
+Below is a list of softwares/packages I reviewed:
 
 
 | Software   |      Description      |  URL |
 |----------|:-------------:|------:|
-| Gplates| A standalone plate reconstruction software | https://www.gplates.org/ |
-| gplately| Official Gplates Python API |https://github.com/GPlates/gplately|
+| Gplates| A standalone plate reconstruction software (No programming) | https://www.gplates.org/ |
+| pyGplates| A python interface to Gplates | https://www.gplates.org/docs/pygplates/ |
+| gplately| A high-level interface to pyGPlates |https://github.com/GPlates/gplately|
 | rgplates | Gplates R API| https://github.com/adamkocsis/rgplates |
 | paleoMap |    A R package, not "the PLAEOMAP"   |   https://github.com/sonjaleo/paleoMap |
 | gplatesr | Another R package using Gplates API |    https://github.com/LunaSare/gplatesr |
@@ -61,12 +62,12 @@ Below is a list of softwares/packages I found:
 | chronosphere | A R package collecting lots of data in Zenodo beyond paleogeography |    https://github.com/chronosphere-info/r_client|
 | via | A dataset (paleocoastlines) is provided to describe coastlines of 0, 10, 20 Ma  |  https://cran.r-project.org/web/packages/via/index.html|
 
-What if someone just wants to use a fancy map for demonstration? I think it is easist to use the exisitng [PALEOMAP Atlas](https://www.earthbyte.org/paleomap-paleoatlas-for-gplates/). Download the data and use the pictures directly, here is an example of the Cretaceous-Paleogene Boundry (66 Ma):
+What if someone just wants to use a fancy map for demonstration? I think it is easist to use the exisitng [PALEOMAP Atlas](https://www.earthbyte.org/paleomap-paleoatlas-for-gplates/). Download the data and use the pictures directly (or put into Gplates for a different projection and export in different format), here is an example of the modern global map.
 
-![](images/paleomap_066.jpg)
+![Modern State](images/image_0.00Ma.png "Example of PaleoAtlas")
 
 
-## Phanerozoic paleogeography evolution
+## Plotting the paleogeography evolution in the whole Phanerozoic
 
 ### Tectonic plates
 Next I use `velociraptr` to reconstruct the Pohl2022 like map series, it starts from 540 Ma and ends in the present with a time gap of 20 Myr. The code is as follows:
@@ -105,7 +106,7 @@ p + scale_fill_viridis_c() + theme(legend.position='none')
 ```
 ![](images/example.png)
 
-### Topography
+### Topography (PaleoDEM)
 Then I also plot the topography using PaleoDEM data. Note there're many data formats and here I use .csv.
 
 ```R
@@ -115,6 +116,7 @@ library(marmap)
 
 ## list all files
 ## data is downloaded from https://zenodo.org/records/5460860
+## NetCDF is also available
 folder <- "~/Downloads/PaleoDEMS_long_lat_elev_csv_v2/PaleoDEMS_long_lat_elev_csv_v2.csv/"
 data_files <- list.files(folder, full.names = T)[seq(1, 88, 4)]
 
