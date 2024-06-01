@@ -69,8 +69,10 @@ What if someone just wants to use a fancy map for demonstration? I think it is e
 
 ## Plotting the paleogeography evolution in the whole Phanerozoic
 
+Making a pretty paleogeography map from scratch requires a bunch of data (and proper tool and knowledge). I have tried several ways but still can't reproduce a full-feature map as the PaleoAtlas because of lacking data. For instance, in `Gplately`, many features in Scotese2016 are missing (only has static polygons, coastlines, and rotation file). Nevertheless, below is some codes for plotting paleocontinent/paleoDEM.
+
 ### Tectonic plates
-Next I use `velociraptr` to reconstruct the Pohl2022 like map series, it starts from 540 Ma and ends in the present with a time gap of 20 Myr. The code is as follows:
+Here I use `velociraptr` to reconstruct the Pohl2022 like map series, it starts from 540 Ma and ends in the present with a time gap of 20 Myr. This package downloads paleocontinents from Macrostrat.org as a shapefile.
 
 ```r
 library(velociraptr)
@@ -107,7 +109,7 @@ p + scale_fill_viridis_c() + theme(legend.position='none')
 ![](images/example.png)
 
 ### Topography (PaleoDEM)
-Then I also plot the topography using PaleoDEM data. Note there're many data formats and here I use .csv.
+Here I plot the topography using PaleoDEM data. Note there're many data formats and here I use .csv.
 
 ```R
 library(data.table)
