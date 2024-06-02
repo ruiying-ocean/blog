@@ -2,7 +2,8 @@
 title: "How I Organise My Personal Blog"
 date: 2024-01-14T15:42:30Z
 draft: false
-tag: "life"
+tag: "technical"
+category: "Life"
 ---
 
 
@@ -35,7 +36,8 @@ hugo server -D
 #+end_src
 
 *** Rstudio + blogdown
-I used `blogdown` for a while and I liked it. But I do not favour Rstudio because it is too slow to follow me.
+I used `blogdown` for a while and I liked it. In particular, it supports the page bundle feature very well. That is, each new post has its own separate folder.
+However, I give up this solution because Rstudio is too heavy and slow.
 
 #+begin_src R
   blogdown::new_site()
@@ -44,7 +46,9 @@ I used `blogdown` for a while and I liked it. But I do not favour Rstudio becaus
 #+end_src
 
 *** Emacs easy-hugo
-This is a lightweight but good enough solution. There are also other packages in Emacs like [[https://ox-hugo.scripter.co/][ox-hugo]]. But it is not how I work.
+This is a lightweight but good enough solution. You can type `easy-hugo-complete-tags` to do the auto-completion stuff. However, it does not support page bundle, but I can tolerate it.
+
+There are also other packages in Emacs like [[https://ox-hugo.scripter.co/][ox-hugo]]. But it is more for the org-mode enthusiast.
 
 ** Depoly in the cloud
 1. [[https://gohugo.io/hosting-and-deployment/hosting-on-github/][Github Pages]]
