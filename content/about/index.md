@@ -7,12 +7,14 @@ date: 2020-02-02T16:23:32+08:00
 
 <img align="right" src="avatar.png" width="200"/>
 
-I am a Chinese PhD student at [School of Earth Sciences, University of Bristol](http://www.bristol.ac.uk/earthsciences/). I studied in Yangling and Guangzhou before my PhD. I have a variety of interests, from programming to fitness/tennis, from natural sciences to music (ME playing guitar on the RHS!). This website is a combination of my blogs and a introduction of my research.
+I grew up in China and received my Bachelor's and Master's degree in Northwest A&F University and Sun Yat-sen University, respectively. Then I spent four years in the UK to complete my PhD study at the University of Bristol. Now I am a Senior Research Associate at the [University of East Anglia](https://www.uea.ac.uk/about/school-of-environmental-sciences). 
+
+I have a variety of interests, from programming to fitness/tennis, from natural sciences to music (ME playing guitar on the RHS!). This website is a combination of my blogs and a introduction of my research.
 
 
 ## Research 🔬
 
-I study climate, marine ecology and evolution, and biogeochemical cycles. The main interest of mine is to understand the fundamental mechanisms of the complex Earth system. For example, why (marine) species become today's shape and have today's functions? Why some areas have more species than the other? Broadly speaking, what controls the fate of lives since its beginning, is it deterministic or stochastic? Below is the introduction of my research object and tool.
+I feel most curious about the fundamental regulation of the complex Earth system, including climate, marine ecosystem, and biogeochemical cycles. For example, why (marine) species become today's shape and have today's functions? Why some areas have more species than the other? Broadly speaking, what controls the fate of lives since its beginning, is it deterministic or stochastic? Below is the introduction of my research object and tool.
 
 ### Coastal marine ecosystem
 
@@ -20,9 +22,7 @@ I study climate, marine ecology and evolution, and biogeochemical cycles. The ma
 	<img align="right" src="fish.png" width="300">
 </figure>
 
-Before I dive in to the "big questions", I studied the seasonal variation of marine food web in North South China Sea 2017-2018. This is a coastal sea affected by the East Asia monsoon system. In the winter, the strong northeasterly wind mixed waters and supplied sufficient nutrient for plankton (high nitrate and Chl-a). However, the total biodiversity is lowest likely due to the narrow temperature window for organisms. Differently, in the summer, another phytoplankton bloom associated with high total pelagic biomass, average trophic level (caused by increasing carnivorous fish) and biodiversity was found. Spring is an interesting time when both temperature and nutrient were limited. This minimises the food resource and makes species to seek different food sources. Thus, we observed more benthic fish in the upper layer, but the most abundance zooplankton due to the less grazing pressure. These observations are based on intense field work including pair trawl, bottom trawl, plankton net, water sampling, and carbon and nitrogen stable isotopes measurement in my 3-year Master.
-
-
+Before I dive in to the "big questions", I studied the seasonal variation of marine food web in North South China Sea from 2017 to 2018. This is a coastal sea affected by the East Asia monsoon system. In the winter, the strong northeasterly wind mixed waters and supplied sufficient nutrient for plankton (high nitrate and Chl-a). However, the total biodiversity is lowest likely due to the narrow temperature window for organisms. Differently, in the summer, another phytoplankton bloom associated with high total pelagic biomass, average trophic level (caused by increasing carnivorous fish) and biodiversity was found. Spring is an interesting time when both temperature and nutrient were limited. This minimises the food resource and makes species to seek different food sources. Thus, we observed more benthic fish in the upper layer, but the most abundance zooplankton due to the less grazing pressure. These observations are based on intense field work including pair trawl, bottom trawl, plankton net, water sampling, and carbon and nitrogen stable isotopes measurement in my 3-year Master.
 
 ### Planktonic Foraminifera
 
