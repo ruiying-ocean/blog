@@ -7,9 +7,9 @@ date: 2020-02-02T16:23:32+08:00
 
 <img align="right" src="avatar.png" width="200"/>
 
-I grew up in China and received my Bachelor's and Master's degree in Northwest A&F University and Sun Yat-sen University, respectively. Then I spent four years in the UK to complete my PhD study at the University of Bristol. Now I am a Senior Research Associate at the [University of East Anglia](https://www.uea.ac.uk/about/school-of-environmental-sciences). 
+I am a scientist studying marine ecology and climate change. I grew up in China and received my Bachelor's and Master's degrees there. Then I spent four years in the UK to complete my PhD study at the University of Bristol. I am now a Senior Research Associate at the [University of East Anglia](https://www.uea.ac.uk/about/school-of-environmental-sciences). 
 
-I have a variety of interests, from programming to fitness/tennis, from natural sciences to music (ME playing guitar on the RHS!). This website is a combination of my blogs and a introduction of my research.
+This website is pretty much a place for me to record *anything* I want, from programming to tennis, or even music (ME playing guitar on the RHS!).
 
 
 ## Research 🔬
@@ -49,7 +49,7 @@ Out of interest, I developed a Python package to visualise cGENIE output, named 
 
 The climate of our Earth is naturally cycling from warm (interglacial) and cold (glacial) ages, because of the changing eccentricity, obliquity and precession. The present day is now in an interglacial age, and the Last Galcial Maximum (~21,000 years BP) is the closet cold age to us (figure to the left, Tierney et al. 2020). There was more ice sheets in the polars and the sea surface temperature was averagely 2 to 4 degree lower than the Holocene (the current geological epoch).
 
-I studied the ecological niche of foraminifera in the LGM based on cGENIE model, and test it in several data compilations. These evidence suggest that some foraminifera have changed their optimal niche in response to the past climate changes, therefore showing the sign of adaptive behaviour. These results can be found in [my preprint](https://doi.org/10.31223/X5D10G).
+I studied the ecological niche of foraminifera in the LGM based on cGENIE model, and test it in several data compilations. These evidence suggest that some foraminifera have changed their optimal niche in response to the past climate changes, therefore showing the sign of adaptive behaviour. These results can be found in [my recent paper](https://www.nature.com/articles/s41586-024-08029-0).
 
 
 

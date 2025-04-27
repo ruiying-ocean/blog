@@ -61,6 +61,7 @@ Below is a list of softwares/packages I reviewed:
 | velociraptr | R package using macrostrat API |    https://github.com/LunaSare/gplatesr |
 | chronosphere | A R package collecting lots of data in Zenodo beyond paleogeography |    https://github.com/chronosphere-info/r_client|
 | via | A dataset (paleocoastlines) is provided to describe coastlines of 0, 10, 20 Ma  |  https://cran.r-project.org/web/packages/via/index.html|
+| cgeniepy | My Python Package  using Gplates' API |  https://doi.org/10.21105/joss.06762 |
 
 What if someone just wants to use a fancy map for demonstration? I think it is easist to use the exisitng [PALEOMAP Atlas](https://www.earthbyte.org/paleomap-paleoatlas-for-gplates/). Download the data and use the pictures directly (or put into Gplates for a different projection and export in different format), here is an example of the modern global map.
 
@@ -147,7 +148,38 @@ p + scale_fill_etopo()+theme_minimal()+
 ```
 ![](images/dem.png)
 
+### cgeniepy
+
+```python
+from cgeniepy.table import ScatterData
+import pandas as pd
+import numpy as np
+
+# Generate random data
+np.random.seed(1239124)  # Set seed for reproducibility
+
+# Create random latitude, longitude, and variable values
+random_data = pd.DataFrame({
+    'lat': np.random.uniform(-90, 90, 100),
+    'lon': np.random.uniform(-180, 180, 100),
+    'dummy_var': np.random.random(100) * 100
+})
+
+# Convert to ScatterData object
+random_data = ScatterData(random_data)
+
+# Set MultiIndex for the data
+random_data.set_index(['lat', 'lon'])
+
+# Plot with specified parameters
+random_data.plot(var='dummy_var', edgecolor='k', mask_age=100)
+```
+
+![](https://cgeniepy.readthedocs.io/en/latest/_images/sphx_glr_plot_paleomask_001.png)
+
+
 ## References
+
 Pohl, Alexandre, et al. "Continental configuration controls ocean oxygenation during the Phanerozoic." Nature 608.7923 (2022): 523-527.
 
 Cermeño, Pedro, et al. "Post-extinction recovery of the Phanerozoic oceans and biodiversity hotspots." Nature 607.7919 (2022): 507-511.
