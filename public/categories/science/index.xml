@@ -1,64 +1,180 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Science - Category - </title>
-    <link>/categories/science/</link>
-    <description>Science - Category - </description>
-    <generator>Hugo -- gohugo.io</generator><managingEditor>rui.ying@bristol.ac.uk (Rui Ying)</managingEditor>
-      <webMaster>rui.ying@bristol.ac.uk (Rui Ying)</webMaster><lastBuildDate>Wed, 05 Oct 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="/categories/science/" rel="self" type="application/rss+xml" /><item>
-  <title>Geological time scale</title>
-  <link>/2022-10-05-geological-time-scale/</link>
-  <pubDate>Wed, 05 Oct 2022 00:00:00 &#43;0000</pubDate>
-  <author>Rui Ying</author>
-  <guid>/2022-10-05-geological-time-scale/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>Overview of functional diversity</title>
-  <link>/2022-09-28-overview-of-functional-diversity/</link>
-  <pubDate>Wed, 28 Sep 2022 00:00:00 &#43;0000</pubDate>
-  <author>Rui Ying</author>
-  <guid>/2022-09-28-overview-of-functional-diversity/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>Carbon chemistry and biological pump</title>
-  <link>/2022-02-21-carbon-chemistry-and-biological-pump/</link>
-  <pubDate>Mon, 21 Feb 2022 00:00:00 &#43;0000</pubDate>
-  <author>Rui Ying</author>
-  <guid>/2022-02-21-carbon-chemistry-and-biological-pump/</guid>
-  <description><![CDATA[A brief study of Hain and Sigman, (2014) The Biological Pump in the Past]]></description>
-</item>
-<item>
-  <title>Re-study biology/geology term in CN/EN</title>
-  <link>/2021-05-06-chinese-english-name-of-marine-organisms/</link>
-  <pubDate>Thu, 06 May 2021 00:00:00 &#43;0000</pubDate>
-  <author>Rui Ying</author>
-  <guid>/2021-05-06-chinese-english-name-of-marine-organisms/</guid>
-  <description><![CDATA[Biology/Geology term list]]></description>
-</item>
-<item>
-  <title>cGEnIE Simplest Summary</title>
-  <link>/2020-12-25-cgenie-simplest-summary/</link>
-  <pubDate>Fri, 25 Dec 2020 16:44:18 &#43;0000</pubDate>
-  <author>Rui Ying</author>
-  <guid>/2020-12-25-cgenie-simplest-summary/</guid>
-  <description><![CDATA[A simple note of cgenie study]]></description>
-</item>
-<item>
-  <title>三文鱼、鲑鱼、大马哈鱼的区别</title>
-  <link>/2019-07-03-%E4%B8%89%E6%96%87%E9%B1%BC%E9%B2%91%E9%B1%BC%E5%A4%A7%E9%A9%AC%E5%93%88%E9%B1%BC%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
-  <pubDate>Wed, 03 Jul 2019 17:40:21 &#43;0000</pubDate>
-  <author>Rui Ying</author>
-  <guid>/2019-07-03-%E4%B8%89%E6%96%87%E9%B1%BC%E9%B2%91%E9%B1%BC%E5%A4%A7%E9%A9%AC%E5%93%88%E9%B1%BC%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
-  <description><![CDATA[Fish identification]]></description>
-</item>
-<item>
-  <title>LaTeX学术写作与排版简介</title>
-  <link>/2019-07-03-%E7%AE%80%E4%BB%8B%E5%A6%82%E4%BD%95%E7%94%A8latex%E8%BF%9B%E8%A1%8C%E5%AD%A6%E6%9C%AF%E5%86%99%E4%BD%9C%E4%B8%8E%E6%8E%92%E7%89%88/</link>
-  <pubDate>Wed, 03 Jul 2019 15:10:26 &#43;0000</pubDate>
-  <author>Rui Ying</author>
-  <guid>/2019-07-03-%E7%AE%80%E4%BB%8B%E5%A6%82%E4%BD%95%E7%94%A8latex%E8%BF%9B%E8%A1%8C%E5%AD%A6%E6%9C%AF%E5%86%99%E4%BD%9C%E4%B8%8E%E6%8E%92%E7%89%88/</guid>
-  <description><![CDATA[use LaTeX to do academic writing]]></description>
-</item>
-</channel>
+    <title>Science - Category - Home</title>
+    <link>http://localhost:1313/categories/science/</link>
+    <description>Home</description>
+    <generator>Hugo 0.147.0 &amp; FixIt v0.3.20-f7a9c52a</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 01 Jul 2024 17:21:01 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The evolution of key ocean gateways in the Cenozoic</title>
+      <link>http://localhost:1313/posts/2024-07-01-ocean-gateways/</link>
+      <pubDate>Mon, 01 Jul 2024 17:21:01 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2024-07-01-ocean-gateways/</guid>
+      <category domain="http://localhost:1313/categories/science/">Science</category>
+      <description>&lt;h2 class=&#34;heading-element&#34; id=&#34;important-gateways&#34;&gt;&lt;span&gt;Important Gateways&lt;/span&gt;&#xA;  &lt;a href=&#34;#important-gateways&#34; class=&#34;heading-mark&#34;&gt;&#xA;    &lt;svg class=&#34;octicon octicon-link&#34; viewBox=&#34;0 0 16 16&#34; version=&#34;1.1&#34; width=&#34;16&#34; height=&#34;16&#34; aria-hidden=&#34;true&#34;&gt;&lt;path d=&#34;m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&lt;ol&gt;&#xA;&lt;li&gt;Drake Passage&lt;/li&gt;&#xA;&lt;li&gt;Tasman Gateway&lt;/li&gt;&#xA;&lt;li&gt;Isthmus of Panama (also known as Central American Seaway)&lt;/li&gt;&#xA;&lt;li&gt;Bering Strait&lt;/li&gt;&#xA;&lt;li&gt;Tethys Sea&lt;/li&gt;&#xA;&lt;li&gt;Indonesian Seaway&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 class=&#34;heading-element&#34; id=&#34;closing-of-tethys-sea-with-the-collision-of-india-from-55-ma-to-late-miocene&#34;&gt;&lt;span&gt;Closing of Tethys Sea (with the collision of India, from 55 Ma to late Miocene)&lt;/span&gt;&#xA;  &lt;a href=&#34;#closing-of-tethys-sea-with-the-collision-of-india-from-55-ma-to-late-miocene&#34; class=&#34;heading-mark&#34;&gt;&#xA;    &lt;svg class=&#34;octicon octicon-link&#34; viewBox=&#34;0 0 16 16&#34; version=&#34;1.1&#34; width=&#34;16&#34; height=&#34;16&#34; aria-hidden=&#34;true&#34;&gt;&lt;path d=&#34;m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&lt;p&gt;Tethys Sea provided deep water connections between the major ocean basins.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>An overview of the Cenozoic climate</title>
+      <link>http://localhost:1313/posts/2024-06-01-cenozoic-climate/</link>
+      <pubDate>Fri, 31 May 2024 22:47:31 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2024-06-01-cenozoic-climate/</guid>
+      <category domain="http://localhost:1313/categories/science/">Science</category>
+      <description>An overview of the Cenozoic climate</description>
+    </item>
+    <item>
+      <title>An introduction of Taylor diagram</title>
+      <link>http://localhost:1313/posts/2024-05-27-taylor-diagram/</link>
+      <pubDate>Mon, 27 May 2024 18:23:35 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2024-05-27-taylor-diagram/</guid>
+      <category domain="http://localhost:1313/categories/science/">Science</category>
+      <description>An introduction of Taylor diagram</description>
+    </item>
+    <item>
+      <title>What is Monsoon and what causes it?</title>
+      <link>http://localhost:1313/posts/monsoon/</link>
+      <pubDate>Sun, 26 May 2024 11:26:56 +0100</pubDate>
+      <guid>http://localhost:1313/posts/monsoon/</guid>
+      <category domain="http://localhost:1313/categories/science/">Science</category>
+      <description>What is Monsoon and what causes it?</description>
+    </item>
+    <item>
+      <title>A series of paleogeography maps</title>
+      <link>http://localhost:1313/posts/2023-12-30-a-series-of-paleogeography-maps/</link>
+      <pubDate>Sat, 30 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023-12-30-a-series-of-paleogeography-maps/</guid>
+      <category domain="http://localhost:1313/categories/science/">Science</category>
+      <description>&lt;h2 class=&#34;heading-element&#34; id=&#34;motivation&#34;&gt;&lt;span&gt;Motivation&lt;/span&gt;&#xA;  &lt;a href=&#34;#motivation&#34; class=&#34;heading-mark&#34;&gt;&#xA;    &lt;svg class=&#34;octicon octicon-link&#34; viewBox=&#34;0 0 16 16&#34; version=&#34;1.1&#34; width=&#34;16&#34; height=&#34;16&#34; aria-hidden=&#34;true&#34;&gt;&lt;path d=&#34;m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&lt;p&gt;Two years ago, I wrote a post about &lt;a href=&#34;https://www.ruiying.online/2021-11-19-cartography-in-r/&#34;target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;plotting maps in R&lt;/a&gt;. Recently, I wanted to understand more about the paleogeography evolution (e.g., Pohl et al. 2022 Nature) and its corresponding geological time, so I explored the available resources on the Internet.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Astronomical forcing and the glacial-interglacial climate</title>
+      <link>http://localhost:1313/posts/2023-12-29-cenozoic-climate-and-astronomical-forcing/</link>
+      <pubDate>Fri, 29 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023-12-29-cenozoic-climate-and-astronomical-forcing/</guid>
+      <category domain="http://localhost:1313/categories/science/">Science</category>
+      <description>&lt;h2 class=&#34;heading-element&#34; id=&#34;时间和天文学原理&#34;&gt;&lt;span&gt;时间和天文学原理&lt;/span&gt;&#xA;  &lt;a href=&#34;#%e6%97%b6%e9%97%b4%e5%92%8c%e5%a4%a9%e6%96%87%e5%ad%a6%e5%8e%9f%e7%90%86&#34; class=&#34;heading-mark&#34;&gt;&#xA;    &lt;svg class=&#34;octicon octicon-link&#34; viewBox=&#34;0 0 16 16&#34; version=&#34;1.1&#34; width=&#34;16&#34; height=&#34;16&#34; aria-hidden=&#34;true&#34;&gt;&lt;path d=&#34;m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&lt;ul&gt;&#xA;&lt;li&gt;地球自转：日夜&lt;/li&gt;&#xA;&lt;li&gt;地球公转：年&lt;/li&gt;&#xA;&lt;li&gt;黄赤交角（地球南北极连线不是垂直于轨道面）：季节性和南北差异（太阳入射角）&lt;/li&gt;&#xA;&lt;li&gt;月球公转：月（注意因为潮汐锁定，月球公转和自传周期一样）&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;黄道面：地球绕太阳旋转的轨道平面; 赤道面：赤道所在的平面。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>life evolution and classification</title>
+      <link>http://localhost:1313/posts/2023-12-29-life-evolution-and-classification/</link>
+      <pubDate>Fri, 29 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023-12-29-life-evolution-and-classification/</guid>
+      <category domain="http://localhost:1313/categories/science/">Science</category>
+      <description>&lt;h2 class=&#34;heading-element&#34; id=&#34;简介&#34;&gt;&lt;span&gt;简介&lt;/span&gt;&#xA;  &lt;a href=&#34;#%e7%ae%80%e4%bb%8b&#34; class=&#34;heading-mark&#34;&gt;&#xA;    &lt;svg class=&#34;octicon octicon-link&#34; viewBox=&#34;0 0 16 16&#34; version=&#34;1.1&#34; width=&#34;16&#34; height=&#34;16&#34; aria-hidden=&#34;true&#34;&gt;&lt;path d=&#34;m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&lt;p&gt;这篇博文主要梳理/复习一下物种的分类、演化时间，并结合背后的地质事件理解复杂的生命演化。&#xA;不过系统发生这方面我不是专家，若有错误，欢迎指正。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Study the species distribution model</title>
+      <link>http://localhost:1313/posts/2023-12-25-play-with-species-distribution-model/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023-12-25-play-with-species-distribution-model/</guid>
+      <category domain="http://localhost:1313/categories/science/">Science</category>
+      <description>&lt;p&gt;I am trying species distribution model recently and generating some nice figure, so I think my blog is a good place to store these pretty things.&lt;/p&gt;&#xA;&lt;h2 class=&#34;heading-element&#34; id=&#34;platform&#34;&gt;&lt;span&gt;Platform&lt;/span&gt;&#xA;  &lt;a href=&#34;#platform&#34; class=&#34;heading-mark&#34;&gt;&#xA;    &lt;svg class=&#34;octicon octicon-link&#34; viewBox=&#34;0 0 16 16&#34; version=&#34;1.1&#34; width=&#34;16&#34; height=&#34;16&#34; aria-hidden=&#34;true&#34;&gt;&lt;path d=&#34;m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&lt;p&gt;Most ecologists use R and there is a curated list of packages&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Foraminifera and stable carbon isotopes</title>
+      <link>http://localhost:1313/posts/2023-09-03-carbon-isotopes/</link>
+      <pubDate>Sun, 03 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023-09-03-carbon-isotopes/</guid>
+      <category domain="http://localhost:1313/categories/science/">Science</category>
+      <description>&lt;h2 class=&#34;heading-element&#34; id=&#34;basics&#34;&gt;&lt;span&gt;Basics&lt;/span&gt;&#xA;  &lt;a href=&#34;#basics&#34; class=&#34;heading-mark&#34;&gt;&#xA;    &lt;svg class=&#34;octicon octicon-link&#34; viewBox=&#34;0 0 16 16&#34; version=&#34;1.1&#34; width=&#34;16&#34; height=&#34;16&#34; aria-hidden=&#34;true&#34;&gt;&lt;path d=&#34;m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&lt;p&gt;Carbon stable isotopes are $&lt;sup&gt;{13}C$, $&lt;/sup&gt;{12}C$. But they are more complex than oxygen isotopes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Foraminifera and stable oxygen isotopes</title>
+      <link>http://localhost:1313/posts/2023-09-02-oxygen-isotopes/</link>
+      <pubDate>Sat, 02 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023-09-02-oxygen-isotopes/</guid>
+      <category domain="http://localhost:1313/categories/science/">Science</category>
+      <description>&lt;h2 class=&#34;heading-element&#34; id=&#34;basics&#34;&gt;&lt;span&gt;Basics&lt;/span&gt;&#xA;  &lt;a href=&#34;#basics&#34; class=&#34;heading-mark&#34;&gt;&#xA;    &lt;svg class=&#34;octicon octicon-link&#34; viewBox=&#34;0 0 16 16&#34; version=&#34;1.1&#34; width=&#34;16&#34; height=&#34;16&#34; aria-hidden=&#34;true&#34;&gt;&lt;path d=&#34;m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&lt;p&gt;Stable isotopes of oxygen are $&lt;sup&gt;{16}O$, $&lt;/sup&gt;{18}O$ (an interesting one is the recently found $^{28}O$, but not sure its life time, Kondo et al. Nature 620, 965–970 (2023)). Isotopic fraction of oxygen isotopes happens when their relative abundance changes. Usually it can be decomposed into &amp;ldquo;ice volume effect&amp;rdquo; and &amp;ldquo;temperature effect&amp;rdquo; (Shackleton et al. 2023, &lt;a href=&#34;https://doi.org/10.1038/s41561-023-01250-y%29&#34;target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;https://doi.org/10.1038/s41561-023-01250-y)&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>基础动物学知识回顾</title>
+      <link>http://localhost:1313/posts/2023-08-29-basic-animal-biology/</link>
+      <pubDate>Tue, 29 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023-08-29-basic-animal-biology/</guid>
+      <category domain="http://localhost:1313/categories/science/">Science</category>
+      <description>&lt;h2 class=&#34;heading-element&#34; id=&#34;主要分类&#34;&gt;&lt;span&gt;主要分类&lt;/span&gt;&#xA;  &lt;a href=&#34;#%e4%b8%bb%e8%a6%81%e5%88%86%e7%b1%bb&#34; class=&#34;heading-mark&#34;&gt;&#xA;    &lt;svg class=&#34;octicon octicon-link&#34; viewBox=&#34;0 0 16 16&#34; version=&#34;1.1&#34; width=&#34;16&#34; height=&#34;16&#34; aria-hidden=&#34;true&#34;&gt;&lt;path d=&#34;m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&lt;p&gt;脊椎和无脊椎动物&#xA;脊索动物包括尾索动物、头索动物和脊椎动物&#xA;后口和原口动物&#xA;单细胞和多细胞&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Introduction to marine iron cycle</title>
+      <link>http://localhost:1313/posts/2023-01-24-introduction-to-marine-iron-cycle/</link>
+      <pubDate>Tue, 24 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023-01-24-introduction-to-marine-iron-cycle/</guid>
+      <category domain="http://localhost:1313/categories/science/">Science</category>
+      <description>Iron cycle in the ocean and related terminology</description>
+    </item>
+    <item>
+      <title>Study the metabolic index model</title>
+      <link>http://localhost:1313/posts/2023-01-23-study-the-curtis-metabolic-model/</link>
+      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023-01-23-study-the-curtis-metabolic-model/</guid>
+      <category domain="http://localhost:1313/categories/science/">Science</category>
+      <description>Demand vs Supply, the trade-off is forever in life story</description>
+    </item>
+    <item>
+      <title>Niche is different from habitat</title>
+      <link>http://localhost:1313/posts/2023-01-22-niche-is-different-from-habitat/</link>
+      <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023-01-22-niche-is-different-from-habitat/</guid>
+      <category domain="http://localhost:1313/categories/science/">Science</category>
+      <description>Habitat and niche</description>
+    </item>
+    <item>
+      <title>Geological time scale and its naming history</title>
+      <link>http://localhost:1313/posts/2022-10-05-geological-time-scale/</link>
+      <pubDate>Wed, 05 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2022-10-05-geological-time-scale/</guid>
+      <category domain="http://localhost:1313/categories/science/">Science</category>
+      <description>Geological time scale and its naming history</description>
+    </item>
+    <item>
+      <title>Overview of functional diversity</title>
+      <link>http://localhost:1313/posts/2022-09-28-overview-of-functional-diversity/</link>
+      <pubDate>Wed, 28 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2022-09-28-overview-of-functional-diversity/</guid>
+      <category domain="http://localhost:1313/categories/science/">Science</category>
+      <description>Overview of functional diversity</description>
+    </item>
+    <item>
+      <title>Carbon chemistry and biological pump</title>
+      <link>http://localhost:1313/posts/2022-02-21-carbon-chemistry-and-biological-pump/</link>
+      <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2022-02-21-carbon-chemistry-and-biological-pump/</guid>
+      <category domain="http://localhost:1313/categories/science/">Science</category>
+      <description>A brief study of Hain and Sigman, (2014) The Biological Pump in the Past</description>
+    </item>
+    <item>
+      <title>基础植物学知识回顾</title>
+      <link>http://localhost:1313/posts/2021-05-06-chinese-english-name-of-marine-organisms/</link>
+      <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2021-05-06-chinese-english-name-of-marine-organisms/</guid>
+      <category domain="http://localhost:1313/categories/science/">Science</category>
+      <description>Biology terminology (Plant)</description>
+    </item>
+    <item>
+      <title>cGEnIE Simplest Summary</title>
+      <link>http://localhost:1313/posts/2020-12-25-cgenie-simplest-summary/</link>
+      <pubDate>Fri, 25 Dec 2020 16:44:18 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2020-12-25-cgenie-simplest-summary/</guid>
+      <category domain="http://localhost:1313/categories/science/">Science</category>
+      <description>A simple note of cgenie study</description>
+    </item>
+    <item>
+      <title>三文鱼、鲑鱼、大马哈鱼的区别</title>
+      <link>http://localhost:1313/posts/2019-07-03-%E4%B8%89%E6%96%87%E9%B1%BC%E9%B2%91%E9%B1%BC%E5%A4%A7%E9%A9%AC%E5%93%88%E9%B1%BC%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Wed, 03 Jul 2019 17:40:21 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019-07-03-%E4%B8%89%E6%96%87%E9%B1%BC%E9%B2%91%E9%B1%BC%E5%A4%A7%E9%A9%AC%E5%93%88%E9%B1%BC%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <category domain="http://localhost:1313/categories/science/">Science</category>
+      <description>Fish identification</description>
+    </item>
+    <item>
+      <title>LaTeX学术写作与排版简介</title>
+      <link>http://localhost:1313/posts/2019-07-03-%E7%AE%80%E4%BB%8B%E5%A6%82%E4%BD%95%E7%94%A8latex%E8%BF%9B%E8%A1%8C%E5%AD%A6%E6%9C%AF%E5%86%99%E4%BD%9C%E4%B8%8E%E6%8E%92%E7%89%88/</link>
+      <pubDate>Wed, 03 Jul 2019 15:10:26 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019-07-03-%E7%AE%80%E4%BB%8B%E5%A6%82%E4%BD%95%E7%94%A8latex%E8%BF%9B%E8%A1%8C%E5%AD%A6%E6%9C%AF%E5%86%99%E4%BD%9C%E4%B8%8E%E6%8E%92%E7%89%88/</guid>
+      <category domain="http://localhost:1313/categories/science/">Science</category>
+      <description>use LaTeX to do academic writing</description>
+    </item>
+  </channel>
 </rss>

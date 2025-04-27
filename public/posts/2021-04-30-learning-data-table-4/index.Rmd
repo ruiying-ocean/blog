@@ -3,8 +3,7 @@ title: Learning data.table (4)
 author: Rui Ying
 date: '2021-04-30'
 slug: []
-categories:
-  - R
+categories: [Programming]  
 tags: []
 subtitle: ''
 summary: 'Day 4: reshape data.table'

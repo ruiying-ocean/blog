@@ -1,16 +1,20 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Music - Category - </title>
-    <link>/categories/music/</link>
-    <description>Music - Category - </description>
-    <generator>Hugo -- gohugo.io</generator><managingEditor>rui.ying@bristol.ac.uk (Rui Ying)</managingEditor>
-      <webMaster>rui.ying@bristol.ac.uk (Rui Ying)</webMaster><lastBuildDate>Sun, 18 Apr 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="/categories/music/" rel="self" type="application/rss+xml" /><item>
-  <title>A simple song by RY</title>
-  <link>/2021-04-18-a-simple-song-score/</link>
-  <pubDate>Sun, 18 Apr 2021 00:00:00 &#43;0000</pubDate>
-  <author>Rui Ying</author>
-  <guid>/2021-04-18-a-simple-song-score/</guid>
-  <description><![CDATA[]]></description>
-</item>
-</channel>
+    <title>Music - Category - Home</title>
+    <link>http://localhost:1313/categories/music/</link>
+    <description>Home</description>
+    <generator>Hugo 0.147.0 &amp; FixIt v0.3.20-f7a9c52a</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 05 Oct 2022 13:47:44 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/music/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A simple song by RY</title>
+      <link>http://localhost:1313/posts/2021-04-18-a-simple-song-score/</link>
+      <pubDate>Sun, 18 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2021-04-18-a-simple-song-score/</guid>
+      <category domain="http://localhost:1313/categories/music/">Music</category>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#39;http://localhost:1313/posts/2021-04-18-a-simple-song-score/images/a_simple_song.png&#39; alt=&#34;/posts/2021-04-18-a-simple-song-score/images/a_simple_song.png&#34; height=&#34;3507&#34; width=&#34;2480&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>
