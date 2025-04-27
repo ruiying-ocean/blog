@@ -67,10 +67,10 @@ Following the PETM, Eocene (particularly early Eocene) is a generally warm perio
 since the EOT, antarctic ice sheet gradually appeared. The opening of drake passage (~33 Ma) allows the appearance of ACC that blocks the heat transport; The Antarctic glaciation also initialised Antarctic Bottom Water (AABW) due to brine injection.
 
 ### Miocene (23-5.3 Ma)
-> [Steinthorsdottir et al. 2020](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2020PA004037) has a good review of Miocene climate.
+> [Steinthorsdottir et al. 2020](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2020PA004037) has a complete review of Miocene climate.
 
 * Middle Miocene Climatic Optimum (MMCO): another relatively warm period before the cooling of MMCT.
-* Middle Miocene Climatic Transition (MMCT): growth of the East Antarctic Ice Sheet
+* Middle Miocene Climatic Transition (MMCT, 14.7–13.8 Ma): abrupt cooling, growth of the East Antarctic Ice Sheet
 
 ### Pliocene (5.3-2.6 Ma)
 > [McClymont et al. 2023](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2022RG000793) has a good review on INHG.

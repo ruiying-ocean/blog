@@ -7,14 +7,6 @@ categories: [Statistic]
 tags: []
 subtitle: ''
 summary: "A study note of 'Bayesian statistics for beginners'"
-authors: []
-lastmod: '2021-05-1516:57:19+01:00'
-featured: no
-image:
-  caption: ''
-  focal_point: ''
-  preview_only: no
-projects: []
 ---
 
 ## Basics
