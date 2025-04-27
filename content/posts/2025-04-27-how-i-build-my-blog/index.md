@@ -7,7 +7,7 @@ author: "Rui Ying"
 authorLink: ""
 authorEmail: ""
 description: ""
-keywords: "Geography"
+keywords: ""
 license: ""
 comment: false
 weight: 0
