@@ -250,12 +250,6 @@ mainSections = []
 # See: https://gohugo.io/about/hugo-and-gdpr/
 # -------------------------------------------------------------------------------------
 
-[privacy]
-  [privacy.twitter]
-    enableDNT = true
-  [privacy.youtube]
-    privacyEnhanced = true
-
 # -------------------------------------------------------------------------------------
 # Media Types
 # See: https://gohugo.io/templates/output-formats/#media-types
@@ -383,10 +377,10 @@ mainSections = []
 
   # Author Configuration
   [params.author]
-    name = ""
-    email = ""
+    name = "Rui Ying"
+    email = "r.ying@uea.ac.uk"
     link = ""
-    avatar = ""
+    avatar = "/images/avatar.jpg"
 
   # FixIt 0.3.0 | NEW public Git repository information only then enableGitInfo is true
   [params.gitInfo]
@@ -610,7 +604,7 @@ mainSections = []
       disclaimer = ""
     # Home page posts
     [params.home.posts]
-      enable = true
+      enable = false
       # special amount of posts in each home posts page
       paginate = 6
 
