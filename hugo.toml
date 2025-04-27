@@ -242,8 +242,7 @@ mainSections = []
 # -------------------------------------------------------------------------------------
 
 [Permalinks]
-  # posts = ":year/:month/:filename"
-  posts = "posts/:slugorfilename"
+  categories = '/:contentbasename'
 
 # -------------------------------------------------------------------------------------
 # Privacy Configuration
