@@ -14,9 +14,9 @@ comment: false
 weight: 0
 
 tags:
-- draft
+- Carbon
 categories:
-- draft
+- Science
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
