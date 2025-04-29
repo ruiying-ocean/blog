@@ -48,9 +48,12 @@ calculated based on exponential decay (half-year: 5568 years) and use 1950 as re
 Calibrated radiocarbon age considering the variability of atm 14C/12C. The calibration can be done using calibration curves like IntCal20, Marine20.
 
 ## Reservoir Age
-Samples are exposed to different source from atmosphere (e.g., ocean) and thus "contaminated". The offset between the reservoir (e.g., ocean) and atmosphere is used as estimate ocean ventilation.
+Reservoir age refers to the apparent age difference between carbon in a sample (e.g., from the ocean) and atmospheric CO2. It arises because carbon in different reservoirs (like the ocean) exchanges more slowly with the atmosphere and can be “older” due to radioactive decay of d14C during isolation.
+
+For example, *ocean surface* is not in fully equilibrium with atmosphere, making the surface ocean 400 yrs "older" than atmosphere. Therefore, instead of "Benthic-Atm", "Benthic-Planktic" is more accurate to represent ocean ventilation.
 
 ## Ideal Age
-Real transit time: time passed since last contact with atmosphere (circulation effect)
+Real transit time that we are interested: time passed since last contact with atmosphere (circulation effect)
 
-
+## Summary
+Measured d14C -> radiocarbon age (via decay law) -> calendar age calibrated with 14C atm. production -> ventilation age after correcting the reservoir offset
