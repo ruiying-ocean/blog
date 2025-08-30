@@ -23,7 +23,7 @@ projects: []
 ## Differences:
 - print() by specifying rows; 
 - subset (you can do slice like in Pandas).
-```{r warning=FALSE,message=FALSE}
+```r
 library(tidyverse)
 library(magrittr)
 #mtcars %>% print(n=10,width = Inf) #always print all columns, regardless of the width of the screen.
@@ -32,7 +32,7 @@ mtcars[,1] == mtcars$mpg #the same
 mtcars %>% select(mpg) %>% head(5) #select() is also used in subset but a little different
 ```
 ## convert with data.frame
-```{r}
+```r
 df <- tibble(foo = 1, bar = 'bar')
 class(as.data.frame(df)) #[1] "data.frame"
 class(as_tibble(df)) #[1] "tbl_df"     "tbl"        "data.frame"
@@ -44,7 +44,7 @@ Column -> variable, row -> observation.
 Ad:
 1. uniformity; 2. Placing variable in columns (or a "vector" in R) allows R and tidyverse to work naturally.
 e.g.
-```{r}
+```r
 mutate(mtcars,new_col = cyl+1) %>% head(5)
 ```
 
@@ -59,20 +59,20 @@ mutate(mtcars,new_col = cyl+1) %>% head(5)
 ## Pivot
 ### Longer table
 Question: *Column names are not names of variables, but values of a variable. For example:*
-```{r}
+```r
 head(table4a)
 ```
 We can divide the two untidy columns into a variable column (with col_name 'year') and a value column (with col_name 'cases')
-```{r}
+```r
 table4a %>% pivot_longer(c('1999','2000'), names_to = "year", values_to = "cases")
 table4a %>% gather(`1999`,`2000`,key = 'year',value = 'cases') #the gather() in tidyr is equal
 ```
 ### Wider pivot
 Question: *Observations is scattered across multiple rows* e.g. the cases and population are both observation, which should be put in one row.
-```{r}
+```r
  head(table2,5)
 ```
-```{r}
+```r
 table2 %>% pivot_wider(names_from = type, values_from = count) # here's 2 paramters only
 table2 %>% spread(type,count) #spread() is equal as well
 ```
@@ -92,7 +92,7 @@ parameters:
 - `variable.name` (change the default variable column name)
 - `value.name` (change the default value column name)
 
-```{r warning=FALSE,message=FALSE}
+```r
 # library(reshape2)
 # table1_melt <- table1 %>% melt(id=c("country","year"))
 # table1_melt
@@ -100,7 +100,7 @@ parameters:
 ### dcast()
 `dcast()` do the opposite thing as `melt()`, transforming long to *wide data*. Additional parameter including `mean`,
 The difference between `dcast` and `acast` is the output in data.frame (2-D only) or vector/array/matrix.
-```{r}
+```r
 # table1_melt %>% dcast(country+year~variable) #turn it back
 ```
 ~~

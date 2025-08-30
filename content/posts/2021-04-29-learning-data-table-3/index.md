@@ -30,7 +30,7 @@ Or as the data.table vignette shows, the `key` in data.table is inherited from `
 # How to set key
 setkey() or setkeyv(): the former one is better in interactive use, whilst the latter one is more of function-use.
 
-```{r eval=FALSE}
+```r
 setkey(flights, origin, dest)
 #is equal to
 setkeyv(flights, c("origin", "dest"))
@@ -42,7 +42,7 @@ setkeyv(flights, c("origin", "dest"))
 - it's manipulating by reference as `:=` operator and all `set*` family function (setkey, setname etc.)
 
 # Do some work 
-```{r eval=FALSE}
+```r
 setkey(flights, origin, dest)
 # select j
 flights[.("LGA", "TPA"), .(arr_delay)]

@@ -23,7 +23,7 @@ Actually I don't know the difference of these two functions between data.table a
 
 ## `melt` converts wide to long
 
-```{r}
+```r
 library(data.table)
 s1 <- "family_id age_mother dob_child1 dob_child2 dob_child3
 1         30 1998-11-26 2000-01-29         NA
@@ -48,11 +48,11 @@ head(DT.melt)
 ## `dcast` converts long to wide
 
 dcast use formula as below
-```{r}
+```r
 dcast(DT.melt, family_id + age_mother ~ child, value.var = "dob") #value.var is the variable to fill all cells
 ```
 # Limitation in combine multiple columns
-```{r}
+```r
 s2 <- "family_id age_mother dob_child1 dob_child2 dob_child3 gender_child1 gender_child2 gender_child3
 1         30 1998-11-26 2000-01-29         NA             1             2            NA
 2         27 1996-06-22         NA         NA             2            NA            NA
@@ -65,7 +65,7 @@ DT
 
 
 ## An untidy way to implement this (not run)
-```{r eval=FALSE}
+```r
 DT.m1 = melt(DT, id = c("family_id", "age_mother"))
 DT.m1[, c("variable", "child") := tstrsplit(variable, "_", fixed = TRUE)] #I don't even understand this weird function tstrsplit
 DT.c1 = dcast(DT.m1, family_id + age_mother + child ~ variable, value.var = "value")
@@ -75,7 +75,7 @@ DT.c1
 ## Enhanced ways
 
 ### Pass a list to measure.vars where each element of the list contains the column that should be combined together.
-```{r}
+```r
 colA = paste("dob_child", 1:3, sep = "")
 colB = paste("gender_child", 1:3, sep = "")
 DT.m2 = melt(DT, measure = list(colA, colB), value.name = c("dob", "gender")) #notice the measure paramter instead of measure.var
@@ -85,7 +85,7 @@ DT.m2
 The additional `variable` column is good to do dcast later and *can be removed* if necessary!
 
 ### Using `patterns()`
-```{r}
+```r
 DT.m2 = melt(DT, measure = patterns("^dob", "^gender"), value.name = c("dob", "gender"))
 DT.m2
 #the ^ here means letters beginning with "dob" and "gender"
@@ -96,7 +96,7 @@ You can also do this using `stat::reshape()` in base R
 
 ### Enhanced `dcast`
 
-```{r}
+```r
 DT.c2 <- dcast(DT.m2, family_id + age_mother ~ variable, value.var = c("dob", "gender") )
 DT.c2
 ```

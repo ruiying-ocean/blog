@@ -18,7 +18,7 @@ projects: []
 runtime: shiny
 ---
 # Prepare data
-```{r}
+```r
 library(data.table)
 file_url <- 'https://raw.githubusercontent.com/Rdatatable/data.table/master/vignettes/flights14.csv'
 df <- fread(file_url)
@@ -29,7 +29,7 @@ head(df,3)
 data.table use one-line syntax like `df[i, j, by]` where `i` is the rows to select and to manipulate, `j` is the columns to select and how to manupulate it (e.g., mutate function in dplyr), `by` is the group option.
 
 # Subset rows
-```{r}
+```r
 library(magrittr)
 #using condition
 sub_df <-  df[year==2014 & hour < 10,]
@@ -41,7 +41,7 @@ head(sub_df)
 df[order(hour,-distance)] %>% head() #`-` means descend order
 ```
 # Subset columns
-```{r}
+```r
 #using list
 df[, .(dep_delay, arr_delay)]
 
@@ -75,7 +75,7 @@ df[, !(year:day)]
 ```
 
 # Do something with `j`
-```{r}
+```r
 #rename
 df[, .(delay_arr = arr_delay, delay_dep = dep_delay)] %>% head()
 
@@ -91,7 +91,7 @@ df[origin == "JFK" & month == 6L,
    .(m_arr = mean(arr_delay), m_dep = mean(dep_delay))] %>% head()
 ```
 # Aggregation using `by`
-```{r}
+```r
 # by is similar to group_by() in tidyverse
 # I imagine it as cut a large block into many small ones
 # by will be the key index in output, which should be quite familiar with pandas user
@@ -124,7 +124,7 @@ df[, .N, .(dep_delay>0, arr_delay>0)] %>% head()
 
 `.SD` means *S*elect of *D*ata. It's a data.table that holds the data for the current group defined using `by`. I prefer regrading it as "grouped data".
   
-```{r}
+```r
 #.SD
 DT = data.table(
   ID = c("b","b","b","a","a","c"),
@@ -140,7 +140,7 @@ DT[, lapply(.SD, mean), by = ID]
 So you can find `.SD` contains all columns as origin `DT` but without the grouping column `ID`. And `.SD` is well sorted.
 
 # `.SDcol` specify what to compute
-```{r}
+```r
 df[carrier == "AA",                       ## Only on trips with carrier "AA"
    lapply(.SD, mean),                     ## compute the mean
    by = .(origin, dest, month),           ## for every 'origin,dest,month'
@@ -148,7 +148,7 @@ df[carrier == "AA",                       ## Only on trips with carrier "AA"
 ```
 
 # subset `.SDcol`
-```{r}
+```r
 # return first 2 cols for each month
 # you can always treat `by` as "for each"
 df[, head(.SD, 2), by=month] %>% head()

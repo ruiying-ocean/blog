@@ -16,7 +16,12 @@ This blog is built with [Hugo](https://gohugo.io/), a fast and flexible static s
    cd blog
    ```
 
-2. Start the Hugo development server:
+2. Initialize and update the FixIt theme submodule:
+   ```bash
+   git submodule update --init --recursive
+   ```
+
+3. Start the Hugo development server:
    ```bash
    hugo server
    ```

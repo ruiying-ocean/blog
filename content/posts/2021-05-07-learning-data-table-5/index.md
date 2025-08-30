@@ -17,7 +17,7 @@ image:
 projects: []
 ---
 
-```{r echo=FALSE}
+```r
 library(data.table)
 flights <- fread("https://raw.githubusercontent.com/Rdatatable/data.table/master/vignettes/flights14.csv")
 ```
@@ -33,7 +33,7 @@ I treat secondary index as fast and simple key for subsetting.
 
 ## Set secondary index
 
-```{r}
+```r
 setindex(flights, origin) #or setindexv()
 head(flights)
 names(attributes(flights))
@@ -41,7 +41,7 @@ names(attributes(flights))
 
 ## Get secondary index
 
-```{r}
+```r
 setindex(flights, origin, dest)
 indices(flights)
 
@@ -71,13 +71,13 @@ The `index` attribute avoid repeated computing if an index already exists. Simpl
 
 ## Fast subset using `on`
 
-```{r}
+```r
 flights["JFK", on="origin"] #works for both key and secondary index
 ```
 
 ## Other features as normal cases
 
-```{r}
+```r
 flights[.("LGA", "TPA"), .(arr_delay), on = c("origin", "dest")]
 #find more in vignettes
 ```

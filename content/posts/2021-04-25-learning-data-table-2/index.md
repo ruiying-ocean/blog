@@ -16,7 +16,7 @@ image:
   preview_only: no
 projects: []
 ---
-```{r}
+```r
 #download data as usual
 library(data.table)
 library(magrittr)
@@ -27,7 +27,7 @@ df <- fread(file_url)
 This post studies the use of `:=` operator which add/update/delete *columns*. The difference between `:=` and default data.frame operation is the former does by reference and therefore is not deep copy and not assign any value to a variable. This causes faster speed, less memory use but some side effects.
 
 ## Two forms of `:=` ways
-```{r eval=FALSE} 
+```r 
 # LHS := RHS
 DT[, c("colA", "colB") := list(valA, valB)]
 
@@ -37,28 +37,28 @@ DT[, `:=`(colA = valA, # valA is assigned to colA
 ```
 
 ## Add/update/delete columns
-```{r}
+```r
 df[, `:=`(speed = distance / (air_time/60),
    delay = arr_delay + dep_delay)] %>% head()
 ```
 # Subassign - conditional update
-```{r}
+```r
 df[hour == 24L, hour := 0L][] #replace all hour 24 to 0
 # note := returns the result invisibly, so we have extra [] here
 ```
 
 # Delete columns
-```{r}
+```r
 df[, c("delay") := NULL]
 ```
 
 # Using `by`
-```{r}
+```r
 df[, max_speed := max(speed), by = .(origin, dest)]
 ```
 
 # Multiple columns
-```{r}
+```r
 in_cols  = c("dep_delay", "arr_delay")
 out_cols = c("max_dep_delay", "max_arr_delay")
 df[, c(out_cols) := lapply(.SD, max), by = month, .SD = in_cols][] %>% head()
