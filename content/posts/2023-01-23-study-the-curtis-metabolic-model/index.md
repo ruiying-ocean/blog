@@ -32,7 +32,7 @@ lightgallery: no
 seo:
   images: []
 repost:
-  enable: yes
+  enable: no
   url: ''
 ---
 
