@@ -34,7 +34,7 @@ seo:
   images: []
 
 repost:
-  enable: true
+  enable: false
   url: ""
 
 # See details front matter: https://fixit.lruihao.cn/theme-documentation-content/#front-matter

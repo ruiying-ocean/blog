@@ -26,7 +26,7 @@ toc:
   enable: true
 
 repost:
-  enable: true
+  enable: false
   url: ""
 ---
 
