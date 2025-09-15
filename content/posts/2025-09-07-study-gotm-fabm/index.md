@@ -49,20 +49,7 @@ Marine biogeochemical modeling has become increasingly important for understandi
 
 ## Setting Up Your Modeling Environment
 
-### Step 1: Building and Installing FABM
-
-First, let's get the FABM framework set up. We'll configure it to work with GOTM as the host model:
-
-```bash
-git clone https://github.com/fabm-model/fabm.git
-cd fabm
-cmake -S . -B build -DFABM_HOST=gotm
-cmake --build build --target install
-```
-
-This downloads the FABM source code and builds it with GOTM support. The `-DFABM_HOST=gotm` flag ensures that FABM is compiled with the necessary interfaces for GOTM integration.
-
-### Step 2: Getting a Biogeochemical Model
+### Step 1: Getting a Biogeochemical Model
 
 For this example, we'll use the PISCES biogeochemical model, which is a comprehensive marine ecosystem model:
 
@@ -72,14 +59,16 @@ git clone https://github.com/BoldingBruggeman/fabm-pisces.git
 
 PISCES includes multiple plankton functional types, nutrient cycles, and carbonate chemistry - making it suitable for a wide range of marine ecosystem studies.
 
-### Step 3: Building and Installing GOTM
+### Step 2: Building and Installing GOTM
 
 Now we'll set up GOTM with FABM and PISCES integration:
 
 ```bash
+## This includes FABM as submodule, so no need to clone FABM separately
 git clone --recurse-submodules https://github.com/gotm-model/code.git gotm
 cd gotm
-cmake -S . -B build -DFABM_BASE=../fabm -DFABM_INSTITUTES=pisces -DFABM_PISCES_BASE=../fabm-pisces
+## S for source, B for build
+cmake -S . -B build -DFABM_INSTITUTES=pisces -DFABM_PISCES_BASE=../fabm-pisces
 cmake --build build --target install
 ```
 
@@ -88,7 +77,7 @@ The key configuration options here are:
 - `DFABM_INSTITUTES=pisces`: Enables the PISCES biogeochemical model
 - `DFABM_PISCES_BASE=../fabm-pisces`: Specifies the location of the PISCES model code
 
-### Step 4: Configuration Setup
+### Step 3: Configuration Setup
 
 Once everything is built, you'll need to create configuration files. GOTM uses YAML files for configuration, and you can generate a complete template:
 
@@ -96,7 +85,21 @@ Once everything is built, you'll need to create configuration files. GOTM uses Y
 gotm --write_yaml gotm_full.yaml --detail full
 ```
 
-This creates a comprehensive configuration file that includes all possible options. You'll need to create a corresponding `fabm.yaml` file to configure your biogeochemical model parameters.
+This creates a comprehensive configuration file that includes all possible options (particularly `FABN: True`). You'll need to create a corresponding `fabm.yaml` file to configure your biogeochemical model parameters.
+
+```yaml
+fabm:                               # Framework for Aquatic Biogeochemical Models
+   use: false                       # enable FABM [default=false]
+   yaml_file: fabm.yaml             # FABM configuration file [default=fabm.yaml]
+```
+
+### Step 4: Run the simulation
+
+Do something like this:
+
+```
+gotm gotm_full.yaml
+```
 
 ## Other relevant toolkit
 
@@ -104,8 +107,8 @@ This creates a comprehensive configuration file that includes all possible optio
 
 The FABM/GOTM ecosystem includes several Python tools that can enhance your modeling workflow:
 
-**FABMOS** - A tool for model optimization and sensitivity analysis
-**PyGOTM** - Python bindings for GOTM, allowing you to run simulations directly from Python
-**PyFABM** - Python interface to FABM models, useful for model development and testing
+- **FABMOS** - A tool for model optimization and sensitivity analysis
+- **PyGOTM** - Python bindings for GOTM, allowing you to run simulations directly from Python
+- **PyFABM** - Python interface to FABM models, useful for model development and testing
 
 These Python tools open up possibilities for automated parameter tuning, uncertainty quantification, and integration with machine learning workflows.
