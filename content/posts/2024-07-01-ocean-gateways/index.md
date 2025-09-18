@@ -2,7 +2,7 @@
 title: "The evolution of key ocean gateways in the Cenozoic"
 subtitle: ""
 date: 2024-07-01T17:21:01+01:00
-draft: false
+draft: true
 author: "Rui Ying"
 authorLink: ""
 authorEmail: ""
@@ -36,7 +36,7 @@ seo:
   images: []
 
 repost:
-  enable: true
+  enable: false
   url: ""
 
 # See details front matter: https://fixit.lruihao.cn/theme-documentation-content/#front-matter

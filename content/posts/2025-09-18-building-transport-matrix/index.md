@@ -3,7 +3,7 @@ title: "Building Transport Matrix Method (TMM)"
 subtitle: ""
 date: 2025-09-18T16:33:09+01:00
 lastmod: 2025-09-18T16:33:09+01:00
-draft: true
+draft: false
 author: "Rui Ying"
 authorLink: ""
 authorEmail: ""
@@ -38,21 +38,21 @@ repost:
 # See details front matter: https://fixit.lruihao.cn/theme-documentation-content/#front-matter
 ---
 
-# Building Transport Matrix Method 
+# Transport Matrix Method (TMM) Guide
 
-## The Transport Matrix Method
-The Transport Matrix Method (TMM) is an off-line approach (Khatiwala et al. 2005, Ocean Modelling) to modelling ocean tracers. Its core idea is to create sparse matrix from ocean physical model's advective-convective operator. Because sparse matrix is easy to store and calculate, TMM is characterised with fast spin up with comparable model performance.
+## Overview
 
+The Transport Matrix Method (TMM) is an offline approach for modeling ocean tracers, developed by Khatiwala et al. (2005, Ocean Modelling). TMM creates a sparse matrix from an ocean physical model's advective-convective operator, enabling fast spin-up calculations with comparable model performance due to the efficiency of sparse matrix operations.
 
-## Creating TMM (TBD)
+## Getting Started
 
+### 1. Download Source Code
 
-## To use TMM 
-Download source code 
-https://doi.org/10.5281/zenodo.17115337
+Get the TMM source code from: https://doi.org/10.5281/zenodo.17115337
 
+### 2. Environment Setup
 
-### Prerequisite
+Create a conda environment with the required dependencies:
 
 ```yaml
 name: tmm4py-macos
@@ -78,41 +78,53 @@ dependencies:
   - numba
 ```
 
+### 3. Build Process
 
-
-Build C library
+#### Step 1: Build C Library
 
 ```bash
+mamba activate tmm4py-macos
+
 export PETSC_DIR="${PETSC_DIR:-$CONDA_PREFIX}"
 export PETSC_ARCH="${PETSC_ARCH:-}"
 export TMM_DIR="${PWD}/TMM"
-
 make -j2
 make install PREFIX=$TMM_DIR
 ```
 
-
-Build PYTHON
+#### Step 2: Build Python Bindings
 
 ```bash
 make tmm4py PREFIX=$TMM_DIR
+```
 
-## or
+Alternative approach:
+```bash
 cd src/binding/tmm4py && pip install --no-deps .
 ```
 
-A quick test
+## Testing Your Installation
 
-Download example
-https://drive.google.com/file/d/1ou1kamcI-ZE6BWHpnAs2LaSmO1uZeXyd/view?usp=sharing
- 
- 
+### Quick Test Setup
+
+1. Download the example files: https://drive.google.com/file/d/1ou1kamcI-ZE6BWHpnAs2LaSmO1uZeXyd/view
+
+2. Set up the test environment:
+
 ```bash
-export PYTHONPATH="${PYTHONPATH:-}:$TMM_DIR"
-
+export PYTHONPATH="${PYTHONPATH:-}:$TMM_DIR
 cd examples/idealage
 cp -p ../../models/idealage/code/python/Age.py .
 cp -p ../../models/idealage/runscript/* .
+```
 
+3. Run the test:
+
+```bash
 mpiexec -n 2 python run_model_age_py.py
 ```
+
+## References
+
+Khatiwala, S., et al. (2005). Accelerated simulation of passive tracers in ocean circulation models. *Ocean Modelling*, 9(1), 51-69.
+
