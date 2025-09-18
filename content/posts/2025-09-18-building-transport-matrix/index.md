@@ -110,7 +110,7 @@ https://drive.google.com/file/d/1ou1kamcI-ZE6BWHpnAs2LaSmO1uZeXyd/view?usp=shari
 ```bash
 export PYTHONPATH="${PYTHONPATH:-}:$TMM_DIR"
 
-cd examples/ideaage
+cd examples/idealage
 cp -p ../../models/idealage/code/python/Age.py .
 cp -p ../../models/idealage/runscript/* .
 
