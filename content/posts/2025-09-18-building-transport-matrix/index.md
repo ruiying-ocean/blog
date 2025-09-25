@@ -1,5 +1,5 @@
 ---
-title: "Building Transport Matrix Method (TMM)"
+title: "Studying Transport Matrix Method (TMM)"
 subtitle: ""
 date: 2025-09-18T16:33:09+01:00
 lastmod: 2025-09-18T16:33:09+01:00
@@ -128,3 +128,53 @@ mpiexec -n 2 python run_model_age_py.py
 
 Khatiwala, S., et al. (2005). Accelerated simulation of passive tracers in ocean circulation models. *Ocean Modelling*, 9(1), 51-69.
 
+
+
+## How to use
+# Here's what happens behind the scenes:
+
+# 1. You write your model functions
+class MyBiogeochemicalModel:
+    def initialize_model(self, tc, Iter, state, *args, **kwargs):
+        print(f"Initializing at time {tc}")
+        # Setup code here
+        
+    def compute_sources(self, tc, Iter, iLoop, state, *args, **kwargs):
+        print(f"Computing at time step {iLoop}, time {tc}")
+        # Main biogeochemical calculations
+        # Example: simple decay
+        decay_rate = 0.01
+        state.qef[0][:] = -decay_rate * state.c[0][:]  # Exponential decay
+        
+    def cleanup_model(self, tc, Iter, state, *args, **kwargs):
+        print(f"Cleaning up at final time {tc}")
+
+# 2. You register them (create the connections)
+model = MyBiogeochemicalModel()
+state = TMM.TMMState()
+state.create()
+
+# Registration creates internal pointers in the TMM C library
+state.setIniExternalForcingFunction(model.initialize_model)
+state.setCalcExternalForcingFunction(model.compute_sources)  
+state.setFinExternalForcingFunction(model.cleanup_model)
+
+# 3. During time-stepping, TMM automatically calls your functions:
+```python
+for iLoop in range(1, maxSteps + 1):
+    tc = time0 + deltaTClock * (iLoop - 1)
+    tf = time0 + deltaTClock * iLoop  
+    Iterc = Iter0 + iLoop - 1
+    
+    TMM.updateTMs(tc)
+    
+    # This line triggers your registered callbacks:
+    state.forcingUpdate(tc, Iterc, iLoop)  # <-- Calls compute_sources()
+    
+    state.timeStep(tc, Iterc, iLoop)      # <-- Advances the tracers
+    state.timeStepPost(tf, Iterc, iLoop)
+    state.output(tf, Iterc, iLoop)
+```
+
+## Other similar tools
+- OCIM (Ocean Circulation Inverse Model) in MATLAB

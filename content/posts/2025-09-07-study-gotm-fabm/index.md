@@ -1,5 +1,5 @@
 ---
-title: "Trying FABM and GOTM model framework"
+title: "Building FABM and GOTM model framework"
 subtitle: ""
 date: 2025-09-07T19:26:33+01:00
 lastmod: 2025-09-07T19:26:33+01:00
@@ -37,9 +37,9 @@ repost:
 
 # See details front matter: https://fixit.lruihao.cn/theme-documentation-content/#front-matter
 ---
-# Setting Up FABM with GOTM
+# Overview
 
-Marine biogeochemical modeling has become increasingly important for understanding ocean ecosystems and their response to environmental changes. Two powerful tools at the forefront of this field are FABM (Framework for Aquatic Biogeochemical Models) and GOTM (General Ocean Turbulence Model). In this guide, we'll walk through the complete setup process to get these tools working together seamlessly.
+Marine biogeochemical modeling has become increasingly important for understanding ocean ecosystems and their response to environmental changes. Two powerful tools at the forefront of this field are FABM (Framework for Aquatic Biogeochemical Models) and GOTM (General Ocean Turbulence Model). In this post, I'll walk through the setup process to test both tools.
 
 ## What are FABM and GOTM?
 
@@ -47,7 +47,33 @@ Marine biogeochemical modeling has become increasingly important for understandi
 
 **GOTM** is a one-dimensional water column model that simulates the vertical structure of marine and freshwater systems. It's particularly strong at modeling turbulence and mixing processes, making it an excellent host for biogeochemical models.
 
-## Setting Up Your Modeling Environment
+## Build a 0D box model
+
+First, download source code:
+```bash
+git clone https://github.com/BoldingBruggeman/fabm.git ~/fabm
+git clone --recurse-submodules https://github.com/gotm-model/code.git ~/gotm
+```
+
+We next build using `cmake`:
+```bash
+cd ~/fabm
+mkdir -p build
+
+cd build
+cmake ../src/drivers/0d -DGOTM_BASE=~/gotm/
+cmake --build . --target install
+```
+This should generate a exe file `fabm0d`. To run the model, we can use the pre-defined namelist and biogeochemical configurations:
+
+```bash
+cd testcases/0d
+fabm0d -r run.nml -y ../fabm-gotm-npzd.yaml
+```
+
+---
+
+## Building a 1D water column model
 
 ### Step 1: Getting a Biogeochemical Model
 
@@ -73,7 +99,6 @@ cmake --build build --target install
 ```
 
 The key configuration options here are:
-- `DFABM_BASE=../fabm`: Points to your FABM installation
 - `DFABM_INSTITUTES=pisces`: Enables the PISCES biogeochemical model
 - `DFABM_PISCES_BASE=../fabm-pisces`: Specifies the location of the PISCES model code
 
@@ -112,3 +137,8 @@ The FABM/GOTM ecosystem includes several Python tools that can enhance your mode
 - **PyFABM** - Python interface to FABM models, useful for model development and testing
 
 These Python tools open up possibilities for automated parameter tuning, uncertainty quantification, and integration with machine learning workflows.
+
+--- 
+
+## References
+- https://github.com/fabm-model/fabm/wiki/
