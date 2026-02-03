@@ -9,7 +9,6 @@ tags: []
 subtitle: ''
 summary: 'Biology terminology (Plant)'
 authors: []
-lastmod: '2023-08-29T17:12:00+00:00'
 featured: no
 image:
   caption: ''
