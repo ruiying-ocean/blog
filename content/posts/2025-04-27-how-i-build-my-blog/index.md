@@ -32,7 +32,7 @@ repost:
 ---
 
 
-I use `hugo`{.verbatim} to build site. As stated in [the official
+I use `hugo` to build site. As stated in [the official
 documentation](https://gohugo.io/getting-started/quick-start/), hugo is
 a fast and flexible static site generator written in Golang. It converts
 source markup files (e.g., org, markdown, Rmarkdown, quarto) to html
