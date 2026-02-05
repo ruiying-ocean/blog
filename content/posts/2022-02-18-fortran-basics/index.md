@@ -195,11 +195,11 @@ i4.3 -> 42 to ` 042`
 
 ```
 
-![](images/iShot2022-02-18 18.33.21.png)
+![](images/iShot1.png)
 
  **Legacy**: use ID to label and format statement (i.e. they are separated!)
 
-![](images/iShot2022-02-18 18.33.49.png)
+![](images/iShot2.png)
 
 ### File IO
 
