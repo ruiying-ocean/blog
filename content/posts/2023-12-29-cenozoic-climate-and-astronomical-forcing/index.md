@@ -14,7 +14,8 @@ authorEmail: ''
 description: ''
 keywords: ''
 license: ''
-comment: no
+comment:
+  enable: false
 weight: 0
 hiddenFromHomePage: no
 hiddenFromSearch: no

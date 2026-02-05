@@ -9,7 +9,8 @@ authorEmail: ""
 description: ""
 keywords: "Geography"
 license: ""
-comment: false
+comment:
+  enable: false
 weight: 0
 
 tags:

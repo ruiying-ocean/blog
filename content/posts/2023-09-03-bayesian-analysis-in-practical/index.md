@@ -8,7 +8,8 @@ categories:
 subtitle: ''
 description: ''
 keywords: ''
-comment: no
+comment:
+  enable: false
 draft: true
 ---
 

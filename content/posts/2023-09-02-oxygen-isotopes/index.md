@@ -10,7 +10,8 @@ tags:
 subtitle: ''
 description: ''
 keywords: ''
-comment: no
+comment:
+  enable: false
 ---
 
 ## Basics
