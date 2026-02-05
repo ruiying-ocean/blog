@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/597d4bdd-8685-46b4-92e7-a4f3248d6a62/deploy-status)](https://app.netlify.com/projects/ruiying/deploys)
+
 # Blog
 
 This blog is built with [Hugo](https://gohugo.io/), a fast and flexible static site generator.
