@@ -17,7 +17,7 @@ weight: 0
 tags:
 - Programming
 categories:
-- Biogeochemical Modelling
+- Programming
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
