@@ -3,11 +3,11 @@ title: "Planktic Foraminifera Map"
 subtitle: ""
 date: 2026-02-07
 lastmod: 2026-02-07
-draft: true
+draft: false
 author: "Rui Ying"
 authorLink: ""
 authorEmail: ""
-description: "Interactive map of planktonic foraminifera relative abundance from DIVAnd interpolation"
+description: "Interactive map of planktonic foraminifera relative abundance"
 keywords: ""
 license: ""
 comment:
@@ -37,6 +37,10 @@ repost:
   enable: false
   url: ""
 ---
+
+## Interactive visualisation of planktic foraminifera species distribution
+
+
 
 <style>
 .foram-controls {
@@ -71,10 +75,11 @@ repost:
 <div id="foram-chart"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/theme/shine.js"></script>
 <script>
 (async () => {
   const dom = document.getElementById('foram-chart');
-  const chart = echarts.init(dom, null, { renderer: 'canvas' });
+  let chart = echarts.init(dom, 'shine', { renderer: 'canvas' });
   chart.showLoading();
 
   // Register world map for the geo component
@@ -133,6 +138,7 @@ repost:
         map: 'world',
         roam: true,
         top: 40, bottom: 70, left: 10, right: 10,
+        boundingCoords: [[-180, 90], [180, -90]],
         itemStyle: { areaColor: '#f0f0f0', borderColor: '#ccc', borderWidth: 0.5 },
         emphasis: { disabled: true }
       },
@@ -142,9 +148,7 @@ repost:
         orient: 'horizontal',
         left: 'center', bottom: 8,
         itemWidth: 12, itemHeight: 140,
-        inRange: {
-          color: ['#ffffcc','#ffeda0','#fed976','#feb24c','#fd8d3c','#fc4e2a','#e31a1c','#bd0026','#800026']
-        },
+        inRange: { color: ['#313695','#4575b4','#74add1','#abd9e5','#e0f3f8','#ffffbf','#fee090','#fdae61','#f46d43','#d73027','#a50026'] },
         text: [(max || 0).toFixed(3), '0'],
         textStyle: { fontSize: 11 }
       },
@@ -154,10 +158,33 @@ repost:
         data: points,
         symbol: 'rect',
         symbolSize: 5,
+        itemStyle: { borderWidth: 0 },
         large: false,
         animation: false,
       }]
     }, true);
+    drawTicks();
+  }
+
+  // ── Axis ticks & labels ────────────────────────────────────────────────
+  function drawTicks() {
+    var els = [];
+    var tickLen = 6;
+    [-180,-120,-60,0,60,120,180].forEach(function (lon) {
+      var px = chart.convertToPixel('geo', [lon, -90]);
+      if (!px) return;
+      var s = lon === 0 ? '0°' : Math.abs(lon) + '°' + (lon > 0 ? 'E' : 'W');
+      els.push({ type: 'line', shape: { x1: px[0], y1: px[1], x2: px[0], y2: px[1] + tickLen }, style: { stroke: '#888', lineWidth: 1 } });
+      els.push({ type: 'text', style: { text: s, x: px[0], y: px[1] + tickLen + 2, textAlign: 'center', textVerticalAlign: 'top', fontSize: 10, fill: '#888' } });
+    });
+    [-60,-30,0,30,60].forEach(function (lat) {
+      var px = chart.convertToPixel('geo', [-180, lat]);
+      if (!px) return;
+      var s = lat === 0 ? '0°' : Math.abs(lat) + '°' + (lat > 0 ? 'N' : 'S');
+      els.push({ type: 'line', shape: { x1: px[0] - tickLen, y1: px[1], x2: px[0], y2: px[1] }, style: { stroke: '#888', lineWidth: 1 } });
+      els.push({ type: 'text', style: { text: s, x: px[0] - tickLen - 2, y: px[1], textAlign: 'right', textVerticalAlign: 'middle', fontSize: 10, fill: '#888' } });
+    });
+    chart.setOption({ graphic: { elements: [{ type: 'group', children: els }] } });
   }
 
   // ── Controls ──────────────────────────────────────────────────────────
@@ -187,7 +214,8 @@ repost:
     render(cache[currentDataset], e.target.value);
   });
 
-  window.addEventListener('resize', function () { chart.resize(); });
+  chart.on('georoam', drawTicks);
+  window.addEventListener('resize', function () { chart.resize(); drawTicks(); });
 
   // ── Init ──────────────────────────────────────────────────────────────
   var data = await loadDataset('lgm');
@@ -196,3 +224,10 @@ repost:
   render(data, sp);
 })();
 </script>
+
+
+
+Data source: [ForCenS](https://www.nature.com/articles/sdata2017109) and [ForCenS LGM](https://www.nature.com/articles/s41597-024-03166-7).
+
+
+Powered by the  [ECharts](https://echarts.apache.org/) Feature of [FixIT theme](https://fixit.lruihao.cn/documentation/content-management/diagrams-support/echarts/)
