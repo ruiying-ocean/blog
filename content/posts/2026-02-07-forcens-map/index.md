@@ -218,7 +218,7 @@ repost:
   window.addEventListener('resize', function () { chart.resize(); drawTicks(); });
 
   // ── Init ──────────────────────────────────────────────────────────────
-  var data = await loadDataset('lgm');
+  var data = await loadDataset('forcens');
   chart.hideLoading();
   var sp = populateSpecies(data);
   render(data, sp);
