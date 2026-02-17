@@ -72,24 +72,33 @@ git clone https://github.com/meom-group/CDFTOOLS.git
 cd CDFTOOLS
 ```
 
-Copy and edit the appropriate `makefile` for your system. The key variables to set are `FC` (Fortran compiler), `FFLAGS`, and the NetCDF paths:
+Choose and edit the appropriate `Makefile.macro` for your system. The key variables to set are the NetCDF root path, the compiler, and the flags:
 
 ```bash
-cp Makefile.macro Makefile.macro.local
+cd src/
+ln -sf ../Macrolib/macro.gfortran  make.macro
 ```
 
-Edit `Makefile.macro.local` to match your environment, e.g. for gfortran:
+Edit `Makefile.macro` to match your environment. Here is an example for gfortran on an HPC cluster:
 
 ```makefile
-FC      = gfortran
-FFLAGS  = -O2 -fPIC $(shell nf-config --fflags)
-LDFLAGS = $(shell nf-config --flibs)
+NCDF_ROOT = /gpfs/software/hali/netcdf/4.7.4/gcc
+NCDF = -I$(NCDF_ROOT)/include -L$(NCDF_ROOT)/lib -lnetcdff -lnetcdf
+
+NC4 = -D key_netcdf4
+
+F90 = gfortran
+FFLAGS = -O $(NCDF) $(NC4) -fno-second-underscore -ffree-line-length-256
+
+INSTALL = $(HOME)/.local/bin
+INSTALL_MAN = $(HOME)/.local/man
 ```
 
 Then build:
 
 ```bash
-make -f Makefile.macro.local
+make all
+make install
 ```
 
 The binaries are placed in `bin/`. Verify the build:
@@ -143,68 +152,56 @@ This produces `moc.nc` containing the streamfunction variables:
 
 The output `moc.nc` can be read and plotted with Python using xarray and matplotlib.
 
-### Reading the MOC file
+### Plotting AMOC and GMOC
 
 ```python
 import xarray as xr
 import numpy as np
-
-ds = xr.open_dataset("MOC/moc_2000.nc", decode_times=False)
-print(ds.data_vars)  # zomsfatl, zomsfglo, ...
-```
-
-### Extracting AMOC strength at 26.5N
-
-The AMOC strength is conventionally measured as the maximum of the Atlantic streamfunction over depth at 26.5°N — the latitude of the RAPID mooring array. In ORCA2, this corresponds approximately to y-index 94:
-
-```python
-moc_atl = ds["zomsfatl"]
-
-# Select 26.5N (y-index 94 in ORCA2), take max over depth
-amoc_26n = moc_atl.isel(y=94).max(dim="depthw")
-
-# Annual mean
-amoc_value = float(amoc_26n.mean(dim="time_counter").values)
-print(f"AMOC at 26.5N: {amoc_value:.1f} Sv")
-```
-
-The observed AMOC strength from the RAPID array is approximately 17 Sv.
-
-### Plotting the streamfunction
-
-```python
 import matplotlib.pyplot as plt
 
-moc_atl = ds["zomsfatl"].mean(dim="time_counter").squeeze()
-data = moc_atl.values
+moc = xr.open_dataset('moc.nc')
+depths = -moc['depthw'].values
+lats = moc['nav_lat'].values.squeeze()
 
-# Approximate ORCA2 latitudes (y-indices 20–130 ≈ 30S–80N)
-lats = np.linspace(-30, 80, data[:, 20:130].shape[1])
-depths = moc_atl.coords["depthw"].values
-data_cropped = data[:, 20:130]
+levels = np.arange(-22, 22, 1)
 
-fig, ax = plt.subplots(figsize=(10, 6))
-vmax = np.nanpercentile(np.abs(data_cropped), 98)
-levels = np.linspace(-vmax, vmax, 21)
+fig, axes = plt.subplots(1, 2, figsize=(10, 4), layout='constrained', sharey=True)
 
-cf = ax.contourf(lats, depths, data_cropped,
-                 levels=levels, cmap="RdBu_r", extend="both")
-ax.contour(lats, depths, data_cropped,
-           levels=[0], colors="k", linewidths=1.0)
+# AMOC: crop to y=20..130 to avoid tripolar artifacts
+atl_yslice = slice(20, 130)
+atl = moc['zomsfatl'].squeeze(dim='x').mean(dim='time_counter')
+atl_plot = atl.isel(y=atl_yslice).values
 
-ax.set_ylabel("Depth (m)")
-ax.set_xlabel("Latitude")
-ax.set_title("Atlantic Meridional Overturning Streamfunction")
-ax.invert_yaxis()
+cs = axes[0].contourf(lats[atl_yslice], depths, atl_plot,
+                      levels=levels, cmap='RdBu_r', extend='both')
+cl = axes[0].contour(lats[atl_yslice], depths, atl_plot,
+                     levels=levels[::2], colors='k', linewidths=0.4, alpha=0.5)
+axes[0].clabel(cl, inline=True, fontsize=8, fmt='%.0f')
+axes[0].set_ylim(5500, 0)
+axes[0].set_xlim(-34, 70)
+axes[0].set_xlabel('Latitude (°N)', fontsize=13)
+axes[0].set_ylabel('Depth (m)', fontsize=13)
+axes[0].set_title('Atlantic Meridional Overturning Streamfunction', fontsize=11)
 
-fig.colorbar(cf, ax=ax, label="Sv")
-ax.axvline(26.5, color="k", linestyle="--", alpha=0.5)
+# GMOC: use full latitude range (y=1..148 to skip boundary)
+glo_yslice = slice(1, 148)
+glo = moc['zomsfglo'].squeeze(dim='x').mean(dim='time_counter')
+glo_plot = glo.isel(y=glo_yslice).values
 
-fig.savefig("amoc_streamfunction.png", dpi=300, bbox_inches="tight")
+cs2 = axes[1].contourf(lats[glo_yslice], depths, glo_plot,
+                       levels=levels, cmap='RdBu_r', extend='both')
+cl2 = axes[1].contour(lats[glo_yslice], depths, glo_plot,
+                      levels=levels[::2], colors='k', linewidths=0.4, alpha=0.5)
+axes[1].clabel(cl2, inline=True, fontsize=8, fmt='%.0f')
+axes[1].set_xlim(-80, 80)
+axes[1].set_xlabel('Latitude (°N)', fontsize=13)
+axes[1].set_title('Global Meridional Overturning Streamfunction', fontsize=11)
+
+fig.colorbar(cs, ax=axes.tolist(), pad=0.02, shrink=0.9, label='Sv')
+
+plt.savefig('MOC_streamfunction.png', dpi=200, bbox_inches='tight')
 ```
 
-This produces a depth-latitude contour plot of the AMOC streamfunction:
+This produces side-by-side depth-latitude contour plots of the Atlantic and Global MOC streamfunctions. The AMOC panel is cropped to the Atlantic basin latitudes, while the GMOC panel shows the full meridional extent including the Southern Ocean overturning cells.
 
-The positive (red) cell in the upper ocean represents the northward surface flow and deep-water return flow — the classic AMOC conveyor belt pattern.
-
-![AMOC from NEMO3.6](images/AMOC_streamfunction.png)
+![MOC streamfunction from NEMO3.6](images/MOC_streamfunction.png)
