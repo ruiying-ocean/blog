@@ -56,7 +56,7 @@ mainSections = []
     url = "/posts/"
     # 当你将鼠标悬停在此菜单链接上时，将显示的标题
     title = "blog by time"
-    weight = 2
+    weight = 3
     #  向菜单项添加用户定义的内容
     [menu.main.params]
       # 添加 CSS 类到菜单项
@@ -110,6 +110,27 @@ mainSections = []
       draft = false
       #  添加 fontawesome 图标到菜单项
       icon = "fa-solid fa-flask"
+      #  设置菜单项类型，可选值：["mobile", "desktop"]
+      type = ""
+
+  [[menu.main]]
+    identifier = "publications"
+    parent = ""
+    pre = ""
+    post = ""
+    name = "publications"
+    url = "/publications/"
+    # 当你将鼠标悬停在此菜单链接上时，将显示的标题
+    title = "papers & software"
+    weight = 2
+    #  向菜单项添加用户定义的内容
+    [menu.main.params]
+      # 添加 CSS 类到菜单项
+      class = 'text-center'
+      # 是否为草稿菜单，类似草稿页面
+      draft = false
+      #  添加 fontawesome 图标到菜单项
+      icon = "fa-solid fa-book"
       #  设置菜单项类型，可选值：["mobile", "desktop"]
       type = ""
 
