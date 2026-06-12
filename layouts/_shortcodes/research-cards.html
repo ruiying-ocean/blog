@@ -1,0 +1,17 @@
+{{- /* Research theme cards, sourced from data/research_themes.yaml */ -}}
+<div class="rs-grid">
+{{- range site.Data.research_themes }}
+  {{- $img := $.Page.Resources.GetMatch .image }}
+  <article class="rs-card">
+    <div class="rs-card__imgwrap">
+      <img class="rs-card__img" loading="lazy" alt="{{ .alt }}"
+        src="{{ with $img }}{{ .RelPermalink }}{{ else }}{{ .image | relURL }}{{ end }}">
+    </div>
+    <div class="rs-card__body">
+      <span class="rs-card__tag">{{ .tag }}</span>
+      <p class="rs-card__title">{{ .title }}</p>
+      <div class="rs-card__desc">{{ .desc | $.Page.RenderString }}</div>
+    </div>
+  </article>
+{{- end }}
+</div>

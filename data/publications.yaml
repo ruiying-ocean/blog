@@ -1,0 +1,57 @@
+# Publications shown on /research/ (rendered by the `research-pubs` shortcode).
+# Keep newest first. `title` supports Markdown (e.g. *Species name* in italics).
+# `doi` is the bare DOI; the link is built as https://doi.org/<doi>.
+- year: 2026
+  title: "Darkness and body size shaped end-Cretaceous marine extinction patterns"
+  venue: "Nature"
+  doi: "10.1038/s41586-026-10541-4"
+
+- year: 2025
+  title: "Reviews and syntheses: A trait-based approach to constrain controls on planktic foraminiferal ecology — key trade-offs and current knowledge gaps"
+  venue: "Biogeosciences"
+  doi: "10.5194/bg-22-3463-2025"
+
+- year: 2024
+  title: "Past foraminiferal acclimatization capacity is limited during future warming"
+  venue: "Nature"
+  doi: "10.1038/s41586-024-08029-0"
+
+- year: 2024
+  title: "cgeniepy: A Python package for analysing cGENIE Earth System Model output"
+  venue: "Journal of Open Source Software"
+  doi: "10.21105/joss.06762"
+
+- year: 2023
+  title: "ForamEcoGEnIE 2.0: incorporating symbiosis and spine traits into a trait-based global planktic foraminiferal model"
+  venue: "Geoscientific Model Development, 16, 813–832"
+  doi: "10.5194/gmd-16-813-2023"
+
+- year: 2022
+  title: "The biological carbon pump in CMIP6 models: 21st century trends and uncertainties"
+  venue: "Proceedings of the National Academy of Sciences"
+  doi: "10.1073/pnas.2204369119"
+
+- year: 2020
+  title: "Trophic structure and functional diversity reveal pelagic-benthic coupling dynamic in the coastal ecosystem of Daya Bay, China"
+  venue: "Ecological Indicators"
+  doi: "10.1016/j.ecolind.2020.106241"
+
+- year: 2019
+  title: "Individual and combined effects of ammonia-N and sulfide on the immune function and intestinal microbiota of Pacific white shrimp *Litopenaeus vannamei*"
+  venue: "Fish & Shellfish Immunology"
+  doi: "10.1016/j.fsi.2019.06.020"
+
+- year: 2019
+  title: "Fitting methods and seasonality effects on the assessment of pelagic fish communities in Daya Bay, China"
+  venue: "Ecological Indicators"
+  doi: "10.1016/j.ecolind.2019.04.042"
+
+- year: 2019
+  title: "Effects of invasive *Spartina alterniflora* and subsequent ecological replacement by *Sonneratia apetala* on soil organic carbon fractions and stock"
+  venue: "Forests"
+  doi: "10.3390/f10020171"
+
+- year: 2018
+  title: "Single and synergistic effects of *Ulva lactuca* and *Sesuvium portulacastrum* on the purification of mariculture wastewater"
+  venue: "Chinese Journal of Ecology"
+  doi: "10.13292/j.1000-4890.201809.014"

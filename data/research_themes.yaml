@@ -1,0 +1,37 @@
+# Research theme cards shown on /research/ (rendered by the `research-cards` shortcode).
+# `image` is a filename inside the content/research/ page bundle.
+# `desc` supports Markdown (e.g. *italics*, `code`, [links](...)).
+- tag: Plankton
+  title: "Plankton ecology & evolution"
+  image: foram.png
+  alt: "Planktic foraminifera shells under the microscope"
+  desc: >-
+    Planktic foraminifera are calcifying zooplankton whose shells form the best
+    microfossil record on Earth. I use trait-based approaches to understand how
+    their ecology — symbiosis, spines, body size — responds to a changing ocean.
+
+- tag: Palaeoclimate
+  title: "Past & future climate change"
+  image: lgm.png
+  alt: "Last Glacial Maximum sea surface temperature map"
+  desc: >-
+    From the Last Glacial Maximum to the end-Cretaceous extinction, the geological
+    record reveals how life responds to climate upheaval — and what limits its
+    capacity to adapt to the warming ahead.
+
+- tag: Modelling
+  title: "Earth system modelling"
+  image: example_map.png
+  alt: "Modelled global ocean map"
+  desc: >-
+    I build and use the cGENIE Earth system model, developing its plankton
+    ecosystem component and the `cgeniepy` Python package to explore ocean ecology
+    and biogeochemistry across deep time.
+
+- tag: Biogeochemistry
+  title: "Carbon cycle & the biological pump"
+  image: genie_example.png
+  alt: "Modelled phytoplankton carbon biomass"
+  desc: >-
+    Plankton regulate the cycling of carbon and nutrients through the biological
+    pump. I study how this pump works in models and how it may shift as the ocean warms.

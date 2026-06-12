@@ -69,31 +69,6 @@ mainSections = []
       type = ""
 
   [[menu.main]]
-    identifier = "categories"
-    #  父级菜单项的标识符 (identifier)
-    parent = ""
-    # 你可以在名称（允许 HTML 格式）之前添加其他信息，例如图标
-    pre = ""
-    # 你可以在名称（允许 HTML 格式）之后添加其他信息，例如图标
-    post = ""
-    name = "categories"
-    url = "/categories/"
-    # 当你将鼠标悬停在此菜单链接上时，将显示的标题
-    title = "blog by category"
-    weight = 1
-    #  向菜单项添加用户定义的内容
-    [menu.main.params]
-      # 添加 CSS 类到菜单项
-      class = 'text-center'
-      # 是否为草稿菜单，类似草稿页面
-      draft = false
-      #  添加 fontawesome 图标到菜单项
-      icon = "fa-solid fa-archive"      
-      # icon = "fa-solid fa-grid-2"
-      #  设置菜单项类型，可选值：["mobile", "desktop"]
-      type = ""
-
-  [[menu.main]]
     identifier = "about"
     #  父级菜单项的标识符 (identifier)
     parent = ""
@@ -114,6 +89,27 @@ mainSections = []
       draft = false
       #  添加 fontawesome 图标到菜单项
       icon = "fa-regular fa-address-card"
+      #  设置菜单项类型，可选值：["mobile", "desktop"]
+      type = ""
+
+  [[menu.main]]
+    identifier = "research"
+    parent = ""
+    pre = ""
+    post = ""
+    name = "research"
+    url = "/research/"
+    # 当你将鼠标悬停在此菜单链接上时，将显示的标题
+    title = "my research"
+    weight = 1
+    #  向菜单项添加用户定义的内容
+    [menu.main.params]
+      # 添加 CSS 类到菜单项
+      class = 'text-center'
+      # 是否为草稿菜单，类似草稿页面
+      draft = false
+      #  添加 fontawesome 图标到菜单项
+      icon = "fa-solid fa-flask"
       #  设置菜单项类型，可选值：["mobile", "desktop"]
       type = ""
 

@@ -1,0 +1,82 @@
+/* Styles for the /research/ page (loaded via front-matter `library.css`). */
+
+/* --- Research theme cards --- */
+.rs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.6rem;
+  margin: 1.5rem 0 1rem;
+}
+.rs-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--fi-global-border-color, #e5e5ea);
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--fi-global-background-color, #ffffff);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.rs-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.13);
+  border-color: var(--fi-primary, #1772ee);
+}
+.rs-card__imgwrap { overflow: hidden; }
+.rs-card__img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+.rs-card:hover .rs-card__img { transform: scale(1.06); }
+.rs-card__body { padding: 1.1rem 1.3rem 1.45rem; }
+.rs-card__tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--fi-primary, #1772ee);
+  margin-bottom: 0.5rem;
+}
+.rs-card__title {
+  margin: 0 0 0.55rem;
+  font-size: 1.16rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--fi-global-font-color, #1a1a1a);
+}
+.rs-card__desc {
+  font-size: 0.94rem;
+  line-height: 1.6;
+  color: var(--fi-global-font-secondary-color, #80808a);
+}
+.rs-card__desc p { margin: 0; }
+
+/* --- Publications --- */
+.rs-pubs { margin: 1rem 0 0; }
+.rs-pub {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  gap: 1.1rem;
+  padding: 0.95rem 0;
+  border-top: 1px solid var(--fi-global-border-color, #e5e5ea);
+}
+.rs-pub:last-child { border-bottom: 1px solid var(--fi-global-border-color, #e5e5ea); }
+.rs-pub__year {
+  font-weight: 700;
+  color: var(--fi-primary, #1772ee);
+  font-variant-numeric: tabular-nums;
+}
+.rs-pub__title { font-weight: 600; line-height: 1.45; }
+.rs-pub__venue {
+  color: var(--fi-global-font-secondary-color, #80808a);
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 480px) {
+  .rs-pub { grid-template-columns: 1fr; gap: 0.15rem; }
+}

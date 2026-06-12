@@ -1,0 +1,12 @@
+{{- /* Publication list, sourced from data/publications.yaml */ -}}
+<div class="rs-pubs">
+{{- range site.Data.publications }}
+  <div class="rs-pub">
+    <div class="rs-pub__year">{{ .year }}</div>
+    <div>
+      <div class="rs-pub__title">{{ .title | $.Page.RenderString (dict "display" "inline") }}</div>
+      <div class="rs-pub__venue"><em>{{ .venue }}</em> · <a href="https://doi.org/{{ .doi }}">doi.org/{{ .doi }}</a></div>
+    </div>
+  </div>
+{{- end }}
+</div>
