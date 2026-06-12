@@ -10,6 +10,25 @@
     microfossil record on Earth. I use trait-based approaches to understand how
     their ecology — symbiosis, spines, body size — responds to a changing ocean.
 
+- tag: Communities
+  title: "Community ecology"
+  image: community.png
+  alt: "Modelled size-structured plankton community assembling over time"
+  desc: >-
+    Plankton don't live alone. With size-structured, trait-based models I study how
+    competition, grazing, and the environment assemble plankton communities and
+    govern their diversity, body-size structure, and succession through time.
+
+- tag: Modelling
+  title: "Ocean biogeochemistry modelling"
+  image: planktom_npp.png
+  alt: "PlankTOM12 modelled global ocean net primary production"
+  desc: >-
+    I build and use global ocean biogeochemistry and Earth system models — from
+    PlankTOM to cGENIE — to link plankton ecology to the cycling of carbon and
+    nutrients, across the modern ocean and deep time. I also maintain the `cgeniepy`
+    Python package.
+
 - tag: Palaeoclimate
   title: "Past & future climate change"
   image: lgm.png
@@ -18,20 +37,3 @@
     From the Last Glacial Maximum to the end-Cretaceous extinction, the geological
     record reveals how life responds to climate upheaval — and what limits its
     capacity to adapt to the warming ahead.
-
-- tag: Modelling
-  title: "Earth system modelling"
-  image: example_map.png
-  alt: "Modelled global ocean map"
-  desc: >-
-    I build and use the cGENIE Earth system model, developing its plankton
-    ecosystem component and the `cgeniepy` Python package to explore ocean ecology
-    and biogeochemistry across deep time.
-
-- tag: Biogeochemistry
-  title: "Carbon cycle & the biological pump"
-  image: genie_example.png
-  alt: "Modelled phytoplankton carbon biomass"
-  desc: >-
-    Plankton regulate the cycling of carbon and nutrients through the biological
-    pump. I study how this pump works in models and how it may shift as the ocean warms.
