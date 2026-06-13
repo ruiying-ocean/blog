@@ -6,18 +6,19 @@
   image: foram.png
   alt: "Planktic foraminifera shells under the microscope"
   desc: >-
-    Planktic foraminifera are calcifying zooplankton whose shells form the best
-    microfossil record on Earth. I use trait-based approaches to understand how
-    their ecology — symbiosis, spines, body size — responds to a changing ocean.
+    Plankton are tiny and abundant microorganisms in the water. I study plankton
+    because they are important for understanding fundamental questions in ecology and evolutions.
+    I am particularly interested in calcifying zooplankton (foraminifera) whose shells form the best
+    microfossil record on Earth.
 
 - tag: Communities
   title: "Community ecology"
   image: community.png
   alt: "Modelled size-structured plankton community assembling over time"
   desc: >-
-    Plankton don't live alone. With size-structured, trait-based models I study how
+    Plankton don't live alone. With theoretical models I study how
     competition, grazing, and the environment assemble plankton communities and
-    govern their diversity, body-size structure, and succession through time.
+    govern their diversity and stability through time.
 
 - tag: Modelling
   title: "Ocean biogeochemistry modelling"
@@ -25,9 +26,8 @@
   alt: "PlankTOM12 modelled global ocean net primary production"
   desc: >-
     I build and use global ocean biogeochemistry and Earth system models — from
-    PlankTOM to cGENIE — to link plankton ecology to the cycling of carbon and
-    nutrients, across the modern ocean and deep time. I also maintain the `cgeniepy`
-    Python package.
+    cGENIE to PlankTOM — to link plankton ecology to the cycling of carbon and
+    nutrients, across the modern ocean and deep time.
 
 - tag: Palaeoclimate
   title: "Past & future climate change"
@@ -36,4 +36,4 @@
   desc: >-
     From the Last Glacial Maximum to the end-Cretaceous extinction, the geological
     record reveals how life responds to climate upheaval — and what limits its
-    capacity to adapt to the warming ahead.
+    capacity to adapt to the modern warming.
