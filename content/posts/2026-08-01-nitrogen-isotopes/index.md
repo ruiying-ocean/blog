@@ -111,24 +111,3 @@ biomass produced early is balanced by the heavier biomass produced later.
 The δ¹⁵N of the total biomass then mainly reflects the nitrate source rather
 than the degree of consumption. Mixing, recycling, and export can blur this
 simple distinction in the ocean.
-
-## From seawater to a sediment record
-
-In surface waters where nitrate remains after the growing season, phytoplankton
-assimilation can produce a Rayleigh-like relationship: greater nitrate use gives
-heavier residual nitrate and heavier export production. This is why sedimentary
-$\delta^{15}\mathrm{N}$ has been used to reconstruct past nutrient consumption,
-especially in nitrate-rich regions such as the Southern Ocean.
-
-The interpretation changes when nitrate is fully consumed. The accumulated
-organic matter then approaches the isotope composition of the nitrate supplied
-to the surface, so the sediment may record changes in the *source nitrate*
-rather than changes in local utilization.
-
-Preservation adds another filter. Sinking organic matter can be remineralized,
-mixed with terrestrial or mineral-bound nitrogen, and altered during early
-burial. A global sediment-trap comparison found that bulk sedimentary nitrogen
-is often enriched in $^{15}\mathrm{N}$ during early diagenesis, particularly in
-low-flux, open-ocean settings. More protected archives—such as nitrogen bound
-within foraminiferal tests or microfossils—can reduce some of this overprinting,
-although every archive has its own calibration and biases.
