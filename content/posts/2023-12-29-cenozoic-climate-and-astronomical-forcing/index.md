@@ -56,7 +56,7 @@ repost:
 
 Fast Fourier Transform (time-frequency plot) is often used to decompose these three periodic drivers.
 
-![](https://i0.wp.com/geologyscience.com/wp-content/uploads/2023/11/Precession-as-a-Milankovitch-Cycle-jpg)
+![](images/example.png "Source: https://geologyscience.com/geology-branches/historical-geology/milankovitch-cycles/")
 
 ## 冰期-间冰期旋回
 
