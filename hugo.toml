@@ -625,8 +625,8 @@ mainSections = []
   # FixIt 0.2.16 | CHANGED Social config about the author
   [params.social]
     GitHub = "ruiying-ocean"
-    X = "YingRui17"
-    Googlescholar = "https://scholar.google.com/citations?user=1QNR-nEAAAAJ&hl=zh-CN"
+    Twitter = "YingRui17"
+    Googlescholar = "user=1QNR-nEAAAAJ&hl=zh-CN"
     Email = "r.ying@uea.ac.uk"
     Bluesky = "rui-ying.bsky.social"
     RSS = false

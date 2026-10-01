@@ -1,59 +1,91 @@
-/* Styles for the /research/ page (loaded via front-matter `library.css`). */
+/* Research and publication styles, loaded through library.css. */
+
+.page.single:has(.research-page) {
+  width: 84%;
+  max-width: 960px;
+}
+
+.research-page {
+  margin: 2rem 0 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--fi-global-border-color);
+}
+
+.single .content .research-page > p {
+  max-width: 70ch;
+  margin: 0 0 1.5rem;
+  line-height: 1.8;
+}
+
+.single .content .research-page > p:first-child {
+  max-width: 44ch;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  line-height: 1.35;
+  text-wrap: pretty;
+}
+
+.single .content .research-page > h2 {
+  margin: 3rem 0 1.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
 
 /* --- Research theme cards --- */
 .rs-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.6rem;
-  margin: 1.5rem 0 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3rem clamp(2rem, 5vw, 4rem);
+  margin: 1.5rem 0 3rem;
 }
 .rs-card {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid var(--fi-global-border-color, #e5e5ea);
-  border-radius: 14px;
-  overflow: hidden;
-  background: var(--fi-global-background-color, #ffffff);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--fi-global-border-color);
 }
-.rs-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.13);
-  border-color: var(--fi-primary, #1772ee);
-}
-.rs-card__imgwrap { overflow: hidden; }
 .rs-card__img {
   display: block;
   width: 100%;
   aspect-ratio: 4 / 3;
-  object-fit: cover;
-  transition: transform 0.45s ease;
+  object-fit: contain;
 }
-.rs-card:hover .rs-card__img { transform: scale(1.06); }
-.rs-card__body { padding: 1.1rem 1.3rem 1.45rem; }
+.rs-card__body { padding-top: 1.5rem; }
 .rs-card__tag {
   display: inline-block;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--fi-primary, #1772ee);
-  margin-bottom: 0.5rem;
+  color: var(--fi-global-font-color);
+  margin-bottom: 0.75rem;
 }
-.rs-card__title {
-  margin: 0 0 0.55rem;
-  font-size: 1.16rem;
-  font-weight: 700;
+.single .content .rs-card__title {
+  margin: 0 0 1rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.5rem;
+  font-weight: normal;
   line-height: 1.3;
-  color: var(--fi-global-font-color, #1a1a1a);
+  text-wrap: pretty;
 }
 .rs-card__desc {
-  font-size: 0.94rem;
-  line-height: 1.6;
-  color: var(--fi-global-font-secondary-color, #80808a);
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--fi-global-font-color);
 }
-.rs-card__desc p { margin: 0; }
+.single .content .rs-card__desc p { margin: 0; }
+
+@media (max-width: 760px) {
+  .research-page {
+    margin-top: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  .rs-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
 
 /* --- Publications --- */
 .rs-pubs { margin: 1rem 0 0; }
