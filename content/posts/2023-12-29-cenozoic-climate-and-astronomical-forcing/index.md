@@ -37,43 +37,49 @@ repost:
   url: ''
 ---
 
-## 时间和天文学原理
-* 地球自转：日夜
-* 地球公转：年
-* 黄赤交角（地球南北极连线不是垂直于轨道面）：季节性和南北差异（太阳入射角）
-* 月球公转：月（注意因为潮汐锁定，月球公转和自传周期一样）
 
-> 黄道面：地球绕太阳旋转的轨道平面; 赤道面：赤道所在的平面。
+![](images/overview.png "Source: https://geologyscience.com/geology-branches/historical-geology/milankovitch-cycles/")
 
 ## 天文轨道参数
-* Eccentricity (400, 100 ka)：公转参数, 直接影响地球接收太阳辐射的总量（年度或季度），同时也影响岁差的幅度。突出低纬过程，主要是季风和水汽运输，包括Walker环流（ENSO的核心概念）和ITCZ。
-* Obliquity (41 ka)：影响季节性和纬度差异，因此突出高纬度的过程，主要是冰盖的消长；
-* Precession (23 ka)：地轴本身也会旋转（名为进动），影响黄赤交角，导致岁差，即恒星年和回归年的时间差。恒星年指的是地球公转的周期，回归年指的是阳光直射点在南北回归线之间的周期，后者显然和地轴的位置有关。
+* Eccentricity：公转离心率, how elliptical Earth’s orbit is. 
+* Obliquity：地轴不垂直于黄道面，这种倾斜（tilt）导致南北半球在一年中交替获得不同的光照，即季节性。
+* Precession：Earth axis wobbles. 决定北半球夏天是远日点还是近日点
 
-> Whereas eccentricity affects climate by modulating the amplitude of precession and thus influencing the total annual/seasonal solar energy budget, obliquity changes the latitudinal distribution of insolation (Zachos et al. 2001)
+![](images/precession.png)
 
-> The Intertropical Convergence Zone, or ITCZ, is a band of low pressure around the Earth which generally lies near to the equator. The trade winds of the northern and southern hemispheres come together here, which leads to the development of frequent thunderstorms and heavy rain. These thunderstorms can reach, and sometimes exceed, 16 kilometres, 55,000 feet or 10 miles in height above the surface. (Metoffice)
+<!-- Fast Fourier Transform (time-frequency plot) is often used to decompose these three periodic drivers. -->
 
-Fast Fourier Transform (time-frequency plot) is often used to decompose these three periodic drivers.
+## 对于气候的影响
 
-![](images/example.png "Source: https://geologyscience.com/geology-branches/historical-geology/milankovitch-cycles/")
+### Obliquity (Period: 41 ka)
+Obliquity determines the latitudinal distribution of insolation. Greater obliquity increases summer insolation and strengthens seasonality at high latitudes. It also determines the latitudinal range of the subsolar point, including the northernmost latitude it reaches at the June solstice.
+
+### Precession (Period: 23 ka)
+Controls where the Norther summer is at: perihelion or aphelion.
+
+Precession also influences Monsoon: warm summer -> strong land-sea temperature contrast -> more moisture movement
+
+### Eccentricity (Period: 400/100 ka)
+Regulate the how strongly precession affects summer sunlight
 
 ## 冰期-间冰期旋回
 
-Milankovitch认为，北纬夏季65度日照量影响冰盖积累、日积月累导致了冰期-间冰期的变化。但其实简单的积累是不够的，这其中还涉及许多复杂的反馈机制，包括但不限于：
+Milankovitch认为，轨道变化通过北纬夏季65度日照量影响冰盖积累、导致了冰期-间冰期的变化。这一理论被Shackleton et al. (1976, Science) 用d18O数据证实。
+
+当然，这其中还涉及许多复杂的反馈机制，包括但不限于：
 
 1. 冰盖反射阳光辐射，这是个正反馈调节; 海冰也将阻止海气交换和碳释放。
-2. Carbon-climate feedback: （1）增加$\ce{CO2}$在海水中的溶解度，导致深海碳储存上升；（2）温度减少有机碳分解，导致碳释放减少。温室气体的减少，加剧了降温。
 3. 洋流模式：AMOC的热和水汽输送无法有效到达极地、减少冰盖的形成。
+2. Carbon-climate feedback: （a）增加$\ce{CO2}$在海水中的溶解度，导致深海碳储存上升；（b）温度减少有机碳分解，导致碳释放减少。温室气体的减少，加剧了降温。
 4. 干旱导致的粉尘和铁元素输送、增加海洋生物泵效率
 5. 风力强度影响上升流和生物生产力
 
 这些机制反映了各种气候系统之间的复杂交互作用， 最常研究的包括水循环和碳循环，分别以$\delta^{18}$O和$\delta^{13}$C指示。接下来的新生代气候演化研究就主要基于这两个proxy的数据。
 
-> 温室气体原理: 太阳短波辐射是地球气候系统的能量来源，地球发射长波辐射以维持能量平衡。大气包括水蒸汽、二氧化碳、甲烷、云层对长波辐射的吸收力较强，对短波辐射的吸收力比较弱。
-
 
 ### References
+https://science.nasa.gov/science-research/earth-science/milankovitch-orbital-cycles-and-their-role-in-earths-climate/
+
 Zachos, J., Pagani, M., Sloan, L., Thomas, E. & Billups, K. Trends, Rhythms, and Aberrations in Global Climate 65 Ma to Present. Science 292, 686–693 (2001).
 
 Westerhold, T. et al. An astronomically dated record of Earth’s climate and its predictability over the last 66 million years. Science 369, 1383–1387 (2020).
