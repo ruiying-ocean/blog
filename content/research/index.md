@@ -11,9 +11,9 @@ library:
 
 <div class="research-page">
 
-I am a marine scientist working at the interface of ecology, palaeoclimate, and biogeochemistry.
+I work at the interface of marine ecology, climate, and biogeochemistry.
 
-I combine Earth system models with the geological record to understand how the ocean and its plankton respond to climate change — in the deep past, the present, and the future.
+I combine Earth system models with the observational records to understand how the ocean and its biosphere respond to climate change — in the deep past, the present, and the future.
 
 ## Research themes
 
