@@ -1,0 +1,16 @@
+{{- /* Reusable header: pass Page, Params (merged page options), and Title. */ -}}
+{{- $page := .Page -}}
+<div class="header blog-post-header">
+  {{- with $page.GetTerms "categories" -}}
+    <nav class="blog-post-categories" aria-label="Categories">
+      {{- range . -}}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{- end -}}
+    </nav>
+  {{- end -}}
+  <h1 class="single-title blog-title"><span>{{ .Title }}</span></h1>
+  {{- with .Params.subtitle -}}<p class="single-subtitle">{{ $page.RenderString . }}</p>{{- end -}}
+  {{- with .Params.repost -}}
+    {{- if .enable -}}
+      <p class="blog-post-repost">Reposted{{ with .url }} from <a href="{{ . }}">the original article</a>{{ end }}.</p>
+    {{- end -}}
+  {{- end -}}
+</div>

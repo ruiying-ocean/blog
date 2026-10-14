@@ -1,9 +1,19 @@
 {{- /* This partial uses only Hugo APIs, so it can be called by any theme. */ -}}
 {{- $config := .Site.Params.typography | default dict -}}
-{{- if and $config.enable .IsPage (in ($config.sections | default (slice "posts")) .Section) (ne .Params.typography false) -}}
+{{- if $config.enable -}}
   {{- $fonts := resources.Get "css/typography/fonts.css" | resources.ExecuteAsTemplate "css/typography/fonts.css" . | minify | fingerprint -}}
-  {{- $prose := resources.Get "css/typography/prose.css" | resources.ExecuteAsTemplate "css/typography/prose.css" $config | minify | fingerprint -}}
   <link rel="stylesheet" href="{{ $fonts.RelPermalink }}" integrity="{{ $fonts.Data.Integrity }}">
+  {{- if eq $config.adapter "fixit" -}}
+    {{- $navigation := resources.Get "css/typography/navigation.css" | resources.ExecuteAsTemplate "css/typography/navigation.css" $config | minify | fingerprint -}}
+    <link rel="stylesheet" href="{{ $navigation.RelPermalink }}" integrity="{{ $navigation.Data.Integrity }}">
+    {{- if and .IsSection (in ($config.sections | default (slice "posts")) .Section) (ne .Params.typography false) -}}
+      {{- $archive := resources.Get "css/typography/archive.css" | resources.ExecuteAsTemplate "css/typography/archive.css" $config | minify | fingerprint -}}
+      <link rel="stylesheet" href="{{ $archive.RelPermalink }}" integrity="{{ $archive.Data.Integrity }}">
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if and $config.enable .IsPage (in ($config.sections | default (slice "posts")) .Section) (ne .Params.typography false) -}}
+  {{- $prose := resources.Get "css/typography/prose.css" | resources.ExecuteAsTemplate "css/typography/prose.css" $config | minify | fingerprint -}}
   <link rel="stylesheet" href="{{ $prose.RelPermalink }}" integrity="{{ $prose.Data.Integrity }}">
   {{- if eq $config.adapter "fixit" -}}
     {{- $adapter := resources.Get "css/typography/fixit.css" | minify | fingerprint -}}

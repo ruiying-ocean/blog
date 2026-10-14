@@ -52,11 +52,11 @@ mainSections = []
     pre = ""
     # 你可以在名称（允许 HTML 格式）之后添加其他信息，例如图标
     post = ""
-    name = "posts"
-    url = "/posts/"
+    name = "Writing"
+    pageRef = "/posts"
     # 当你将鼠标悬停在此菜单链接上时，将显示的标题
     title = "blog by time"
-    weight = 3
+    weight = 30
     #  向菜单项添加用户定义的内容
     [menu.main.params]
       # 添加 CSS 类到菜单项
@@ -64,7 +64,7 @@ mainSections = []
       # 是否为草稿菜单，类似草稿页面
       draft = false
       #  添加 fontawesome 图标到菜单项
-      icon = "fa-solid fa-pen-nib"
+      icon = ""
       #  设置菜单项类型，可选值：["mobile", "desktop"]
       type = ""
 
@@ -76,11 +76,11 @@ mainSections = []
     pre = ""
     # 你可以在名称（允许 HTML 格式）之后添加其他信息，例如图标
     post = ""
-    name = "about"
-    url = "/about/"
+    name = "About"
+    pageRef = "/about"
     # 当你将鼠标悬停在此菜单链接上时，将显示的标题
     title = "self-introduction"
-    weight = 0
+    weight = 40
     #  向菜单项添加用户定义的内容
     [menu.main.params]
       # 添加 CSS 类到菜单项
@@ -88,7 +88,7 @@ mainSections = []
       # 是否为草稿菜单，类似草稿页面
       draft = false
       #  添加 fontawesome 图标到菜单项
-      icon = "fa-regular fa-address-card"
+      icon = ""
       #  设置菜单项类型，可选值：["mobile", "desktop"]
       type = ""
 
@@ -97,11 +97,11 @@ mainSections = []
     parent = ""
     pre = ""
     post = ""
-    name = "research"
-    url = "/research/"
+    name = "Research"
+    pageRef = "/research"
     # 当你将鼠标悬停在此菜单链接上时，将显示的标题
     title = "my research"
-    weight = 1
+    weight = 10
     #  向菜单项添加用户定义的内容
     [menu.main.params]
       # 添加 CSS 类到菜单项
@@ -109,7 +109,7 @@ mainSections = []
       # 是否为草稿菜单，类似草稿页面
       draft = false
       #  添加 fontawesome 图标到菜单项
-      icon = "fa-solid fa-flask"
+      icon = ""
       #  设置菜单项类型，可选值：["mobile", "desktop"]
       type = ""
 
@@ -118,11 +118,11 @@ mainSections = []
     parent = ""
     pre = ""
     post = ""
-    name = "publications"
-    url = "/publications/"
+    name = "Publications"
+    pageRef = "/publications"
     # 当你将鼠标悬停在此菜单链接上时，将显示的标题
     title = "papers & software"
-    weight = 2
+    weight = 20
     #  向菜单项添加用户定义的内容
     [menu.main.params]
       # 添加 CSS 类到菜单项
@@ -130,7 +130,7 @@ mainSections = []
       # 是否为草稿菜单，类似草稿页面
       draft = false
       #  添加 fontawesome 图标到菜单项
-      icon = "fa-solid fa-book"
+      icon = ""
       #  设置菜单项类型，可选值：["mobile", "desktop"]
       type = ""
 
@@ -481,7 +481,7 @@ mainSections = []
       # URL of the LOGO
       logo = ""
       # title name
-      name = ""
+      name = "Rui Ying"
       # you can add extra information before the name (HTML format is supported), such as icons
       pre = ""
       # you can add extra information after the name (HTML format is supported), such as icons
@@ -507,7 +507,7 @@ mainSections = []
   # FixIt 0.3.10 | NEW Post navigation config
   [params.navigation]
     # whether to show the post navigation in section pages scope
-    inSection = false
+    inSection = true
     # whether to reverse the next/previous post navigation order
     reverse = false
 

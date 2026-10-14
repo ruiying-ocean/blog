@@ -1,0 +1,109 @@
+/* Site-wide FixIt navigation; the reading styles still load only on posts. */
+:root {
+  --blog-muted: color-mix(in srgb, var(--fi-global-font-color) 85%, var(--fi-global-background-color));
+  --blog-font-ui: {{ .uifont | default `"Geist", system-ui, sans-serif` }};
+}
+
+:is(#header-desktop, #header-mobile) {
+  font-family: var(--blog-font-ui);
+  border-bottom: 1px solid var(--fi-global-border-color);
+  box-shadow: none;
+}
+
+#header-desktop .header-wrapper {
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 3rem);
+}
+
+:is(#header-desktop, #header-mobile) .header-title {
+  font-family: var(--blog-font-ui);
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+}
+
+:is(#header-desktop, #header-mobile) .header-title-text { margin: 0; }
+
+:is(#header-desktop, #header-mobile) .menu-link {
+  font-size: 0.875rem;
+  font-weight: 450;
+  color: var(--blog-muted);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.5rem;
+}
+
+:is(#header-desktop, #header-mobile) .menu-item.active > .menu-link {
+  font-weight: 550;
+  color: var(--fi-global-font-color);
+  text-decoration-line: underline;
+}
+
+:is(#header-desktop, #header-mobile) .menu-link:hover {
+  color: var(--fi-global-font-color);
+}
+
+:is(#header-desktop, #header-mobile) a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+#header-desktop .header-wrapper .menu > .menu-item {
+  padding-inline: 0.75rem;
+}
+
+#header-desktop .menu-link {
+  display: inline-block;
+  min-height: 44px;
+}
+
+#header-desktop .header-wrapper .menu > .delimiter {
+  align-self: center;
+  height: 1rem;
+  margin-inline: 0.5rem;
+  padding: 0;
+  border-left: 1px solid var(--fi-global-border-color);
+}
+
+#header-desktop .header-wrapper .menu > .theme-switch {
+  min-width: 44px;
+  padding: 0;
+  text-align: center;
+}
+
+/* Keep the expanding search within the available header width. */
+#header-desktop.open .header-wrapper .menu .menu-item.search input {
+  width: clamp(10rem, 25vw, 22rem);
+}
+
+#header-mobile .header-container .header-wrapper { padding-inline: 1.25rem; }
+
+#header-mobile :is(.theme-switch, .menu-toggle) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 44px;
+  min-height: 44px;
+  cursor: pointer;
+}
+
+#header-mobile .header-container .menu {
+  border-top: 1px solid var(--fi-global-border-color);
+  box-shadow: none;
+}
+
+#header-mobile .header-container .menu .menu-item { padding-inline: 1.25rem; }
+
+#header-mobile .menu-link {
+  min-height: 48px;
+  line-height: 48px;
+  text-underline-offset: 0.3rem;
+}
+
+@media (min-width: 681px) and (max-width: 900px) {
+  #header-desktop .header-wrapper { padding-inline: 1.25rem; }
+  #header-desktop .header-wrapper .menu > .menu-item { padding-inline: 0.5rem; }
+  #header-desktop.open .header-wrapper .menu .menu-item.search input { width: 10rem; }
+}

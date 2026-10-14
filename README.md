@@ -61,23 +61,44 @@ tables, and figures. Colors follow the active theme in light and dark mode.
 
 All settings live in `[params.typography]` in `hugo.toml`: change `headingFont`,
 `bodyFont`, `uiFont`, `bodySize`, `titleSize`, `lineHeight`, or `measure` to adjust the design.
-`enable = false` turns the layer off. `sections` limits where it loads; by
-default only individual posts use it. A post can opt out with `typography: false`
-in its front matter. About, Research, Publications, and listing pages keep their
-own layouts.
+`enable = false` turns the layer off. `sections` limits the reading styles; by
+default only individual posts use them. A post can opt out with `typography: false`
+in its front matter. The Geist navigation and font declarations load site-wide;
+The `/posts/` overview uses Lora for its heading and listed titles, with Geist
+for years, dates, and pagination. Its compact title scale is separate from the
+article title size; long titles wrap on narrow screens. About, Research,
+Publications, and taxonomy listings keep their own content layouts.
+
+The menu uses the site's name, text links, and an underline for the active
+section. `pageRef` connects each menu item to its Hugo page, keeping Writing
+active on posts too. Posts place categories above the title, followed by the
+publication date and reading time. The footer keeps tags, the update date,
+license, and source/share links, with previous/next links scoped to posts via
+`params.navigation.inSection`.
 
 The implementation belongs to this site, outside the theme submodule:
 
 - `assets/css/typography/prose.css`: reusable reading styles and design tokens.
 - `assets/css/typography/fixit.css`: FixIt integration, including desktop and
-  mobile contents navigation that shares the post typography tokens.
+  mobile contents navigation, post headers, and footers.
+- `assets/css/typography/navigation.css`: site-wide FixIt menu styling.
+- `assets/css/typography/archive.css`: FixIt section overview typography,
+  loaded only for the configured sections (including their pagination pages).
 - `layouts/_partials/typography/head.html`: loads fingerprinted stylesheets.
+- `layouts/_partials/typography/post-header.html`: reusable category/title markup.
+- `layouts/posts/single.html`: FixIt 0.4.5 layout override for the header and
+  compact metadata. It retains the theme's content, TOC, comments, and other
+  hooks, and falls back to the original header when typography is disabled.
+  Compare this file with the upstream layout when upgrading FixIt.
 - `static/fonts/`: local WOFF2 fonts and their licenses; no runtime font service.
 
 ### Switching themes
 
 1. Keep the files above and `[params.typography]` when installing a new theme.
 2. Set `adapter = ""` to remove the FixIt-specific integration.
+   Remove `layouts/posts/single.html` so the new theme can supply its own post
+   layout. The optional `typography/post-header.html` partial can be reused by
+   passing a dictionary with `Page`, `Title`, and merged page `Params`.
 3. Call `{{ partial "typography/head.html" . }}` from the new theme's head hook,
    **after its main stylesheet**, passing the current page as `.`. FixIt's hook
    is currently configured in `[params.customPartials].head`.
