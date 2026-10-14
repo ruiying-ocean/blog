@@ -2,7 +2,8 @@
 command = "hugo --gc --minify"
 publish = "public"
 
-[context.production.environment]
-HUGO_VERSION = "0.155.2"
+# Apply the same Hugo release to production, deploy previews, and branch builds.
+[build.environment]
+HUGO_VERSION = "0.168.0"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"

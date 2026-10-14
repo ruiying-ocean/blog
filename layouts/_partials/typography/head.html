@@ -1,0 +1,16 @@
+{{- /* This partial uses only Hugo APIs, so it can be called by any theme. */ -}}
+{{- $config := .Site.Params.typography | default dict -}}
+{{- if and $config.enable .IsPage (in ($config.sections | default (slice "posts")) .Section) (ne .Params.typography false) -}}
+  {{- $fonts := resources.Get "css/typography/fonts.css" | resources.ExecuteAsTemplate "css/typography/fonts.css" . | minify | fingerprint -}}
+  {{- $prose := resources.Get "css/typography/prose.css" | resources.ExecuteAsTemplate "css/typography/prose.css" $config | minify | fingerprint -}}
+  <link rel="stylesheet" href="{{ $fonts.RelPermalink }}" integrity="{{ $fonts.Data.Integrity }}">
+  <link rel="stylesheet" href="{{ $prose.RelPermalink }}" integrity="{{ $prose.Data.Integrity }}">
+  {{- if eq $config.adapter "fixit" -}}
+    {{- $adapter := resources.Get "css/typography/fixit.css" | minify | fingerprint -}}
+    <link rel="stylesheet" href="{{ $adapter.RelPermalink }}" integrity="{{ $adapter.Data.Integrity }}">
+    {{- if strings.Contains .Content `class="katex` -}}
+      {{- $tocMath := resources.Get "js/typography/toc-math.js" | minify | fingerprint -}}
+      <script src="{{ $tocMath.RelPermalink }}" integrity="{{ $tocMath.Data.Integrity }}" defer></script>
+    {{- end -}}
+  {{- end -}}
+{{- end -}}

@@ -1,0 +1,187 @@
+/* FixIt-specific integration. Disable this adapter when changing themes. */
+article.page.single {
+  --blog-rule: var(--fi-global-border-color);
+}
+
+article.page.single .single-title {
+  animation: none;
+}
+
+article.page.single .single-subtitle {
+  margin-bottom: 1.5rem;
+  font-family: var(--blog-font-body);
+  font-size: 1.25rem;
+  line-height: 1.45;
+}
+
+article.page.single .post-meta .author { font-size: inherit; }
+
+article.page.single .content .heading-element {
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+article.page.single .content .heading-mark {
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+article.page.single .content .heading-mark:focus-visible { opacity: 1; }
+
+article.page.single .content .table-wrapper {
+  margin-block: 1.75em;
+  border: 1px solid var(--blog-rule);
+  border-radius: 0.5rem;
+  font-family: var(--blog-font-ui);
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+article.page.single .content .table-wrapper > table { margin: 0; }
+
+article.page.single .content .table-wrapper > table :is(th, td) {
+  padding: 0.75em 1em;
+  border: 0;
+  border-bottom: 1px solid var(--blog-rule);
+}
+
+article.page.single .content .highlight {
+  margin-block: 1.75em;
+  border: 1px solid var(--blog-rule);
+  border-radius: 0.5rem;
+}
+
+article.page.single .content .code-header {
+  font-family: var(--blog-font-ui);
+  font-size: 0.75rem;
+}
+
+article.page.single .content .image-caption {
+  font-family: var(--blog-font-ui);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+
+/* Keep controls, diagrams, and navigation in the UI font. Math keeps its own. */
+article.page.single .content :is(.details-summary, .admonition-title, .file-tree, .diagram-container),
+article.page.single .post-footer,
+.toc {
+  font-family: var(--blog-font-ui);
+}
+
+/* Contents navigation: a quiet companion to the reading column. */
+#toc-auto {
+  min-width: 0;
+  padding: 0 0.5rem 0 1rem;
+  border-inline-start: 1px solid var(--fi-global-border-color);
+  /* FixIt writes a metadata-based inline offset; align with our title instead. */
+  margin-top: clamp(1rem, 3vw, 3rem) !important;
+  backdrop-filter: none;
+}
+
+:root :is(#toc-auto, #toc-static, #toc-dialog) .toc-title {
+  margin-block: 0 0.85rem;
+  font-family: var(--blog-font-ui);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.12em;
+  color: var(--fi-global-font-secondary-color);
+}
+
+#toc-auto .toc-title::before,
+:is(#toc-auto, #toc-static, #toc-dialog) .toc-content a::before {
+  display: none;
+}
+
+:root :is(#toc-auto, #toc-static, #toc-dialog) .toc-content {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+#toc-auto .toc-content {
+  max-width: 16rem;
+  max-height: calc(100dvh - 10rem - var(--fi-breadcrumb-height, 0px));
+  overflow-y: auto;
+}
+
+:is(#toc-auto, #toc-static, #toc-dialog) .toc-content ul {
+  margin: 0;
+  padding-inline-start: 0;
+  text-indent: 0;
+  list-style: none;
+}
+
+:is(#toc-auto, #toc-static, #toc-dialog) .toc-content ul ul {
+  padding-inline-start: 0.9rem;
+}
+
+:is(#toc-auto, #toc-static, #toc-dialog) .toc-content ol {
+  margin: 0;
+  padding-inline-start: 1.4rem;
+}
+
+:is(#toc-auto, #toc-static, #toc-dialog) .toc-content li {
+  margin-block: 0.2rem;
+}
+
+:root :is(#toc-auto, #toc-static, #toc-dialog) .toc-content li > a {
+  display: block;
+  padding: 0.3rem 0.6rem;
+  border-inline-start: 2px solid transparent;
+  border-radius: 0 0.25rem 0.25rem 0;
+  font-weight: 400;
+  color: var(--fi-global-font-secondary-color);
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+:root :is(#toc-auto, #toc-static, #toc-dialog) .toc-content li.has-active > a {
+  color: var(--fi-global-font-color);
+}
+
+:root :is(#toc-auto, #toc-static, #toc-dialog) .toc-content li > a:is(:hover, :focus-visible, .active) {
+  color: var(--fi-global-font-color);
+  background: var(--blog-surface);
+  font-weight: 400;
+}
+
+:root :is(#toc-auto, #toc-static, #toc-dialog) .toc-content li > a.active {
+  border-inline-start-color: currentColor;
+}
+
+:is(#toc-auto, #toc-static, #toc-dialog) .toc-content a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+#toc-static {
+  margin-block: 0 2rem;
+  border: 1px solid var(--fi-global-border-color);
+  border-radius: 0.5rem;
+}
+
+:root #toc-static .toc-title {
+  margin: 0;
+  padding: 0.9rem 1rem;
+  border-radius: 0.5rem;
+  background: var(--blog-surface);
+}
+
+#toc-static .toc-content {
+  padding: 0 0.75rem 0.75rem;
+  background: none;
+}
+
+#toc-static .toc-content > nav > ul { padding: 0; }
+#toc-static .toc-content > nav > ol { padding: 0 0 0 1.4rem; }
+
+#toc-dialog .toc { margin-top: 1.5rem; }
+#toc-dialog .toc .toc-content { font-size: 0.9375rem; }
+:root #toc-dialog .toc-content li > a { padding-block: 0.6rem; }
+
+.toc .katex {
+  font-size: 1.05em;
+  letter-spacing: normal;
+}

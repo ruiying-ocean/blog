@@ -19,7 +19,7 @@ theme = ["FixIt"] # enable in your site config file
 # determines default content language ["en", "zh-cn", "fr", "pl", ...]
 defaultContentLanguage = "en"
 # language code ["en", "zh-CN", "fr", "pl", ...]
-languageCode = "en"
+locale = "en"
 # language name ["English", "简体中文", "Français", "Polski", ...]
 languageName = "English"
 # whether to include Chinese/Japanese/Korean
@@ -182,7 +182,7 @@ mainSections = []
 [module]
   [module.hugoVersion]
     extended = true
-    min = "0.146.0"
+    min = "0.168.0"
 
 # -------------------------------------------------------------------------------------
 # Markup related configuration in Hugo
@@ -355,7 +355,7 @@ mainSections = []
 
 [params]
   # FixIt 0.2.15 | CHANGED FixIt theme version
-  version = "0.4.X" # e.g. "0.2.X", "0.2.15", "v0.2.15" etc.
+  version = "0.4.5"
   # site description
   description = ""
   # site keywords
@@ -910,7 +910,7 @@ mainSections = []
   # Custom partials must be stored in the /layouts/partials/ directory.
   # Depends on open custom blocks https://fixit.lruihao.cn/references/blocks/
   [params.customPartials]
-    head = []
+    head = ["typography/head.html"]
     menuDesktop = []
     menuMobile = []
     profile = []
@@ -925,6 +925,24 @@ mainSections = []
     postContentAfter = []
     postFooterBefore = []
     postFooterAfter = []
+
+  # Site-owned post typography. See README for adapting this to another theme.
+  [params.typography]
+    enable = true
+    sections = ["posts"]
+    adapter = "fixit" # Set to "" when changing themes.
+    headingFont = '"Lora", "Noto Serif CJK SC", "Songti SC", Georgia, serif'
+    bodyFont = '"Source Serif 4", "Noto Serif CJK SC", "Songti SC", Georgia, serif'
+    uiFont = '"Geist", "Noto Sans CJK SC", "PingFang SC", system-ui, sans-serif'
+    bodySize = "clamp(1.0625rem, 1rem + 0.25vw, 1.25rem)"
+    titleSize = "clamp(1.875rem, 1.3rem + 1.6vw, 2.75rem)"
+    lineHeight = "1.7"
+    measure = "46rem"
+    # Only these selectors and the head hook need reconnecting in a new theme.
+    articleSelector = "article.page.single"
+    titleSelector = "article.page.single .single-title"
+    contentSelector = "article.page.single .content"
+    metaSelector = "article.page.single .post-meta"
 
   # FixIt 0.2.15 | NEW Developer options
   # Select the scope named `public_repo` to generate personal access token,
